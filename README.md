@@ -1,8 +1,12 @@
+# Project Sources
+
+[Google Drive Shared Folder](https://drive.google.com/drive/folders/1WyFGIZ_ocX_4AhMUiMJvDxovCNJ5LbBl?usp=drive_link)
+
 # Web Application Project: [Your Project Title]
 
 ## Overview
 
-Welcome to my final project for I211 Information Infrastructure II! In this project, I'll be developing a robust and user-friendly web application aimed at [brief description of the project's purpose]. This project is a culmination of my learning journey, where I'll apply various concepts and techniques learned throughout the course to create a practical and impactful solution.
+Welcome to our final project for I211 Information Infrastructure II! In this project, we'll be developing a robust and user-friendly web application aimed at [brief description of the project's purpose]. This project is a culmination of my learning journey, where we'll apply various concepts and techniques learned throughout the course to create a practical and impactful solution.
 
 ### Project Goals
 
