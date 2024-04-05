@@ -23,7 +23,7 @@
         foreach ($data as $d) {
             // Output the product details with a link to the product details page
             echo '<div class="product">';
-            echo '<h2><a href="detail/' . $d['ID'] . '">' . htmlspecialchars($d['Name']) . '</a></h2>';
+            echo '<h2><a href="shop/detail/' . $d['ID'] . '">' . htmlspecialchars($d['Name']) . '</a></h2>';
             echo '<p>Price: $' . number_format($d['Price'], 2) . '</p>';
             echo '</div>';
         }
