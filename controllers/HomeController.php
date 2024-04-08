@@ -12,8 +12,6 @@
 class HomeController {
     public function index(): void {
         $view = new HomeIndexView();
-        $view->displayHeader();
         $view->display();
-        $view->displayFooter();
     }
 }

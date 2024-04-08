@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="0b4233fc-04b0-4682-974e-00fb01904b1d" name="XAMPP" url="http://localhost">
+      <webServer id="0b4233fc-04b0-4682-974e-00fb01904b1d" name="XAMPP (project level)" url="http://localhost">
         <fileTransfer accessType="LOCAL" port="0" />
       </webServer>
     </option>

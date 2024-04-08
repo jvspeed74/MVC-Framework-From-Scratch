@@ -9,7 +9,15 @@
 
 class View {
     public static function displayHeader(): void {
-        //todo add header
+        ?>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Sample Homepage</title>
+        </head>
+        <?php
     }
     
     public static function displayFooter(): void {
