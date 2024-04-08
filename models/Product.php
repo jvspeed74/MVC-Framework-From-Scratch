@@ -1,32 +1,32 @@
 <?php
+/**
+ * Author: Jalen Vaughn
+ * Date: 4/8/24
+ * File: Product.php
+ * Description:
+ */
 
-/*
-File: Product.php
-Created By: diffi
-Date: 4/4/2024
-Description: 
-*/
 
 class Product {
-    private int $productID;
+    private string $productID;
     private string $name;
-    private float $price;
+    private string $price;
     private string $description;
     
     /**
-     * @param int $productId
+     * @param string $productID
      * @param string $name
-     * @param float $price
+     * @param string $price
      * @param string $description
      */
-    public function __construct(int $productId, string $name, float $price, string $description) {
-        $this->productID = $productId;
+    public function __construct(string $productID, string $name, string $price, string $description) {
+        $this->productID = $productID;
         $this->name = $name;
         $this->price = $price;
         $this->description = $description;
     }
     
-    public function getProductID(): int {
+    public function getProductID(): string {
         return $this->productID;
     }
     
@@ -34,7 +34,7 @@ class Product {
         return $this->name;
     }
     
-    public function getPrice(): float {
+    public function getPrice(): string {
         return $this->price;
     }
     
@@ -42,5 +42,4 @@ class Product {
         return $this->description;
     }
     
-
 }
