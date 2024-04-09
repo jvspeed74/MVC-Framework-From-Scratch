@@ -7,17 +7,18 @@
  */
 
 class ProductController {
-    public function index() {
+    public function index(): void {
         // Get all products from DB
         $productModel = ProductModel::getInstance();
         $products = $productModel->getProducts();
         
         // Render view
         $view = new ProductIndexView();
+        $view->display($products);
     }
     
-    public function show($id) {
-        
+    public function show($id): void {
+        // todo model does not have method for singular product
         // Create an instance and query all products
         $productModel = ProductModel::getInstance();
         $productData = $productModel->getProduct($id);

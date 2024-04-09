@@ -11,7 +11,7 @@ class ProductModel {
     private Database $db;  // Database object (shouldn't be used outside constructor)
     private mysqli $connection;  // Connection to database
     static private null|ProductModel $_instance = null;
-    private $table;
+    private string $table;
     
     private function __construct() {
         $this->db = Database::getInstance();
@@ -35,7 +35,8 @@ class ProductModel {
         // Check if query failed
         if (!$result) {
             //todo result technically failed so it should be displayed
-            return [];
+            echo "Connection Error";
+            exit();
         }
         
         // Create product obj from result

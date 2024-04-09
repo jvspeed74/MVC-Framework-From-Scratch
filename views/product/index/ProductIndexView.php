@@ -7,20 +7,21 @@
  * Description:
  */
 class ProductIndexView extends View {
-    public function display($data): void {
+    public function display($products): void {
+        parent::displayHeader();
         ?>
         <body>
         <h1>Shop</h1>
         <div class="products">
             <?php
             // Check if products array is not empty
-            if (!empty($data)) {
+            if ($products) {
                 // Loop through each product
-                foreach ($data as $d) {
+                foreach ($products as $p) {
                     // Output the product details with a link to the product details page
                     echo '<div class="product">';
-                    echo '<h2><a href="shop/detail/' . $d['ID'] . '">' . htmlspecialchars($d['Name']) . '</a></h2>';
-                    echo '<p>Price: $' . number_format($d['Price'], 2) . '</p>';
+                    echo '<h2><a href="shop/detail/' . $p->getProductID() . '">' . $p->getName() . '</a></h2>';
+                    echo '<p>Price: $' . $p->getPrice() . '</p>';
                     echo '</div>';
                 }
             } else {
@@ -30,5 +31,7 @@ class ProductIndexView extends View {
             ?>
         </div>
         </body>
-    <?php }
+        <?php
+        parent::displayFooter();
+    }
 }
