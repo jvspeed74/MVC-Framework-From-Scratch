@@ -8,7 +8,7 @@
  */
 
 class HomeIndexView extends View {
-    public function display() {
+    public function display(): void {
         parent::displayHeader();
         ?>
         <body>
