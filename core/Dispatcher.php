@@ -14,17 +14,18 @@ class Dispatcher {
     }
     
     public function dispatch(string $uri, string $requestType) {
-        $controllerMethod = $this->router->lookupRoute($uri, $requestType);
+        $routeInfo = $this->router->lookupRoute($uri, $requestType);
         
-        if ($controllerMethod === null) {
+        if ($routeInfo === null) {
             // todo soft error handling
             die('No route defined for this URI.');
         }
         
+        [$controllerMethod, $args] = $routeInfo;
         [$controller, $method] = explode('@', $controllerMethod);
         
         $controllerInstance = new $controller;
         
-        return $controllerInstance->$method();
+        return call_user_func_array([$controllerInstance, $method], $args);
     }
 }

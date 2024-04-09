@@ -16,6 +16,14 @@ class View {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Sample Homepage</title>
+            <style>
+                /* Some basic CSS for styling */
+                .product {
+                    border: 1px solid #ccc;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                }
+            </style>
         </head>
         <?php
     }

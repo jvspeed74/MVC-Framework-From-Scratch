@@ -7,26 +7,20 @@
  */
 
 class ProductShowView extends View {
-    public function display($product) {
+    public function display($product): void {
         parent::displayHeader(); ?>
         <body>
         <h1>Product Details</h1>
-        <div class="products">
+        <div class="product">
             <?php
-            // Check if products array is not empty
-            if (!empty($product)) {
-                // Loop through each product
-                foreach ($product as $p) {
-                    // Output the product details with a link to the product details page
-                    echo '<div class="product">';
-                    echo '<h2>' . $p->getName() . '</h2>';
-                    echo '<p>ID: ' . $p->getProductID() . '</p>';
-                    echo '<p>Price: $' . $p->getPrice() . '</p>';
-                    echo '<p>Description: ' . $p->getDescription() . '</p>';
-                    echo '</div>';
-                }
+            // Check if product exists
+            if ($product) {
+                // Output the product details
+                echo '<h2>' . $product->getName() . '</h2>';
+                echo '<p>Price: $' . $product->getPrice() . '</p>';
+                echo '<p>Description: ' . $product->getDescription() . '</p>';
             } else {
-                // No products found
+                // Product not found
                 echo '<p>This product does not exist.</p>';
             }
             ?>
