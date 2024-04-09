@@ -20,7 +20,7 @@ class ProductIndexView extends View {
                 foreach ($products as $p) {
                     // Output the product details with a link to the product details page
                     echo '<div class="product">';
-                    echo '<h2><a href="/I211-Team-Project/index.php/product/show/' . $p->getProductID() . '">' . $p->getName() . '</a></h2>';
+                    echo '<h2><a href="' . BASE_URL . '/product/show/' . $p->getProductID() . '">' . $p->getName() . '</a></h2>';
                     echo '<p>Price: $' . $p->getPrice() . '</p>';
                     echo '</div>';
                 }
