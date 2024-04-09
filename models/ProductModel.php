@@ -27,7 +27,7 @@ class ProductModel {
         return self::$_instance;
     }
     
-    public function getProducts(): array {
+    public function getAllProducts(): array {
         // Query all products from DB
         $sql = "SELECT * FROM $this->table ORDER BY productID DESC";
         $result = $this->connection->query($sql);
@@ -53,5 +53,21 @@ class ProductModel {
         return $products;
     }
     
-    
+    public function getProduct($id): false|int|Product {
+        $sql = "SELECT * FROM $this->table WHERE productID=$id";
+        
+        $query = $this->connection->query($sql);
+        
+        if (!$query) return false;
+        
+        if ($query->num_rows == 0) return 0;
+        
+        $obj = $query->fetch_object();
+        
+        return new Product(
+            $obj->productID,
+            stripslashes($obj->name),
+            $obj->price,
+            stripslashes($obj->description));
+    }
 }

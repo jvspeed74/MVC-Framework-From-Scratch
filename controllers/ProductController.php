@@ -10,7 +10,7 @@ class ProductController {
     public function index(): void {
         // Get all products from DB
         $productModel = ProductModel::getInstance();
-        $products = $productModel->getProducts();
+        $products = $productModel->getAllProducts();
         
         // Render view
         $view = new ProductIndexView();
@@ -23,20 +23,15 @@ class ProductController {
         $productModel = ProductModel::getInstance();
         $productData = $productModel->getProduct($id);
         
+        // Render view
+        $view = new ProductShowView();
+        
         // Check if any data was returned
         if (!$productData) {
-            $this->view('shop/main');
-            return;
-        }
+            exit();
+            
+        } else
         
-        // Layer the data into a dictionary
-        $products[] = [
-            'ID' => $productData->getProductID(),
-            'Name' => $productData->getName(),
-            'Price' => $productData->getPrice(),
-            'Description' => $productData->getDescription(),
-        ];
-        
-        $this->view('shop/detail', $products);
+        $view->display($productData);
     }
 }
