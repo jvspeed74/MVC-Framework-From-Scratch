@@ -6,31 +6,26 @@
  * Description:
  */
 
-class ProductController {
+class ProductController extends Controller {
+    protected function loadModel(): ProductModel {
+        return ProductModel::getInstance();
+    }
+    
     public function index(): void {
         // Get all products from DB
-        $productModel = ProductModel::getInstance();
-        $products = $productModel->fetchAll();
+        $products = $this->model->fetchAll();
         
         // Render view
-        $view = new ProductIndexView();
-        $view->display($products);
+        ProductIndexView::render($products);
     }
     
     public function show($id): void {
-        // Create an instance and query all products
-        $productModel = ProductModel::getInstance();
-        $productData = $productModel->fetchByID($id);
+        // Query product from DB
+        $product = $this->model->fetchByID($id);
         
         // Render view
-        $view = new ProductShowView();
-        
-        // Check if any data was returned
-        if (!$productData) {
-            exit();
-            
-        } else
-        
-        $view->display($productData);
+        ProductShowView::render($product);
     }
+    
+    
 }
