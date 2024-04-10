@@ -7,8 +7,8 @@
  */
 
 class ProductShowView extends View {
-    public function display($product): void {
-        parent::displayHeader(); ?>
+    static public function render(?Product $product): void {
+        parent::header(); ?>
         <body>
         <h1>Product Details</h1>
         <div class="product">
@@ -26,6 +26,6 @@ class ProductShowView extends View {
             ?>
         </div>
         </body>
-        <?php parent::displayFooter();
+        <?php parent::footer();
     }
 }

@@ -7,16 +7,14 @@
  * File: ProductModel.php
  * Description:
  */
-class ProductModel {
-    private Database $db;  // Database object (shouldn't be used outside constructor)
-    private mysqli $connection;  // Connection to database
-    static private null|ProductModel $_instance = null;
-    private string $table;
+class ProductModel extends Model {
+    protected Database $db;  // Database object
+    static private ?ProductModel $_instance = null;
+    private string $table = 'products';
+    private array $attributes = ['productID', 'name', 'price', 'description'];
     
     private function __construct() {
-        $this->db = Database::getInstance();
-        $this->connection = $this->db->getConnection();
-        $this->table = $this->db->getProductTable();
+        parent::__construct();
     }
     
     // Return the singular instance of the GuestModel
@@ -27,47 +25,45 @@ class ProductModel {
         return self::$_instance;
     }
     
-    public function getAllProducts(): array {
+    public function fetchAll(): array {
         // Query all products from DB
         $sql = "SELECT * FROM $this->table ORDER BY productID DESC";
-        $result = $this->connection->query($sql);
-        
-        // Check if query failed
-        if (!$result) {
-            //todo result technically failed so it should be displayed
-            echo "Connection Error";
-            exit();
-        }
+        $query = $this->db->query($sql);
         
         // Create product obj from result
-        $products = [];
-        while ($row = $result->fetch_assoc()) {
-            $product = new Product(
-                $row["productID"],
-                $row["name"],
-                $row["price"],
-                $row["description"]);
-            $products[] = $product;
+        $results = [];
+        while ($row = $query->fetch_object(Product::class)) {
+            $results[] = $row;
         }
         // List of Product objects
-        return $products;
+        //todo check error handling
+        return $results;
     }
     
-    public function getProduct($id): false|int|Product {
+    public function fetchByID(int $id): false|null|Product {
+        // Request product from DB
         $sql = "SELECT * FROM $this->table WHERE productID=$id";
-        
-        $query = $this->connection->query($sql);
-        
-        if (!$query) return false;
-        
-        if ($query->num_rows == 0) return 0;
-        
-        $obj = $query->fetch_object();
-        
-        return new Product(
-            $obj->productID,
-            stripslashes($obj->name),
-            $obj->price,
-            stripslashes($obj->description));
+        $query = $this->db->query($sql);
+        // todo check error handling
+        return $query->fetch_object(Product::class);
+    }
+    
+    public function create(): bool {
+        // TODO: Implement create() method.
+        return false;
+    }
+    
+    public function fetch() {
+        // TODO: Implement fetch() method.
+    }
+    
+    public function update(): bool {
+        // TODO: Implement update() method.
+        return false;
+    }
+    
+    public function delete(): bool {
+        // TODO: Implement delete() method.
+        return false;
     }
 }

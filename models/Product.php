@@ -13,16 +13,19 @@ class Product {
     private string $price;
     private string $description;
     
-    /**
-     * @param string $productID
-     * @param string $name
-     * @param string $price
-     * @param string $description
-     */
-    public function __construct(string $productID, string $name, string $price, string $description) {
+    public function setProductID(string $productID): void {
         $this->productID = $productID;
+    }
+    
+    public function setName(string $name): void {
         $this->name = $name;
+    }
+    
+    public function setPrice(string $price): void {
         $this->price = $price;
+    }
+    
+    public function setDescription(string $description): void {
         $this->description = $description;
     }
     
