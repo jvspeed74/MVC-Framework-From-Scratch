@@ -53,14 +53,6 @@ class Database {
     }
     
     /**
-     * Gets the Database Connection.
-     * @return mysqli
-     */
-    public function getConnection(): mysqli {
-        return $this->connection;
-    }
-    
-    /**
      * Send a query to the database.
      * @param $sql
      * @return bool|mysqli_result|void
@@ -71,19 +63,12 @@ class Database {
         
         // Check if the query was successful
         if (!$result) {
-            // todo route to error page
+            // todo handle errors
             // If the query failed, terminate the script and output the error message
             die("Query failed: " . $this->connection->error);
         }
         
         // Return the result of the query
         return $result;
-    }
-    
-    public function lookupTable($model): string {
-        if (isset($this->param['tables'][$model])) {
-            return $this->param['tables'][$model];
-        } else
-            die("Unable to establish table: " . $model);
     }
 }
