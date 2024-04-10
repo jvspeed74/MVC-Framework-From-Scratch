@@ -8,10 +8,10 @@
  * Description:
  */
 class ProductModel extends Model {
-    protected Database $db;  // Database object (shouldn't be used outside constructor)
-    protected mysqli $connection;  // Connection to database
+    protected Database $db;  // Database object
     static private ?ProductModel $_instance = null;
-    private string $table='products';
+    private string $table = 'products';
+    private array $attributes = ['productID', 'name', 'price', 'description'];
     
     private function __construct() {
         parent::__construct();
@@ -28,45 +28,24 @@ class ProductModel extends Model {
     public function fetchAll(): array {
         // Query all products from DB
         $sql = "SELECT * FROM $this->table ORDER BY productID DESC";
-        $result = $this->connection->query($sql);
-        
-        // Check if query failed
-        if (!$result) {
-            //todo result technically failed so it should be displayed
-            echo "Connection Error";
-            exit();
-        }
+        $query = $this->db->query($sql);
         
         // Create product obj from result
-        $products = [];
-        while ($row = $result->fetch_assoc()) {
-            $product = new Product(
-                $row["productID"],
-                $row["name"],
-                $row["price"],
-                $row["description"]);
-            $products[] = $product;
+        $results = [];
+        while ($row = $query->fetch_object(Product::class)) {
+            $results[] = $row;
         }
         // List of Product objects
-        return $products;
+        //todo check error handling
+        return $results;
     }
     
-    public function fetchByID($id): false|int|Product {
+    public function fetchByID(int $id): false|null|Product {
+        // Request product from DB
         $sql = "SELECT * FROM $this->table WHERE productID=$id";
-        
-        $query = $this->connection->query($sql);
-        
-        if (!$query) return false;
-        
-        if ($query->num_rows == 0) return 0;
-        
-        $obj = $query->fetch_object();
-        
-        return new Product(
-            $obj->productID,
-            stripslashes($obj->name),
-            $obj->price,
-            stripslashes($obj->description));
+        $query = $this->db->query($sql);
+        // todo check error handling
+        return $query->fetch_object(Product::class);
     }
     
     public function create(): bool {
