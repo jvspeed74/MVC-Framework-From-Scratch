@@ -7,16 +7,14 @@
  * File: ProductModel.php
  * Description:
  */
-class ProductModel {
-    private Database $db;  // Database object (shouldn't be used outside constructor)
-    private mysqli $connection;  // Connection to database
-    static private null|ProductModel $_instance = null;
-    private string $table;
+class ProductModel extends Model {
+    protected Database $db;  // Database object (shouldn't be used outside constructor)
+    protected mysqli $connection;  // Connection to database
+    static private ?ProductModel $_instance = null;
+    private string $table='products';
     
     private function __construct() {
-        $this->db = Database::getInstance();
-        $this->connection = $this->db->getConnection();
-        $this->table = $this->db->getProductTable();
+        parent::__construct();
     }
     
     // Return the singular instance of the GuestModel
@@ -27,7 +25,7 @@ class ProductModel {
         return self::$_instance;
     }
     
-    public function getAllProducts(): array {
+    public function fetchAll(): array {
         // Query all products from DB
         $sql = "SELECT * FROM $this->table ORDER BY productID DESC";
         $result = $this->connection->query($sql);
@@ -53,7 +51,7 @@ class ProductModel {
         return $products;
     }
     
-    public function getProduct($id): false|int|Product {
+    public function fetchByID($id): false|int|Product {
         $sql = "SELECT * FROM $this->table WHERE productID=$id";
         
         $query = $this->connection->query($sql);
@@ -69,5 +67,24 @@ class ProductModel {
             stripslashes($obj->name),
             $obj->price,
             stripslashes($obj->description));
+    }
+    
+    public function create(): bool {
+        // TODO: Implement create() method.
+        return false;
+    }
+    
+    public function fetch() {
+        // TODO: Implement fetch() method.
+    }
+    
+    public function update(): bool {
+        // TODO: Implement update() method.
+        return false;
+    }
+    
+    public function delete(): bool {
+        // TODO: Implement delete() method.
+        return false;
     }
 }

@@ -81,6 +81,9 @@ class Database {
     }
     
     public function lookupTable($model): string {
-        return $this->param['tables'][$model];
+        if (isset($this->param['tables'][$model])) {
+            return $this->param['tables'][$model];
+        } else
+            die("Unable to establish table: " . $model);
     }
 }

@@ -8,26 +8,23 @@ Description:
 */
 
 abstract class Model {
-    use QueryBuilder;
-    
-    protected ?string $table;
     
     protected Database $db;
     protected mysqli $connection;
     
-    protected function __construct(string $tableName) {
+    protected function __construct() {
         $this->db = Database::getInstance();
         $this->connection = $this->db->getConnection();
-        $this->table = $tableName;
     }
     
     abstract static public function getInstance();
     
     abstract public function create(): bool;
     
-    abstract public function fetch();
+    abstract public function fetchByID(int $id);
     
     abstract public function fetchAll(): array;
+    abstract public function fetch();
     
     abstract public function update(): bool;
     
