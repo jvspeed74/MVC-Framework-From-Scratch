@@ -13,7 +13,9 @@ class Database {
         'login' => 'root',
         'password' => '',
         'database' => 'fitness_db',
-        'productTable' => 'products'
+        'tables' => [
+            'Product' => 'products'
+        ]
     ];
     
     private mysqli $connection;
@@ -78,7 +80,7 @@ class Database {
         return $result;
     }
     
-    public function getProductTable() {
-        return $this->param['productTable'];
+    public function lookupTable($model): string {
+        return $this->param['tables'][$model];
     }
 }
