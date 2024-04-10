@@ -7,8 +7,8 @@
  */
 
 
-class View {
-    public static function displayHeader(): void {
+abstract class View {
+    static public function header(): void {
         ?>
         <!DOCTYPE html>
         <html lang="en">
@@ -28,7 +28,7 @@ class View {
         <?php
     }
     
-    public static function displayFooter(): void {
+    static public function footer(): void {
         //todo add footer
     }
 }

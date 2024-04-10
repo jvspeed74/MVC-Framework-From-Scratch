@@ -10,11 +10,9 @@ Description:
 abstract class Model {
     
     protected Database $db;
-    protected mysqli $connection;
     
     protected function __construct() {
         $this->db = Database::getInstance();
-        $this->connection = $this->db->getConnection();
     }
     
     abstract static public function getInstance();
