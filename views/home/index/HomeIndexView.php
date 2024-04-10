@@ -9,7 +9,7 @@
 
 class HomeIndexView extends View {
     public function display(): void {
-        parent::displayHeader();
+        parent::header();
         ?>
         <body>
         <h1>Welcome to Group 4's Draft 1 submission!</h1>
@@ -25,6 +25,6 @@ class HomeIndexView extends View {
         </body>
         </html>
         <?php
-        parent::displayFooter();
+        parent::footer();
     }
 }
