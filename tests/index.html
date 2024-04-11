@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Navbar</title>
+<style>
+  /* Basic reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Navbar styling */
+  .navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+
+  .navbar-logo {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .navbar-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .navbar-links li {
+    margin: 0 10px;
+  }
+
+  .navbar-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-icons img {
+    margin-left: 20px;
+    cursor: pointer;
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="#" class="navbar-logo"><img src="img/site-logo.png" alt="Logo"></a>
+  <ul class="navbar-links">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+  </ul>
+  <div class="navbar-icons">
+      <img src="img/search-icon.png" alt="Search">
+      <img src="img/profile-icon.png" alt="Profile">
+      <img src="img/favorites-icon.png" alt="Favorite">
+      <img src="img/cart-icon.png" alt="Cart">
+  </div>
+</nav>
+
+</body>
+</html>
