@@ -13,9 +13,6 @@ class Database {
         'login' => 'root',
         'password' => '',
         'database' => 'fitness_db',
-        'tables' => [
-            'Product' => 'products'
-        ]
     ];
     
     private mysqli $connection;
@@ -43,6 +40,7 @@ class Database {
     /**
      * Gets the singular instance of the Database object. This is statically checked
      * to confirm there is only one Database connection being made.
+     *
      * @return Database
      */
     static public function getInstance(): Database {
@@ -54,6 +52,7 @@ class Database {
     
     /**
      * Send a query to the database.
+     *
      * @param $sql
      * @return bool|mysqli_result|void
      */

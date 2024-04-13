@@ -7,6 +7,16 @@
  */
 
 class ProductShowView extends View {
+    
+    /**
+     * Renders the product show view.
+     *
+     * This method outputs the HTML content for displaying details of a single product.
+     * It includes the header, product details, and footer.
+     *
+     * @param Product|null $product The product object to display details of.
+     * @return void
+     */
     static public function render(?Product $product): void {
         parent::header(); ?>
         <body>
@@ -29,3 +39,4 @@ class ProductShowView extends View {
         <?php parent::footer();
     }
 }
+

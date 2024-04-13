@@ -8,6 +8,15 @@
 
 
 abstract class View {
+    
+    /**
+     * Outputs the HTML header for the webpage.
+     *
+     * This method outputs the standard HTML header including the doctype declaration,
+     * meta tags, and title tag. It also includes some basic CSS styling.
+     *
+     * @return void
+     */
     static public function header(): void {
         ?>
         <!DOCTYPE html>
@@ -28,7 +37,17 @@ abstract class View {
         <?php
     }
     
+    /**
+     * Outputs the HTML footer for the webpage.
+     *
+     * This method is intended to be implemented to output the HTML footer
+     * content for the webpage. It can be used to include scripts, closing
+     * tags, or any other content needed for the footer.
+     *
+     * @return void
+     */
     static public function footer(): void {
         //todo add footer
     }
 }
+

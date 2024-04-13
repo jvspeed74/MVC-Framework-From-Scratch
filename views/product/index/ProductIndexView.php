@@ -7,6 +7,16 @@
  * Description:
  */
 class ProductIndexView extends View {
+    
+    /**
+     * Renders the product index view.
+     *
+     * This method outputs the HTML content for displaying a list of products.
+     * It includes the header, product list, and footer.
+     *
+     * @param array $products An array containing product objects to display.
+     * @return void
+     */
     static public function render(array $products = []): void {
         parent::header();
         ?>
@@ -35,3 +45,4 @@ class ProductIndexView extends View {
         parent::footer();
     }
 }
+

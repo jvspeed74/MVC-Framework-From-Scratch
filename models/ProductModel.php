@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * Author: Jalen Vaughn
  * Date: 4/8/24
@@ -11,13 +9,14 @@ class ProductModel extends Model {
     protected Database $db;  // Database object
     static private ?ProductModel $_instance = null;
     private string $table = 'products';
-    private array $attributes = ['productID', 'name', 'price', 'description'];
     
     private function __construct() {
         parent::__construct();
     }
     
-    // Return the singular instance of the GuestModel
+    /**
+     * @return ProductModel An instance of the Model.
+     */
     static public function getInstance(): ProductModel {
         if (self::$_instance == null) {
             self::$_instance = new ProductModel();
@@ -44,26 +43,44 @@ class ProductModel extends Model {
         // Request product from DB
         $sql = "SELECT * FROM $this->table WHERE productID=$id";
         $query = $this->db->query($sql);
+        
         // todo check error handling
         return $query->fetch_object(Product::class);
     }
     
+    /**
+     * Fetches records from the database by a search parameter.
+     *
+     * @return array The fetched record.
+     */
+    public function fetchBySearch(): array {
+        // TODO: Implement fetchBySearch() method.
+    }
+    
+    /**
+     * Creates a new record in the database.
+     *
+     * @return bool True if the record creation was successful, false otherwise.
+     */
     public function create(): bool {
         // TODO: Implement create() method.
-        return false;
     }
     
-    public function fetch() {
-        // TODO: Implement fetch() method.
-    }
-    
+    /**
+     * Updates an existing record in the database.
+     *
+     * @return bool True if the record update was successful, false otherwise.
+     */
     public function update(): bool {
         // TODO: Implement update() method.
-        return false;
     }
     
+    /**
+     * Deletes an existing record from the database.
+     *
+     * @return bool True if the record deletion was successful, false otherwise.
+     */
     public function delete(): bool {
         // TODO: Implement delete() method.
-        return false;
     }
 }

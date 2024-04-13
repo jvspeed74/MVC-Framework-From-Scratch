@@ -6,8 +6,17 @@ Date: 4/10/2024
 Description: 
 */
 
-
 class ErrorView extends View {
+    
+    /**
+     * Renders the error view.
+     *
+     * This method outputs the HTML content for displaying an error message.
+     * It includes the error message within a styled container.
+     *
+     * @param string $message The error message to display.
+     * @return void
+     */
     static public function render(string $message): void {
         // HTML for error page
         ?>
