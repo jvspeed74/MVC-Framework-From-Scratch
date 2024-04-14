@@ -25,13 +25,6 @@ abstract class Model {
     abstract static public function getInstance();
     
     /**
-     * Creates a new record in the database.
-     *
-     * @return bool True if the record creation was successful, false otherwise.
-     */
-    abstract public function create(): bool;
-    
-    /**
      * Fetches a record from the database by its ID.
      *
      * @param int $id The ID of the record to fetch.
@@ -52,6 +45,13 @@ abstract class Model {
      * @return array The fetched record.
      */
     abstract public function fetchBySearch(): array;
+    
+    /**
+     * Creates a new record in the database.
+     *
+     * @return bool True if the record creation was successful, false otherwise.
+     */
+    abstract public function create(): bool;
     
     /**
      * Updates an existing record in the database.
