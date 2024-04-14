@@ -55,5 +55,35 @@ class ProductController extends Controller {
         // Render view
         ProductShowView::render($product);
     }
+    
+    /**
+     * Renders the search view displaying the results of the search query.
+     *
+     * Searches for products based on provided terms.
+     *
+     * @param mixed $terms The search terms provided by the user.
+     * @return void
+     */
+    public function search(mixed $terms): void {
+        //retrieve query terms from search form
+        $searchTerms = trim($terms);
+        
+        //if search term is empty, list all products
+        if ($searchTerms == "") {
+            $this->index();
+        }
+        
+        //search the database for matching products
+        $products = $this->model->fetchBySearch($searchTerms);
+        
+        if ($products === false) {
+            //handle error
+            ErrorView::render("An error occurred");
+            return;
+        }
+        // Render view
+        ProductSearchView::render($products);
+        
+    }
 }
 

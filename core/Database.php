@@ -70,4 +70,14 @@ class Database {
         // Return the result of the query
         return $result;
     }
+    
+    /**
+     * An intermediary to use the real_escape_string method from the mysqli connection property.
+     *
+     * @param $string
+     * @return string An escaped string
+     */
+    public function escape_string($string): string {
+        return $this->connection->real_escape_string($string);
+    }
 }

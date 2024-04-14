@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Author: Jalen Vaughn
  * Date: 4/8/24
@@ -54,7 +55,37 @@ class ProductModel extends Model {
      * @return array The fetched record.
      */
     public function fetchBySearch(): array {
-        // TODO: Implement fetchBySearch() method.
+        // separate terms into array
+        $searchTerms = explode(" ", $_GET['search-terms']);
+        
+        // Escape each term to prevent SQL injection
+        $escapedTerms = [];
+        foreach ($searchTerms as $term) {
+            $escapedTerms[] = $this->db->escape_string($term);
+        }
+        
+        // sql for search
+        $sql = "SELECT * FROM $this->table WHERE name LIKE '%" . array_shift($escapedTerms) . "%'";
+        
+        // pass each term in array
+        foreach ($escapedTerms as $term) {
+            $sql .= " AND name LIKE '%$term%'";
+        }
+        
+        // execute query
+        $query = $this->db->query($sql);
+        
+        //todo query could fail and send false
+        //search succeeded, but no movie was found.
+        if ($query->num_rows == 0)
+            return [];
+        
+        // store results in array of Product objects
+        $results = [];
+        while ($row = $query->fetch_object(Product::class)) {
+            $results[] = $row;
+        }
+        return $results;
     }
     
     /**

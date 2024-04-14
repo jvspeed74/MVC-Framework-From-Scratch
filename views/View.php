@@ -21,19 +21,25 @@ abstract class View {
         ?>
         <!DOCTYPE html>
         <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Sample Homepage</title>
-            <style>
-                /* Some basic CSS for styling */
-                .product {
-                    border: 1px solid #ccc;
-                    margin-bottom: 20px;
-                    padding: 10px;
-                }
-            </style>
-        </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sample Homepage</title>
+        <style>
+            /* Some basic CSS for styling */
+            .product {
+                border: 1px solid #ccc;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <form method="get" action="<?= BASE_URL ?>/product/search/">
+        <input type="text" name="search-terms" placeholder="Search products by name"
+               autocomplete="off"
+               onkeyup="">
+        <input type="submit" value="Go"/>
+    </form>
         <?php
     }
     
