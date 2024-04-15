@@ -18,5 +18,4 @@ abstract class Controller {
     public function error(string $message='An error occurred.'): void {
         ErrorView::render($message);
     }
-    
 }

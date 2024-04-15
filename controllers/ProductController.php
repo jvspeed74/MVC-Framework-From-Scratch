@@ -26,6 +26,4 @@ class ProductController extends Controller {
         // Render view
         ProductShowView::render($product);
     }
-    
-    
 }

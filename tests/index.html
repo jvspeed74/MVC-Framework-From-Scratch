@@ -1,80 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Custom Navbar</title>
-<style>
-  /* Basic reset */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+    <title>FitFlex</title>
 
-  /* Navbar styling */
-  .navbar {
-    background-color: #ffffff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-  }
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
 
-  .navbar-logo {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-
-  .navbar-links {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-  }
-
-  .navbar-links li {
-    margin: 0 10px;
-  }
-
-  .navbar-links a {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-
-  .navbar-icons {
-    display: flex;
-    align-items: center;
-  }
-
-  .navbar-icons img {
-    margin-left: 20px;
-    cursor: pointer;
-    width: 30px; /* Adjust the width as needed */
-    height: 30px; /* Adjust the height as needed */
-  }
-</style>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body>
 
-<nav class="navbar">
-  <a href="#" class="navbar-logo"><img src="img/site-logo.png" alt="Logo"></a>
-  <ul class="navbar-links">
-    <li><a href="#">Link 1</a></li>
-    <li><a href="#">Link 2</a></li>
-    <li><a href="#">Link 3</a></li>
-  </ul>
-  <div class="navbar-icons">
-      <img src="img/search-icon.png" alt="Search">
-      <img src="img/profile-icon.png" alt="Profile">
-      <img src="img/favorites-icon.png" alt="Favorite">
-      <img src="img/cart-icon.png" alt="Cart">
-  </div>
-</nav>
-
-</body>
-</html>
+<!-- Header Section Begin -->
+<header class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-1 col-lg-7">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="img/site-logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-7">
+                <nav class="header__menu">
+                    <ul>
+                        <li><a href="#">Shop</a>
+                            <ul class="dropdown">
+                                <li><a href="./product-details.html">Men</a></li>
+                                <li><a href="./shop-cart.html">Women</a></li>
+                                <li><a href="./checkout.html">Gear</a></li>
+                                <li><a href="./blog-details.html">Supplements</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html">Classes</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3">
+                <div class="header__right">
+                    <div class="header__right__auth">
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+                    </div>
+                    <ul class="header__right__widget">
+                        <li><span class="search-icon.png"></span></li>
+                        <li><a href="#"><span class="img/favorites-icon.png"></span>
+                            <div class="tip">2</div>
+                        </a></li>
+                        <li><a href="#"><span class="icon_bag_alt"></span>
+                            <div class="tip">2</div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="canvas__open">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+</header>
+<!-- Header Section End -->
