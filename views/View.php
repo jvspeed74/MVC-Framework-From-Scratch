@@ -3,7 +3,7 @@
  * Author: Jalen Vaughn
  * Date: 4/8/24
  * File: View.php
- * Description:
+ * Description: Abstract class containing the foundation for the header and footer methods.
  */
 
 

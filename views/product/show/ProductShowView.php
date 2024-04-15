@@ -3,7 +3,7 @@
  * Author: Jalen Vaughn
  * Date: 4/9/24
  * File: ProductShowView.php
- * Description:
+ * Description: Contains the show page for the ProductController.
  */
 
 class ProductShowView extends View {

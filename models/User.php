@@ -1,11 +1,11 @@
 <?php
+/**
+ * File: User.php
+ * Created By: Jalen Vaughn
+ * Date: 4/14/2024
+ * Description: Data transfer object for a User.
+ */
 
-/*
-File: User.php
-Created By: Jalen Vaughn
-Date: 4/14/2024
-Description: 
-*/
 
 class User {
     private string $userID;

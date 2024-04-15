@@ -1,10 +1,11 @@
 <?php
-/*
-File: ErrorView.php
-Created By: Jalen Vaughn
-Date: 4/10/2024
-Description: 
-*/
+/**
+ * File: ErrorView.php
+ * Created By: Jalen Vaughn
+ * Date: 4/10/2024
+ * Description: View for error related activities.
+ */
+
 
 class ErrorView extends View {
     

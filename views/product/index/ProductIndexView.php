@@ -1,11 +1,12 @@
 <?php
-
 /**
  * Author: Jalen Vaughn
  * Date: 4/8/24
  * File: ShopIndexView.php
- * Description:
+ * Description: Contains the index page for the ProductController.
  */
+
+
 class ProductIndexView extends View {
     
     /**

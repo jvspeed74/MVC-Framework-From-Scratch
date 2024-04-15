@@ -3,7 +3,7 @@
  * Author: Jalen Vaughn
  * Date: 4/8/24
  * File: Dispatcher.php
- * Description:
+ * Description: Responsible for routing requests to their appropriate controller and method.
  */
 
 class Dispatcher {

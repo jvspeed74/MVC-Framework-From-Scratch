@@ -6,6 +6,7 @@
  * Description:
  */
 
+
 class ProductController extends Controller {
     /*
      * Initializes the controller and loads the model.

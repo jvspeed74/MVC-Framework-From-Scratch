@@ -1,11 +1,11 @@
 <?php
+/**
+ * File: UserModel.php
+ * Created By: Jalen Vaughn
+ * Date: 4/14/2024
+ * Description: Model directly tied to the representation of the User object.
+ */
 
-/*
-File: UserModel.php
-Created By: Jalen Vaughn
-Date: 4/14/2024
-Description: 
-*/
 
 class UserModel extends Model {
     protected Database $db;

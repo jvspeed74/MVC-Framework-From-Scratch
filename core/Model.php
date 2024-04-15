@@ -1,11 +1,10 @@
 <?php
-
-/*
-File: Model.php
-Created By: Jalen Vaughn
-Date: 4/9/2024
-Description: 
-*/
+/**
+ * File: Model.php
+ * Created By: Jalen Vaughn
+ * Date: 4/9/2024
+ * Description: Creates an abstract class Model that contains the base functionality of each inherited model.
+ */
 
 abstract class Model {
     

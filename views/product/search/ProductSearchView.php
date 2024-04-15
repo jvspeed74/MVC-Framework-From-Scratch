@@ -1,11 +1,11 @@
 <?php
+/**
+ * File: ProductSearchView.php
+ * Created By: Jalen Vaughn
+ * Date: 4/14/2024
+ * Description: Contains the search page for the ProductController.
+ */
 
-/*
-File: ProductSearchView.php
-Created By: Jalen Vaughn
-Date: 4/14/2024
-Description: 
-*/
 
 class ProductSearchView extends View {
     static public function render(array $products = []): void {

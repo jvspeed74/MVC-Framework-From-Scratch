@@ -1,11 +1,12 @@
 <?php
-
 /**
  * Author: Jalen Vaughn
  * Date: 4/8/24
  * File: ProductModel.php
- * Description:
+ * Description: Model directly tied to the representation of the Product object.
  */
+
+
 class ProductModel extends Model {
     protected Database $db;  // Database object
     static private ?ProductModel $_instance = null;
@@ -61,7 +62,7 @@ class ProductModel extends Model {
         // Escape each term to prevent SQL injection
         $escapedTerms = [];
         foreach ($searchTerms as $term) {
-            $escapedTerms[] = $this->db->escape_string($term);
+            $escapedTerms[] = $this->db->realEscapeString($term);
         }
         
         // sql for search

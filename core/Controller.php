@@ -1,11 +1,11 @@
 <?php
+/**
+ * File: Controller.php
+ * Created By: Jalen Vaughn
+ * Date: 4/9/2024
+ * Description: Creates an abstract class Controller that contains the base functionality of each inherited controller.
+ */
 
-/*
-File: Controller.php
-Created By: Jalen Vaughn
-Date: 4/9/2024
-Description: 
-*/
 
 abstract class Controller {
     protected object $model;
@@ -31,7 +31,8 @@ abstract class Controller {
      * @param string $message The message to be displayed to the client
      * @return void
      */
-    public function error(string $message='An error occurred.'): void {
+    public function error(string $message = 'An error occurred.'): void {
+        //todo expand error functionality
         ErrorView::render($message);
     }
     

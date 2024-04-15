@@ -3,7 +3,7 @@
  * Author: Jalen Vaughn
  * Date: 4/8/24
  * File: Product.php
- * Description:
+ * Description: Data transfer object for a Product.
  */
 
 
