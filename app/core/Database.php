@@ -14,26 +14,32 @@ class Database {
         'password' => '',
         'database' => 'fitness_db',
     ];
-    
     private mysqli $connection;
     static private ?Database $_instance = null;
     
     /**
      * Creates DB connection when called
+     * @throws mysqli_sql_exception
      */
     private function __construct() {
-        // Attempt database connection
-        $this->connection = @new mysqli(
-            $this->param['host'],
-            $this->param['login'],
-            $this->param['password'],
-            $this->param['database']
-        );
-        
-        // Check if the connection was successful
-        if ($this->connection->connect_error) {
-            // todo route to error page
-            die("Connection failed: " . $this->connection->connect_error);
+        try {
+            // Attempt database connection
+            $this->connection = new mysqli(
+                $this->param['host'],
+                $this->param['login'],
+                $this->param['password'],
+                $this->param['database']
+            );
+            
+            // Check if the connection was successful
+            if ($this->connection->connect_error) {
+                throw new mysqli_sql_exception($this->connection->connect_error);
+            }
+            
+        } catch (mysqli_sql_exception $e) {
+            ExceptionHandler::handleConnectionFailure($e);
+        } catch (Exception $e) {
+            ExceptionHandler::handleException($e);
         }
     }
     
@@ -54,17 +60,22 @@ class Database {
      * Send a query to the database.
      *
      * @param $sql
-     * @return bool|mysqli_result|void
+     * @return bool|mysqli_result
      */
-    public function query($sql) {
-        // Execute the query using the query method of the mysqli object
-        $result = $this->connection->query($sql);
-        
-        // Check if the query was successful
-        if (!$result) {
-            // todo handle errors
-            // If the query failed, terminate the script and output the error message
-            die("Query failed: " . $this->connection->error);
+    public function query($sql): mysqli_result|bool {
+        try {
+            // Execute the query using the query method of the mysqli object
+            $result = $this->connection->query($sql);
+            
+            // Handle connection error
+            if (!$result) {
+                throw new mysqli_sql_exception($this->connection->error);
+            }
+            
+        } catch (mysqli_sql_exception $e) {
+            ExceptionHandler::handleConnectionFailure($e);
+        } catch (Exception $e) {
+            ExceptionHandler::handleException($e);
         }
         
         // Return the result of the query
@@ -78,6 +89,13 @@ class Database {
      * @return string An escaped string
      */
     public function realEscapeString($string): string {
-        return $this->connection->real_escape_string($string);
+        try {
+            return $this->connection->real_escape_string($string);
+            
+        } catch (mysqli_sql_exception $e) {
+            ExceptionHandler::handleConnectionFailure($e);
+        } catch (Exception $e) {
+            ExceptionHandler::handleException($e);
+        }
     }
 }

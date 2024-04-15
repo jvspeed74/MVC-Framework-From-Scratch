@@ -6,11 +6,27 @@
  * Description: Set error reporting, development modes, and base url of the application.
  */
 
-// todo add mode for production
+const CI_MODE = "production";
 
-// Set up error reporting for development
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+try {
+    switch (CI_MODE) {
+        case "development":
+            // Set up error reporting for development
+            error_reporting(E_ALL);
+            ini_set('display_errors', 1);
+            break;
+        case "production":
+            // Set up error reporting for production
+            error_reporting(0);
+            ini_set('display_errors', 0);
+            break;
+        default:
+            throw new Exception("CI_MODE not defined");
+    }
+} catch (Exception $e) {
+    ExceptionHandler::handleException($e);
+}
+
 
 // Base URL
 const BASE_URL = "/I211-Team-Project/public/index.php";

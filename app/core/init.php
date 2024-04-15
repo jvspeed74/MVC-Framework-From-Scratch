@@ -7,7 +7,7 @@
  * The purpose of this file is to be a hub so the index.php isn't cluttered with code.
  */
 
-
+require_once "../vendor/autoload.php";
 require_once "config.php";
 require_once "routes.php";
 
@@ -20,5 +20,3 @@ require_once "routes.php";
 // Send routes to dispatcher and dispatch the server request.
 $dispatcher = new Dispatcher($router);
 $dispatcher->dispatch($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
-
-
