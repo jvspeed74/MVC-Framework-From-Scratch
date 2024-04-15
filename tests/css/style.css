@@ -459,6 +459,11 @@ ol {
 	display: inline-block;
 }
 
+.header__right__widget img {
+	width: 30px;
+	height: 30px;
+}
+
 .header__right__widget li {
 	list-style: none;
 	display: inline-block;
