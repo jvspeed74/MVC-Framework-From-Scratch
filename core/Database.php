@@ -3,7 +3,7 @@
  * Author: Jalen Vaughn
  * Date: 4/8/24
  * File: Database.php
- * Description: This class is the main source of connection to the Database
+ * Description: This class works as an API for database operations.
  */
 
 
