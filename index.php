@@ -4,7 +4,7 @@
  * Created By: Jalen Vaughn
  * Date: 4/4/2024
  * Description: The bootstrap file for the application and the main source of all routes.
-*/
+ */
 
 
 // Load the required code and initialize the page.
