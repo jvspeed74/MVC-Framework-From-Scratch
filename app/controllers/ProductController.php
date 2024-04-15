@@ -1,12 +1,12 @@
 <?php
+
+
 /**
  * Author: Jalen Vaughn
  * Date: 4/8/24
  * File: ProductController.php
  * Description:
  */
-
-
 class ProductController extends Controller {
     /*
      * Initializes the controller and loads the model.

@@ -6,8 +6,6 @@
  * Description: Responsible for storing route information containing the controller and method responsible for each
  * route.
  */
-
-
 class Router {
     protected array $routes = [];
     

@@ -3,10 +3,9 @@
  * File: index.php
  * Created By: Jalen Vaughn
  * Date: 4/4/2024
- * Description: The bootstrap file for the application and the main source of all routes.
+ * Description: Redirects to the bootstrap file located in the public folder
  */
 
 
-// Load the required code and initialize the page.
-require_once "core/init.php";
-
+// Redirect page
+header("Location: public/index.php");

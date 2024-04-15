@@ -6,6 +6,7 @@
  * Description: Contains the show page for the ProductController.
  */
 
+
 class ProductShowView extends View {
     
     /**

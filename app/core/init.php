@@ -7,7 +7,7 @@
  * The purpose of this file is to be a hub so the index.php isn't cluttered with code.
  */
 
-require_once "vendor/autoload.php";
+
 require_once "config.php";
 require_once "routes.php";
 

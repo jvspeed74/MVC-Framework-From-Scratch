@@ -5,8 +5,6 @@
  * Date: 4/9/2024
  * Description: Creates an abstract class Controller that contains the base functionality of each inherited controller.
  */
-
-
 abstract class Controller {
     protected object $model;
     

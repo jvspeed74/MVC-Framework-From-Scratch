@@ -13,4 +13,4 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Base URL
-const BASE_URL = "/I211-Team-Project/index.php";
+const BASE_URL = "/I211-Team-Project/public/index.php";
