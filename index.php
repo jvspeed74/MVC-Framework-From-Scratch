@@ -1,21 +1,12 @@
 <?php
-/*
-File: index.php
-Created By: diffi
-Date: 4/4/2024
-Description: 
+/**
+ * File: index.php
+ * Created By: Jalen Vaughn
+ * Date: 4/4/2024
+ * Description: The bootstrap file for the application and the main source of all routes.
 */
 
 
-
-require_once "vendor/autoload.php";
-require_once "core/config.php";
-
-$router = new Router();
-$router->get(BASE_URL, 'ProductController@index');
-$router->get(BASE_URL . "/product/show/{id}", 'ProductController@show');
-$router->get(BASE_URL. "/product/search/{terms}", 'ProductController@search');
-
-$dispatcher = new Dispatcher($router);
-$dispatcher->dispatch($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
+// Load the required code and initialize the page.
+require_once "core/init.php";
 
