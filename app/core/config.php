@@ -25,8 +25,8 @@ ini_set('log_errors', 1);
 ini_set('error_log', __DIR__ . "/error.log");
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-//// Default handler for uncaught exceptions
-//set_exception_handler(['ExceptionHandler', 'handleException']);
+// Default handler for uncaught exceptions
+set_exception_handler(['ExceptionHandler', 'handleException']);
 
 // Base URL
 const BASE_URL = "/I211-Team-Project/public/index.php";

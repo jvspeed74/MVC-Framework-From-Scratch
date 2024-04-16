@@ -1,14 +1,21 @@
-[16-Apr-2024 20:12:38 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: set_exception_handler(): Argument #1 ($callback) must be a valid callback or null, class "ExceptionHandler" not found in C:\xampp\htdocs\I211-Team-Project\app\core\config.php:29
+[16-Apr-2024 16:02:38 America/New_York] PHP Fatal error:  Uncaught TypeError: ExceptionHandler::handleException(): Argument #1 ($exception) must be of type Exception, Error given in C:\xampp\htdocs\I211-Team-Project\app\exceptions\ExceptionHandler.php:13
 Stack trace:
-#0 C:\xampp\htdocs\I211-Team-Project\app\core\config.php(29): set_exception_handler(Array)
-#1 C:\xampp\htdocs\I211-Team-Project\app\core\init.php(11): require_once('C:\\xampp\\htdocs...')
+#0 [internal function]: ExceptionHandler::handleException(Object(Error))
+#1 {main}
+  thrown in C:\xampp\htdocs\I211-Team-Project\app\exceptions\ExceptionHandler.php on line 13
+[16-Apr-2024 16:03:53 America/New_York] Call to undefined method ProductModel::fetchAl()
+0
+C:\xampp\htdocs\I211-Team-Project\app\controllers\ProductController.php
+38
+#0 C:\xampp\htdocs\I211-Team-Project\app\core\Dispatcher.php(47): ProductController->index()
+#1 C:\xampp\htdocs\I211-Team-Project\app\core\init.php(22): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
 #2 C:\xampp\htdocs\I211-Team-Project\public\index.php(14): require_once('C:\\xampp\\htdocs...')
 #3 {main}
-  thrown in C:\xampp\htdocs\I211-Team-Project\app\core\config.php on line 29
-[16-Apr-2024 20:12:55 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: set_exception_handler(): Argument #1 ($callback) must be a valid callback or null, class "ExceptionHandler" not found in C:\xampp\htdocs\I211-Team-Project\app\core\config.php:29
-Stack trace:
-#0 C:\xampp\htdocs\I211-Team-Project\app\core\config.php(29): set_exception_handler(Array)
-#1 C:\xampp\htdocs\I211-Team-Project\app\core\init.php(11): require_once('C:\\xampp\\htdocs...')
+[16-Apr-2024 16:06:24 America/New_York] Call to undefined method ProductModel::fetchAl()
+0
+C:\xampp\htdocs\I211-Team-Project\app\controllers\ProductController.php
+38
+#0 C:\xampp\htdocs\I211-Team-Project\app\core\Dispatcher.php(47): ProductController->index()
+#1 C:\xampp\htdocs\I211-Team-Project\app\core\init.php(22): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
 #2 C:\xampp\htdocs\I211-Team-Project\public\index.php(14): require_once('C:\\xampp\\htdocs...')
 #3 {main}
-  thrown in C:\xampp\htdocs\I211-Team-Project\app\core\config.php on line 29

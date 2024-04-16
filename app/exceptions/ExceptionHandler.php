@@ -10,7 +10,7 @@ use JetBrains\PhpStorm\NoReturn;
  */
 class ExceptionHandler {
     #[NoReturn]
-    public static function handleException(Exception $exception): void {
+    public static function handleException(Exception|Error $exception): void {
         $exceptionDetails = [
             'message' => $exception->getMessage(),
             'code' => $exception->getCode(),
