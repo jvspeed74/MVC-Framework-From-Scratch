@@ -22,7 +22,7 @@ try {
             // Set up error reporting for production
             error_reporting(0);
             ini_set('display_errors', 0);
-            mysqli_report(M);
+            mysqli_report(MYSQLI_REPORT_OFF);
             break;
         default:
             throw new Exception("CI_MODE not defined");
