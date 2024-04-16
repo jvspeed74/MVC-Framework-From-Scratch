@@ -1,0 +1,14 @@
+[16-Apr-2024 20:12:38 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: set_exception_handler(): Argument #1 ($callback) must be a valid callback or null, class "ExceptionHandler" not found in C:\xampp\htdocs\I211-Team-Project\app\core\config.php:29
+Stack trace:
+#0 C:\xampp\htdocs\I211-Team-Project\app\core\config.php(29): set_exception_handler(Array)
+#1 C:\xampp\htdocs\I211-Team-Project\app\core\init.php(11): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\I211-Team-Project\public\index.php(14): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\I211-Team-Project\app\core\config.php on line 29
+[16-Apr-2024 20:12:55 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: set_exception_handler(): Argument #1 ($callback) must be a valid callback or null, class "ExceptionHandler" not found in C:\xampp\htdocs\I211-Team-Project\app\core\config.php:29
+Stack trace:
+#0 C:\xampp\htdocs\I211-Team-Project\app\core\config.php(29): set_exception_handler(Array)
+#1 C:\xampp\htdocs\I211-Team-Project\app\core\init.php(11): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\I211-Team-Project\public\index.php(14): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\I211-Team-Project\app\core\config.php on line 29

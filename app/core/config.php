@@ -25,22 +25,8 @@ ini_set('log_errors', 1);
 ini_set('error_log', __DIR__ . "/error.log");
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-// Default handler for uncaught exceptions
-set_exception_handler(function ($exception) {
-    $exceptionDetails = [
-        'message' => $exception->getMessage(),
-        'code' => $exception->getCode(),
-        'file' => $exception->getFile(),
-        'line' => $exception->getLine(),
-        'trace' => $exception->getTraceAsString()
-    ];
-    
-    // Parse and send exception details to the log file.
-    error_log(implode(PHP_EOL, $exceptionDetails));
-    
-    // Render the error page.
-    ErrorView::render("An unknown error occurred while conducting site operations.");
-});
+//// Default handler for uncaught exceptions
+//set_exception_handler(['ExceptionHandler', 'handleException']);
 
 // Base URL
 const BASE_URL = "/I211-Team-Project/public/index.php";
