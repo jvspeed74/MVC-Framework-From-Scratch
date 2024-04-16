@@ -52,7 +52,7 @@ class ErrorView extends View {
         <body>
         <div class="container">
             <h1>Error</h1>
-            <p><?php echo $message; ?></p>
+            <p><?php echo "$message"; ?></p>
         </div>
         </body>
         </html>

@@ -19,7 +19,6 @@ class Database {
     
     /**
      * Creates DB connection when called
-     * @throws mysqli_sql_exception
      */
     private function __construct() {
         try {
@@ -33,12 +32,9 @@ class Database {
             
             // Check if the connection was successful
             if ($this->connection->connect_error) {
-                throw new mysqli_sql_exception($this->connection->connect_error);
+                throw new DatabaseException($this->connection->connect_error);
             }
-            
-        } catch (mysqli_sql_exception $e) {
-            ExceptionHandler::handleConnectionFailure($e);
-        } catch (Exception $e) {
+        } catch (mysqli_sql_exception|DatabaseException $e) {
             ExceptionHandler::handleException($e);
         }
     }
@@ -69,12 +65,11 @@ class Database {
             
             // Handle connection error
             if (!$result) {
-                throw new mysqli_sql_exception($this->connection->error);
+                $this->closeConnection();
+                throw new DatabaseException($this->connection->error);
             }
             
-        } catch (mysqli_sql_exception $e) {
-            ExceptionHandler::handleConnectionFailure($e);
-        } catch (Exception $e) {
+        } catch (DatabaseException $e) {
             ExceptionHandler::handleException($e);
         }
         
@@ -85,16 +80,19 @@ class Database {
     /**
      * An intermediary to use the real_escape_string method from the mysqli connection property.
      *
-     * @param $string
-     * @return string An escaped string
+     * @param string $string The string to be escaped.
+     * @return string An escaped string.
      */
-    public function realEscapeString($string): string {
+    public function realEscapeString(string $string): string {
+        return $this->connection->real_escape_string($string);
+    }
+    
+    public function closeConnection(): void {
         try {
-            return $this->connection->real_escape_string($string);
-            
-        } catch (mysqli_sql_exception $e) {
-            ExceptionHandler::handleConnectionFailure($e);
-        } catch (Exception $e) {
+            if (!$this->connection->close()) {
+                throw new DatabaseException($this->connection->error);
+            }
+        } catch (DatabaseException $e) {
             ExceptionHandler::handleException($e);
         }
     }
