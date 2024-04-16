@@ -1,3 +1,11 @@
+<?php
+/**
+ * Author : Abrar Sabel
+ * Date : 4/16/24
+ * File : ?{FILE_NAME}
+ * Description :
+ */
+?>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -18,6 +26,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 
 <!-- Header Section Begin -->
@@ -34,8 +43,7 @@
                     <ul>
                         <li><a href="#">Shop</a>
                             <ul class="dropdown">
-                                <li><a href="./product-details.html">Men</a></li>
-                                <li><a href="./shop-cart.html">Women</a></li>
+                                <li><a href="./shop-cart.html">Apparel</a></li>
                                 <li><a href="./checkout.html">Gear</a></li>
                                 <li><a href="./blog-details.html">Supplements</a></li>
                             </ul>
@@ -57,20 +65,17 @@
                         <li><a href="#"><img src="img/cart-icon.png" alt="Cart" style="width: 20px; height: auto;"></a></li>
                     </ul>
                 </div>
-
             </div>
         </div>
-        <div class="canvas__open">
-            <i class="fa fa-bars"></i>
-        </div>
+
     </div>
 </header>
 <!-- Header Section End -->
-
-<div class="hero-section">
-<img src="img/supp-image.jpg" alt="supplements picture">
-<div class="hero-content">
-    <p>Discover the best supplements for your fitness journey.</p>
-    <a href="#" class="btn">Shop Supplements</a>
+<div class="trend">
+    <img src="img/supp-image.jpg" alt="Big Picture" class="hero-image">
+    <div class="hero-content">
+        <a href="#" class="site-btn">Shop Supplements</a>
+    </div>
 </div>
-</div>
+<?php
+include ('includes/footer.php');

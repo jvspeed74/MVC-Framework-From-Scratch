@@ -165,19 +165,23 @@ ol {
 	font-weight: 600;
 	padding: 12px 30px 10px;
 	color: #ffffff;
-	background: #ca1515;
+	background: #D2952B;
 }
 
 .site-btn {
-	font-size: 14px;
+	font-size: 11px;
 	color: #ffffff;
-	background: #ca1515;
+	background: #D2952B;
 	font-weight: 600;
 	border: none;
 	text-transform: uppercase;
 	display: inline-block;
-	padding: 12px 30px;
 	border-radius: 50px;
+	position: absolute;
+	top: 700%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px 20px;
 }
 
 /* Preloder */
@@ -1099,7 +1103,7 @@ ol {
 	bottom: 0;
 	height: 2px;
 	width: 100%;
-	background: #ca1515;
+	background: #7ca26e;
 	content: "";
 }
 
@@ -3685,18 +3689,34 @@ ol {
 		font-size: 24px;
 	}
 }
-/* styles.css */
+/* Reset default styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+/* Global styles */
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #f5f5f5;
+}
+
+/* Header styles */
+.header {
+	/* Your header styles here */
+}
+
+/* Hero section styles */
 .hero-section {
 	position: relative;
 	text-align: center;
-	margin-top: 20px; /* Adjust margin as needed */
+	margin-top: 20px;
 }
 
-.hero-section img {
-	width: 50%;
+.hero-image {
+	max-width: 100%; /* Adjust as needed */
 	height: auto;
-	display: block;
 }
 
 .hero-content {
@@ -3707,29 +3727,49 @@ ol {
 	color: white;
 }
 
-.hero-content h1 {
-	font-size: 3em;
-	margin-bottom: 20px;
-}
-
 .hero-content p {
 	font-size: 1.2em;
 	margin-bottom: 30px;
 }
 
-.btn {
-	position: relative;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.site-btn {
+	display: inline-block;
 	padding: 10px 20px;
-	background-color: #007bff; /* Use your desired button color */
+	background-color: #007bff;
 	color: white;
 	text-decoration: none;
 	border-radius: 5px;
 	font-size: 1.2em;
+	transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-	background-color: #0056b3; /* Hover color */
+.site-btn:hover {
+	background-color: #0056b3;
 }
+
+#footer {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 90px;
+	border: none;
+	border-top: 10px solid #1A2822;
+	height: 80px;
+	background-color: #1A2822;
+	margin-left: 200px;
+	margin-right: 200px;
+
+}
+
+#footer p{
+	display: flex;
+	align-content: stretch;
+	justify-content: center;
+	color: white;
+	font-family: Arial;
+
+}
+
+
+

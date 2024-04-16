@@ -84,11 +84,11 @@
     text-align: center;
     margin-top: 30px;
     border: none;
-    border-top: 1px solid #44543D;
-    height: 50px;
+    border-top: 6px solid #44543D;
+    height: 100px;
     background-color: #44543D;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
 
 }
 
