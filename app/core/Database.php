@@ -30,11 +30,8 @@ class Database {
                 $this->param['database']
             );
             
-            // Check if the connection was successful
-            if ($this->connection->connect_error) {
-                throw new DatabaseException($this->connection->connect_error);
-            }
-        } catch (mysqli_sql_exception|DatabaseException $e) {
+            // Database connection was unsuccessful
+        } catch (mysqli_sql_exception $e) {
             ExceptionHandler::handleException($e);
         }
     }
@@ -57,6 +54,7 @@ class Database {
      *
      * @param $sql
      * @return bool|mysqli_result
+     * @throws QueryException
      */
     public function query($sql): mysqli_result|bool {
         try {
@@ -65,11 +63,10 @@ class Database {
             
             // Handle connection error
             if (!$result) {
-                $this->closeConnection();
-                throw new DatabaseException($this->connection->error);
+                throw new QueryException($this->connection->error);
             }
             
-        } catch (DatabaseException $e) {
+        } catch (mysqli_sql_exception $e) {
             ExceptionHandler::handleException($e);
         }
         
@@ -88,12 +85,9 @@ class Database {
     }
     
     public function closeConnection(): void {
-        try {
-            if (!$this->connection->close()) {
-                throw new DatabaseException($this->connection->error);
-            }
-        } catch (DatabaseException $e) {
-            ExceptionHandler::handleException($e);
+        if (!$this->connection->close()) {
+            // Log a warning if closing the connection fails
+            error_log("Failed to close database connection");
         }
     }
 }
