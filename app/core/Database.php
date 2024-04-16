@@ -32,7 +32,7 @@ class Database {
             
             // Database connection was unsuccessful
         } catch (mysqli_sql_exception $e) {
-            ExceptionHandler::handleException($e);
+        
         }
     }
     
@@ -54,20 +54,14 @@ class Database {
      *
      * @param $sql
      * @return bool|mysqli_result
-     * @throws QueryException
      */
     public function query($sql): mysqli_result|bool {
-        try {
-            // Execute the query using the query method of the mysqli object
-            $result = $this->connection->query($sql);
-            
-            // Handle connection error
-            if (!$result) {
-                throw new QueryException($this->connection->error);
-            }
-            
-        } catch (mysqli_sql_exception $e) {
-            ExceptionHandler::handleException($e);
+        
+        // Execute the query using the query method of the mysqli object
+        $result = $this->connection->query($sql);
+        
+        if (!$result) {
+            throw new QueryException($this->connection->error, $sql);
         }
         
         // Return the result of the query

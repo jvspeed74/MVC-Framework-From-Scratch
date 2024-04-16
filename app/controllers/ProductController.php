@@ -33,11 +33,18 @@ class ProductController extends Controller {
      * @return void
      */
     public function index(): void {
-        // Get all products from DB
-        $products = $this->model->fetchAll();
+        try {
+            // Get all products from DB
+            $products = $this->model->fetchAll();
+            
+            // Render view
+            ProductIndexView::render($products);
+        } catch (mysqli_sql_exception $e) {
+            ErrorView::render("Unable to establish connection to our services. Please try again later.");
+        } catch (QueryException $e) {
+            ErrorView::render("There was an error processing your request.");
+        }
         
-        // Render view
-        ProductIndexView::render($products);
     }
     
     /**

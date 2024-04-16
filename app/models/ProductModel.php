@@ -26,9 +26,15 @@ class ProductModel extends Model {
         return self::$_instance;
     }
     
+    
+    /**
+     * @throws QueryException
+     */
     public function fetchAll(): array {
-        // Query all products from DB
+        // Declare SQL
         $sql = "SELECT * FROM $this->table ORDER BY productID DESC";
+        
+        // Query DB for data
         $query = $this->db->query($sql);
         
         // Create product obj from result
@@ -36,6 +42,7 @@ class ProductModel extends Model {
         while ($row = $query->fetch_object(Product::class)) {
             $results[] = $row;
         }
+        
         // List of Product objects
         //todo check error handling
         return $results;

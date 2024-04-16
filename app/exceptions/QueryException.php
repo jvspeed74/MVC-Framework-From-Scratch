@@ -1,7 +1,4 @@
 <?php
-
-use JetBrains\PhpStorm\NoReturn;
-
 /**
  * Author: Jalen Vaughn
  * Date: 4/15/2024
