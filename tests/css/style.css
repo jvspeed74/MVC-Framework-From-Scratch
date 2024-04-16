@@ -3685,3 +3685,51 @@ ol {
 		font-size: 24px;
 	}
 }
+/* styles.css */
+
+.hero-section {
+	position: relative;
+	text-align: center;
+	margin-top: 20px; /* Adjust margin as needed */
+}
+
+.hero-section img {
+	width: 50%;
+	height: auto;
+	display: block;
+}
+
+.hero-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.hero-content h1 {
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+
+.hero-content p {
+	font-size: 1.2em;
+	margin-bottom: 30px;
+}
+
+.btn {
+	position: relative;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px 20px;
+	background-color: #007bff; /* Use your desired button color */
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 1.2em;
+}
+
+.btn:hover {
+	background-color: #0056b3; /* Hover color */
+}
