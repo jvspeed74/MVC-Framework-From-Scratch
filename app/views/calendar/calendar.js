@@ -60,7 +60,6 @@ const manipulate = () => {
                 type: 'GET',
                 data: { date: selectedDate },
                 success: function(response) {
-                    // Display events
                     alert(response);
                 },
                 error: function(xhr, status, error) {
@@ -102,7 +101,6 @@ day.addEventListener("click", function(event) {
             type: 'GET',
             data: { date: selectedDate },
             success: function(response) {
-                // Display events
                 alert(response);
             },
             error: function(xhr, status, error) {
