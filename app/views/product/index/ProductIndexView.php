@@ -41,6 +41,7 @@ class ProductIndexView extends View {
             }
             ?>
         </div>
+        <div class="product"><a href="<?=BASE_URL?>/product/create">Create new product</a></div>
         </body>
         <?php
         parent::footer();

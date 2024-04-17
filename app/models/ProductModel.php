@@ -99,10 +99,28 @@ class ProductModel extends Model {
     /**
      * Creates a new record in the database.
      *
-     * @return bool True if the record creation was successful, false otherwise.
+     * @param object $dataObj The Product object containing the information of the product to be created.
+     * @return int|null The ID of the newly created record, or null if creation fails.
+     * @throws QueryException if there is an error in the query.
      */
-    public function create(): bool {
-        // TODO: Implement create() method.
+    public function create(object $dataObj): ?int {
+        // Escape the input data to prevent SQL injection
+        $escapedName = $this->db->realEscapeString($dataObj->getName());
+        $escapedDescription = $this->db->realEscapeString($dataObj->getDescription());
+        $price = $dataObj->getPrice(); // Assuming price is already validated as float or numeric
+        
+        // Prepare the SQL query
+        $sql = "INSERT INTO $this->table (name, price, description) VALUES ('$escapedName', $price, '$escapedDescription')";
+        
+        // Execute the query
+        if ($this->db->query($sql)) {
+            // Return the ID of the newly inserted record
+            return $this->db->insertId();
+        } else {
+            // Return null if insertion fails
+            //todo Query exception somewhere
+            return null;
+        }
     }
     
     /**

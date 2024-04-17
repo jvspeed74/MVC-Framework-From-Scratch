@@ -47,9 +47,11 @@ abstract class Model {
     /**
      * Creates a new record in the database.
      *
-     * @return bool True if the record creation was successful, false otherwise.
+     * @return int|null The ID of the record creation was successful, null otherwise.
      */
-    abstract public function create(): bool;
+    public function create (object $dataObj): ?int {
+    
+    }
     
     /**
      * Updates an existing record in the database.

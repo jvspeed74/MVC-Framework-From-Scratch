@@ -84,4 +84,8 @@ class Database {
             error_log("Failed to close database connection");
         }
     }
+    
+    public function insertID(): int {
+        return $this->connection->insert_id;
+    }
 }

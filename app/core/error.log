@@ -19,3 +19,11 @@ C:\xampp\htdocs\I211-Team-Project\app\controllers\ProductController.php
 #1 C:\xampp\htdocs\I211-Team-Project\app\core\init.php(22): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
 #2 C:\xampp\htdocs\I211-Team-Project\public\index.php(14): require_once('C:\\xampp\\htdocs...')
 #3 {main}
+[16-Apr-2024 21:37:49 America/New_York] Class "ProductCreateView" not found
+0
+C:\xampp\htdocs\I211-Team-Project\app\controllers\ProductController.php
+120
+#0 C:\xampp\htdocs\I211-Team-Project\app\core\Dispatcher.php(47): ProductController->create()
+#1 C:\xampp\htdocs\I211-Team-Project\app\core\init.php(22): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\xampp\htdocs\I211-Team-Project\public\index.php(14): require_once('C:\\xampp\\htdocs...')
+#3 {main}

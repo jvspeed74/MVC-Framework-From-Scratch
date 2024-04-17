@@ -39,6 +39,7 @@ class ProductController extends Controller {
             
             // Render view
             ProductIndexView::render($products);
+            //todo remove try catch
         } catch (mysqli_sql_exception $e) {
             ErrorView::render("Unable to establish connection to our services. Please try again later.");
         } catch (QueryException $e) {
@@ -90,8 +91,41 @@ class ProductController extends Controller {
             return;
         }
         // Render view
-        ProductSearchView::render($products);
+        ProductIndexView::render($products);
         
+    }
+    
+    public function create() {
+        // Check if the form has been submitted
+        if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+            // If the form hasn't been submitted, render the create view
+            ProductCreateView::render();
+            exit();
+        }
+        
+        // Validate form data
+        $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+        $price = filter_input(INPUT_POST, 'price', FILTER_SANITIZE_NUMBER_FLOAT);
+        $description = filter_input(INPUT_POST, 'description', FILTER_SANITIZE_STRING);
+        
+        
+        // Create a new Product object with form data
+        $product = new Product();
+        $product->setName($_POST["name"]);
+        $product->setPrice($_POST["price"]);
+        $product->setDescription($_POST["description"]);
+        
+        // Insert the new product into the database
+        try {
+            $productId = $this->model->create($product);
+            
+            // Redirect to the show view for the newly created product
+            $this->show($productId);
+        } catch (Exception $e) {
+            // Handle any exceptions that occur during product creation
+            ErrorView::render("An error occurred while creating the product.");
+            return;
+        }
     }
 }
 
