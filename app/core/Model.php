@@ -42,7 +42,7 @@ abstract class Model {
      *
      * @return array The fetched record.
      */
-    abstract public function fetchBySearch(): array;
+    abstract public function fetchBySearch(string $terms): array;
     
     /**
      * Creates a new record in the database.

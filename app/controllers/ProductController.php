@@ -70,19 +70,23 @@ class ProductController extends Controller {
      *
      * Searches for products based on provided terms.
      *
-     * @param mixed $terms The search terms provided by the user.
      * @return void
      */
-    public function search(mixed $terms): void {
-        //retrieve query terms from search form
-        $searchTerms = trim($terms);
-        
-        //if search term is empty, list all products
-        if ($searchTerms == "") {
-            $this->index();
+    public function search(): void {
+        // Check if search was sent
+        if ($_SERVER["REQUEST_METHOD"] !== "GET") {
+            ErrorView::render("We detected unfamilar activity with your request.");
         }
         
-        //search the database for matching products
+        // Set search if not already declared
+        if (!isset($_GET["search-terms"])) {
+            $_GET["search-terms"] = "";
+        }
+        
+        // Filter and trim user input
+        $searchTerms = trim(filter_input(INPUT_GET, 'search-terms', FILTER_SANITIZE_SPECIAL_CHARS));
+        
+        // Search the database for matching products
         $products = $this->model->fetchBySearch($searchTerms);
         
         if ($products === false) {
@@ -91,29 +95,33 @@ class ProductController extends Controller {
             return;
         }
         // Render view
-        ProductIndexView::render($products);
+        ProductSearchView::render($products);
         
     }
     
-    public function create() {
+    public function create(): void {
         // Check if the form has been submitted
         if ($_SERVER["REQUEST_METHOD"] !== "POST") {
             // If the form hasn't been submitted, render the create view
             ProductCreateView::render();
             exit();
+        } elseif ( // Confirm all POST variables are set
+            !filter_has_var(INPUT_POST, 'name') ||
+            !filter_has_var(INPUT_POST, 'price') ||
+            !filter_has_var(INPUT_POST, 'description')) {
+            ErrorView::render("We were unable to process the data entered.");
         }
         
         // Validate form data
         $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-        $price = filter_input(INPUT_POST, 'price', FILTER_SANITIZE_NUMBER_FLOAT);
+        $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
         $description = filter_input(INPUT_POST, 'description', FILTER_SANITIZE_STRING);
-        
         
         // Create a new Product object with form data
         $product = new Product();
-        $product->setName($_POST["name"]);
-        $product->setPrice($_POST["price"]);
-        $product->setDescription($_POST["description"]);
+        $product->setName($name);
+        $product->setPrice($price);
+        $product->setDescription($description);
         
         // Insert the new product into the database
         try {
@@ -123,8 +131,7 @@ class ProductController extends Controller {
             $this->show($productId);
         } catch (Exception $e) {
             // Handle any exceptions that occur during product creation
-            ErrorView::render("An error occurred while creating the product.");
-            return;
+            ExceptionHandler::handleException($e);
         }
     }
 }

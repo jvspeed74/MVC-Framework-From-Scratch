@@ -23,7 +23,7 @@ class ProductIndexView extends View {
         ?>
         <body>
         <h1>Products</h1>
-        <div class="product">
+        <div class="product-container">
             <?php
             // Check if products array is not empty
             if (!empty($products)) {

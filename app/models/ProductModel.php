@@ -48,7 +48,9 @@ class ProductModel extends Model {
         return $results;
     }
     
-    public function fetchByID(int $id): false|null|Product {
+    public function fetchByID($id): false|null|Product {
+        //todo throws exception if user manually types in string into browser where ID
+        
         // Request product from DB
         $sql = "SELECT * FROM $this->table WHERE productID=$id";
         $query = $this->db->query($sql);
@@ -60,11 +62,13 @@ class ProductModel extends Model {
     /**
      * Fetches records from the database by a search parameter.
      *
+     * @param string $terms The provided search terms.
      * @return array The fetched record.
+     * @throws QueryException
      */
-    public function fetchBySearch(): array {
+    public function fetchBySearch(string $terms): array {
         // separate terms into array
-        $searchTerms = explode(" ", $_GET['search-terms']);
+        $searchTerms = explode(" ", $terms);
         
         // Escape each term to prevent SQL injection
         $escapedTerms = [];
@@ -106,11 +110,11 @@ class ProductModel extends Model {
     public function create(object $dataObj): ?int {
         // Escape the input data to prevent SQL injection
         $escapedName = $this->db->realEscapeString($dataObj->getName());
+        $escapedPrice = $this->db->realEscapeString($dataObj->getPrice());
         $escapedDescription = $this->db->realEscapeString($dataObj->getDescription());
-        $price = $dataObj->getPrice(); // Assuming price is already validated as float or numeric
         
         // Prepare the SQL query
-        $sql = "INSERT INTO $this->table (name, price, description) VALUES ('$escapedName', $price, '$escapedDescription')";
+        $sql = "INSERT INTO $this->table (name, price, description) VALUES ('$escapedName', '$escapedPrice', '$escapedDescription')";
         
         // Execute the query
         if ($this->db->query($sql)) {
