@@ -29,7 +29,7 @@ abstract class Controller {
      * @param string $message The message to be displayed to the client
      * @return void
      */
-    public function error(string $message = 'An error occurred.'): void {
+    public function error(string $message): void {
         //todo expand error functionality
         ErrorView::render($message);
     }

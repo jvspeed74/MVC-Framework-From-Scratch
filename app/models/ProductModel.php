@@ -26,9 +26,13 @@ class ProductModel extends Model {
         return self::$_instance;
     }
     
-    
     /**
-     * @throws QueryException
+     * Fetches all products from the database.
+     *
+     * Retrieves all product data from the specified database table,
+     * ordered by productID in descending order.
+     *
+     * @return array An array containing Product objects representing all products in the database.
      */
     public function fetchAll(): array {
         // Declare SQL
@@ -48,14 +52,23 @@ class ProductModel extends Model {
         return $results;
     }
     
+    /**
+     * Fetches a product from the database by its ID.
+     *
+     * Retrieves product data from the database corresponding to the provided ID.
+     *
+     * @param mixed $id The ID of the product to fetch.
+     * @return false|null|Product A Product object if the product is found, null if not found, or false on error.
+     */
     public function fetchByID($id): false|null|Product {
         //todo throws exception if user manually types in string into browser where ID
+        //todo error handling for false|null results not implemented
         
         // Request product from DB
         $sql = "SELECT * FROM $this->table WHERE productID=$id";
         $query = $this->db->query($sql);
         
-        // todo check error handling
+        // Return an instance of a product with provided data
         return $query->fetch_object(Product::class);
     }
     
@@ -64,7 +77,6 @@ class ProductModel extends Model {
      *
      * @param string $terms The provided search terms.
      * @return array The fetched record.
-     * @throws QueryException
      */
     public function fetchBySearch(string $terms): array {
         // separate terms into array
@@ -105,7 +117,6 @@ class ProductModel extends Model {
      *
      * @param object $dataObj The Product object containing the information of the product to be created.
      * @return int|null The ID of the newly created record, or null if creation fails.
-     * @throws QueryException if there is an error in the query.
      */
     public function create(object $dataObj): ?int {
         // Escape the input data to prevent SQL injection
@@ -119,7 +130,7 @@ class ProductModel extends Model {
         // Execute the query
         if ($this->db->query($sql)) {
             // Return the ID of the newly inserted record
-            return $this->db->insertId();
+            return $this->db->getInsertionID();
         } else {
             // Return null if insertion fails
             //todo Query exception somewhere

@@ -22,7 +22,7 @@ class ProductIndexView extends View {
         parent::header();
         ?>
         <body>
-        <h1>Products</h1>
+        <?php echo (!isset($_GET['search-terms'])) ? "<h1>Products</h1>" : "<h1>Search Results</h1>"; ?>
         <div class="product-container">
             <?php
             // Check if products array is not empty
@@ -41,7 +41,7 @@ class ProductIndexView extends View {
             }
             ?>
         </div>
-        <div class="product"><a href="<?=BASE_URL?>/product/create">Create new product</a></div>
+        <div class="product"><a href="<?= BASE_URL ?>/product/create">Create new product</a></div>
         </body>
         <?php
         parent::footer();

@@ -33,19 +33,11 @@ class ProductController extends Controller {
      * @return void
      */
     public function index(): void {
-        try {
-            // Get all products from DB
-            $products = $this->model->fetchAll();
-            
-            // Render view
-            ProductIndexView::render($products);
-            //todo remove try catch
-        } catch (mysqli_sql_exception $e) {
-            ErrorView::render("Unable to establish connection to our services. Please try again later.");
-        } catch (QueryException $e) {
-            ErrorView::render("There was an error processing your request.");
-        }
+        // Get all products from DB
+        $products = $this->model->fetchAll();
         
+        // Render view
+        ProductIndexView::render($products);
     }
     
     /**
@@ -75,7 +67,7 @@ class ProductController extends Controller {
     public function search(): void {
         // Check if search was sent
         if ($_SERVER["REQUEST_METHOD"] !== "GET") {
-            ErrorView::render("We detected unfamilar activity with your request.");
+            $this->error("We detected unfamiliar activity with your request.");
         }
         
         // Set search if not already declared
@@ -91,25 +83,34 @@ class ProductController extends Controller {
         
         if ($products === false) {
             //handle error
-            ErrorView::render("An error occurred");
+            $this->error("An error occurred while searching for products.");
             return;
         }
         // Render view
-        ProductSearchView::render($products);
-        
+        ProductIndexView::render($products);
     }
     
+    /**
+     * Creates a new product based on form submission data,
+     *
+     * Redirects to the show view for the newly created product.
+     *
+     * @return void
+     */
     public function create(): void {
         // Check if the form has been submitted
         if ($_SERVER["REQUEST_METHOD"] !== "POST") {
             // If the form hasn't been submitted, render the create view
             ProductCreateView::render();
             exit();
-        } elseif ( // Confirm all POST variables are set
-            !filter_has_var(INPUT_POST, 'name') ||
+        }
+        
+        // Confirm all POST variables are set
+        if (!filter_has_var(INPUT_POST, 'name') ||
             !filter_has_var(INPUT_POST, 'price') ||
-            !filter_has_var(INPUT_POST, 'description')) {
-            ErrorView::render("We were unable to process the data entered.");
+            !filter_has_var(INPUT_POST, 'description')
+        ) {
+            $this->error("We were unable to process the data entered.");
         }
         
         // Validate form data
@@ -124,15 +125,20 @@ class ProductController extends Controller {
         $product->setDescription($description);
         
         // Insert the new product into the database
-        try {
-            $productId = $this->model->create($product);
-            
-            // Redirect to the show view for the newly created product
-            $this->show($productId);
-        } catch (Exception $e) {
-            // Handle any exceptions that occur during product creation
-            ExceptionHandler::handleException($e);
-        }
+        $productId = $this->model->create($product);
+        
+        // Redirect to the show view for the newly created product
+        $this->show($productId);
+    }
+    
+    /**
+     * Renders an error pages with an optional message.
+     *
+     * @param string $message The message to be displayed to the client
+     * @return void
+     */
+    public function error(string $message): void {
+        ErrorView::render($message);
     }
 }
 

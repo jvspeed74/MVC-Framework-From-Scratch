@@ -32,7 +32,7 @@ class Database {
             
             // Database connection was unsuccessful
         } catch (mysqli_sql_exception $e) {
-        
+            ExceptionHandler::handleException($e);
         }
     }
     
@@ -56,16 +56,13 @@ class Database {
      * @return bool|mysqli_result
      */
     public function query($sql): mysqli_result|bool {
-        
-        // Execute the query using the query method of the mysqli object
-        $result = $this->connection->query($sql);
-        
-        if (!$result) {
-            throw new QueryException($this->connection->error, $sql);
+        try {
+            // Execute the query using the query method of the mysqli object
+            // Return the result of the query
+            return $this->connection->query($sql);
+        } catch (mysqli_sql_exception $e) {
+            ExceptionHandler::handleException($e);
         }
-        
-        // Return the result of the query
-        return $result;
     }
     
     /**
@@ -85,7 +82,7 @@ class Database {
         }
     }
     
-    public function insertID(): int {
+    public function getInsertionID(): string {
         return $this->connection->insert_id;
     }
 }
