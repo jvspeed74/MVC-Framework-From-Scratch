@@ -8,10 +8,7 @@
     ],
     "autoload": {
         "classmap": [
-            "controllers/",
-            "core/",
-            "models/",
-            "views/"
+            "app/"
         ]
     },
     "require": {
