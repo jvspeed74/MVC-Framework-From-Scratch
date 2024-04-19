@@ -47,3 +47,13 @@ C:\xampp\htdocs\I211-Team-Project\app\core\Database.php
 #4 C:\xampp\htdocs\I211-Team-Project\app\core\init.php(22): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
 #5 C:\xampp\htdocs\I211-Team-Project\public\index.php(14): require_once('C:\\xampp\\htdocs...')
 #6 {main}
+[19-Apr-2024 18:27:00 America/New_York] Too few arguments to function View::header(), 0 passed in C:\xampp\htdocs\I211-Team-Project\app\views\product\index\ProductIndexView.php on line 22 and exactly 1 expected
+0
+C:\xampp\htdocs\I211-Team-Project\app\views\View.php
+21
+#0 C:\xampp\htdocs\I211-Team-Project\app\views\product\index\ProductIndexView.php(22): View::header()
+#1 C:\xampp\htdocs\I211-Team-Project\app\controllers\ProductController.php(40): ProductIndexView::render(Array)
+#2 C:\xampp\htdocs\I211-Team-Project\app\core\Dispatcher.php(47): ProductController->index()
+#3 C:\xampp\htdocs\I211-Team-Project\app\core\init.php(22): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\xampp\htdocs\I211-Team-Project\public\index.php(14): require_once('C:\\xampp\\htdocs...')
+#5 {main}
