@@ -1,19 +1,17 @@
 {
-  "name": "jalen/i211-team-project",
-  "autoload": {
-    "classmap": [
-      "app/models",
-      "app/core",
-      "app/controllers"
-    ]
-  },
-  "authors": [
-    {
-      "name": "jvspeed74",
-      "email": "javaugh@iu.edu"
+    "name": "jalenvaughn/i211-team-project",
+    "authors": [
+        {
+            "name": "Jalen Vaughn",
+            "email": "javaugh@iu.edu"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "app/"
+        ]
+    },
+    "require": {
+      "ext-mysqli": "*"
     }
-  ],
-  "require": {
-    "ext-mysqli": "*"
-  }
 }

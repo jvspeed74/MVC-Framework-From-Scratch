@@ -1,46 +1,76 @@
 <?php
+/**
+ * Author: Jalen Vaughn
+ * Date: 4/8/24
+ * File: Product.php
+ * Description: Data transfer object for a Product.
+ */
 
-/*
-File: Product.php
-Created By: diffi
-Date: 4/4/2024
-Description: 
-*/
 
 class Product {
-    private int $productID;
+    private string $productID;
     private string $name;
-    private float $price;
+    private string $price;
     private string $description;
     
     /**
-     * @param int $productId
-     * @param string $name
-     * @param float $price
-     * @param string $description
+     * @param string $productID
+     * @return void
      */
-    public function __construct(int $productId, string $name, float $price, string $description) {
-        $this->productID = $productId;
+    public function setProductID(string $productID): void {
+        $this->productID = $productID;
+    }
+    
+    /**
+     * @param string $name
+     * @return void
+     */
+    public function setName(string $name): void {
         $this->name = $name;
+    }
+    
+    /**
+     * @param string $price
+     * @return void
+     */
+    public function setPrice(string $price): void {
         $this->price = $price;
+    }
+    
+    /**
+     * @param string $description
+     * @return void
+     */
+    public function setDescription(string $description): void {
         $this->description = $description;
     }
     
-    public function getProductID(): int {
+    /**
+     * @return string
+     */
+    public function getProductID(): string {
         return $this->productID;
     }
     
+    /**
+     * @return string
+     */
     public function getName(): string {
         return $this->name;
     }
     
-    public function getPrice(): float {
+    /**
+     * @return string
+     */
+    public function getPrice(): string {
         return $this->price;
     }
     
+    /**
+     * @return string
+     */
     public function getDescription(): string {
         return $this->description;
     }
     
-
 }
