@@ -15,16 +15,17 @@ abstract class View {
      * This method outputs the standard HTML header including the doctype declaration,
      * meta tags, and title tag. It also includes some basic CSS styling.
      *
+     * @param string $pageTitle The title to be displayed on the browser tab.
      * @return void
      */
-    static public function header(): void {
+    static public function header(string $pageTitle): void {
         ?>
         <!DOCTYPE html>
         <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sample Homepage</title>
+        <title>FitFlex: <?= $pageTitle ?></title>
         <style>
             .product-container {
                 display: grid;

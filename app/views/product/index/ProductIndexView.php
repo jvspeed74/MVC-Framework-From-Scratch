@@ -19,7 +19,7 @@ class ProductIndexView extends View {
      * @return void
      */
     static public function render(array $products = []): void {
-        parent::header();
+        parent::header("Shop");
         ?>
         <body>
         <?php echo (!isset($_GET['search-terms'])) ? "<h1>Products</h1>" : "<h1>Search Results</h1>"; ?>
