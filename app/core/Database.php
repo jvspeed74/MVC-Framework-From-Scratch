@@ -32,7 +32,7 @@ class Database {
             
             // Database connection was unsuccessful
         } catch (mysqli_sql_exception $e) {
-            ExceptionHandler::handleException($e);
+            ExceptionHandler::handleException($e, "Our data services are currently unresponsive. Please try again later.");
         }
     }
     
@@ -58,10 +58,10 @@ class Database {
     public function query($sql): mysqli_result|bool {
         try {
             // Execute the query using the query method of the mysqli object
-            // Return the result of the query
             return $this->connection->query($sql);
+            
         } catch (mysqli_sql_exception $e) {
-            ExceptionHandler::handleException($e);
+            ExceptionHandler::handleException($e, "Unable to process the query made to our data services.");
         }
     }
     

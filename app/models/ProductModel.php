@@ -57,19 +57,17 @@ class ProductModel extends Model {
      *
      * Retrieves product data from the database corresponding to the provided ID.
      *
-     * @param mixed $id The ID of the product to fetch.
-     * @return false|null|Product A Product object if the product is found, null if not found, or false on error.
+     * @param string $id The ID of the product to fetch.
+     * @return Product|null A Product object if the product is found, null if not found.
      */
-    public function fetchByID($id): false|null|Product {
-        //todo throws exception if user manually types in string into browser where ID
-        //todo error handling for false|null results not implemented
-        
+    public function fetchByID(string $id): ?Product {
         // Request product from DB
-        $sql = "SELECT * FROM $this->table WHERE productID=$id";
+        $sql = "SELECT * FROM $this->table WHERE productID='$id'";
         $query = $this->db->query($sql);
         
         // Return an instance of a product with provided data
         return $query->fetch_object(Product::class);
+        
     }
     
     /**
@@ -99,11 +97,6 @@ class ProductModel extends Model {
         // execute query
         $query = $this->db->query($sql);
         
-        //todo query could fail and send false
-        //search succeeded, but no movie was found.
-        if ($query->num_rows == 0)
-            return [];
-        
         // store results in array of Product objects
         $results = [];
         while ($row = $query->fetch_object(Product::class)) {
@@ -128,14 +121,10 @@ class ProductModel extends Model {
         $sql = "INSERT INTO $this->table (name, price, description) VALUES ('$escapedName', '$escapedPrice', '$escapedDescription')";
         
         // Execute the query
-        if ($this->db->query($sql)) {
-            // Return the ID of the newly inserted record
-            return $this->db->getInsertionID();
-        } else {
-            // Return null if insertion fails
-            //todo Query exception somewhere
-            return null;
-        }
+        $this->db->query($sql);
+        
+        // Return the ID of the newly inserted record
+        return $this->db->getInsertionID();
     }
     
     /**

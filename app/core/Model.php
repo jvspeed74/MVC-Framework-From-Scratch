@@ -25,10 +25,10 @@ abstract class Model {
     /**
      * Fetches a record from the database by its ID.
      *
-     * @param int $id The ID of the record to fetch.
+     * @param string $id The ID of the record to fetch.
      * @return mixed The fetched record
      */
-    abstract public function fetchByID(int $id): mixed;
+    abstract public function fetchByID(string $id): mixed;
     
     /**
      * Fetches all records from the database.

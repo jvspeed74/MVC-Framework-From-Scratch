@@ -46,12 +46,15 @@ class ProductController extends Controller {
      * This method queries a single product from the database using the model
      * based on the provided ID and then renders the show view with the retrieved product.
      *
-     * @param mixed $id The ID of the product to display.
+     * @param string $id The ID of the product to display.
      * @return void
      */
-    public function show(mixed $id): void {
+    public function show(string $id): void {
+        // Filter and trim user input
+        $filteredID = htmlspecialchars(trim($id));
+        
         // Query product from DB
-        $product = $this->model->fetchByID($id);
+        $product = $this->model->fetchByID($filteredID);
         
         // Render view
         ProductShowView::render($product);
@@ -65,11 +68,6 @@ class ProductController extends Controller {
      * @return void
      */
     public function search(): void {
-        // Check if search was sent
-        if ($_SERVER["REQUEST_METHOD"] !== "GET") {
-            $this->error("We detected unfamiliar activity with your request.");
-        }
-        
         // Set search if not already declared
         if (!isset($_GET["search-terms"])) {
             $_GET["search-terms"] = "";
