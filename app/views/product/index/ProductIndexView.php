@@ -22,7 +22,7 @@ class ProductIndexView extends View {
         parent::header("Shop");
         ?>
         <!-- Section-->
-        <section class="py-5">
+        <section class="py-5" xmlns="http://www.w3.org/1999/html">
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <?php
@@ -39,12 +39,16 @@ class ProductIndexView extends View {
                                         echo '<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>';
                                     } ?>
                                     <!-- Product image-->
-                                    <img class="card-img-top" src="<?= $product->getImage() ?>" alt="..."/>
+                                    <img class="card-img-top" style="height: 300px" src="<?= $product->getImage() ?>"
+                                         alt="..."/>
                                     <!-- Product details-->
                                     <div class="card-body p-4">
                                         <div class="text-center">
                                             <!-- Product name-->
-                                            <h5 class="fw-bolder"><?= $product->getName() ?></h5>
+                                            <h5 class="fw-bolder">
+                                                <a class="link-dark text-decoration-underline"
+                                                   href="<?= BASE_URL ?>/product/show/<?= $product->getProductID() ?>"><?= $product->getName() ?></a>
+                                            </h5>
                                             <!-- Product reviews-->
                                             <?php if ($product->getRating() != null) {
                                                 // Print review star amount dynamically
@@ -79,8 +83,9 @@ class ProductIndexView extends View {
                                     <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                         <div class="text-center">
+                                            <!--todo not implemented-->
                                             <a class="btn btn-outline-dark mt-auto"
-                                               href="<?= BASE_URL ?>/product/show/<?= $product->getProductID() ?>">
+                                               href="#">
                                                 Add to cart</a>
                                         </div>
                                     </div>
