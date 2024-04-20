@@ -19,30 +19,87 @@ class ProductIndexView extends View {
      * @return void
      */
     static public function render(array $products = []): void {
-        parent::header();
+        parent::header("Shop");
         ?>
-        <body>
-        <?php echo (!isset($_GET['search-terms'])) ? "<h1>Products</h1>" : "<h1>Search Results</h1>"; ?>
-        <div class="product-container">
-            <?php
-            // Check if products array is not empty
-            if (!empty($products)) {
-                // Loop through each product
-                foreach ($products as $product) {
-                    // Output the product details with a link to the product details page
-                    echo '<div class="product">';
-                    echo '<h2><a href="' . BASE_URL . '/product/show/' . $product->getProductID() . '">' . $product->getName() . '</a></h2>';
-                    echo '<p>Price: $' . $product->getPrice() . '</p>';
-                    echo '</div>';
-                }
-            } else {
-                // No products found
-                echo '<p>No products found.</p>';
-            }
-            ?>
-        </div>
-        <div class="product"><a href="<?= BASE_URL ?>/product/create">Create new product</a></div>
-        </body>
+        <!-- Section-->
+        <section class="py-5" xmlns="http://www.w3.org/1999/html">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <?php
+                    // Check if products array is not empty
+                    if (!empty($products)) {
+                        // Loop through each product
+                        foreach ($products as $product) {
+                            // Output the product info
+                            ?>
+                            <div class="col mb-5">
+                                <div class="card h-100">
+                                    <?php if ($product->getOnSale()) {
+                                        // Sale Badge
+                                        echo '<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>';
+                                    } ?>
+                                    <!-- Product image-->
+                                    <img class="card-img-top" style="height: 300px" src="<?= $product->getImage() ?>"
+                                         alt="..."/>
+                                    <!-- Product details-->
+                                    <div class="card-body p-4">
+                                        <div class="text-center">
+                                            <!-- Product name-->
+                                            <h5 class="fw-bolder">
+                                                <a class="link-dark text-decoration-underline"
+                                                   href="<?= BASE_URL ?>/product/show/<?= $product->getProductID() ?>"><?= $product->getName() ?></a>
+                                            </h5>
+                                            <!-- Product reviews-->
+                                            <?php if ($product->getRating() != null) {
+                                                // Print review star amount dynamically
+                                                $maxStarAmount = 5;
+                                                $fullStars = (integer)$product->getRating();
+                                                ?>
+                                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                                    <?php
+                                                    for ($i = 0; $i < $fullStars; $i++) {
+                                                        echo '<div class="bi-star-fill"></div>';
+                                                    }
+                                                    for ($i = 0; $i < ($maxStarAmount - $fullStars); $i++) {
+                                                        echo '<div class="bi-star"></div>';
+                                                    }
+                                                    ?>
+
+
+                                                </div>
+                                            <?php } ?>
+                                            <!-- Product price-->
+                                            <?php if ($product->getOnSale() && $product->getDiscountPrice() != null) {
+                                                // Show discounted price
+                                                echo '<span class="text-muted text-decoration-line-through">$' . $product->getPrice() . '</span><br>';
+                                                echo "$" . $product->getDiscountPrice();
+                                            } else {
+                                                // Show regular price
+                                                echo "$" . $product->getPrice();
+                                            }
+                                            ?>
+                                        </div>
+                                    </div>
+                                    <!-- Product actions-->
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center">
+                                            <!--todo not implemented-->
+                                            <a class="btn btn-outline-dark mt-auto"
+                                               href="#">
+                                                Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                    } else {
+                        echo '<h1 class="display-4 fw-bolder text-black">No products found</h1>';
+                    }
+                    ?>
+                </div>
+            </div>
+        </section>
         <?php
         parent::footer();
     }

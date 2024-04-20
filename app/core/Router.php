@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Author: Jalen Vaughn
  * Date: 4/8/24
@@ -41,10 +42,17 @@ class Router {
      *
      * @param string $uri The URI to match against registered routes.
      * @param string $requestType The type of HTTP request (e.g., GET, POST).
-     * @return array|null An array containing the controller method and captured
+     * @return array|bool|null An array containing the controller method and captured
      * segments from the URI, or null if no route matches the URI.
      */
-    public function lookupRoute(string $uri, string $requestType): ?array {
+    public function lookupRoute(string $uri, string $requestType): null|array|bool {
+        // Check if the request is for a static file (e.g., CSS, JS, images)
+        if (preg_match('/\.(css|js|jpg|jpeg|png|gif|ico)$/', $uri)) {
+            // Return null to indicate that the request should not be routed
+            return null;
+        }
+        
+        // Proceed with routing for other requests
         foreach ($this->routes[$requestType] as $route => $controllerMethod) {
             // Essentially searches for arguments passed through curly brackets
             $pattern = preg_replace('/\/{(\w+)}/', '/([^/]+)', $route);
@@ -56,7 +64,8 @@ class Router {
             }
         }
         
-        return null;
+        return false;
     }
+    
 }
 

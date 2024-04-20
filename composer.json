@@ -12,6 +12,12 @@
         ]
     },
     "require": {
-      "ext-mysqli": "*"
+      "ext-mysqli": "*",
+      "ext-fileinfo": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
     }
 }

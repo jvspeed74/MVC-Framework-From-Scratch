@@ -19,7 +19,7 @@ class ProductShowView extends View {
      * @return void
      */
     static public function render(?Product $product): void {
-        parent::header(); ?>
+        parent::header("View Product"); ?>
         <body>
         <h1>Product Details</h1>
         <div class="product">
