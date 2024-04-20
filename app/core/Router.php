@@ -11,25 +11,15 @@ class Router {
     protected array $routes = [];
     
     /**
-     * Register a route for GET requests.
+     * Register a route for requests.
      *
+     * @param string $requestType GET|POST method
      * @param string $uri The URI pattern to match.
      * @param string $controllerMethod The controller method to call when the route matches.
      * @return void
      */
-    public function get(string $uri, string $controllerMethod): void {
-        $this->routes['GET'][$uri] = $controllerMethod;
-    }
-    
-    /**
-     * Register a route for POST requests.
-     *
-     * @param string $uri The URI pattern to match.
-     * @param string $controllerMethod The controller method to call when the route matches.
-     * @return void
-     */
-    public function post(string $uri, string $controllerMethod): void {
-        $this->routes['POST'][$uri] = $controllerMethod;
+    public function registerRoute(string $requestType, string $uri, string $controllerMethod): void {
+        $this->routes[$requestType][BASE_URL . $uri] = $controllerMethod;
     }
     
     /**
@@ -63,7 +53,6 @@ class Router {
                 return [$controllerMethod, $matches];
             }
         }
-        
         return false;
     }
     
