@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Apr 15, 2024 at 02:12 AM
+-- Host: localhost
+-- Generation Time: Apr 20, 2024 at 07:23 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -26,26 +26,50 @@ USE `fitness_db`;
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `classes`
+--
+
+CREATE TABLE `classes` (
+  `classID` mediumint(9) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` text DEFAULT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `classes`
+--
+
+INSERT INTO `classes` (`classID`, `title`, `description`, `date`) VALUES
+(1, 'Yoga 101', 'An introductory class that specializes in foundational yoga techniques.', '2024-04-18');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `products`
 --
 
 CREATE TABLE `products` (
   `productID` mediumint(9) NOT NULL,
   `name` char(50) DEFAULT NULL,
-  `price` decimal(65,2) DEFAULT NULL,
-  `description` varchar(5000) DEFAULT NULL
+  `price` decimal(6,2) NOT NULL,
+  `rating` int(1) DEFAULT NULL COMMENT 'Product star rating 1-5',
+  `description` varchar(5000) DEFAULT NULL,
+  `onSale` tinyint(1) DEFAULT NULL COMMENT 'If the item is on sale: 1, otherwise 0.',
+  `discountPrice` decimal(6,2) DEFAULT NULL COMMENT 'The product discounted price',
+  `image` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`productID`, `name`, `price`, `description`) VALUES
-(1, 'Dumbbell Set (10 lbs)', 29.99, 'Pair of 10-pound dumbbells for strength training.'),
-(2, 'Yoga Mat', 19.95, 'Non-slip yoga mat for comfortable floor exercises.'),
-(3, 'Resistance Bands Set', 39.50, 'Set of resistance bands for full-body workouts.'),
-(4, 'Jump Rope', 9.99, 'Adjustable jump rope for cardio and agility training.'),
-(5, 'Foam Roller', 24.75, 'High-density foam roller for muscle recovery and flexibility exercises.');
+INSERT INTO `products` (`productID`, `name`, `price`, `rating`, `description`, `onSale`, `discountPrice`, `image`) VALUES
+(1, 'Dumbbell Set (10 lbs)', 30.00, 4, 'Pair of 10-pound dumbbells for strength training.', 1, 25.00, 'assets/DumbbellSet.jpg'),
+(2, 'Yoga Mat', 20.00, 5, 'Non-slip yoga mat for comfortable floor exercises.', 0, 0.00, 'assets/yoga%20mat.jpg'),
+(3, 'Resistance Bands Set', 40.00, 3, 'Set of resistance bands for full-body workouts.', 1, 30.00, 'assets/complete-band-pack.jpeg'),
+(4, 'Jump Rope', 9.99, 5, 'Adjustable jump rope for cardio and agility training.', NULL, NULL, 'assets/jump%20ropes.jpg'),
+(5, 'Foam Roller', 25.00, 5, 'High-density foam roller for muscle recovery and flexibility exercises.', 0, 0.00, 'assets/best-foam-rollers-scaled.jpg');
 
 -- --------------------------------------------------------
 
@@ -94,6 +118,12 @@ INSERT INTO `users` (`userID`, `firstName`, `lastName`, `email`, `userName`, `pa
 --
 
 --
+-- Indexes for table `classes`
+--
+ALTER TABLE `classes`
+  ADD PRIMARY KEY (`classID`);
+
+--
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
@@ -115,6 +145,18 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `classes`
+--
+ALTER TABLE `classes`
+  MODIFY `classID` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `productID` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`
