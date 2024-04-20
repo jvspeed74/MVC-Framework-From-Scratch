@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 20, 2024 at 07:23 PM
+-- Generation Time: Apr 20, 2024 at 07:43 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -26,22 +26,24 @@ USE `fitness_db`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `classes`
+-- Table structure for table `Courses`
 --
 
-CREATE TABLE `classes` (
-  `classID` mediumint(9) NOT NULL,
+CREATE TABLE `Courses` (
+  `courseID` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `description` text DEFAULT NULL,
-  `date` date NOT NULL
+  `date` date DEFAULT NULL,
+  `startTime` time DEFAULT NULL,
+  `endTime` time DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `classes`
+-- Dumping data for table `Courses`
 --
 
-INSERT INTO `classes` (`classID`, `title`, `description`, `date`) VALUES
-(1, 'Yoga 101', 'An introductory class that specializes in foundational yoga techniques.', '2024-04-18');
+INSERT INTO `Courses` (`courseID`, `title`, `description`, `date`, `startTime`, `endTime`) VALUES
+(1, 'Yoga 101', 'An introductory class that specializes in foundational yoga techniques.', '2024-04-18', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -118,10 +120,10 @@ INSERT INTO `users` (`userID`, `firstName`, `lastName`, `email`, `userName`, `pa
 --
 
 --
--- Indexes for table `classes`
+-- Indexes for table `Courses`
 --
-ALTER TABLE `classes`
-  ADD PRIMARY KEY (`classID`);
+ALTER TABLE `Courses`
+  ADD PRIMARY KEY (`courseID`);
 
 --
 -- Indexes for table `products`
@@ -145,12 +147,6 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
---
--- AUTO_INCREMENT for table `classes`
---
-ALTER TABLE `classes`
-  MODIFY `classID` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `products`
