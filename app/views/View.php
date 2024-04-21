@@ -48,7 +48,8 @@ abstract class View {
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <!-- todo handle active page on specific views -->
                         <!-- todo not implemented -->
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Classes</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                                href="<?= BASE_URL ?>/course/index">Classes</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Analytics</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"

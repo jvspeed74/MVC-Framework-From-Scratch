@@ -7,11 +7,32 @@
  * Description:
  */
 class CourseController extends Controller {
+    public function __construct() {
+        parent::__construct();
+    }
     
     /**
      * @inheritDoc
      */
     protected function loadModel(): object {
-        // TODO: Implement loadModel() method.
+        return CourseModel::getInstance();
+    }
+    
+    public function index(): void {
+        CourseIndexView::render();
+    }
+    
+    public function fetch(): void {
+        $date = $_GET['date'];
+        
+        $courses = $this->model->fetchByDate($date);
+        
+        $jsonResponse = json_encode($courses);
+        
+        // Set response headers
+        header('Content-Type: application/json');
+        
+        // Send the JSON response back to the client
+        echo $jsonResponse;
     }
 }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 20, 2024 at 07:43 PM
+-- Generation Time: Apr 21, 2024 at 05:13 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -43,7 +43,7 @@ CREATE TABLE `Courses` (
 --
 
 INSERT INTO `Courses` (`courseID`, `title`, `description`, `date`, `startTime`, `endTime`) VALUES
-(1, 'Yoga 101', 'An introductory class that specializes in foundational yoga techniques.', '2024-04-18', NULL, NULL);
+(1, 'Yoga 101', 'An introductory class that specializes in foundational yoga techniques.', '2024-04-18', '00:00:00', '00:00:00');
 
 -- --------------------------------------------------------
 
