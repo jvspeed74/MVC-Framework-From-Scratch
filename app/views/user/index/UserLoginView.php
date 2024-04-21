@@ -8,14 +8,18 @@
  * todo signup page
  * todo session to save user state
  */
-class UserIndexView extends View {
-    
+
+
+/**
+ * Class UserIndexView
+ */
+class UserLoginView extends View {
     
     /**
      * Render the view based on user authentication status.
      * @param User|null $user The authenticated user (null if not logged in).
      */
-    public static function render(?User $user=null): void {
+    public static function render(?User $user = null): void {
         // Check if the user is logged in
         if ($user) {
             self::renderLoggedInView($user);
@@ -34,6 +38,7 @@ class UserIndexView extends View {
         echo 'Password: <input type="password" name="password"><br>';
         echo '<input type="submit" value="Login">';
         echo '</form>';
+        echo '<p><a href="signup">Sign Up</a></p>'; // Link to the signup page
     }
     
     /**
