@@ -63,18 +63,7 @@ class CourseModel extends Model {
         // TODO: Implement delete() method.
     }
     
-    public
-    function fetchByID(string $id): mixed {
-        // TODO: Implement fetchByID() method.
-    }
-    
-    public
-    function fetchAll(): array {
-        // TODO: Implement fetchAll() method.
-    }
-    
-    public
-    function fetchBySearch(string $terms): array {
-        // TODO: Implement fetchBySearch() method.
+    public function create(object $dataObj): ?int {
+        // TODO: Implement create() method.
     }
 }
