@@ -29,3 +29,9 @@ $router->registerRoute("POST", "/product/create", 'ProductController@create');
 $router->registerRoute("GET", "/course/index", "CourseController@index");
 $router->registerRoute("GET", "/course/fetch", "CourseController@fetch");
 $router->registerRoute("GET", "/course/fetch/{date}", "CourseController@fetch");
+
+/**
+ * User page:
+ */
+$router->registerRoute("GET", "/user/index", "UserController@index");
+$router->registerRoute("POST", "/user/login", "UserController@login");
