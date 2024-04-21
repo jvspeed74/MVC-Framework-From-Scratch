@@ -16,8 +16,8 @@ class UserController extends Controller {
         return UserModel::getInstance();
     }
     
-    public function index(): void {
-        UserIndexView::render();
+    public function loginForm(): void {
+        UserLoginView::render();
     }
     
     /**
@@ -29,7 +29,11 @@ class UserController extends Controller {
         $password = $_POST["password"];
         
         // Verify user credentials
-        UserIndexView::render($this->model->verifyUserCredentials($username, $password));
+        UserLoginView::render($this->model->verifyUserCredentials($username, $password));
+    }
+    
+    public function signupForm(): void {
+        UserSignupView::render();
     }
     
     
