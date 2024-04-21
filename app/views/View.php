@@ -4,9 +4,8 @@
  * Date: 4/8/24
  * File: View.php
  * Description: Abstract class containing the foundation for the header and footer methods.
+ * todo different header depending on user login status
  */
-
-
 abstract class View {
     
     /**
@@ -80,7 +79,7 @@ abstract class View {
                             <!-- todo not implemented -->
                             <div class="d-flex">
                                 <button class="btn btn-outline-primary me-2" type="button"
-                                        onclick="location.href='login.html'">Login
+                                        onclick="location.href='<?=BASE_URL?>/user/index'">Login
                                 </button>
                                 <button class="btn btn-outline-secondary me-2" type="button"
                                         onclick="location.href='register.html'">Register
