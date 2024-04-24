@@ -1,10 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-
 .calendar-container {
     background: #fff;
     width: 650px;
@@ -110,3 +103,34 @@ header .calendar-current-date {
 .calendar-dates li:not(.active):hover::before {
     background: #e4e1e1;
 }
+
+.course-container {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.course {
+    margin-bottom: 20px;
+}
+
+.course-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.course-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.course-date,
+.course-time,
+.course-location {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Add more specific styling as needed */

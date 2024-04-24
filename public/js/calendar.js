@@ -31,21 +31,21 @@ const fetchAndRenderCourses = (selectedDate) => {
 
 // Function to render course information
 const renderCourses = (courses) => {
+    let courseInfoHTML = '';
     if (!Array.isArray(courses)) {
         console.error("Invalid or empty courses data received");
-        return;
-    }
-    let courseInfoHTML = '';
-    courses.forEach(course => {
-        courseInfoHTML += `
+    } else {
+        courses.forEach(course => {
+            courseInfoHTML += `
             <div class="course">
-                <h3>${course.title}</h3>
-                <p>${course.description}</p>
-                <p>Date: ${course.date}</p>
-                <p>Time: ${course.startTime} - ${course.endTime}</p>
+                <h3 class="course-title">${course.title}</h3>
+                <p class="course-description">${course.description}</p>
+                <p class="course-date">Date: ${course.date}</p>
+                <p class="course-time">Time: ${course.startTime} - ${course.endTime}</p>
             </div>
         `;
-    });
+        });
+    }
     const courseContainer = document.querySelector('.course-container');
     courseContainer.innerHTML = courseInfoHTML;
 };
