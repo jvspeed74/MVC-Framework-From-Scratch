@@ -10,7 +10,7 @@
  * todo There should be a default popup when no classes are scheduled. Right now nothing is shown.
  */
 class CourseIndexView extends View {
-    public static function render($courses = []) {
+    public static function render(): void {
         parent::header("Courses");
         ?>
         <link href="/I211-Team-Project/public/css/calstyle.css" rel="stylesheet"/>
