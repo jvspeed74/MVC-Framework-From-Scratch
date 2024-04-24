@@ -6,7 +6,6 @@
  * File: CourseIndexView.php
  * Description:
  * todo Calendar and Course Info should be side by side not in a column
- * todo Active css class doesnt change when clicking on different days
  * todo There should be a default popup when no classes are scheduled. Right now nothing is shown.
  */
 class CourseIndexView extends View {
