@@ -1,12 +1,12 @@
 <?php
+
 /**
  * Author: Jalen Vaughn
  * Date: 4/8/24
  * File: View.php
  * Description: Abstract class containing the foundation for the header and footer methods.
+ * todo different header depending on user login status
  */
-
-
 abstract class View {
     
     /**
@@ -77,13 +77,12 @@ abstract class View {
                                 <button class="btn btn-outline-success" type="submit">Search</button>
                             </form>
                             <!-- Login and Register Links -->
-                            <!-- todo not implemented -->
                             <div class="d-flex">
                                 <button class="btn btn-outline-primary me-2" type="button"
-                                        onclick="location.href='login.html'">Login
+                                        onclick="location.href='<?= BASE_URL ?>/user/login'">Login
                                 </button>
                                 <button class="btn btn-outline-secondary me-2" type="button"
-                                        onclick="location.href='register.html'">Register
+                                        onclick="location.href='<?= BASE_URL ?>/user/signup'">Register
                                 </button>
                                 <!-- Cart button -->
                                 <!-- todo not implemented -->
