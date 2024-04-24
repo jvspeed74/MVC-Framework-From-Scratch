@@ -12,10 +12,7 @@ let year = new Date().getFullYear();
 let month = new Date().getMonth(); // Note: Months are zero-indexed, January is 0
 
 // Define months globally
-const months = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-];
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 // Function to fetch and render course information
 const fetchAndRenderCourses = (selectedDate) => {
@@ -34,21 +31,21 @@ const fetchAndRenderCourses = (selectedDate) => {
 
 // Function to render course information
 const renderCourses = (courses) => {
+    let courseInfoHTML = '';
     if (!Array.isArray(courses)) {
         console.error("Invalid or empty courses data received");
-        return;
-    }
-    let courseInfoHTML = '';
-    courses.forEach(course => {
-        courseInfoHTML += `
+    } else {
+        courses.forEach(course => {
+            courseInfoHTML += `
             <div class="course">
-                <h3>${course.title}</h3>
-                <p>${course.description}</p>
-                <p>Date: ${course.date}</p>
-                <p>Time: ${course.startTime} - ${course.endTime}</p>
+                <h3 class="course-title">${course.title}</h3>
+                <p class="course-description">${course.description}</p>
+                <p class="course-date">Date: ${course.date}</p>
+                <p class="course-time">Time: ${course.startTime} - ${course.endTime}</p>
             </div>
         `;
-    });
+        });
+    }
     const courseContainer = document.querySelector('.course-container');
     courseContainer.innerHTML = courseInfoHTML;
 };
@@ -72,7 +69,7 @@ const manipulate = () => {
     }
 
     for (let i = 1; i <= lastdate; i++) {
-        let isActive = (i === date.getDate() && month === date.getMonth() && year === date.getFullYear()) ? "active" : "clickable";
+        let isActive = (i === date.getDate() && month === date.getMonth() && year === date.getFullYear()) ? "clickable" : "clickable";
         lit += `<li class="${isActive}">${i}</li>`;
     }
 
@@ -86,6 +83,17 @@ const manipulate = () => {
     const clickableDates = document.querySelectorAll(".clickable");
     clickableDates.forEach(dateElement => {
         dateElement.addEventListener("click", function (event) {
+            // Remove "active" class from previously selected date
+            const activeDate = document.querySelector(".active");
+            if (activeDate) {
+                activeDate.classList.remove("active");
+                activeDate.classList.add("clickable");
+            }
+
+            // Apply "active" class to the currently clicked date
+            dateElement.classList.add("active");
+            dateElement.classList.remove("clickable");
+
             let clickedDate = dateElement.innerText;
             let monthString = (month + 1).toString().padStart(2, "0");
             let selectedDate = `${year}-${monthString}-${clickedDate}`;
@@ -94,7 +102,12 @@ const manipulate = () => {
     });
 
     updateCurrentDateDisplay();
+
+    // Fetch and render courses for the current date
+    let currentDateString = `${year}-${(month + 1).toString().padStart(2, "0")}-${date.getDate().toString().padStart(2, "0")}`;
+    fetchAndRenderCourses(currentDateString);
 };
+
 
 // Attach a click event listener to each icon if prenexIcons is defined
 if (prenexIcons) {

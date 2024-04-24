@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Apr 21, 2024 at 05:13 AM
+-- Host: 127.0.0.1
+-- Generation Time: Apr 24, 2024 at 09:05 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -26,10 +26,10 @@ USE `fitness_db`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Courses`
+-- Table structure for table `courses`
 --
 
-CREATE TABLE `Courses` (
+CREATE TABLE `courses` (
   `courseID` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `description` text DEFAULT NULL,
@@ -39,11 +39,16 @@ CREATE TABLE `Courses` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `Courses`
+-- Dumping data for table `courses`
 --
 
-INSERT INTO `Courses` (`courseID`, `title`, `description`, `date`, `startTime`, `endTime`) VALUES
-(1, 'Yoga 101', 'An introductory class that specializes in foundational yoga techniques.', '2024-04-18', '00:00:00', '00:00:00');
+INSERT INTO `courses` (`courseID`, `title`, `description`, `date`, `startTime`, `endTime`) VALUES
+(1, 'Yoga 101', 'An introductory class that specializes in foundational yoga techniques.', '2024-04-18', '00:00:00', '00:00:00'),
+(2, 'Meditation Workshop', 'Learn various meditation techniques to promote mindfulness and relaxation.', '2024-04-20', '10:00:00', '12:00:00'),
+(3, 'Pilates for Beginners', 'A beginner-friendly Pilates class focusing on core strength and flexibility.', '2024-04-24', '18:30:00', '20:00:00'),
+(4, 'Cardio Kickboxing', 'High-intensity cardio workout combined with martial arts moves.', '2024-05-05', '17:00:00', '18:30:00'),
+(5, 'Tai Chi for Stress Relief', 'Gentle movements and breathing exercises to reduce stress and improve balance.', '2024-05-10', '09:30:00', '11:00:00'),
+(6, 'Hatha Yoga Flow', 'A dynamic yoga class emphasizing breath with movement.', '2024-05-15', '19:00:00', '20:30:00');
 
 -- --------------------------------------------------------
 
@@ -120,9 +125,9 @@ INSERT INTO `users` (`userID`, `firstName`, `lastName`, `email`, `userName`, `pa
 --
 
 --
--- Indexes for table `Courses`
+-- Indexes for table `courses`
 --
-ALTER TABLE `Courses`
+ALTER TABLE `courses`
   ADD PRIMARY KEY (`courseID`);
 
 --
@@ -147,6 +152,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `courses`
+--
+ALTER TABLE `courses`
+  MODIFY `courseID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `products`
