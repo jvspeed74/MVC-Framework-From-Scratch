@@ -12,7 +12,7 @@ class CourseIndexView extends View {
     public static function render(): void {
         parent::header("Courses");
         ?>
-        <link href="/I211-Team-Project/public/css/calstyle.css" rel="stylesheet"/>
+        <link href="/I211-Team-Project/public/css/calendar.css" rel="stylesheet"/>
         <div class="calendar-container">
             <header class="calendar-header">
                 <p class="calendar-current-date"></p>

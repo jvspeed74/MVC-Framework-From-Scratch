@@ -33,7 +33,10 @@ abstract class View {
             <!-- Bootstrap icons-->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
             <!-- Core theme CSS (includes Bootstrap)-->
-            <link href="/I211-Team-Project/public/css/styles.css" rel="stylesheet"/>
+            <!--            <link href="/I211-Team-Project/public/css/styles.css" rel="stylesheet"/>-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+                  crossorigin="anonymous">
         </head>
         <body>
         <!-- Navigation-->
@@ -51,7 +54,8 @@ abstract class View {
                         <li class="nav-item"><a class="nav-link active" aria-current="page"
                                                 href="<?= BASE_URL ?>/course/index">Courses</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" id="navbarDropdown" href="<?=BASE_URL?>/product/index" aria-expanded="false">Shop</a>
+                            <a class="nav-link" id="navbarDropdown" href="<?= BASE_URL ?>/product/index"
+                               aria-expanded="false">Shop</a>
                         </li>
                     </ul>
                     <div class="container">
@@ -74,7 +78,8 @@ abstract class View {
                                         onclick="location.href='<?= BASE_URL ?>/user/signup'">Register
                                 </button>
                                 <!-- Cart button -->
-                                <button class="btn btn-outline-dark" type="button" onclick="location.href='<?=BASE_URL ?>/cart/index'">
+                                <button class="btn btn-outline-dark" type="button"
+                                        onclick="location.href='<?= BASE_URL ?>/cart/index'">
                                     <i class="bi-cart-fill me-1"></i>
                                     Cart
                                     <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
