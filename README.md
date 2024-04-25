@@ -63,10 +63,3 @@ practical and impactful solution.
 
 - Enhance user experience with asynchronous data loading and real-time updates.
 - Implement interactive features for seamless interaction without page refreshes.
-
-## Project Timeline
-
-- **Initial Plan:** Outline project goals, features, and technical approach. Submit proposal by 3/24/24.
-- **Development Phases:** Iterate through stages of development, presenting drafts and seeking feedback.
-- **Final Version:** Submit completed web application, accompanied by comprehensive documentation,
-  by [Final Submission Deadline].
