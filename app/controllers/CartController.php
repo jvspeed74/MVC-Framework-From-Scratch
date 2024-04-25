@@ -75,7 +75,7 @@ class CartController extends Controller {
      */
     public function index(): void {
         $items = $this->model->getItems();
-        $totalPrice = $this->model->getTotalPrice();  // TODO: Implement total price calculation
+       // $totalPrice = $this->model->getTotalPrice();  // TODO: Implement total price calculation
         CartIndexView::render($items);
     }
 }

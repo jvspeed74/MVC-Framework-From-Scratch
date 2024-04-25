@@ -30,7 +30,7 @@ abstract class Controller {
      * @return void
      */
     public function error(string $message): void {
-        //todo expand error functionality
+        // Default error page
         ErrorView::render($message);
     }
     

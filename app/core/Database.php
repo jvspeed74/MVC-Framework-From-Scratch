@@ -75,13 +75,6 @@ class Database {
         return $this->connection->real_escape_string($string);
     }
     
-    public function closeConnection(): void {
-        if (!$this->connection->close()) {
-            // Log a warning if closing the connection fails
-            error_log("Failed to close database connection");
-        }
-    }
-    
     public function getInsertionID(): string {
         return $this->connection->insert_id;
     }

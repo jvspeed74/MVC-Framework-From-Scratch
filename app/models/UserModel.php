@@ -79,7 +79,7 @@ class UserModel extends Model {
      * @return bool True if the record creation was successful, false otherwise.
      */
     public function create(User $user): bool {
-        // TODO: Implement create() method.
+        // TODO: Test create() method
         // Escape user inputs to prevent SQL injection
         $firstName = $this->db->realEscapeString($user->getFirstName());
         $lastName = $this->db->realEscapeString($user->getLastName());

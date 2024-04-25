@@ -35,8 +35,4 @@ class UserController extends Controller {
     public function signupForm(): void {
         UserSignupView::render();
     }
-    
-    
 }
-
-?>
