@@ -28,25 +28,14 @@ practical and impactful solution.
 - Allow users to register accounts and securely log in.
 - Implement authentication measures to protect user data.
 
-### 2. [Feature 2]
+### 2. E-commerce Store
 
-- [Description of Feature 2]
+- The site will host shopping cart functionality tied to a user account.
+- Users can add, remove, update, and checkout products in their cart.
 
-### 3. [Feature 3]
+### 3. Dynamic Workout Calendar
 
-- [Description of Feature 3]
-
-### 4. [Feature 4]
-
-- [Description of Feature 4]
-
-### 5. [Feature 5]
-
-- [Description of Feature 5]
-
-### 6. [Feature 6]
-
-- [Description of Feature 6]
+- Customizable calendar for users to take advantage of a wide variety of fitness courses.
 
 ## Technical Implementation
 
