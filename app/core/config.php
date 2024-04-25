@@ -22,7 +22,7 @@ switch (CI_MODE) {
 
 // Set error handling configuration
 ini_set('log_errors', 1);
-ini_set('error_log', __DIR__ . "/logging/error.log");
+ini_set('error_log', __DIR__ . "/error.log");
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 // Default handler for uncaught exceptions
