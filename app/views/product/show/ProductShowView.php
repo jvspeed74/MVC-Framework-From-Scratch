@@ -7,7 +7,7 @@
  */
 
 
-class ProductShowView extends View {
+class ProductShowView extends ProductView {
     
     /**
      * Renders the product show view.

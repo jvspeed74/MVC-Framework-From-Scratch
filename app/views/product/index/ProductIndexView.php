@@ -7,7 +7,7 @@
  */
 
 
-class ProductIndexView extends View {
+class ProductIndexView extends ProductView {
     
     /**
      * Renders the product index view.

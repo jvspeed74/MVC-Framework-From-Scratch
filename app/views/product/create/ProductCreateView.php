@@ -6,7 +6,7 @@
  * File: ProductCreateView.php
  * Description:
  */
-class ProductCreateView extends View {
+class ProductCreateView extends ProductView {
     public static function render(): void {
         parent::header("Product Creation");
         ?>
@@ -21,11 +21,13 @@ class ProductCreateView extends View {
                     </div>
                     <div>
                         <label for="price">Price:</label>
-                        <input type="number" class="form-control" id="price" name="price" min="0.00" max='100.00' step="0.01" required>
+                        <input type="number" class="form-control" id="price" name="price" min="0.00" max='100.00'
+                               step="0.01" required>
                     </div>
                     <div>
                         <label for="description">Description:</label>
-                        <textarea class="form-control" id="description" name="description" rows="3" maxlength="5000" required></textarea>
+                        <textarea class="form-control" id="description" name="description" rows="3" maxlength="5000"
+                                  required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
