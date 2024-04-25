@@ -17,6 +17,7 @@ $router = new Router();
  * - search: Displays the products found in the user search result.
  */
 $router->registerRoute("GET", "", 'ProductController@index');
+$router->registerRoute("GET", "/product/index", 'ProductController@index');
 $router->registerRoute("GET", "/product/show/{id}", 'ProductController@show');
 $router->registerRoute("GET", "/product/search/{terms}", 'ProductController@search');
 $router->registerRoute("GET", "/product/create", 'ProductController@create');
