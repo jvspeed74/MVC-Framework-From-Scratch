@@ -21,8 +21,14 @@ $router->get(BASE_URL . "/product/show/{id}", 'ProductController@show');
 $router->get(BASE_URL . "/product/search/{terms}", 'ProductController@search');
 $router->get(BASE_URL . "/product/create", 'ProductController@create');
 $router->post(BASE_URL . "/product/create", 'ProductController@create');
-$router->get(BASE_URL . "/cart", 'ProductController@showCart');
-$router->get(BASE_URL . "/cart/add/{id}", 'ProductController@addToCart');
-$router->get(BASE_URL . "/cart/remove/{id}", 'ProductController@removeFromCart');
-$router->post(BASE_URL . "/cart/update", 'ProductController@updateCart');
+
+/**
+ * Shopping Cart Page:
+ * - Index: Lists all items in the cart
+*/
+$router->get(BASE_URL . "/cart", 'CartController@index');
+$router->get(BASE_URL . "/cart/show", 'CartController@index');
+$router->get(BASE_URL . "/cart/add/{id}", 'CartController@add');
+$router->get(BASE_URL . "/cart/remove/{id}", 'CartController@remove');
+$router->post(BASE_URL . "/cart/update", 'CartController@update');
 
