@@ -10,8 +10,8 @@
 class Database {
     private array $param = [
         'host' => 'localhost',
-        'login' => 'root',
-        'password' => '',
+        'login' => 'phpuser',
+        'password' => 'phpuser',
         'database' => 'fitness_db',
     ];
     private mysqli $connection;
