@@ -8,7 +8,7 @@
  */
 class CartIndexView extends View {
     public static function render($items=[]): void {
-        parent::header(); ?>
+        parent::header("Shopping Cart"); ?>
         <!--Page Specific Content-->
         <h1>Shopping Cart</h1>
         <table>

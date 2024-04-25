@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Class CartController
  *
@@ -40,7 +41,7 @@ class CartController extends Controller {
     public function add(mixed $id): void {
         try {
             $this->model->addItem($id);
-            CartIndexView::render();
+            $this->index();
         } catch (InvalidArgumentException $exception) {
             $this->error($exception->getMessage());
         }
@@ -53,7 +54,7 @@ class CartController extends Controller {
      */
     public function remove(mixed $id): void {
         $this->model->removeItem($id);
-        CartIndexView::render();
+        $this->index();
     }
     
     /**
@@ -64,7 +65,7 @@ class CartController extends Controller {
             foreach ($_POST['quantity'] as $id => $quantity) {
                 $this->model->updateQuantity($id, $quantity);
             }
-            CartIndexView::render();
+            $this->index();
         } catch (InvalidArgumentException $exception) {
             $this->error($exception->getMessage());
         }
@@ -75,7 +76,6 @@ class CartController extends Controller {
      */
     public function index(): void {
         $items = $this->model->getItems();
-       // $totalPrice = $this->model->getTotalPrice();  // TODO: Implement total price calculation
         CartIndexView::render($items);
     }
 }

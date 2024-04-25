@@ -84,10 +84,9 @@ class ProductIndexView extends ProductView {
                                     <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                         <div class="text-center">
-                                            <!--todo not implemented-->
                                             <a class="btn btn-outline-dark mt-auto"
-                                               href="#">
-                                                Add to cart</a>
+                                               href="<?= BASE_URL ?>/cart/add/<?= $product->getProductID() ?>">Add to
+                                                Cart</a>
                                         </div>
                                     </div>
                                 </div>

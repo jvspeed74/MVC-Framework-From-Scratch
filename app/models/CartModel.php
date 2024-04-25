@@ -4,29 +4,29 @@
  * Class CartModel
  *
  * Represents the shopping cart model responsible for managing cart items.
+ * //todo throws error if two or more items are in the cart. Needs a rewrite of how it handles product objects.
  */
 class CartModel {
-    private array $items;
-    
+    // Add a constant for the session key
+    private const CART_SESSION_KEY = 'cart';
+
     private ProductModel $productModel;
-    
+
     /**
      * CartModel constructor.
      *
      * Initializes the cart model with an empty array of items and an instance of the ProductModel.
      */
     public function __construct() {
-        $this->items = [];
         $this->productModel = ProductModel::getInstance();
+        // Start or resume the session
+        session_start();
+        // Initialize cart if not set in session
+        if (!isset($_SESSION[self::CART_SESSION_KEY])) {
+            $_SESSION[self::CART_SESSION_KEY] = [];
+        }
     }
-    
-    /**
-     * @return CartModel
-     */
-    public static function getInstance(): CartModel {
-        return new self();
-    }
-    
+
     /**
      * Adds an item to the cart.
      *
@@ -40,31 +40,33 @@ class CartModel {
         if ($quantity <= 0) {
             throw new InvalidArgumentException("Quantity must be greater than zero.");
         }
-        
+
         $product = $this->productModel->fetchByID($productId);
         if (!$product) {
             throw new InvalidArgumentException("Product with ID $productId does not exist.");
         }
-        
-        if (isset($this->items[$productId])) {
-            $this->items[$productId]['quantity'] += $quantity;
+
+        // Check if the product is already in the cart
+        if (isset($_SESSION[self::CART_SESSION_KEY][$productId])) {
+            $_SESSION[self::CART_SESSION_KEY][$productId]['quantity'] += $quantity;
         } else {
-            $this->items[$productId] = [
+            // Add new product to the cart
+            $_SESSION[self::CART_SESSION_KEY][$productId] = [
                 'product' => $product,
                 'quantity' => $quantity,
             ];
         }
     }
-    
+
     /**
      * Removes an item from the cart.
      *
      * @param string $productId The ID of the product to remove from the cart.
      */
     public function removeItem(string $productId): void {
-        unset($this->items[$productId]);
+        unset($_SESSION[self::CART_SESSION_KEY][$productId]);
     }
-    
+
     /**
      * Updates the quantity of an item in the cart.
      *
@@ -77,34 +79,25 @@ class CartModel {
         if ($quantity <= 0) {
             throw new InvalidArgumentException("Quantity must be greater than zero.");
         }
-        
-        if (isset($this->items[$productId])) {
-            $this->items[$productId]['quantity'] = $quantity;
+
+        if (isset($_SESSION[self::CART_SESSION_KEY][$productId])) {
+            $_SESSION[self::CART_SESSION_KEY][$productId]['quantity'] = $quantity;
         }
     }
-    
+
     /**
      * Retrieves the items in the cart.
      *
      * @return array An array containing the cart items.
      */
     public function getItems(): array {
-        return $this->items;
+        return $_SESSION[self::CART_SESSION_KEY];
     }
-    
+
     /**
-     * Calculates the total price of all items in the cart.
-     *
-     * @return float The total price of all items in the cart.
-     * @throws NotImplementedException
+     * Clears the cart.
      */
-    public function getTotalPrice(): float {
-        throw new NotImplementedException();
-//        $total = 0.0;
-//        foreach ($this->items as $productId => $item) {
-//            $total += $item['product']->getPrice() * $item['quantity'];
-//        }
-//        return $total;
+    public function clearCart(): void {
+        $_SESSION[self::CART_SESSION_KEY] = [];
     }
 }
-
