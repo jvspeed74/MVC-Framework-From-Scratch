@@ -96,13 +96,15 @@ class CartModel {
      * Calculates the total price of all items in the cart.
      *
      * @return float The total price of all items in the cart.
+     * @throws NotImplementedException
      */
     public function getTotalPrice(): float {
-        $total = 0.0;
-        foreach ($this->items as $productId => $item) {
-            $total += $item['product']->getPrice() * $item['quantity'];
-        }
-        return $total;
+        throw new NotImplementedException();
+//        $total = 0.0;
+//        foreach ($this->items as $productId => $item) {
+//            $total += $item['product']->getPrice() * $item['quantity'];
+//        }
+//        return $total;
     }
 }
 

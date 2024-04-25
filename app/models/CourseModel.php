@@ -25,7 +25,7 @@ class CourseModel extends Model {
         return self::$_instance;
     }
     
-    public function fetchByDate($date) {
+    public function fetchByDate($date): array {
         $sql = "SELECT * FROM $this->table WHERE date = '$date'";
         $query = $this->db->query($sql);
         
@@ -48,22 +48,28 @@ class CourseModel extends Model {
     
     
     /**
-     * @inheritDoc
+     * @throws NotImplementedException
      */
     public
     function update(): bool {
         // TODO: Implement update() method.
+        throw new NotImplementedException();
     }
     
     /**
-     * @inheritDoc
+     * @throws NotImplementedException
      */
     public
     function delete(): bool {
         // TODO: Implement delete() method.
+        throw new NotImplementedException();
     }
     
+    /**
+     * @throws NotImplementedException
+     */
     public function create(object $dataObj): ?int {
         // TODO: Implement create() method.
+        throw new NotImplementedException();
     }
 }
