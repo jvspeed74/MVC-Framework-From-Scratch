@@ -4,10 +4,11 @@
  * Date: 4/9/24
  * File: ProductShowView.php
  * Description: Contains the show page for the ProductController.
+ * todo show img AND FIX THE DAMN STYLING
  */
 
 
-class ProductShowView extends View {
+class ProductShowView extends ProductView {
     
     /**
      * Renders the product show view.
@@ -19,7 +20,7 @@ class ProductShowView extends View {
      * @return void
      */
     static public function render(?Product $product): void {
-        parent::header(); ?>
+        parent::header("View Product"); ?>
         <body>
         <h1>Product Details</h1>
         <div class="product">
@@ -35,6 +36,7 @@ class ProductShowView extends View {
                 echo '<p>This product does not exist.</p>';
             }
             ?>
+            <p><a href="<?=BASE_URL?>">Back to Product Page</a></p>
         </div>
         </body>
         <?php parent::footer();

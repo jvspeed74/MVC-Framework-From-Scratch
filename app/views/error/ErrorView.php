@@ -53,6 +53,7 @@ class ErrorView extends View {
         <div class="container">
             <h1>Error</h1>
             <p><?php echo "$message"; ?></p>
+            <p><a href="<?=BASE_URL?>">Back to Home</a></p>
         </div>
         </body>
         </html>

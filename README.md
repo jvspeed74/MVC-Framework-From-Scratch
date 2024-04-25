@@ -28,25 +28,14 @@ practical and impactful solution.
 - Allow users to register accounts and securely log in.
 - Implement authentication measures to protect user data.
 
-### 2. [Feature 2]
+### 2. E-commerce Store
 
-- [Description of Feature 2]
+- The site will host shopping cart functionality tied to a user account.
+- Users can add, remove, update, and checkout products in their cart.
 
-### 3. [Feature 3]
+### 3. Dynamic Workout Calendar
 
-- [Description of Feature 3]
-
-### 4. [Feature 4]
-
-- [Description of Feature 4]
-
-### 5. [Feature 5]
-
-- [Description of Feature 5]
-
-### 6. [Feature 6]
-
-- [Description of Feature 6]
+- Customizable calendar for users to take advantage of a wide variety of fitness courses.
 
 ## Technical Implementation
 
@@ -74,10 +63,3 @@ practical and impactful solution.
 
 - Enhance user experience with asynchronous data loading and real-time updates.
 - Implement interactive features for seamless interaction without page refreshes.
-
-## Project Timeline
-
-- **Initial Plan:** Outline project goals, features, and technical approach. Submit proposal by 3/24/24.
-- **Development Phases:** Iterate through stages of development, presenting drafts and seeking feedback.
-- **Final Version:** Submit completed web application, accompanied by comprehensive documentation,
-  by [Final Submission Deadline].

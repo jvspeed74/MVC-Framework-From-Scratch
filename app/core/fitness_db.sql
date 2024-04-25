@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2024 at 02:12 AM
+-- Generation Time: Apr 24, 2024 at 09:05 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -26,26 +26,57 @@ USE `fitness_db`;
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `courses`
+--
+
+CREATE TABLE `courses` (
+  `courseID` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` text DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `startTime` time DEFAULT NULL,
+  `endTime` time DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `courses`
+--
+
+INSERT INTO `courses` (`courseID`, `title`, `description`, `date`, `startTime`, `endTime`) VALUES
+(1, 'Yoga 101', 'An introductory class that specializes in foundational yoga techniques.', '2024-04-18', '00:00:00', '00:00:00'),
+(2, 'Meditation Workshop', 'Learn various meditation techniques to promote mindfulness and relaxation.', '2024-04-20', '10:00:00', '12:00:00'),
+(3, 'Pilates for Beginners', 'A beginner-friendly Pilates class focusing on core strength and flexibility.', '2024-04-24', '18:30:00', '20:00:00'),
+(4, 'Cardio Kickboxing', 'High-intensity cardio workout combined with martial arts moves.', '2024-05-05', '17:00:00', '18:30:00'),
+(5, 'Tai Chi for Stress Relief', 'Gentle movements and breathing exercises to reduce stress and improve balance.', '2024-05-10', '09:30:00', '11:00:00'),
+(6, 'Hatha Yoga Flow', 'A dynamic yoga class emphasizing breath with movement.', '2024-05-15', '19:00:00', '20:30:00');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `products`
 --
 
 CREATE TABLE `products` (
   `productID` mediumint(9) NOT NULL,
   `name` char(50) DEFAULT NULL,
-  `price` decimal(65,2) DEFAULT NULL,
-  `description` varchar(5000) DEFAULT NULL
+  `price` decimal(6,2) NOT NULL,
+  `rating` int(1) DEFAULT NULL COMMENT 'Product star rating 1-5',
+  `description` varchar(5000) DEFAULT NULL,
+  `onSale` tinyint(1) DEFAULT NULL COMMENT 'If the item is on sale: 1, otherwise 0.',
+  `discountPrice` decimal(6,2) DEFAULT NULL COMMENT 'The product discounted price',
+  `image` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`productID`, `name`, `price`, `description`) VALUES
-(1, 'Dumbbell Set (10 lbs)', 29.99, 'Pair of 10-pound dumbbells for strength training.'),
-(2, 'Yoga Mat', 19.95, 'Non-slip yoga mat for comfortable floor exercises.'),
-(3, 'Resistance Bands Set', 39.50, 'Set of resistance bands for full-body workouts.'),
-(4, 'Jump Rope', 9.99, 'Adjustable jump rope for cardio and agility training.'),
-(5, 'Foam Roller', 24.75, 'High-density foam roller for muscle recovery and flexibility exercises.');
+INSERT INTO `products` (`productID`, `name`, `price`, `rating`, `description`, `onSale`, `discountPrice`, `image`) VALUES
+(1, 'Dumbbell Set (10 lbs)', 30.00, 4, 'Pair of 10-pound dumbbells for strength training.', 1, 25.00, 'assets/DumbbellSet.jpg'),
+(2, 'Yoga Mat', 20.00, 5, 'Non-slip yoga mat for comfortable floor exercises.', 0, 0.00, 'assets/yoga%20mat.jpg'),
+(3, 'Resistance Bands Set', 40.00, 3, 'Set of resistance bands for full-body workouts.', 1, 30.00, 'assets/complete-band-pack.jpeg'),
+(4, 'Jump Rope', 9.99, 5, 'Adjustable jump rope for cardio and agility training.', NULL, NULL, 'assets/jump%20ropes.jpg'),
+(5, 'Foam Roller', 25.00, 5, 'High-density foam roller for muscle recovery and flexibility exercises.', 0, 0.00, 'assets/best-foam-rollers-scaled.jpg');
 
 -- --------------------------------------------------------
 
@@ -94,6 +125,12 @@ INSERT INTO `users` (`userID`, `firstName`, `lastName`, `email`, `userName`, `pa
 --
 
 --
+-- Indexes for table `courses`
+--
+ALTER TABLE `courses`
+  ADD PRIMARY KEY (`courseID`);
+
+--
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
@@ -115,6 +152,18 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `courses`
+--
+ALTER TABLE `courses`
+  MODIFY `courseID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `productID` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`

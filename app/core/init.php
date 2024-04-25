@@ -19,4 +19,8 @@ require_once "routes.php";
  */
 // Send routes to dispatcher and dispatch the server request.
 $dispatcher = new Dispatcher($router);
-$dispatcher->dispatch($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
+try {
+    $dispatcher->dispatch($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
+} catch (PageNotFoundException $e) {
+    ExceptionHandler::handleException($e, "Page Not Found: Oops! Looks like the page you requested doesn't exist!");
+}

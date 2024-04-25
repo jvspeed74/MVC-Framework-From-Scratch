@@ -10,8 +10,8 @@
 class Database {
     private array $param = [
         'host' => 'localhost',
-        'login' => 'root',
-        'password' => '',
+        'login' => 'phpuser',
+        'password' => 'phpuser',
         'database' => 'fitness_db',
     ];
     private mysqli $connection;
@@ -73,13 +73,6 @@ class Database {
      */
     public function realEscapeString(string $string): string {
         return $this->connection->real_escape_string($string);
-    }
-    
-    public function closeConnection(): void {
-        if (!$this->connection->close()) {
-            // Log a warning if closing the connection fails
-            error_log("Failed to close database connection");
-        }
     }
     
     public function getInsertionID(): string {

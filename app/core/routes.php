@@ -16,8 +16,40 @@ $router = new Router();
  * - show: Displays details of a single product.
  * - search: Displays the products found in the user search result.
  */
-$router->get(BASE_URL, 'ProductController@index');
-$router->get(BASE_URL . "/product/show/{id}", 'ProductController@show');
-$router->get(BASE_URL . "/product/search/{terms}", 'ProductController@search');
-$router->get(BASE_URL . "/product/create", 'ProductController@create');
-$router->post(BASE_URL . "/product/create", 'ProductController@create');
+$router->registerRoute("GET", "", 'ProductController@index');
+$router->registerRoute("GET", "/product/index", 'ProductController@index');
+$router->registerRoute("GET", "/product/show/{id}", 'ProductController@show');
+$router->registerRoute("GET", "/product/search/{terms}", 'ProductController@search');
+$router->registerRoute("GET", "/product/create", 'ProductController@create');
+$router->registerRoute("POST", "/product/create", 'ProductController@create');
+
+/**
+ * Courses page:
+ * - index: displays a calendar of all courses
+ */
+$router->registerRoute("GET", "/course/index", "CourseController@index");
+$router->registerRoute("GET", "/course/fetch", "CourseController@fetch");
+$router->registerRoute("GET", "/course/fetch/{date}", "CourseController@fetch");
+
+/**
+ * User page:
+ */
+$router->registerRoute("GET", "/user/login", "UserController@loginForm");
+$router->registerRoute("POST", "/user/login", "UserController@login");
+$router->registerRoute("GET", "/user/signup", "UserController@signupForm");
+$router->registerRoute("POST", "/user/signup", "UserController@signup");
+
+/**
+ * Shopping Cart Page:
+ * - Index: Lists all items in the cart
+*/
+$router->registerRoute("GET","/cart/index",'CartController@index');
+$router->registerRoute("GET", "/cart/show", 'CartController@index');
+$router->registerRoute("GET", "/cart/add/{id}", 'CartController@add');
+$router->registerRoute("GET", "/cart/remove/{id}", 'CartController@remove');
+$router->registerRoute("POST", "/cart/update", 'CartController@update');
+
+/**
+ * Error Page:
+ */
+$router->registerRoute("GET", "/error/{code}/{message}", "bypass");

@@ -48,7 +48,6 @@ class ProductModel extends Model {
         }
         
         // List of Product objects
-        //todo check error handling
         return $results;
     }
     
@@ -67,17 +66,16 @@ class ProductModel extends Model {
         
         // Return an instance of a product with provided data
         return $query->fetch_object(Product::class);
-        
     }
     
     /**
      * Fetches records from the database by a search parameter.
      *
      * @param string $terms The provided search terms.
-     * @return array The fetched record.
+     * @return array The fetched records.
      */
     public function fetchBySearch(string $terms): array {
-        // separate terms into array
+        // Separate terms into array
         $searchTerms = explode(" ", $terms);
         
         // Escape each term to prevent SQL injection
@@ -86,18 +84,18 @@ class ProductModel extends Model {
             $escapedTerms[] = $this->db->realEscapeString($term);
         }
         
-        // sql for search
-        $sql = "SELECT * FROM $this->table WHERE name LIKE '%" . array_shift($escapedTerms) . "%'";
-        
-        // pass each term in array
+        // Build the SQL query to search for both name and description
+        $sql = "SELECT * FROM $this->table WHERE ";
+        $conditions = [];
         foreach ($escapedTerms as $term) {
-            $sql .= " AND name LIKE '%$term%'";
+            $conditions[] = "(name LIKE '%$term%' OR description LIKE '%$term%')";
         }
+        $sql .= implode(" AND ", $conditions);
         
-        // execute query
+        // Execute query
         $query = $this->db->query($sql);
         
-        // store results in array of Product objects
+        // Store results in array of Product objects
         $results = [];
         while ($row = $query->fetch_object(Product::class)) {
             $results[] = $row;
@@ -131,17 +129,21 @@ class ProductModel extends Model {
      * Updates an existing record in the database.
      *
      * @return bool True if the record update was successful, false otherwise.
+     * @throws NotImplementedException
      */
     public function update(): bool {
         // TODO: Implement update() method.
+        throw new NotImplementedException();
     }
     
     /**
      * Deletes an existing record from the database.
      *
      * @return bool True if the record deletion was successful, false otherwise.
+     * @throws NotImplementedException
      */
     public function delete(): bool {
         // TODO: Implement delete() method.
+        throw new NotImplementedException();
     }
 }
