@@ -7,7 +7,6 @@
  * File: ProductController.php
  * Description:
  */
-require_once 'ShoppingCart.php';
 class ProductController extends Controller {
     /*
      * Initializes the controller and loads the model.
@@ -138,53 +137,6 @@ class ProductController extends Controller {
      */
     public function error(string $message): void {
         ErrorView::render($message);
-    }
-    public function addToCart($id) {
-        $productModel = ProductModel::getInstance();
-        $product = $productModel->fetchByID($id);
-
-        if ($product) {
-            if (!isset($_SESSION['cart'])) {
-                $_SESSION['cart'] = new ShoppingCart();
-            }
-
-            $_SESSION['cart']->addItem($product);
-            header('Location: ' . BASE_URL . '/cart');
-            exit();
-        } else {
-            header('Location: ' . BASE_URL . '/error/product_not_found');
-            exit();
-        }
-    }
-
-    public function removeFromCart($id) {
-        if (isset($_SESSION['cart'])) {
-            $_SESSION['cart']->removeItem($id);
-        }
-        header('Location: ' . BASE_URL . '/cart');
-        exit();
-    }
-
-    public function updateCart() {
-        if (isset($_SESSION['cart'])) {
-            foreach ($_POST['quantity'] as $id => $quantity) {
-                $_SESSION['cart']->updateQuantity($id, $quantity);
-            }
-        }
-        header('Location: ' . BASE_URL . '/cart');
-        exit();
-    }
-
-    public function showCart() {
-        if (isset($_SESSION['cart'])) {
-            $cart = $_SESSION['cart'];
-            $items = $cart->getItems();
-            $totalPrice = $cart->getTotalPrice();
-            include 'cart.php';
-        } else {
-            header('Location: ' . BASE_URL . '/error/product_not_found');
-            exit();
-        }
     }
 }
 
