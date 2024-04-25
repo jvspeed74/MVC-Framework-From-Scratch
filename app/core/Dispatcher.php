@@ -28,7 +28,10 @@ class Dispatcher {
      *
      * @param string $uri The URI of the request.
      * @param string $requestType The type of HTTP request (e.g., GET, POST).
+     *
      * @return mixed The result of the controller method execution.
+     *
+     * @throws PageNotFoundException If a request is unable to be dispatched.
      */
     public function dispatch(string $uri, string $requestType): mixed {
         // Check if the request is for a static file (e.g., CSS, JS, images)
@@ -42,19 +45,27 @@ class Dispatcher {
         // Proceed with routing for other requests
         $routeInfo = $this->router->lookupRoute($uri, $requestType);
         
+        // The URI is not defined
         if ($routeInfo === false) {
-            die("URI not defined");
-        } elseif ($routeInfo !== null) {
-            
-            [$controllerMethod, $args] = $routeInfo;
-            [$controller, $method] = explode('@', $controllerMethod);
-            
-            $controllerInstance = new $controller;
-            
-            return call_user_func_array([$controllerInstance, $method], $args);
-        } else {
+            throw new PageNotFoundException();
+        }
+        
+        // Route is a static file.
+        if ($routeInfo === null) {
             return null;
         }
+        
+        // Extract controller method and arguments from the routeInfo array.
+        [$controllerMethod, $args] = $routeInfo;
+        
+        // Split the controller method into controller and method name.
+        [$controller, $method] = explode('@', $controllerMethod);
+        
+        // Create an instance of the controller.
+        $controllerInstance = new $controller;
+        
+        // Call the controller method with arguments and return the result.
+        return call_user_func_array([$controllerInstance, $method], $args);
     }
     
     /**

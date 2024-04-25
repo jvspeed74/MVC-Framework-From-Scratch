@@ -33,7 +33,7 @@ class Router {
      * @param string $uri The URI to match against registered routes.
      * @param string $requestType The type of HTTP request (e.g., GET, POST).
      * @return array|bool|null An array containing the controller method and captured
-     * segments from the URI, or null if no route matches the URI.
+     * segments from the URI, null if the request shouldn't be routed, or false if no route is found.
      */
     public function lookupRoute(string $uri, string $requestType): null|array|bool {
         // Check if the request is for a static file (e.g., CSS, JS, images)
@@ -53,6 +53,7 @@ class Router {
                 return [$controllerMethod, $matches];
             }
         }
+        // No route found
         return false;
     }
     
