@@ -5,6 +5,8 @@
  * Date: 4/21/24
  * File: UserController.php
  * Description: Controller class for user-related operations.
+ * todo handle incorrect password
+ * todo combine methods (GET & POST)
  */
 class UserController extends Controller {
     

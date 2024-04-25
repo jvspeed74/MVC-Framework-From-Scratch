@@ -4,6 +4,7 @@
  * Date: 4/9/24
  * File: ProductShowView.php
  * Description: Contains the show page for the ProductController.
+ * todo show img AND FIX THE DAMN STYLING
  */
 
 
@@ -35,6 +36,7 @@ class ProductShowView extends ProductView {
                 echo '<p>This product does not exist.</p>';
             }
             ?>
+            <p><a href="<?=BASE_URL?>">Back to Product Page</a></p>
         </div>
         </body>
         <?php parent::footer();
