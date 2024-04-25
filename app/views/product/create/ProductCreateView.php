@@ -8,7 +8,7 @@
  */
 class ProductCreateView extends View {
     public static function render(): void {
-        parent::header();
+        parent::header("Product Creation");
         ?>
         <!-- Page Content-->
         <div class="compact-product">

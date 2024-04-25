@@ -8,69 +8,125 @@
 
 
 class Product {
-    private string $productID;
-    private string $name;
-    private string $price;
-    private string $description;
+    private ?string $productID = null;
+    private ?string $name = null;
+    private ?string $price = null;
+    private ?string $description = null;
+    private ?string $rating = null;
+    private ?string $onSale = null;
+    private ?string $discountPrice = null;
+    private ?string $image = null;
     
     /**
-     * @param string $productID
-     * @return void
+     * @return string|null
      */
-    public function setProductID(string $productID): void {
-        $this->productID = $productID;
-    }
-    
-    /**
-     * @param string $name
-     * @return void
-     */
-    public function setName(string $name): void {
-        $this->name = $name;
-    }
-    
-    /**
-     * @param string $price
-     * @return void
-     */
-    public function setPrice(string $price): void {
-        $this->price = $price;
-    }
-    
-    /**
-     * @param string $description
-     * @return void
-     */
-    public function setDescription(string $description): void {
-        $this->description = $description;
-    }
-    
-    /**
-     * @return string
-     */
-    public function getProductID(): string {
+    public function getProductID(): ?string {
         return $this->productID;
     }
     
     /**
-     * @return string
+     * @param string|null $productID
      */
-    public function getName(): string {
+    public function setProductID(?string $productID): void {
+        $this->productID = $productID;
+    }
+    
+    /**
+     * @return string|null
+     */
+    public function getName(): ?string {
         return $this->name;
     }
     
     /**
-     * @return string
+     * @param string|null $name
      */
-    public function getPrice(): string {
+    public function setName(?string $name): void {
+        $this->name = $name;
+    }
+    
+    /**
+     * @return string|null
+     */
+    public function getPrice(): ?string {
         return $this->price;
     }
     
     /**
-     * @return string
+     * @param string|null $price
      */
-    public function getDescription(): string {
+    public function setPrice(?string $price): void {
+        $this->price = $price;
+    }
+    
+    /**
+     * @return string|null
+     */
+    public function getDescription(): ?string {
         return $this->description;
+    }
+    
+    /**
+     * @param string|null $description
+     */
+    public function setDescription(?string $description): void {
+        $this->description = $description;
+    }
+    
+    /**
+     * @return string|null
+     */
+    public function getRating(): ?string {
+        return $this->rating;
+    }
+    
+    /**
+     * @param string|null $rating
+     */
+    public function setRating(?string $rating): void {
+        $this->rating = $rating;
+    }
+    
+    /**
+     * @return string|null
+     */
+    public function getOnSale(): ?string {
+        return $this->onSale;
+    }
+    
+    /**
+     * @param string|null $onSale
+     */
+    public function setOnSale(?string $onSale): void {
+        $this->onSale = $onSale;
+    }
+    
+    /**
+     * @return string|null
+     */
+    public function getDiscountPrice(): ?string {
+        return $this->discountPrice;
+    }
+    
+    /**
+     * @param string|null $discountPrice
+     */
+    public function setDiscountPrice(?string $discountPrice): void {
+        $this->discountPrice = $discountPrice;
+    }
+    
+    /**
+     * @return string|null
+     */
+    public function getImage(): ?string {
+        return $this->image;
+    }
+    
+    /**
+     * @param string|null $image
+     */
+    public function setImage(?string $image): void {
+        $this->image = $image;
     }
     
 }

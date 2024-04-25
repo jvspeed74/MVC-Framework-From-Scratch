@@ -26,58 +26,75 @@ class UserModel extends Model {
         return self::$_instance;
     }
     
-    /**
-     * Fetches a record from the database by its ID.
-     *
-     * @param int $id The ID of the record to fetch.
-     * @return mixed The fetched record
-     */
-    public function fetchByID(int $id): mixed {
-        // TODO: Implement fetchByID() method.
+    public function getUserByUsername($username): ?User {
+        // Escape the username to prevent SQL injection
+        $userName = $this->db->realEscapeString($username);
+        
+        // Build the SQL query to fetch user by username
+        $sql = "SELECT * FROM users WHERE username='$userName'";
+        
+        // Execute the query
+        $result = $this->db->query($sql);
+        
+        // Check if a user with the given username exists
+        if ($result && $result->num_rows > 0) {
+            // Fetch user data
+            $userData = $result->fetch_assoc();
+            
+            // Create a new User object
+            $user = new User();
+            $user->setUserID($userData['user_id']);
+            $user->setFirstName($userData['first_name']);
+            $user->setLastName($userData['last_name']);
+            $user->setEmail($userData['email']);
+            $user->setUserName($userData['username']);
+            $user->setPassword($userData['password']); // Store hashed password
+            
+            return $user;
+        } else {
+            // No user found with the given username
+            return null;
+        }
     }
     
-    /**
-     * Fetches all records from the database.
-     *
-     * @return array An array containing all fetched records.
-     */
-    public function fetchAll(): array {
-        // TODO: Implement fetchAll() method.
+    public function verifyUserCredentials($username, $password): ?User {
+        // Fetch user by username
+        $user = $this->getUserByUsername($username);
+        
+        // Check if user exists and verify password
+        if ($user && password_verify($password, $user->getPassword())) {
+            // Password is correct, return the user
+            return $user;
+        } else {
+            // Invalid credentials
+            return null;
+        }
     }
     
-    /**
-     * Fetches records from the database by a search parameter.
-     *
-     * @return array The fetched record.
-     */
-    public function fetchBySearch(): array {
-        // TODO: Implement fetchBySearch() method.
-    }
     
     /**
      * Creates a new record in the database.
      *
+     * @param User $user
      * @return bool True if the record creation was successful, false otherwise.
      */
-    public function create(): bool {
+    public function create(User $user): bool {
         // TODO: Implement create() method.
-    }
-    
-    /**
-     * Updates an existing record in the database.
-     *
-     * @return bool True if the record update was successful, false otherwise.
-     */
-    public function update(): bool {
-        // TODO: Implement update() method.
-    }
-    
-    /**
-     * Deletes an existing record from the database.
-     *
-     * @return bool True if the record deletion was successful, false otherwise.
-     */
-    public function delete(): bool {
-        // TODO: Implement delete() method.
+        // Escape user inputs to prevent SQL injection
+        $firstName = $this->db->realEscapeString($user->getFirstName());
+        $lastName = $this->db->realEscapeString($user->getLastName());
+        $email = $this->db->realEscapeString($user->getEmail());
+        $userName = $this->db->realEscapeString($user->getUserName());
+        $roleID = $this->db->realEscapeString($user->getRoleID());
+        
+        // Hash the password
+        $hashedPassword = password_hash($user->getPassword(), PASSWORD_DEFAULT);
+        
+        // Build the SQL query to insert a new user
+        $sql = "INSERT INTO $this->table (first_name, last_name, email, username, password, role_id)
+                VALUES ('$firstName', '$lastName', '$email', '$userName', '$hashedPassword', '$roleID')";
+        
+        // Execute the query
+        return $this->db->query($sql);
     }
 }

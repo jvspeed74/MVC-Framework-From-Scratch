@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Author: Jalen Vaughn
  * Date: 4/8/24
@@ -10,25 +11,15 @@ class Router {
     protected array $routes = [];
     
     /**
-     * Register a route for GET requests.
+     * Register a route for requests.
      *
+     * @param string $requestType GET|POST method
      * @param string $uri The URI pattern to match.
      * @param string $controllerMethod The controller method to call when the route matches.
      * @return void
      */
-    public function get(string $uri, string $controllerMethod): void {
-        $this->routes['GET'][$uri] = $controllerMethod;
-    }
-    
-    /**
-     * Register a route for POST requests.
-     *
-     * @param string $uri The URI pattern to match.
-     * @param string $controllerMethod The controller method to call when the route matches.
-     * @return void
-     */
-    public function post(string $uri, string $controllerMethod): void {
-        $this->routes['POST'][$uri] = $controllerMethod;
+    public function registerRoute(string $requestType, string $uri, string $controllerMethod): void {
+        $this->routes[$requestType][BASE_URL . $uri] = $controllerMethod;
     }
     
     /**
@@ -41,10 +32,17 @@ class Router {
      *
      * @param string $uri The URI to match against registered routes.
      * @param string $requestType The type of HTTP request (e.g., GET, POST).
-     * @return array|null An array containing the controller method and captured
+     * @return array|bool|null An array containing the controller method and captured
      * segments from the URI, or null if no route matches the URI.
      */
-    public function lookupRoute(string $uri, string $requestType): ?array {
+    public function lookupRoute(string $uri, string $requestType): null|array|bool {
+        // Check if the request is for a static file (e.g., CSS, JS, images)
+        if (preg_match('/\.(css|js|jpg|jpeg|png|gif|ico)$/', $uri)) {
+            // Return null to indicate that the request should not be routed
+            return null;
+        }
+        
+        // Proceed with routing for other requests
         foreach ($this->routes[$requestType] as $route => $controllerMethod) {
             // Essentially searches for arguments passed through curly brackets
             $pattern = preg_replace('/\/{(\w+)}/', '/([^/]+)', $route);
@@ -55,8 +53,8 @@ class Router {
                 return [$controllerMethod, $matches];
             }
         }
-        
-        return null;
+        return false;
     }
+    
 }
 
