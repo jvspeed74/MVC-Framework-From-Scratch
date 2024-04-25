@@ -36,3 +36,13 @@ $router->registerRoute("GET", "/course/fetch/{date}", "CourseController@fetch");
 $router->registerRoute("GET", "/user/login", "UserController@loginForm");
 $router->registerRoute("POST", "/user/login", "UserController@login");
 $router->registerRoute("GET", "/user/signup", "UserController@signupForm");
+
+/**
+ * Shopping Cart Page:
+ * - Index: Lists all items in the cart
+*/
+$router->registerRoute("GET","/cart",'CartController@index');
+$router->registerRoute("GET", "/cart/show", 'CartController@index');
+$router->registerRoute("GET", "/cart/add/{id}", 'CartController@add');
+$router->registerRoute("GET", "/cart/remove/{id}", 'CartController@remove');
+$router->registerRoute("POST", "/cart/update", 'CartController@update');
