@@ -1,17 +1,10 @@
 <?php
 
 /**
- * Author: Jalen Vaughn
- * Date: 4/21/24
- * File: UserIndexView.php
- * Description:
- * todo signup page
- * todo session to save user state
- */
-
-
-/**
  * Class UserIndexView
+ *
+ *  todo signup page
+ *  todo session to save user state
  */
 class UserLoginView extends View {
     

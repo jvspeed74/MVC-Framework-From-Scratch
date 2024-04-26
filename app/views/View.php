@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Author: Jalen Vaughn
- * Date: 4/8/24
- * File: View.php
- * Description: Abstract class containing the foundation for the header and footer methods.
+ * Class View
+ *
+ * Abstract class containing the foundation for the header and footer methods.
+ *
  * todo different header depending on user login status
  */
 abstract class View {
@@ -112,7 +112,7 @@ abstract class View {
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="/I211-Team-Project/public/js/scripts.js"></script>
+        <!--        <script src="/I211-Team-Project/public/js/scripts.js"></script>-->
         </body>
         </html>
         <?php

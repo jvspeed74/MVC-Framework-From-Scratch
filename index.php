@@ -6,6 +6,5 @@
  * Description: Redirects to the bootstrap file located in the public folder
  */
 
-
-// Redirect page
+// Redirect page to bootstrap file
 header("Location: public/index.php");

@@ -1,13 +1,12 @@
 <?php
 
-
 /**
- * Author: Jalen Vaughn
- * Date: 4/8/24
- * File: ProductController.php
- * Description:
+ * Class ProductController
+ *
+ * Controller responsible for managing products.
  */
 class ProductController extends Controller {
+    
     /*
      * Initializes the controller and loads the model.
      */
@@ -27,36 +26,36 @@ class ProductController extends Controller {
     /**
      * Renders the index view displaying all products.
      *
-     * This method retrieves all products from the database using the model
+     * Retrieves all products from the database using the model
      * and then renders the index view with the retrieved products.
      *
      * @return void
      */
     public function index(): void {
-        // Get all products from DB
+        // Get all products from the database
         $products = $this->model->fetchAll();
         
-        // Render view
+        // Render the index view
         ProductIndexView::render($products);
     }
     
     /**
      * Renders the show view displaying details of a single product.
      *
-     * This method queries a single product from the database using the model
+     * Queries a single product from the database using the model
      * based on the provided ID and then renders the show view with the retrieved product.
      *
      * @param string $id The ID of the product to display.
      * @return void
      */
     public function show(string $id): void {
-        // Filter and trim user input
+        // Filter and trim the provided product ID
         $filteredID = htmlspecialchars(trim($id));
         
-        // Query product from DB
+        // Query the product from the database
         $product = $this->model->fetchByID($filteredID);
         
-        // Render view
+        // Render the show view
         ProductShowView::render($product);
     }
     
@@ -68,28 +67,29 @@ class ProductController extends Controller {
      * @return void
      */
     public function search(): void {
-        // Set search if not already declared
+        // Set default search terms if not provided
         if (!isset($_GET["search-terms"])) {
             $_GET["search-terms"] = "";
         }
         
-        // Filter and trim user input
+        // Filter and trim the search terms
         $searchTerms = trim(filter_input(INPUT_GET, 'search-terms', FILTER_SANITIZE_SPECIAL_CHARS));
         
         // Search the database for matching products
         $products = $this->model->fetchBySearch($searchTerms);
         
+        // Handle errors if occurred during the search
         if ($products === false) {
-            //handle error
             $this->error("An error occurred while searching for products.");
             return;
         }
-        // Render view
+        
+        // Render the search results view
         ProductIndexView::render($products);
     }
     
     /**
-     * Creates a new product based on form submission data,
+     * Creates a new product based on form submission data.
      *
      * Redirects to the show view for the newly created product.
      *
@@ -103,12 +103,12 @@ class ProductController extends Controller {
             exit();
         }
         
-        // Confirm all POST variables are set
+        // Ensure all required POST variables are set
         if (!filter_has_var(INPUT_POST, 'name') ||
             !filter_has_var(INPUT_POST, 'price') ||
             !filter_has_var(INPUT_POST, 'description')
         ) {
-            $this->error("We were unable to process the data entered.");
+            $this->error("We were unable to process the entered data.");
         }
         
         // Validate form data
@@ -130,13 +130,12 @@ class ProductController extends Controller {
     }
     
     /**
-     * Renders an error pages with an optional message.
+     * Renders an error page with an optional message.
      *
-     * @param string $message The message to be displayed to the client
+     * @param string $message The message to be displayed to the client.
      * @return void
      */
     public function error(string $message): void {
         ErrorView::render($message);
     }
 }
-

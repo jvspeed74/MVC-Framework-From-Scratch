@@ -1,5 +1,7 @@
 <?php
 /**
+ * Class Course
+ *
  * Data Transfer Object for the Courses Table
  */
 class Course {

@@ -6,7 +6,6 @@
  * Description: The bootstrap file for the application and the main source of all routes.
  */
 
-
 // Start session
 session_start();
 

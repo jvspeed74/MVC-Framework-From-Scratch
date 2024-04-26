@@ -9,9 +9,9 @@
 class CartModel {
     // Add a constant for the session key
     private const CART_SESSION_KEY = 'cart';
-
+    
     private ProductModel $productModel;
-
+    
     /**
      * CartModel constructor.
      *
@@ -26,7 +26,7 @@ class CartModel {
             $_SESSION[self::CART_SESSION_KEY] = [];
         }
     }
-
+    
     /**
      * Adds an item to the cart.
      *
@@ -40,12 +40,12 @@ class CartModel {
         if ($quantity <= 0) {
             throw new InvalidArgumentException("Quantity must be greater than zero.");
         }
-
+        
         $product = $this->productModel->fetchByID($productId);
         if (!$product) {
             throw new InvalidArgumentException("Product with ID $productId does not exist.");
         }
-
+        
         // Check if the product is already in the cart
         if (isset($_SESSION[self::CART_SESSION_KEY][$productId])) {
             $_SESSION[self::CART_SESSION_KEY][$productId]['quantity'] += $quantity;
@@ -57,7 +57,7 @@ class CartModel {
             ];
         }
     }
-
+    
     /**
      * Removes an item from the cart.
      *
@@ -66,7 +66,7 @@ class CartModel {
     public function removeItem(string $productId): void {
         unset($_SESSION[self::CART_SESSION_KEY][$productId]);
     }
-
+    
     /**
      * Updates the quantity of an item in the cart.
      *
@@ -79,12 +79,12 @@ class CartModel {
         if ($quantity <= 0) {
             throw new InvalidArgumentException("Quantity must be greater than zero.");
         }
-
+        
         if (isset($_SESSION[self::CART_SESSION_KEY][$productId])) {
             $_SESSION[self::CART_SESSION_KEY][$productId]['quantity'] = $quantity;
         }
     }
-
+    
     /**
      * Retrieves the items in the cart.
      *
@@ -93,7 +93,7 @@ class CartModel {
     public function getItems(): array {
         return $_SESSION[self::CART_SESSION_KEY];
     }
-
+    
     /**
      * Clears the cart.
      */

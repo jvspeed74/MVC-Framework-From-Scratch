@@ -1,13 +1,22 @@
 <?php
 
 /**
- * Author: Jalen Vaughn
- * Date: 4/24/2024
- * File: CartIndexView.php
- * Description:
+ * Class CartIndexView
+ *
+ * Represents the view for displaying the shopping cart contents.
  */
 class CartIndexView extends View {
-    public static function render($items=[]): void {
+    
+    /**
+     * Renders the shopping cart view.
+     *
+     * This method outputs the HTML content for displaying the shopping cart contents,
+     * including the product details, quantity, total price, and action buttons.
+     *
+     * @param array $items An array containing items in the shopping cart.
+     * @return void
+     */
+    public static function render(array $items = []): void {
         parent::header("Shopping Cart"); ?>
         <!--Page Specific Content-->
         <h1>Shopping Cart</h1>
@@ -37,9 +46,11 @@ class CartIndexView extends View {
                 </tr>
             <?php endforeach; ?>
         </table>
-<!--        <p>Total Price: $--><?php //= $totalPrice ?><!--</p>-->
+        <!--        <p>Total Price: $--><?php //= $totalPrice ?><!--</p>-->
         <a href="<?= BASE_URL ?>/cart/checkout">Proceed to Checkout</a>
         <?php
         parent::footer();
     }
 }
+
+?>

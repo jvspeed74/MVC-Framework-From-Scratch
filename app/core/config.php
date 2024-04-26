@@ -1,12 +1,11 @@
 <?php
 /**
- * Author: Jalen Vaughn
- * Date: 4/8/24
  * File: config.php
- * Description: Set error reporting, development modes, and base url of the application.
+ * Description: Set error reporting, development modes, and base URL of the application.
  */
 
-const CI_MODE = "";
+// Set up error reporting and development modes based on CI_MODE constant
+const CI_MODE = ""; // Possible values: "development", "production"
 
 switch (CI_MODE) {
     case "development":
@@ -28,8 +27,9 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 // Default handler for uncaught exceptions
 set_exception_handler(['ExceptionHandler', 'handleException']);
 
-// Base URL
+// Base URL for the application
 const BASE_URL = "/I211-Team-Project/public/index.php";
+// Base URL used for routing within the application
 
 // Set the default time zone to East Coast
-date_default_timezone_set('America/New_York');
+date_default_timezone_set('America/New_York'); // Default time zone for the application

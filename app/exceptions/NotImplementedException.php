@@ -1,13 +1,17 @@
 <?php
 
 /**
- * Author: Jalen Vaughn
- * Date: 4/24/2024
- * File: NotImplementedException.php
- * Description:
+ * Class NotImplementedException
+ *
+ * Exception indicating that a piece of code is not implemented yet.
  */
 class NotImplementedException extends Exception {
-    public function __construct() {
-        parent::__construct("The code ran is not implemented yet.");
+    /**
+     * Constructs a NotImplementedException instance with an optional error message.
+     *
+     * @param string $message The error message.
+     */
+    public function __construct(string $message = "The code is not implemented yet.") {
+        parent::__construct($message);
     }
 }

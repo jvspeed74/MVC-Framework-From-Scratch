@@ -1,12 +1,19 @@
 <?php
 
 /**
- * Author: Jalen Vaughn
- * Date: 4/16/2024
- * File: ProductCreateView.php
- * Description:
+ * Class ProductCreateView
+ *
+ * Represents the view for creating a new product.
  */
 class ProductCreateView extends ProductView {
+    /**
+     * Renders the product creation form.
+     *
+     * This method outputs the HTML content for displaying a form to create a new product.
+     * It includes input fields for the product name, price, and description, along with a submit button.
+     *
+     * @return void
+     */
     public static function render(): void {
         parent::header("Product Creation");
         ?>

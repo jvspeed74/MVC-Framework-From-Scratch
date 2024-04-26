@@ -1,22 +1,38 @@
 <?php
 
 /**
- * Author: Jalen Vaughn
- * Date: 4/20/24
- * File: CourseModel.php
- * Description:
+ * Class CourseModel
+ *
+ * Represents a model for courses.
  */
 class CourseModel extends Model {
+    /**
+     * @var Database $db Database object.
+     */
     protected Database $db;
+    
+    /**
+     * @var CourseModel|null $_instance Singleton instance of CourseModel.
+     */
     private static ?CourseModel $_instance = null;
+    
+    /**
+     * @var string $table Database table name.
+     */
     private string $table = 'Courses';
     
+    /**
+     * CourseModel constructor.
+     * Initializes the database connection.
+     */
     private function __construct() {
         parent::__construct();
     }
     
     /**
-     * @inheritDoc
+     * Retrieves an instance of the CourseModel.
+     *
+     * @return CourseModel An instance of the model.
      */
     static public function getInstance(): CourseModel {
         if (self::$_instance == null) {
@@ -25,7 +41,13 @@ class CourseModel extends Model {
         return self::$_instance;
     }
     
-    public function fetchByDate($date): array {
+    /**
+     * Fetches courses from the database by date.
+     *
+     * @param string $date The date of the courses to fetch.
+     * @return array An array containing course data.
+     */
+    public function fetchByDate(string $date): array {
         $sql = "SELECT * FROM $this->table WHERE date = '$date'";
         $query = $this->db->query($sql);
         

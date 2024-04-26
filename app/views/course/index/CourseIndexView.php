@@ -1,14 +1,21 @@
 <?php
 
 /**
- * Author: Jalen Vaughn
- * Date: 4/20/24
- * File: CourseIndexView.php
- * Description:
+ * Class CourseIndexView
+ *
+ * Represents the view for the course index page.
+ *
  * todo Calendar and Course Info should be side by side not in a column
  * todo There should be a default popup when no classes are scheduled. Right now nothing is shown.
  */
 class CourseIndexView extends View {
+    /**
+     * Renders the course index view.
+     *
+     * This method renders the course index view, which includes a calendar
+     * for displaying course dates and a container for course information.
+     * It also includes necessary CSS and JavaScript files for styling and functionality.
+     */
     public static function render(): void {
         parent::header("Courses");
         ?>
@@ -17,8 +24,8 @@ class CourseIndexView extends View {
             <header class="calendar-header">
                 <p class="calendar-current-date"></p>
                 <div class="calendar-navigation">
-                    <span id="calendar-prev" class="material-symbols-rounded"><</span>
-                    <span id="calendar-next" class="material-symbols-rounded">></span>
+                    <span id="calendar-prev" class="material-symbols-rounded">&lt;</span>
+                    <span id="calendar-next" class="material-symbols-rounded">&gt;</span>
                 </div>
             </header>
             <div class="calendar-body">

@@ -1,22 +1,35 @@
 <?php
+
 /**
- * Author: Jalen Vaughn
- * Date: 4/8/24
- * File: ProductModel.php
- * Description: Model directly tied to the representation of the Product object.
+ * Represents a model for products.
  */
-
-
 class ProductModel extends Model {
-    protected Database $db;  // Database object
+    /**
+     * @var Database $db Database object.
+     */
+    protected Database $db;
+    
+    /**
+     * @var ProductModel|null $_instance Singleton instance of ProductModel.
+     */
     static private ?ProductModel $_instance = null;
+    
+    /**
+     * @var string $table Database table name.
+     */
     private string $table = 'products';
     
+    /**
+     * ProductModel constructor.
+     * Initializes the database connection.
+     */
     private function __construct() {
         parent::__construct();
     }
     
     /**
+     * Retrieves an instance of the ProductModel.
+     *
      * @return ProductModel An instance of the Model.
      */
     static public function getInstance(): ProductModel {
@@ -47,7 +60,7 @@ class ProductModel extends Model {
             $results[] = $row;
         }
         
-        // List of Product objects
+        // Return list of Product objects
         return $results;
     }
     
@@ -100,28 +113,30 @@ class ProductModel extends Model {
         while ($row = $query->fetch_object(Product::class)) {
             $results[] = $row;
         }
+        
+        // Return array of resulting objects
         return $results;
     }
     
     /**
      * Creates a new record in the database.
      *
-     * @param object $dataObj The Product object containing the information of the product to be created.
+     * @param Product $product The Product object containing the information of the product to be created.
      * @return int|null The ID of the newly created record, or null if creation fails.
      */
-    public function create(object $dataObj): ?int {
-        // Escape the input data to prevent SQL injection
-        $escapedName = $this->db->realEscapeString($dataObj->getName());
-        $escapedPrice = $this->db->realEscapeString($dataObj->getPrice());
-        $escapedDescription = $this->db->realEscapeString($dataObj->getDescription());
+    public function create(Product $product): ?int {
+        // Escape input data to prevent SQL injection
+        $escapedName = $this->db->realEscapeString($product->getName());
+        $escapedPrice = $this->db->realEscapeString($product->getPrice());
+        $escapedDescription = $this->db->realEscapeString($product->getDescription());
         
-        // Prepare the SQL query
+        // Prepare SQL query
         $sql = "INSERT INTO $this->table (name, price, description) VALUES ('$escapedName', '$escapedPrice', '$escapedDescription')";
         
-        // Execute the query
+        // Execute query
         $this->db->query($sql);
         
-        // Return the ID of the newly inserted record
+        // Return ID of the newly inserted record
         return $this->db->getInsertionID();
     }
     

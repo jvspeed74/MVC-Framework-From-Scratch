@@ -1,13 +1,6 @@
 <?php
 
 /**
- * Author: Jalen Vaughn
- * Date: 4/21/24
- * File: UserSignupView.php
- * Description:
- */
-
-/**
  * Class UserSignupView
  */
 class UserSignupView extends View {

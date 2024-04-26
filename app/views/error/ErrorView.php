@@ -1,14 +1,11 @@
 <?php
+
 /**
- * File: ErrorView.php
- * Created By: Jalen Vaughn
- * Date: 4/10/2024
- * Description: View for error related activities.
+ * Class ErrorView
+ *
+ * Represents the view for displaying error messages.
  */
-
-
 class ErrorView extends View {
-    
     /**
      * Renders the error view.
      *
@@ -52,8 +49,8 @@ class ErrorView extends View {
         <body>
         <div class="container">
             <h1>Error</h1>
-            <p><?php echo "$message"; ?></p>
-            <p><a href="<?=BASE_URL?>">Back to Home</a></p>
+            <p><?php echo htmlspecialchars($message); ?></p>
+            <p><a href="<?= BASE_URL ?>">Back to Home</a></p>
         </div>
         </body>
         </html>

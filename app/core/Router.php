@@ -1,19 +1,20 @@
 <?php
 
 /**
- * Author: Jalen Vaughn
- * Date: 4/8/24
- * File: Router.php
- * Description: Responsible for storing route information containing the controller and method responsible for each
- * route.
+ * Class Router
+ *
+ * Handles routing of requests to controller methods based on URI patterns.
  */
 class Router {
+    /**
+     * @var array The registered routes.
+     */
     protected array $routes = [];
     
     /**
      * Register a route for requests.
      *
-     * @param string $requestType GET|POST method
+     * @param string $requestType GET|POST method.
      * @param string $uri The URI pattern to match.
      * @param string $controllerMethod The controller method to call when the route matches.
      * @return void
@@ -36,7 +37,7 @@ class Router {
      * segments from the URI, null if the request shouldn't be routed, or false if no route is found.
      */
     public function lookupRoute(string $uri, string $requestType): null|array|bool {
-        // Check if the request is for a static file (e.g., CSS, JS, images)
+        // Check if the request is for a static file
         if (preg_match('/\.(css|js|jpg|jpeg|png|gif|ico)$/', $uri)) {
             // Return null to indicate that the request should not be routed
             return null;
@@ -44,18 +45,19 @@ class Router {
         
         // Proceed with routing for other requests
         foreach ($this->routes[$requestType] as $route => $controllerMethod) {
-            // Essentially searches for arguments passed through curly brackets
+            // Construct regular expression pattern from route
             $pattern = preg_replace('/\/{(\w+)}/', '/([^/]+)', $route);
             $pattern = '~^' . str_replace('/', '\/', $pattern) . '$~';
             
+            // Check if URI matches the pattern
             if (preg_match($pattern, $uri, $matches)) {
+                // Remove full match from matches array
                 array_shift($matches);
+                // Return controller method and captured segments
                 return [$controllerMethod, $matches];
             }
         }
         // No route found
         return false;
     }
-    
 }
-
