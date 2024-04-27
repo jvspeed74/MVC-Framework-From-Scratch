@@ -56,7 +56,7 @@ class UserController extends Controller {
         
         # Login Successful
         $this->session->set('username', $user->getUserID());
-        $this->session->set('account-name', $user->getFirstName() . " " . $user->getLastName());
+        $this->session->set('account-name', $user->getFirstName());
         $this->session->set('login-status', 1);
         
         // Render appropriate view based on verification result

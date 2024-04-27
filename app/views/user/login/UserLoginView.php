@@ -2,6 +2,7 @@
 
 /**
  * Class UserLoginView
+ *
  * Responsible for rendering the login view.
  */
 class UserLoginView extends View {
