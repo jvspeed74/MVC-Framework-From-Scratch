@@ -41,9 +41,11 @@ $router->registerRoute("GET", "/course/fetch/{date}", "CourseController@fetch");
  * User page:
  * - login: Handles user login.
  * - signup: Handles user signup.
+ * - logout: Handles user logout.
  */
 $router->registerRoute("GET", "/user/login", "UserController@login");
 $router->registerRoute("GET", "/user/signup", "UserController@signup");
+$router->registerRoute('GET', '/user/logout', 'UserController@logout');
 
 $router->registerRoute("POST", "/user/login", "UserController@login");
 $router->registerRoute("POST", "/user/signup", "UserController@signup");

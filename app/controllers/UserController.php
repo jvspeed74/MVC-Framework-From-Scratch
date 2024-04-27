@@ -56,7 +56,6 @@ class UserController extends Controller {
         
         # Login Successful
         $this->session->set('username', $user->getUserID());
-        $this->session->set('role', $user->getRoleID());
         $this->session->set('account-name', $user->getFirstName() . " " . $user->getLastName());
         $this->session->set('login-status', 1);
         
@@ -72,8 +71,7 @@ class UserController extends Controller {
      *
      * @return void
      */
-    public
-    function signup(): void {
+    public function signup(): void {
         // If the form hasn't been submitted, render the signup form.
         if ($_SERVER["REQUEST_METHOD"] !== "POST") {
             UserSignupView::render();
@@ -83,9 +81,16 @@ class UserController extends Controller {
         UserSignupView::render();
     }
     
-    public
-    function logout(): void {
-        //todo
-        throw new NotImplementedException();
+    public function logout(): void {
+        // Start session
+        $this->session->startSession();
+        
+        // Delete session data pertaining to user
+        $this->session->set('username', null);
+        $this->session->set('account-name', null);
+        $this->session->set('login-status', null);
+        
+        // Render the view
+        UserLogoutView::render();
     }
 }
