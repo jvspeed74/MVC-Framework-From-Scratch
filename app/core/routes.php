@@ -9,13 +9,19 @@
 $router = new Router();
 
 /**
+ * Home page:
+ * - index: Displays a static welcome page
+ */
+$router->registerRoute('GET', "", 'HomeController@index');
+
+
+/**
  * Product page:
  * - index: Lists all products.
  * - show: Displays details of a single product.
  * - search: Displays the products found in the user search result.
  * - create: Creates a new product based on form submission.
  */
-$router->registerRoute("GET", "", 'ProductController@index');
 $router->registerRoute("GET", "/product/index", 'ProductController@index');
 $router->registerRoute("GET", "/product/show/{id}", 'ProductController@show');
 $router->registerRoute("GET", "/product/search/{terms}", 'ProductController@search');
