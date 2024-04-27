@@ -58,18 +58,7 @@ class UserModel extends Model {
         // Check if a user with the given username exists
         if ($result && $result->num_rows > 0) {
             // Fetch user data
-            $userData = $result->fetch_assoc();
-            
-            // Create a new User object
-            $user = new User();
-            $user->setUserID($userData['user_id']);
-            $user->setFirstName($userData['first_name']);
-            $user->setLastName($userData['last_name']);
-            $user->setEmail($userData['email']);
-            $user->setUserName($userData['username']);
-            $user->setPassword($userData['password']); // Store hashed password
-            
-            return $user;
+            return $result->fetch_object(User::class);
         } else {
             // No user found with the given username
             return null;

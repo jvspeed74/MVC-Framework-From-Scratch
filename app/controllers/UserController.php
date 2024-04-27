@@ -5,12 +5,13 @@
  *
  * Controller responsible for managing user-related actions.
  *
- * @todo handle incorrect password
- * @todo combine methods (GET & POST)
+ * todo logout
+ * todo signup
  */
 class UserController extends Controller {
     public function __construct() {
         $this->model = UserModel::getInstance();
+        $this->session = SessionManager::getInstance();
     }
     
     /**
@@ -22,6 +23,9 @@ class UserController extends Controller {
      * @return void
      */
     public function login(): void {
+        // Start session
+        $this->session->startSession();
+        
         // If the form hasn't been submitted, render the login form.
         if ($_SERVER["REQUEST_METHOD"] !== "POST") {
             UserLoginView::render();
@@ -29,12 +33,12 @@ class UserController extends Controller {
         }
         
         // Check if appropriate POST data was sent in request.
-        if (!isset($_POST['username'])) {
+        if (empty($_POST['username'])) {
             UserLoginView::render("Username is required");
             exit();
         }
         
-        if (!isset($_POST['password'])) {
+        if (empty($_POST['password'])) {
             UserLoginView::render("Password is required");
             exit();
         }
@@ -43,20 +47,21 @@ class UserController extends Controller {
         $username = $_POST['username'];
         $password = $_POST['password'];
         
-        
         // Verify user credentials
         $user = $this->model->verifyUserCredentials($username, $password);
-        if ($user) {
-            # Login Successfully
-            $session = SessionManager::getInstance();
-            $session->set('username', $user->getUserID());
-            $session->set('role', $user->getRoleID());
-            $session->set('account-name', $user->getFirstName() . "" . $user->getLastName());
-            $session->set('login-status', 1);
+        if (!$user) {
+            UserLoginView::render("The username or password is incorrect.");
+            exit();
         }
         
+        # Login Successful
+        $this->session->set('username', $user->getUserID());
+        $this->session->set('role', $user->getRoleID());
+        $this->session->set('account-name', $user->getFirstName() . " " . $user->getLastName());
+        $this->session->set('login-status', 1);
+        
         // Render appropriate view based on verification result
-        UserLoginView::render("Success");
+        UserLoginView::render();
     }
     
     /**
