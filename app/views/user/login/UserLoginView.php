@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class UserIndexView
+ * Class UserLoginView
  *
  *  todo signup page
  *  todo session to save user state
@@ -10,22 +10,39 @@ class UserLoginView extends View {
     
     /**
      * Render the view based on user authentication status.
-     * @param User|null $user The authenticated user (null if not logged in).
+     * @param null|string $message The login failure message.
      */
-    public static function render(?User $user = null): void {
-        // Check if the user is logged in
+    public static function render(?string $message = ''): void {
+        // Display header
         parent::header('Login');
-        if ($user) {
-            self::renderLoggedInView($user);
-        } else {
-            self::renderLoginForm();
+        
+        // Check if user is already logged in.
+        if (SessionManager::getInstance()->get('login-status') == 1) {
+            self::renderLoggedInView();
+            exit();
         }
+        
+       
+        
+        // Display login form
+        self::loginForm();
+        
+        // Check if attempt failed
+        if ($message) {
+            // Check the signup status
+            echo "<div class='form-container'>";
+            echo htmlspecialchars($message);
+            echo "</div>";
+        }
+        
+        // Display footer
+        parent::footer();
     }
     
     /**
      * Render the login form.
      */
-    private static function renderLoginForm(): void {
+    private static function loginForm(): void {
         echo '<h2>Login</h2>';
         echo '<form action="login" method="post">';
         echo 'Username: <input type="text" name="username"><br>';
@@ -33,14 +50,15 @@ class UserLoginView extends View {
         echo '<input type="submit" value="Login">';
         echo '</form>';
         echo '<p><a href="signup">Sign Up</a></p>'; // Link to the signup page
+        
+         echo SessionManager::getInstance()->get('login-status');
     }
     
     /**
      * Render the welcome screen.
-     * @param User $user The authenticated user.
      */
-    private static function renderLoggedInView(User $user): void {
-        echo '<h2>Welcome, ' . $user->getUsername() . '!</h2>';
-        echo '<p>You are now logged in.</p>';
+    private static function renderLoggedInView(): void {
+        echo '<h2>Welcome!</h2>';
+        echo '<p>You are logged in.</p>';
     }
 }
