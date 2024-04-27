@@ -14,6 +14,7 @@ class UserLoginView extends View {
      */
     public static function render(?User $user = null): void {
         // Check if the user is logged in
+        parent::header('Login');
         if ($user) {
             self::renderLoggedInView($user);
         } else {

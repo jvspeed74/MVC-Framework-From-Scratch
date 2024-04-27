@@ -9,6 +9,7 @@ class UserSignupView extends View {
      * Render the signup form.
      */
     public static function render(): void {
+        parent::header('Signup');
         echo '<h2>Sign Up</h2>';
         echo '<form action="signup" method="post">';
         echo 'Username: <input type="text" name="username"><br>';
