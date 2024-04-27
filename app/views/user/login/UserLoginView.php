@@ -12,14 +12,24 @@ class UserLoginView extends View {
      * @param string|null $message Optional message to display (e.g., login failure message).
      */
     public static function render(?string $message = ''): void {
+        // Display header
         parent::header('Login');
         
-        if (SessionManager::getInstance()->get('login-status')) {
-            self::renderLoggedInView(SessionManager::getInstance()->get('account-name'));
+        // Get session instance
+        $session = SessionManager::getInstance();
+        
+        // Check if user is logged in
+        if ($session->get('login-status')) {
+            // Display welcome message ?>
+            <h2>Welcome <?= $session->get('account-name') ?>!</h2>
+            <p>You are logged in.</p>
+            <?php
         } else {
-            self::renderLoginForm($message);
+            // Display login form
+            self::loginForm($message);
         }
         
+        // Display footer
         parent::footer();
     }
     
@@ -27,7 +37,7 @@ class UserLoginView extends View {
      * Render the login form.
      * @param string|null $message Optional message to display (e.g., login failure message).
      */
-    private static function renderLoginForm(?string $message = ''): void {
+    private static function loginForm(?string $message = ''): void {
         ?>
         <h2>Login</h2>
         <form action="login" method="post">
@@ -43,16 +53,6 @@ class UserLoginView extends View {
         }
         ?>
         <p><a href="signup">Sign Up</a></p>
-        <?php
-    }
-    
-    /**
-     * Render the welcome screen.
-     */
-    private static function renderLoggedInView($name): void {
-        ?>
-        <h2>Welcome <?= $name ?>!</h2>
-        <p>You are logged in.</p>
         <?php
     }
 }
