@@ -13,17 +13,7 @@ class CourseController extends Controller {
      * Initializes the controller.
      */
     public function __construct() {
-        parent::__construct();
-    }
-    
-    /**
-     * Loads the CourseModel.
-     *
-     * @return object The CourseModel instance.
-     */
-    protected function loadModel(): object {
-        // Load CourseModel instance
-        return CourseModel::getInstance();
+        $this->model = CourseModel::getInstance();
     }
     
     /**

@@ -7,26 +7,9 @@
  */
 abstract class Controller {
     /**
-     * @var object The model instance associated with the controller.
+     * @var object|null The model instance associated with the controller.
      */
-    protected object $model;
-    
-    /**
-     * Constructor.
-     * Upon creation of the controller, the loadModel method is called
-     * to set the model property to an instance of the object the controller is responsible for.
-     */
-    public function __construct() {
-        $this->model = $this->loadModel();
-    }
-    
-    /**
-     * Abstract method to be implemented by child classes.
-     * This method should instantiate and return the model associated with the controller.
-     *
-     * @return object The model instance.
-     */
-    abstract protected function loadModel(): object;
+    protected ?object $model=null;
     
     /**
      * Renders an error page with an optional message.

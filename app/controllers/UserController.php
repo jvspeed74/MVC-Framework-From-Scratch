@@ -9,14 +9,8 @@
  * @todo combine methods (GET & POST)
  */
 class UserController extends Controller {
-    
-    /**
-     * Load the UserModel.
-     *
-     * @return UserModel The UserModel instance.
-     */
-    protected function loadModel(): object {
-        return UserModel::getInstance();
+    public function __construct() {
+        $this->model = UserModel::getInstance();
     }
     
     /**

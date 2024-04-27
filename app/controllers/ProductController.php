@@ -11,16 +11,7 @@ class ProductController extends Controller {
      * Initializes the controller and loads the model.
      */
     public function __construct() {
-        parent::__construct();
-    }
-    
-    /**
-     * Loads the ProductModel instance.
-     *
-     * @return ProductModel The ProductModel instance.
-     */
-    protected function loadModel(): ProductModel {
-        return ProductModel::getInstance();
+        $this->model = ProductModel::getInstance();
     }
     
     /**

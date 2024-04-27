@@ -13,18 +13,8 @@ class CartController extends Controller {
      * Initializes the controller and sets the model property to CartModel.
      */
     public function __construct() {
-        parent::__construct();
         // Load CartModel
-        $this->model = $this->loadModel();
-    }
-    
-    /**
-     * Loads the CartModel.
-     *
-     * @return CartModel The CartModel instance.
-     */
-    protected function loadModel(): CartModel {
-        return new CartModel();
+        $this->model = new CartModel();
     }
     
     /**
