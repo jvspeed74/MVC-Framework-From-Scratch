@@ -29,6 +29,3 @@ try {
     // Handle PageNotFoundException
     ExceptionHandler::handleException($e, "Page Not Found: Oops! Looks like the page you requested doesn't exist!");
 }
-
-// Start SESSION variable management in the application
-SessionManager::getInstance()->startSession();
