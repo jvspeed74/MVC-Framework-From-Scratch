@@ -25,9 +25,12 @@ class UserSignupView extends View {
         ?>
         <h2>Sign Up</h2>
         <form action="signup" method="post">
-            Username: <input type="text" name="username"><br>
-            Password: <input type="password" name="password"><br>
-            Confirm Password: <input type="password" name="confirm_password"><br>
+            First Name: <input type="text" name="first-name" required><br>
+            Last Name: <input type="text" name="last-name" required><br>
+            Email: <input type="email" name="email" required><br>
+            Username: <input type="text" name="username" required><br>
+            Password: <input type="password" name="password" required><br>
+            Confirm Password: <input type="password" name="confirm-password" required><br>
             <input type="submit" value="Sign Up">
         </form>
         <?php

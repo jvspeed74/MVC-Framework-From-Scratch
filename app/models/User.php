@@ -12,7 +12,7 @@ class User {
     private ?string $email = null;
     private ?string $userName = null;
     private ?string $password = null;
-    private ?string $roleID = null;
+    private string $roleID = '0';
     
     /**
      * @return string|null
