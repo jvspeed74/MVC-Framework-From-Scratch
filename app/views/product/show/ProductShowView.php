@@ -36,7 +36,7 @@ class ProductShowView extends ProductView {
                 echo '<p>This product does not exist.</p>';
             }
             ?>
-            <p><a href="<?= BASE_URL ?>">Back to Product Page</a></p>
+            <p><a href="<?= BASE_URL ?>/product/index">Back to Product Page</a></p>
         </div>
         </body>
         <?php parent::footer();

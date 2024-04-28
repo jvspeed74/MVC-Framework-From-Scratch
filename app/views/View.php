@@ -19,6 +19,8 @@ abstract class View {
      * @return void
      */
     static public function header(string $pageTitle): void {
+        $session = SessionManager::getInstance();
+        $session->startSession();
         ?>
         <!DOCTYPE html>
         <html lang="en">
@@ -71,12 +73,22 @@ abstract class View {
                             </form>
                             <!-- Login and Register Links -->
                             <div class="d-flex">
-                                <button class="btn btn-outline-primary me-2" type="button"
-                                        onclick="location.href='<?= BASE_URL ?>/user/login'">Login
-                                </button>
-                                <button class="btn btn-outline-secondary me-2" type="button"
-                                        onclick="location.href='<?= BASE_URL ?>/user/signup'">Register
-                                </button>
+                                <?php
+                                if ($session->get('login-status')) {
+                                    // Display logout button if user is logged in ?>
+                                    <button class="btn btn-outline-primary me-2" type="button"
+                                            onclick="location.href='<?= BASE_URL ?>/user/logout'">Logout
+                                    </button>
+                                    <?php
+                                } else {
+                                    // Display login/register buttons if user is not logged in ?>
+                                    <button class="btn btn-outline-primary me-2" type="button"
+                                            onclick="location.href='<?= BASE_URL ?>/user/login'">Login
+                                    </button>
+                                    <button class="btn btn-outline-secondary me-2" type="button"
+                                            onclick="location.href='<?= BASE_URL ?>/user/signup'">Register
+                                    </button>
+                                <?php } ?>
                                 <!-- Cart button -->
                                 <button class="btn btn-outline-dark" type="button"
                                         onclick="location.href='<?= BASE_URL ?>/cart/index'">

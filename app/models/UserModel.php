@@ -47,10 +47,10 @@ class UserModel extends Model {
      */
     public function getUserByUsername(string $username): ?User {
         // Escape the username to prevent SQL injection
-        $userName = $this->db->realEscapeString($username);
+        $escapedString = $this->db->realEscapeString($username);
         
         // Build the SQL query to fetch user by username
-        $sql = "SELECT * FROM users WHERE username='$userName'";
+        $sql = "SELECT * FROM users WHERE username='$escapedString'";
         
         // Execute the query
         $result = $this->db->query($sql);
@@ -58,20 +58,35 @@ class UserModel extends Model {
         // Check if a user with the given username exists
         if ($result && $result->num_rows > 0) {
             // Fetch user data
-            $userData = $result->fetch_assoc();
-            
-            // Create a new User object
-            $user = new User();
-            $user->setUserID($userData['user_id']);
-            $user->setFirstName($userData['first_name']);
-            $user->setLastName($userData['last_name']);
-            $user->setEmail($userData['email']);
-            $user->setUserName($userData['username']);
-            $user->setPassword($userData['password']); // Store hashed password
-            
-            return $user;
+            return $result->fetch_object(User::class);
         } else {
             // No user found with the given username
+            return null;
+        }
+    }
+    
+    /**
+     * Retrieves a user from the database by their email.
+     *
+     * @param string $email The email of the user to retrieve.
+     * @return User|null A User object if the user is found, null if not found.
+     */
+    public function getUserByEmail(string $email): ?User {
+        // Escape the username to prevent SQL injection
+        $escapedEmail = $this->db->realEscapeString($email);
+        
+        // Build the SQL query to fetch user by username
+        $sql = "SELECT * FROM users WHERE email='$escapedEmail'";
+        
+        // Execute the query
+        $result = $this->db->query($sql);
+        
+        // Check if a user with the given email exists
+        if ($result && $result->num_rows > 0) {
+            // Fetch user data
+            return $result->fetch_object(User::class);
+        } else {
+            // No user found with the given email
             return null;
         }
     }
@@ -97,7 +112,6 @@ class UserModel extends Model {
         }
     }
     
-    
     /**
      * Creates a new user record in the database.
      *
@@ -110,13 +124,13 @@ class UserModel extends Model {
         $lastName = $this->db->realEscapeString($user->getLastName());
         $email = $this->db->realEscapeString($user->getEmail());
         $userName = $this->db->realEscapeString($user->getUserName());
-        $roleID = $this->db->realEscapeString($user->getRoleID());
+        $roleID = 0;  // Base User
         
         // Hash the password
         $hashedPassword = password_hash($user->getPassword(), PASSWORD_DEFAULT);
         
         // Build the SQL query to insert a new user
-        $sql = "INSERT INTO $this->table (first_name, last_name, email, username, password, role_id)
+        $sql = "INSERT INTO $this->table (firstName, lastName, email, userName, password, roleID)
                 VALUES ('$firstName', '$lastName', '$email', '$userName', '$hashedPassword', '$roleID')";
         
         // Execute the query

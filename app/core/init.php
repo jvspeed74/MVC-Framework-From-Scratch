@@ -23,7 +23,6 @@ require_once "routes.php";
  */
 // Send routes to dispatcher and dispatch the server request.
 $dispatcher = new Dispatcher($router);
-
 try {
     $dispatcher->dispatch($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
 } catch (PageNotFoundException $e) {

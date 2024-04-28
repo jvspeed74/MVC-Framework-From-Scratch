@@ -10,6 +10,7 @@ abstract class Controller {
      * @var object|null The model instance associated with the controller.
      */
     protected ?object $model=null;
+    protected ?SessionManager $session=null;
     
     /**
      * Renders an error page with an optional message.
