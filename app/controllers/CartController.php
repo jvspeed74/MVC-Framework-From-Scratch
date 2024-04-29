@@ -14,7 +14,18 @@ class CartController extends Controller {
      */
     public function __construct() {
         // Load CartModel
-        $this->model = new CartModel();
+        $this->model = CartModel::getInstance();
+        $this->session = SessionManager::getInstance();
+    }
+    
+    /**
+     * Renders the cart view.
+     */
+    public function index(): void {
+        // Retrieve items from the model
+        $items = $this->model->getCart();
+        // Render cart view
+        CartIndexView::render($items);
     }
     
     /**
@@ -22,18 +33,18 @@ class CartController extends Controller {
      *
      * @param mixed $id The ID of the product to add.
      *
-     * @throws InvalidArgumentException if the product ID is invalid.
      */
     public function add(mixed $id): void {
         try {
             // Add item to cart
-            $this->model->addItem($id);
+            $this->model->addToCart($id);
             // Redirect to cart index
             $this->index();
-        } catch (InvalidArgumentException $exception) {
-            // Handle invalid product ID
-            $this->error($exception->getMessage());
+        } catch (ProductNotFoundException $e) {
+            $this->error($e->getMessage());
         }
+        
+        
     }
     
     /**
@@ -43,7 +54,7 @@ class CartController extends Controller {
      */
     public function remove(mixed $id): void {
         // Remove item from cart
-        $this->model->removeItem($id);
+        $this->model->removeFromCart($id);
         // Redirect to cart index
         $this->index();
     }
@@ -52,26 +63,30 @@ class CartController extends Controller {
      * Updates the quantities of products in the cart.
      */
     public function update(): void {
-        try {
-            // Update quantities based on POST data
-            foreach ($_POST['quantity'] as $id => $quantity) {
-                $this->model->updateQuantity($id, $quantity);
-            }
-            // Redirect to cart index
+        if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             $this->index();
-        } catch (InvalidArgumentException $exception) {
-            // Handle invalid quantity or product ID
-            $this->error($exception->getMessage());
+            return;
         }
+        
+        // Update quantities based on POST data
+        foreach ($_POST['quantity'] as $id => $quantity) {
+            $this->model->addToCart($id, $quantity);
+        }
+        // Redirect to cart index
+        $this->index();
     }
     
-    /**
-     * Renders the cart view.
-     */
-    public function index(): void {
-        // Retrieve items from the model
-        $items = $this->model->getItems();
-        // Render cart view
-        CartIndexView::render($items);
+    public function checkout(): void {
+        // Verify user is signed in
+        if (!$this->session->get('login-status')) {
+            header('Location: ' . BASE_URL . '/user/login');
+            return;
+        }
+        
+        // Destroy the cart
+        $this->model->destroyCart();
+        
+        // Display page verifying checkout is complete.
+        $this->index();
     }
 }

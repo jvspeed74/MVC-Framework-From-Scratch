@@ -60,6 +60,8 @@ $router->registerRoute("POST", "/user/signup", "UserController@signup");
 $router->registerRoute("GET", "/cart/index", 'CartController@index');
 $router->registerRoute("GET", "/cart/add/{id}", 'CartController@add');
 $router->registerRoute("GET", "/cart/remove/{id}", 'CartController@remove');
+$router->registerRoute("GET", "/cart/checkout", 'CartController@checkout');
+
 $router->registerRoute("POST", "/cart/update", 'CartController@update');
 
 /**
