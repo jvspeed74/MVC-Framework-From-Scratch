@@ -25,7 +25,7 @@ class HomeView extends View {
                 <div class="text-center">
                     <h1 class="text-white display-3">Start Your Fitness Journey</h1>
                     <p class="lead text-white">Check out our premium supplements and gear to boost your performance.</p>
-                    <a href="#shop" class="btn btn-primary btn-lg">Shop Now</a>
+                    <a href="<?=BASE_URL?>/product/index" class="btn btn-primary btn-lg">Shop Now</a>
                 </div>
             </div>
         </div>
