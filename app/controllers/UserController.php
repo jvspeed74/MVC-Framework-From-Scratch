@@ -5,8 +5,7 @@
  *
  * Controller responsible for managing user-related actions.
  *
- * todo logout
- * todo signup
+ * todo document
  */
 class UserController extends Controller {
     public function __construct() {
@@ -55,9 +54,9 @@ class UserController extends Controller {
         }
         
         # Login Successful
-        $this->session->set('username', $user->getUserID());
-        $this->session->set('account-name', $user->getFirstName());
-        $this->session->set('login-status', 1);
+        $this->session->set(['username' => $user->getUserID()]);
+        $this->session->set(['account-name' => $user->getFirstName()]);
+        $this->session->set(['login-status' => 1]);
         
         // Render appropriate view based on verification result
         UserLoginView::render();
@@ -146,9 +145,9 @@ class UserController extends Controller {
         $this->session->startSession();
         
         // Delete session data pertaining to user
-        $this->session->set('username', null);
-        $this->session->set('account-name', null);
-        $this->session->set('login-status', null);
+        $this->session->set(['username' => null]);
+        $this->session->set(['account-name' => null]);
+        $this->session->set(['login-status' => null]);
         
         // Render the view
         UserLogoutView::render();

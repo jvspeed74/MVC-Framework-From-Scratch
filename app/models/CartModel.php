@@ -1,103 +1,72 @@
 <?php
-
-/**
- * Class CartModel
- *
- * Represents the shopping cart model responsible for managing cart items.
- * //todo throws error if two or more items are in the cart. Needs a rewrite of how it handles product objects.
- */
+//todo document
 class CartModel {
-    // Add a constant for the session key
-    private const CART_SESSION_KEY = 'cart';
+    private static CartModel $_instance;
+    private SessionManager $sessionManager;
+    private array $cart;
+    const CART_SESSION_KEY = 'cart';
     
-    private ProductModel $productModel;
-    
-    /**
-     * CartModel constructor.
-     *
-     * Initializes the cart model with an empty array of items and an instance of the ProductModel.
-     */
-    public function __construct() {
-        $this->productModel = ProductModel::getInstance();
-        // Start or resume the session
-        session_start();
-        // Initialize cart if not set in session
-        if (!isset($_SESSION[self::CART_SESSION_KEY])) {
-            $_SESSION[self::CART_SESSION_KEY] = [];
-        }
+    private function __construct() {
+        $this->sessionManager = SessionManager::getInstance();
+        $this->cart = $this->getCartFromSession();
     }
     
-    /**
-     * Adds an item to the cart.
-     *
-     * @param string $productId The ID of the product to add to the cart.
-     * @param int $quantity The quantity of the product to add (default: 1).
-     *
-     * @throws InvalidArgumentException if the quantity is less than or equal to zero.
-     * @throws InvalidArgumentException if the product with the provided ID does not exist.
-     */
-    public function addItem(string $productId, int $quantity = 1): void {
-        if ($quantity <= 0) {
-            throw new InvalidArgumentException("Quantity must be greater than zero.");
+    public static function getInstance(): CartModel {
+        if (!isset(self::$_instance)) {
+            self::$_instance = new self();
         }
+        return self::$_instance;
+    }
+    
+    private function getCartFromSession(): array {
+        // Start session if not started
+        $this->sessionManager->startSession();
         
-        $product = $this->productModel->fetchByID($productId);
+        // Get the current cart from session
+        return $this->sessionManager->get(self::CART_SESSION_KEY) ?? [];
+    }
+    
+    public function addToCart($productId, $quantity = 1): void {
+        $product = ProductModel::getInstance()->fetchByID($productId);
         if (!$product) {
-            throw new InvalidArgumentException("Product with ID $productId does not exist.");
+            throw new ProductNotFoundException();
         }
         
         // Check if the product is already in the cart
-        if (isset($_SESSION[self::CART_SESSION_KEY][$productId])) {
-            $_SESSION[self::CART_SESSION_KEY][$productId]['quantity'] += $quantity;
+        if (isset($this->cart[$productId])) {
+            // Product exists in the cart, so update its quantity
+            $this->cart[$productId]['quantity'] = $quantity;
         } else {
-            // Add new product to the cart
-            $_SESSION[self::CART_SESSION_KEY][$productId] = [
+            // Product does not exist in the cart, so add it
+            $this->cart[$productId] = [
                 'product' => $product,
                 'quantity' => $quantity,
             ];
         }
-    }
-    
-    /**
-     * Removes an item from the cart.
-     *
-     * @param string $productId The ID of the product to remove from the cart.
-     */
-    public function removeItem(string $productId): void {
-        unset($_SESSION[self::CART_SESSION_KEY][$productId]);
-    }
-    
-    /**
-     * Updates the quantity of an item in the cart.
-     *
-     * @param string $productId The ID of the product to update.
-     * @param int $quantity The new quantity for the product.
-     *
-     * @throws InvalidArgumentException if the quantity is less than or equal to zero.
-     */
-    public function updateQuantity(string $productId, int $quantity): void {
-        if ($quantity <= 0) {
-            throw new InvalidArgumentException("Quantity must be greater than zero.");
-        }
         
-        if (isset($_SESSION[self::CART_SESSION_KEY][$productId])) {
-            $_SESSION[self::CART_SESSION_KEY][$productId]['quantity'] = $quantity;
+        // Save the updated cart back to session
+        $this->sessionManager->set([self::CART_SESSION_KEY => $this->cart]);
+    }
+    
+    public function removeFromCart($productId): void {
+        // Remove the product from the cart if it exists
+        if (isset($this->cart[$productId])) {
+            unset($this->cart[$productId]);
+            
+            // Save the updated cart back to session
+            $this->sessionManager->set([self::CART_SESSION_KEY => $this->cart]);
         }
     }
     
-    /**
-     * Retrieves the items in the cart.
-     *
-     * @return array An array containing the cart items.
-     */
-    public function getItems(): array {
-        return $_SESSION[self::CART_SESSION_KEY];
+    public function getCart(): array {
+        return $this->cart;
     }
     
-    /**
-     * Clears the cart.
-     */
-    public function clearCart(): void {
-        $_SESSION[self::CART_SESSION_KEY] = [];
+    public function destroyCart(): void {
+        // Destroy the cart session
+        $this->cart = [];
+        $this->sessionManager->set([self::CART_SESSION_KEY => $this->cart]);
     }
+    
+    
 }

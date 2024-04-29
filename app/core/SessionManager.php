@@ -41,13 +41,14 @@ class SessionManager {
     }
     
     /**
-     * Set a session variable.
-     * @param string $key The key of the session variable.
-     * @param mixed $value The value to set.
+     * Set session variables.
+     * @param array $data An associative array of key-value pairs.
      * @return void
      */
-    public function set(string $key, mixed $value): void {
-        $_SESSION[$key] = $value;
+    public function set(array $data): void {
+        foreach ($data as $key => $value) {
+            $_SESSION[$key] = $value;
+        }
     }
     
     /**
