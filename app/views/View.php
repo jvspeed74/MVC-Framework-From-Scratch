@@ -22,6 +22,9 @@ abstract class View {
         $session = SessionManager::getInstance();
         $session->startSession();
         
+        // Get cart quantity
+        $totalQuantity = CartManager::getInstance()->getTotalQuantity();
+        
         // Get current page URL
         $currentUrl = $_SERVER['REQUEST_URI'];
         
@@ -103,7 +106,7 @@ abstract class View {
                                         onclick="location.href='<?= BASE_URL ?>/cart/index'">
                                     <i class="bi-cart-fill me-1"></i>
                                     Cart
-                                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                                    <span class="badge bg-dark text-white ms-1 rounded-pill"><?= $totalQuantity ?></span>
                                 </button>
                             </div>
                         </nav>
@@ -128,7 +131,8 @@ abstract class View {
         ?>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+            <div class="container"><p class="m-0 text-center text-white">&copy; FitFlex 2024. All rights reserved.</p>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
