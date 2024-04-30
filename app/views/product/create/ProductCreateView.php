@@ -14,7 +14,7 @@ class ProductCreateView extends ProductView {
      *
      * @return void
      */
-    public static function render(): void {
+    public static function render($message = ''): void {
         parent::header("Product Creation");
         ?>
         <!-- Page Content-->
@@ -24,7 +24,7 @@ class ProductCreateView extends ProductView {
                 <div class="form-group">
                     <div>
                         <label for="name">Product Name:</label>
-                        <input type="text" class="form-control" id="name" name="name" maxlength="50" required>
+                        <input type="text" class="form-control" id="name" name="name" maxlength="50">
                     </div>
                     <div>
                         <label for="price">Price:</label>
@@ -41,6 +41,9 @@ class ProductCreateView extends ProductView {
             </form>
         </div>
         <?php
+        if (!empty($message)) {
+            echo '<div class="alert alert-danger">' . $message . '</div>';
+        }
         parent::footer();
     }
 }
