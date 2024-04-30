@@ -8,7 +8,7 @@
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 ini_set('display_errors', 0);
 ini_set('log_errors', 1);
-ini_set('error_log', __DIR__ . "/error.log");
+ini_set('error_log', __DIR__ . DIRECTORY_SEPARATOR . "error.log");
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 // Default handler for uncaught exceptions
