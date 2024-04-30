@@ -38,7 +38,7 @@ class ProductIndexView extends ProductView {
                                     } ?>
                                     <!-- Product image-->
                                     <img class="card-img-top" style="height: 300px"
-                                         src="/I211-Team-Project/public/<?= $product->getImage() ?>"
+                                         src="<?= IMG_URL . $product->getImage() ?>"
                                          alt="..."/>
                                     <!-- Product details-->
                                     <div class="card-body p-4">
