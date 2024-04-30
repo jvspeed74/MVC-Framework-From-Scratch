@@ -14,7 +14,7 @@ class CartController extends Controller {
      */
     public function __construct() {
         // Load CartModel
-        $this->model = CartModel::getInstance();
+        $this->model = CartManager::getInstance();
         $this->session = SessionManager::getInstance();
     }
     
@@ -41,7 +41,7 @@ class CartController extends Controller {
             // Redirect to cart index
             $this->index();
         } catch (ProductNotFoundException $e) {
-            $this->error($e->getMessage());
+            ExceptionHandler::handleException($e, $e->getMessage());
         }
         
         
@@ -70,7 +70,18 @@ class CartController extends Controller {
         
         // Update quantities based on POST data
         foreach ($_POST['quantity'] as $id => $quantity) {
-            $this->model->addToCart($id, $quantity);
+            // Validate that quantity is a positive integer
+            try {
+                if (!is_numeric($quantity)) {
+                    // Throw critical error for non-integer inputs
+                    throw new InvalidQuantityException('Invalid update quantity. Please enter an integer value.  ');
+                }
+            } catch (InvalidQuantityException $e) {
+                ExceptionHandler::handleException($e);
+            }
+            
+            // Update quantity
+            $this->model->updateQuantity($id, intval($quantity));
         }
         // Redirect to cart index
         $this->index();
