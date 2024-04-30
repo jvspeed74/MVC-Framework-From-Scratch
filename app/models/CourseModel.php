@@ -67,31 +67,4 @@ class CourseModel extends Model {
         }
         return $results;
     }
-    
-    
-    /**
-     * @throws NotImplementedException
-     */
-    public
-    function update(): bool {
-        // TODO: Implement update() method.
-        throw new NotImplementedException();
-    }
-    
-    /**
-     * @throws NotImplementedException
-     */
-    public
-    function delete(): bool {
-        // TODO: Implement delete() method.
-        throw new NotImplementedException();
-    }
-    
-    /**
-     * @throws NotImplementedException
-     */
-    public function create(object $dataObj): ?int {
-        // TODO: Implement create() method.
-        throw new NotImplementedException();
-    }
 }
