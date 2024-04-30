@@ -24,7 +24,7 @@ class UserSignupView extends View {
     private static function signupForm($message): void {
         ?>
         <h2>Sign Up</h2>
-        <form action="signup" method="post">
+        <form action="<?=BASE_URL?>/user/signup" method="post">
             First Name: <input type="text" name="first-name" required><br>
             Last Name: <input type="text" name="last-name" required><br>
             Email: <input type="email" name="email" required><br>

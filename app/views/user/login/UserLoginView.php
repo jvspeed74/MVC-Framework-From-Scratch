@@ -25,6 +25,9 @@ class UserLoginView extends View {
             <p>You are logged in.</p>
             <?php
         } else {
+            if (isset($_GET['message'])) {
+                $message = $_GET['message'];
+            }
             // Display login form
             self::loginForm($message);
         }
@@ -40,7 +43,7 @@ class UserLoginView extends View {
     private static function loginForm(?string $message = ''): void {
         ?>
         <h2>Login</h2>
-        <form action="login" method="post">
+        <form action="<?=BASE_URL?>/user/login" method="post">
             Username: <input type="text" name="username"><br>
             Password: <input type="password" name="password"><br>
             <input type="submit" value="Login">
@@ -52,7 +55,7 @@ class UserLoginView extends View {
             echo "</div>";
         }
         ?>
-        <p><a href="signup">Sign Up</a></p>
+        <p><a href="<?=BASE_URL?>/user/signup">Sign Up</a></p>
         <?php
     }
 }
