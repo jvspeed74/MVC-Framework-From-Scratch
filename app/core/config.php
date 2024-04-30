@@ -14,11 +14,10 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 // Default handler for uncaught exceptions
 set_exception_handler(['ExceptionHandler', 'handleException']);
 
-// Base URL used for routing within the application
+// Constant URLs used for routing within the application
 const BASE_URL = "/I211-Team-Project/public/index.php";
-
-// Image URL
 const IMG_URL = "/I211-Team-Project/public";
+const PUBLIC_URL = "/I211-Team-Project/public";
 
 // Set the default time zone to East Coast
 date_default_timezone_set('America/New_York'); // Default time zone for the application
