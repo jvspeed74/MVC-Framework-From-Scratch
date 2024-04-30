@@ -132,7 +132,7 @@ class UserController extends Controller {
         
         $result = $this->model->create($user);
         if (!$result) {
-            $this->error("An error occured while trying to create an account.");
+            UserSignupView::render("An error occurred while trying to create an account.");
             exit();
         }
         
