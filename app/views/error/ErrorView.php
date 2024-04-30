@@ -24,7 +24,7 @@ class ErrorView extends View {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- Favicon-->
-            <link rel="icon" type="image/x-icon" href="/I211-Team-Project/public/assets/favicon.ico"/>
+            <link rel="icon" type="image/x-icon" href="<?=IMG_URL?>/assets/favicon.ico"/>
             <title>FitFlex: <?= $message ?></title>
             <style>
                 body {

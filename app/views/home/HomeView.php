@@ -19,13 +19,13 @@ class HomeView extends View {
 
         <!-- Hero Section -->
         <div class="hero-section position-relative">
-            <img src="/I211-Team-Project/public/assets/supp-image.jpg" alt="Supplements" class="img-fluid">
+            <img src="<?= IMG_URL ?>/assets/supp-image.jpg" alt="Supplements" class="img-fluid">
             <div class="hero-content position-absolute w-100 h-100 top-0 d-flex align-items-center justify-content-center"
                  style="background-color: rgba(173, 216, 230, 0.5);"> <!-- semi-transparent overlay -->
                 <div class="text-center">
                     <h1 class="text-white display-3">Start Your Fitness Journey</h1>
                     <p class="lead text-white">Check out our premium supplements and gear to boost your performance.</p>
-                    <a href="<?=BASE_URL?>/product/index" class="btn btn-primary btn-lg">Shop Now</a>
+                    <a href="<?= BASE_URL ?>/product/index" class="btn btn-primary btn-lg">Shop Now</a>
                 </div>
             </div>
         </div>
