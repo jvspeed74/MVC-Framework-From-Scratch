@@ -1,11 +1,12 @@
 <?php
 
+
 /**
  * Class CartIndexView
  *
  * Represents the view for displaying the shopping cart contents.
  */
-class CartIndexView extends View {
+class CartIndexView extends CartView {
     
     /**
      * Renders the shopping cart view.
@@ -19,7 +20,6 @@ class CartIndexView extends View {
     public static function render(array $items = []): void {
         parent::header("Shopping Cart"); ?>
         <!--Page Specific Content-->
-        <h1>Shopping Cart</h1>
         <table>
             <tr>
                 <th>Product Name</th>
