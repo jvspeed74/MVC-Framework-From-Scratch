@@ -5,7 +5,6 @@
  *
  * Abstract class containing the foundation for the header and footer methods.
  *
- * todo different header depending on user login status
  */
 abstract class View {
     
