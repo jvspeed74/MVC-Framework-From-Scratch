@@ -1,7 +1,7 @@
 <?php
 
 //todo document
-class UserAuthenticator {
+class UserManager {
     private UserModel $userModel;
     private SessionManager $sessionManager;
     
