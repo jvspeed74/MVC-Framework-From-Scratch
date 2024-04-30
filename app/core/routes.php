@@ -68,4 +68,4 @@ $router->registerRoute("POST", "/cart/update", 'CartController@update');
  * Error Page:
  * - Currently unused but may have functionality in a later build.
  */
-//$router->registerRoute("GET", "/error/{code}/{message}", "bypass");
+$router->registerRoute("GET", "/error/display/{message}", "ErrorController@display");
