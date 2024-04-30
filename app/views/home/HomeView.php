@@ -1,7 +1,7 @@
 <?php
 
 class HomeView extends View {
-    public static function header(string $pageTitle): void {
+    public static function header(string $pageTitle, bool $isLoggedIn = false, string $username = ""): void {
         parent::header($pageTitle);
         ?>
         <!-- Header-->
@@ -19,7 +19,7 @@ class HomeView extends View {
 
         <!-- Hero Section -->
         <div class="hero-section position-relative">
-            <img src="/I211-Team-Project/public/assets/supp-image.jpg" alt="Supplements" class="img-fluid">
+            <img src="../public/assets/supp-image.jpg" alt="Supplements" class="img-fluid">
             <div class="hero-content position-absolute w-100 h-100 top-0 d-flex align-items-center justify-content-center"
                  style="background-color: rgba(173, 216, 230, 0.5);"> <!-- semi-transparent overlay -->
                 <div class="text-center">

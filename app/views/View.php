@@ -8,7 +8,7 @@
  * todo different header depending on user login status
  */
 abstract class View {
-    
+
     /**
      * Outputs the HTML header for the webpage.
      *
@@ -29,7 +29,7 @@ abstract class View {
             <meta name="author" content=""/>
             <title>FitFlex: <?= $pageTitle ?></title>
             <!-- Favicon-->
-            <link rel="icon" type="image/x-icon" href="/I211-Team-Project/public/assets/favicon.ico"/>
+            <link rel="icon" type="image/x-icon" href="/public/assets/favicon.ico"/>
             <!-- Bootstrap icons-->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
             <!-- Core theme CSS (includes Bootstrap)-->
@@ -93,7 +93,7 @@ abstract class View {
         </nav>
         <?php
     }
-    
+
     /**
      * Outputs the HTML footer for the webpage.
      *
@@ -107,7 +107,7 @@ abstract class View {
         ?>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; FitFlex 2024</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
