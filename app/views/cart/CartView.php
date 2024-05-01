@@ -1,9 +1,15 @@
 <?php
 
 /**
- * todo document
+ * Represents the base view for the shopping cart.
  */
 class CartView extends View {
+    
+    /**
+     * Renders the header section of the shopping cart page.
+     *
+     * @param string $pageTitle The title of the page.
+     */
     public static function header(string $pageTitle): void {
         parent::header($pageTitle);
         ?>

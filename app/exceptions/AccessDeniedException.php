@@ -1,12 +1,12 @@
 <?php
 
-
 /**
- * todo document
+ * Represents an exception thrown when access is denied.
  */
 class AccessDeniedException extends Exception {
+    
     /**
-     * Constructs a AccessDeniedException instance with an optional error message.
+     * Constructs an AccessDeniedException instance with an optional error message.
      *
      * @param string $message The error message.
      */

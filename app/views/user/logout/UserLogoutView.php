@@ -1,7 +1,14 @@
 <?php
 
-//todo document
+/**
+ * Class UserLogoutView
+ * Represents the view for user logout.
+ */
 class UserLogoutView extends View {
+    
+    /**
+     * Renders the logout page.
+     */
     public static function render(): void {
         parent::header('Logout'); ?>
         <!-- Page Specific Content -->

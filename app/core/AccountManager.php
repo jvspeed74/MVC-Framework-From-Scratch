@@ -1,6 +1,8 @@
 <?php
 
-//todo document
+/**
+ * Manages user accounts, including login, logout, and access control.
+ */
 class AccountManager {
     private static AccountManager $_instance;
     private SessionManager $sessionManager;
@@ -10,12 +12,15 @@ class AccountManager {
     const ACCOUNT_ROLE = 'role';
     const ACCOUNT_PRIVILEGES = ['0' => 'None', '1' => 'Admin'];
     
+    /**
+     * AccountManager constructor.
+     */
     private function __construct() {
         $this->sessionManager = SessionManager::getInstance();
     }
     
     /**
-     * Retrieves an instance of the UserModel.
+     * Retrieves an instance of the AccountManager.
      *
      * @return AccountManager The instance of the class.
      */
@@ -29,7 +34,7 @@ class AccountManager {
     /**
      * Handles user login.
      *
-     * @param User $user
+     * @param User $user The user object.
      * @return void
      */
     public function login(User $user): void {
@@ -43,6 +48,11 @@ class AccountManager {
         $this->sessionManager->set([self::ACCOUNT_ROLE => $user->getRoleID()]);
     }
     
+    /**
+     * Logs out the current user.
+     *
+     * @return void
+     */
     public function logout(): void {
         // Start session
         $this->sessionManager->startSession();
@@ -54,6 +64,11 @@ class AccountManager {
         $this->sessionManager->set([self::ACCOUNT_ROLE => null]);
     }
     
+    /**
+     * Checks if a user is logged in.
+     *
+     * @return bool True if the user is logged in, false otherwise.
+     */
     public function isLoggedIn(): bool {
         // Start Session
         $this->sessionManager->startSession();
@@ -62,15 +77,30 @@ class AccountManager {
         return (bool)$this->sessionManager->get(self::ACCOUNT_LOGIN_STATUS);
     }
     
+    /**
+     * Checks if the logged-in user is an admin.
+     *
+     * @return bool True if the user is an admin, false otherwise.
+     */
     public function isAdmin(): bool {
         return $this->isLoggedIn() && self::ACCOUNT_PRIVILEGES[$this->getAccountRole()] === 'Admin';
     }
     
-    public function getAccountName() {
+    /**
+     * Retrieves the name of the logged-in user.
+     *
+     * @return mixed|null The name of the logged-in user, or null if not logged in.
+     */
+    public function getAccountName(): mixed {
         return $this->sessionManager->get(self::ACCOUNT_NAME);
     }
     
-    public function getAccountRole() {
+    /**
+     * Retrieves the role of the logged-in user.
+     *
+     * @return mixed|null The role of the logged-in user, or null if not logged in.
+     */
+    public function getAccountRole(): mixed {
         return $this->sessionManager->get(self::ACCOUNT_ROLE);
     }
 }

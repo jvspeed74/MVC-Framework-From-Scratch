@@ -1,9 +1,15 @@
 <?php
 
 /**
- * todo document
+ * Class CartCheckoutView
+ *
+ * Represents the view for cart checkout.
  */
 class CartCheckoutView extends CartView {
+    
+    /**
+     * Renders the checkout page.
+     */
     public static function render(): void {
         parent::header('Checkout');
         ?>

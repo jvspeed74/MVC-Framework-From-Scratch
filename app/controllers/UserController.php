@@ -1,13 +1,12 @@
 <?php
 
 /**
- * Class UserController
- *
  * Controller responsible for managing user-related actions.
- *
- * todo document
  */
 class UserController extends Controller {
+    /**
+     * UserController constructor.
+     */
     public function __construct() {
         $this->model = UserModel::getInstance();
         $this->session = SessionManager::getInstance();
@@ -61,7 +60,7 @@ class UserController extends Controller {
     }
     
     /**
-     * Handles the login action.
+     * Handles the signup action.
      *
      * Attempts to create a user account with the input sent from the POST request
      * and renders the appropriate view based on the verification result.
@@ -77,7 +76,7 @@ class UserController extends Controller {
             UserSignupView::render();
             exit();
         }
-
+        
         // Validate POST data
         $fields = $this->validateSignupRequest();
         
@@ -99,6 +98,11 @@ class UserController extends Controller {
         $this->login();
     }
     
+    /**
+     * Logs out the current user.
+     *
+     * @return void
+     */
     public function logout(): void {
         // Log user out
         AccountManager::getInstance()->logout();
@@ -107,7 +111,12 @@ class UserController extends Controller {
         UserLogoutView::render();
     }
     
-    public function validateSignupRequest() {
+    /**
+     * Validates the signup request data.
+     *
+     * @return array The validated signup request data.
+     */
+    public function validateSignupRequest(): array {
         // Ensure POST data is sent.
         $fields = [
             'first-name' => FILTER_SANITIZE_SPECIAL_CHARS,
@@ -133,7 +142,7 @@ class UserController extends Controller {
                 UserSignupView::render($field . ' is required.');
                 exit();
             }
-            // Addd the input to the filtered array
+            // Add the input to the filtered array
             $filteredFields[$field] = $trimmedInput;
         }
         
