@@ -16,9 +16,9 @@ class UserLoginView extends View {
         parent::header('Login');
         
         // Check if user is logged in
-        if (UserManager::getInstance()->isLoggedIn()) {
+        if (AccountManager::getInstance()->isLoggedIn()) {
             // Display welcome message ?>
-            <h2>Welcome <?= UserManager::getInstance()->getAccountName() ?>!</h2>
+            <h2>Welcome <?= AccountManager::getInstance()->getAccountName() ?>!</h2>
             <p>You are logged in.</p>
             <?php
         } else {

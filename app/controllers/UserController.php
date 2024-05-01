@@ -54,7 +54,7 @@ class UserController extends Controller {
         }
         
         // Login the account
-        UserManager::getInstance()->login($user);
+        AccountManager::getInstance()->login($user);
         
         // Render appropriate view based on verification result
         UserLoginView::render();
@@ -101,7 +101,7 @@ class UserController extends Controller {
     
     public function logout(): void {
         // Log user out
-        UserManager::getInstance()->logout();
+        AccountManager::getInstance()->logout();
         
         // Render the view
         UserLogoutView::render();

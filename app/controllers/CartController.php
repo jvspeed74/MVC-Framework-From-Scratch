@@ -89,7 +89,7 @@ class CartController extends Controller {
     
     public function checkout(): void {
         // Verify user is signed in
-        if (!UserManager::getInstance()->isLoggedIn()) {
+        if (!AccountManager::getInstance()->isLoggedIn()) {
             $message = urlencode("Please log in to continue");
             header('Location: ' . BASE_URL . '/user/login/?message=' . $message);
             return;
