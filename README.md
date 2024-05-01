@@ -35,7 +35,7 @@ practical and impactful solution.
 
 ### 3. Dynamic Workout Calendar
 
-- Customizable calendar for users to take advantage of a wide variety of fitness courses.
+- Calendar for users to find information of a wide variety of fitness courses.
 
 ## Technical Implementation
 
