@@ -18,7 +18,8 @@ class CartIndexView extends CartView {
      * @return void
      */
     public static function render(array $items = []): void {
-        parent::header("Shopping Cart"); ?>
+        parent::header("Shopping Cart");
+        $totalPrice = 0; ?>
         <!--Page Specific Content-->
         <table>
             <tr>
@@ -40,15 +41,19 @@ class CartIndexView extends CartView {
                         </form>
                     </td>
                     <td>$<?= $item['product']->getPrice() * $item['quantity'] ?></td>
+                    <?php $totalPrice += $item['product']->getPrice() * $item['quantity']; ?>
                     <td>
                         <a href="<?= BASE_URL ?>/cart/remove/<?= $item['product']->getProductID() ?>">Remove</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
         </table>
-        <!--        <p>Total Price: $--><?php //= $totalPrice ?><!--</p>-->
-        <a href="<?= BASE_URL ?>/cart/checkout">Proceed to Checkout</a>
-        <?php
+        <?php if (!empty($items)) { ?>
+            <p>Total Price: $<?= $totalPrice ?></p>
+            <a href="<?= BASE_URL ?>/cart/checkout">Proceed to Checkout</a>
+            
+            <?php
+        }
         parent::footer();
     }
 }
