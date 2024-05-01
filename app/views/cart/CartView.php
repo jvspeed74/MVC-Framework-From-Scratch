@@ -6,6 +6,22 @@
 class CartView extends View {
     public static function header(string $pageTitle): void {
         parent::header($pageTitle);
-        echo '<h1>Shopping Cart</h1>';
+        ?>
+        <!-- Bootstrap Container for centering content -->
+        <div class="container my-4">
+        <!-- Shopping Cart Header -->
+        <div class="row">
+            <div class="col">
+                <h2 class="my-3">Shopping Cart</h2>
+            </div>
+            <div class="col-auto my-auto">
+                <a href="<?= BASE_URL ?>/product/index" class="btn btn-outline-primary">Continue Shopping</a>
+                
+                <?php if (CartManager::getInstance()->getTotalQuantity()): ?>
+                    <a href="<?= BASE_URL ?>/cart/checkout" class="btn btn-primary">Proceed to Checkout</a>
+                <?php endif; ?>
+            </div>
+        </div>
+        <?php
     }
 }
