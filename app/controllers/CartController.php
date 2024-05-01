@@ -41,7 +41,7 @@ class CartController extends Controller {
             // Redirect to cart index
             $this->index();
         } catch (ProductNotFoundException $e) {
-            CartErrorView::render($e->getMessage());
+            $this->error($e->getMessage());
             return;
         }
     }
@@ -76,8 +76,8 @@ class CartController extends Controller {
                     throw new InvalidQuantityException('Invalid update quantity. Please enter an integer value.  ');
                 }
             } catch (InvalidQuantityException $e) {
-               CartErrorView::render($e->getMessage());
-               return;
+                $this->error($e->getMessage());
+                return;
             }
             
             // Update quantity
@@ -103,6 +103,6 @@ class CartController extends Controller {
     }
     
     public function error($message): void {
-        CartErrorView::render($message);
+        header("Location: " . BASE_URL . '/cart/index/?message=' . $message);
     }
 }
