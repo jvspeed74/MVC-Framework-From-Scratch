@@ -94,22 +94,25 @@ class ProductIndexView extends ProductView {
                     } else {
                         echo '<h1 class="display-4 fw-bolder text-black">No products found</h1>';
                     }
-                    ?>
-                    <!-- Card to Create new Product-->
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">
-                                        <a class="link-dark text-decoration-underline"
-                                           href="<?= BASE_URL ?>/product/create">Create New Product</a>
-                                    </h5>
+                    // Allow to create feature if user is logged in and has a valid account role
+                    if (AccountManager::getInstance()->isAdmin()) {
+                        ?>
+                        <!-- Card to Create new Product-->
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">
+                                            <a class="link-dark text-decoration-underline"
+                                               href="<?= BASE_URL ?>/product/create">Create New Product</a>
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <?php } ?>
                 </div>
             </div>
         </section>

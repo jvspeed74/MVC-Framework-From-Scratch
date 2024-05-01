@@ -8,6 +8,7 @@ class AccountManager {
     const ACCOUNT_USERNAME = 'username';
     const ACCOUNT_NAME = 'account-name';
     const ACCOUNT_ROLE = 'role';
+    const ACCOUNT_PRIVILEGES = ['0' => 'None', '1' => 'Admin'];
     
     private function __construct() {
         $this->sessionManager = SessionManager::getInstance();
@@ -38,7 +39,8 @@ class AccountManager {
         // Set session data
         $this->sessionManager->set([self::ACCOUNT_USERNAME => $user->getUserID()]);
         $this->sessionManager->set([self::ACCOUNT_NAME => $user->getFirstName()]);
-        $this->sessionManager->set([self::ACCOUNT_LOGIN_STATUS => 1]);
+        $this->sessionManager->set([self::ACCOUNT_LOGIN_STATUS => true]);
+        $this->sessionManager->set([self::ACCOUNT_ROLE => $user->getRoleID()]);
     }
     
     public function logout(): void {
@@ -49,6 +51,7 @@ class AccountManager {
         $this->sessionManager->set([self::ACCOUNT_USERNAME => null]);
         $this->sessionManager->set([self::ACCOUNT_NAME => null]);
         $this->sessionManager->set([self::ACCOUNT_LOGIN_STATUS => null]);
+        $this->sessionManager->set([self::ACCOUNT_ROLE => null]);
     }
     
     public function isLoggedIn(): bool {
@@ -59,7 +62,15 @@ class AccountManager {
         return (bool)$this->sessionManager->get(self::ACCOUNT_LOGIN_STATUS);
     }
     
+    public function isAdmin(): bool {
+        return $this->isLoggedIn() && self::ACCOUNT_PRIVILEGES[$this->getAccountRole()] === 'Admin';
+    }
+    
     public function getAccountName() {
         return $this->sessionManager->get(self::ACCOUNT_NAME);
+    }
+    
+    public function getAccountRole() {
+        return $this->sessionManager->get(self::ACCOUNT_ROLE);
     }
 }

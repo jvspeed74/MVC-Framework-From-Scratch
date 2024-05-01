@@ -12,10 +12,16 @@ class ProductCreateView extends ProductView {
      * This method outputs the HTML content for displaying a form to create a new product.
      * It includes input fields for the product name, price, and description, along with a submit button.
      *
+     * @param string $message
      * @return void
+     * @throws AccessDeniedException
      */
-    public static function render($message = ''): void {
+    public static function render(string $message = ''): void {
         parent::header("Product Creation");
+        // Verify user has access to this page.
+        if (!AccountManager::getInstance()->isAdmin()) {
+            throw new AccessDeniedException();
+        }
         ?>
         <!-- Page Content-->
         <div class="compact-product">

@@ -81,20 +81,29 @@ class ProductController extends Controller {
      * @return void
      */
     public function create(): void {
-        // Check if the form has been submitted
-        if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-            // If the form hasn't been submitted, render the create view
-            ProductCreateView::render();
-            exit();
-        }
-        
-        // Ensure each post variable is set
-        $fields = ['name', 'price', 'description'];
-        foreach ($fields as $field) {
-            if (empty($_POST[$field])) {
-                ProductCreateView::render("We were unable to process the entered data.");
+        // Verify that user has access and appropriate variables are set.
+        try {
+            if (!AccountManager::getInstance()->isAdmin()) {
+                throw new AccessDeniedException();
+            }
+            
+            // Check if the form has been submitted
+            if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+                // If the form hasn't been submitted, render the create view
+                ProductCreateView::render();
                 exit();
             }
+            
+            // Ensure each post variable is set
+            $fields = ['name', 'price', 'description'];
+            foreach ($fields as $field) {
+                if (empty($_POST[$field])) {
+                    ProductCreateView::render("We were unable to process the entered data.");
+                    exit();
+                }
+            }
+        } catch (AccessDeniedException $e) {
+            ExceptionHandler::handleException($e, "Access Denied");
         }
         
         // Validate form data
