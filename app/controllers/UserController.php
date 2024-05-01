@@ -47,11 +47,14 @@ class UserController extends Controller {
         $password = $_POST['password'];
         
         // Verify user credentials
-        $authenticator = new UserManager($this->model, $this->session);
-        if (!$authenticator->login($username, $password)) {
+        $user = $this->model->verifyUserCredentials($username, $password);
+        if (!$user) {
             UserLoginView::render("The username or password is incorrect.");
             exit();
         }
+        
+        // Login the account
+        UserManager::getInstance()->login($user);
         
         // Render appropriate view based on verification result
         UserLoginView::render();
@@ -97,8 +100,8 @@ class UserController extends Controller {
     }
     
     public function logout(): void {
-        $authenticator = new UserManager($this->model, $this->session);
-        $authenticator->logout();
+        // Log user out
+        UserManager::getInstance()->logout();
         
         // Render the view
         UserLogoutView::render();

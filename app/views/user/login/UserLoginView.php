@@ -15,13 +15,10 @@ class UserLoginView extends View {
         // Display header
         parent::header('Login');
         
-        // Get session instance
-        $session = SessionManager::getInstance();
-        
         // Check if user is logged in
-        if ($session->get('login-status')) {
+        if (UserManager::getInstance()->isLoggedIn()) {
             // Display welcome message ?>
-            <h2>Welcome <?= $session->get('account-name') ?>!</h2>
+            <h2>Welcome <?= UserManager::getInstance()->getAccountName() ?>!</h2>
             <p>You are logged in.</p>
             <?php
         } else {
@@ -43,7 +40,7 @@ class UserLoginView extends View {
     private static function loginForm(?string $message = ''): void {
         ?>
         <h2>Login</h2>
-        <form action="<?=BASE_URL?>/user/login" method="post">
+        <form action="<?= BASE_URL ?>/user/login" method="post">
             Username: <input type="text" name="username"><br>
             Password: <input type="password" name="password"><br>
             <input type="submit" value="Login">
@@ -55,7 +52,7 @@ class UserLoginView extends View {
             echo "</div>";
         }
         ?>
-        <p><a href="<?=BASE_URL?>/user/signup">Sign Up</a></p>
+        <p><a href="<?= BASE_URL ?>/user/signup">Sign Up</a></p>
         <?php
     }
 }

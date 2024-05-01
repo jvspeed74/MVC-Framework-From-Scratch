@@ -2,37 +2,42 @@
 
 //todo document
 class UserManager {
-    private UserModel $userModel;
+    private static UserManager $_instance;
     private SessionManager $sessionManager;
+    const LOGIN_STATUS = "login-status";
+    const USERNAME = 'username';
+    const ACCOUNT_NAME = 'account-name';
     
-    public function __construct(UserModel $userModel, SessionManager $sessionManager) {
-        $this->userModel = $userModel;
-        $this->sessionManager = $sessionManager;
+    private function __construct() {
+        $this->sessionManager = SessionManager::getInstance();
+    }
+    
+    /**
+     * Retrieves an instance of the UserModel.
+     *
+     * @return UserManager The instance of the class.
+     */
+    public static function getInstance(): UserManager {
+        if (!isset(self::$_instance)) {
+            self::$_instance = new self();
+        }
+        return self::$_instance;
     }
     
     /**
      * Handles user login.
      *
-     * @param string $username The username of the user.
-     * @param string $password The password of the user.
-     * @return bool True if the login is successful, false otherwise.
+     * @param User $user
+     * @return void
      */
-    public function login(string $username, string $password): bool {
-        $user = $this->userModel->verifyUserCredentials($username, $password);
-        if ($user) {
-            // Start session
-            $this->sessionManager->startSession();
-            
-            // Set session data
-            $this->sessionManager->set(['username' => $user->getUserID()]);
-            $this->sessionManager->set(['account-name' => $user->getFirstName()]);
-            $this->sessionManager->set(['login-status' => 1]);
-            
-            // Login successful
-            return true;
-        }
-        // Login failure
-        return false;
+    public function login(User $user): void {
+        // Start session
+        $this->sessionManager->startSession();
+        
+        // Set session data
+        $this->sessionManager->set([self::USERNAME => $user->getUserID()]);
+        $this->sessionManager->set([self::ACCOUNT_NAME => $user->getFirstName()]);
+        $this->sessionManager->set([self::LOGIN_STATUS => 1]);
     }
     
     public function logout(): void {
@@ -40,8 +45,20 @@ class UserManager {
         $this->sessionManager->startSession();
         
         // Delete session data pertaining to user
-        $this->sessionManager->set(['username' => null]);
-        $this->sessionManager->set(['account-name' => null]);
-        $this->sessionManager->set(['login-status' => null]);
+        $this->sessionManager->set([self::USERNAME => null]);
+        $this->sessionManager->set([self::ACCOUNT_NAME => null]);
+        $this->sessionManager->set([self::LOGIN_STATUS => null]);
+    }
+    
+    public function isLoggedIn(): bool {
+        // Start Session
+        $this->sessionManager->startSession();
+        
+        // Return login status
+        return (bool)$this->sessionManager->get(self::LOGIN_STATUS);
+    }
+    
+    public function getAccountName() {
+        return $this->sessionManager->get(self::ACCOUNT_NAME);
     }
 }
