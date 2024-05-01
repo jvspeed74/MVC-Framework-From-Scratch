@@ -44,6 +44,7 @@ $router->registerRoute("GET", "/course/fetch/{date}", "CourseController@fetch");
  * - logout: Handles user logout.
  */
 $router->registerRoute("GET", "/user/login", "UserController@login");
+$router->registerRoute("GET", "/user/login/{message}", "UserController@login");
 $router->registerRoute("GET", "/user/signup", "UserController@signup");
 $router->registerRoute('GET', '/user/logout', 'UserController@logout');
 
@@ -58,6 +59,7 @@ $router->registerRoute("POST", "/user/signup", "UserController@signup");
  * - update: Updates the quantities of products in the cart.
  */
 $router->registerRoute("GET", "/cart/index", 'CartController@index');
+$router->registerRoute("GET", "/cart/index/{message}", 'CartController@index');
 $router->registerRoute("GET", "/cart/add/{id}", 'CartController@add');
 $router->registerRoute("GET", "/cart/remove/{id}", 'CartController@remove');
 $router->registerRoute("GET", "/cart/checkout", 'CartController@checkout');
@@ -66,6 +68,6 @@ $router->registerRoute("POST", "/cart/update", 'CartController@update');
 
 /**
  * Error Page:
- * - Currently unused but may have functionality in a later build.
+ * - Displays the error page
  */
-//$router->registerRoute("GET", "/error/{code}/{message}", "bypass");
+$router->registerRoute("GET", "/error/display/{message}", "ErrorController@display");

@@ -1,13 +1,12 @@
 <?php
 
 /**
- * Class UserController
- *
  * Controller responsible for managing user-related actions.
- *
- * todo document
  */
 class UserController extends Controller {
+    /**
+     * UserController constructor.
+     */
     public function __construct() {
         $this->model = UserModel::getInstance();
         $this->session = SessionManager::getInstance();
@@ -53,17 +52,15 @@ class UserController extends Controller {
             exit();
         }
         
-        # Login Successful
-        $this->session->set(['username' => $user->getUserID()]);
-        $this->session->set(['account-name' => $user->getFirstName()]);
-        $this->session->set(['login-status' => 1]);
+        // Login the account
+        AccountManager::getInstance()->login($user);
         
         // Render appropriate view based on verification result
         UserLoginView::render();
     }
     
     /**
-     * Handles the login action.
+     * Handles the signup action.
      *
      * Attempts to create a user account with the input sent from the POST request
      * and renders the appropriate view based on the verification result.
@@ -80,6 +77,46 @@ class UserController extends Controller {
             exit();
         }
         
+        // Validate POST data
+        $fields = $this->validateSignupRequest();
+        
+        // Create user DTO
+        $user = new User();
+        $user->setFirstName($fields['first-name']);
+        $user->setLastName($fields['last-name']);
+        $user->setEmail($fields['email']);
+        $user->setUsername($fields['username']);
+        $user->setPassword($fields['password']);
+        
+        // Send request to UserModel
+        if (!$this->model->create($user)) {
+            UserSignupView::render("An error occurred while trying to create an account.");
+            exit();
+        }
+        
+        # Login Successful
+        $this->login();
+    }
+    
+    /**
+     * Logs out the current user.
+     *
+     * @return void
+     */
+    public function logout(): void {
+        // Log user out
+        AccountManager::getInstance()->logout();
+        
+        // Render the view
+        UserLogoutView::render();
+    }
+    
+    /**
+     * Validates the signup request data.
+     *
+     * @return array The validated signup request data.
+     */
+    public function validateSignupRequest(): array {
         // Ensure POST data is sent.
         $fields = [
             'first-name' => FILTER_SANITIZE_SPECIAL_CHARS,
@@ -90,66 +127,50 @@ class UserController extends Controller {
             'confirm-password' => FILTER_DEFAULT,
         ];
         
+        // Validate each field
+        $filteredFields = [];
         foreach ($fields as $field => $filter) {
+            // Check if data was sent
             if (empty($_POST[$field])) {
                 UserSignupView::render($field . ' is required.');
                 exit();
             }
+            // Filter and trim the input
             $filteredInput = filter_var($_POST[$field], $filter);
             $trimmedInput = trim($filteredInput);
             if (empty($trimmedInput)) {
                 UserSignupView::render($field . ' is required.');
                 exit();
             }
+            // Add the input to the filtered array
             $filteredFields[$field] = $trimmedInput;
         }
         
+        // Validate email
         if (!filter_var($filteredFields['email'], FILTER_VALIDATE_EMAIL)) {
             UserSignupView::render("Invalid email address.");
             exit();
         }
         
+        // Check if passwords match
         if ($filteredFields['password'] !== $filteredFields['confirm-password']) {
             UserSignupView::render("The passwords do not match.");
             exit();
         }
         
+        // Check if email already exists
         if ($this->model->getUserByEmail($filteredFields['email'])) {
             UserSignupView::render("The email address is already in use.");
             exit();
         }
         
+        // Check if username already exists
         if ($this->model->getUserByUsername($filteredFields['username'])) {
             UserSignupView::render("The username is already in use.");
-        }
-        
-        $user = new User();
-        $user->setFirstName($filteredFields['first-name']);
-        $user->setLastName($filteredFields['last-name']);
-        $user->setEmail($filteredFields['email']);
-        $user->setUsername($filteredFields['username']);
-        $user->setPassword($filteredFields['password']);
-        
-        $result = $this->model->create($user);
-        if (!$result) {
-            $this->error("An error occured while trying to create an account.");
             exit();
         }
         
-        # Login Successful
-        $this->login();
-    }
-    
-    public function logout(): void {
-        // Start session
-        $this->session->startSession();
-        
-        // Delete session data pertaining to user
-        $this->session->set(['username' => null]);
-        $this->session->set(['account-name' => null]);
-        $this->session->set(['login-status' => null]);
-        
-        // Render the view
-        UserLogoutView::render();
+        // Validated data. If ANYTHING went wrong the user was sent back to the signup view with the according message
+        return $filteredFields;
     }
 }

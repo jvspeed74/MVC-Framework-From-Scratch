@@ -139,26 +139,4 @@ class ProductModel extends Model {
         // Return ID of the newly inserted record
         return $this->db->getInsertionID();
     }
-    
-    /**
-     * Updates an existing record in the database.
-     *
-     * @return bool True if the record update was successful, false otherwise.
-     * @throws NotImplementedException
-     */
-    public function update(): bool {
-        // TODO: Implement update() method.
-        throw new NotImplementedException();
-    }
-    
-    /**
-     * Deletes an existing record from the database.
-     *
-     * @return bool True if the record deletion was successful, false otherwise.
-     * @throws NotImplementedException
-     */
-    public function delete(): bool {
-        // TODO: Implement delete() method.
-        throw new NotImplementedException();
-    }
 }

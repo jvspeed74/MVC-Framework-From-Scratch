@@ -4,9 +4,6 @@
  * Class CourseIndexView
  *
  * Represents the view for the course index page.
- *
- * todo Calendar and Course Info should be side by side not in a column
- * todo There should be a default popup when no classes are scheduled. Right now nothing is shown.
  */
 class CourseIndexView extends View {
     /**
@@ -19,7 +16,7 @@ class CourseIndexView extends View {
     public static function render(): void {
         parent::header("Courses");
         ?>
-        <link href="/I211-Team-Project/public/css/calendar.css" rel="stylesheet"/>
+        <link href="<?= PUBLIC_URL ?>/css/calendar.css" rel="stylesheet"/>
         <div class="calendar-container">
             <header class="calendar-header">
                 <p class="calendar-current-date"></p>
@@ -48,7 +45,7 @@ class CourseIndexView extends View {
         <!-- Include jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- Include optimized calendar.js script -->
-        <script src="/I211-Team-Project/public/js/calendar.js"></script>
+        <script src="<?= PUBLIC_URL ?>/js/calendar.js"></script>
         <script>
             // Call manipulate() function after the document is ready to initialize the calendar
             $(document).ready(function () {

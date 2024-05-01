@@ -5,7 +5,6 @@
  *
  * Abstract class containing the foundation for the header and footer methods.
  *
- * todo different header depending on user login status
  */
 abstract class View {
     
@@ -19,8 +18,22 @@ abstract class View {
      * @return void
      */
     static public function header(string $pageTitle): void {
+        // Start session
         $session = SessionManager::getInstance();
         $session->startSession();
+        
+        // Get cart quantity
+        $totalQuantity = CartManager::getInstance()->getTotalQuantity();
+        
+        // Get current page URL
+        $currentUrl = $_SERVER['REQUEST_URI'];
+        
+        // Logic for active navigation links
+        $navLinks = [
+            'Shop' => BASE_URL . '/product/index',
+            'Courses' => BASE_URL . '/course/index'
+        ];
+        
         ?>
         <!DOCTYPE html>
         <html lang="en">
@@ -31,11 +44,10 @@ abstract class View {
             <meta name="author" content=""/>
             <title>FitFlex: <?= $pageTitle ?></title>
             <!-- Favicon-->
-            <link rel="icon" type="image/x-icon" href="/I211-Team-Project/public/assets/favicon.ico"/>
+            <link rel="icon" type="image/x-icon" href="<?= IMG_URL ?>/assets/favicon.ico"/>
             <!-- Bootstrap icons-->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
             <!-- Core theme CSS (includes Bootstrap)-->
-            <!--            <link href="/I211-Team-Project/public/css/styles.css" rel="stylesheet"/>-->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
                   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
                   crossorigin="anonymous">
@@ -49,16 +61,16 @@ abstract class View {
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
                 </button>
+                <!--  Dynamically set navigation links and active link style-->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <!-- todo handle active page on specific views -->
-                        <!-- todo not implemented -->
-                        <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                                href="<?= BASE_URL ?>/course/index">Courses</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="navbarDropdown" href="<?= BASE_URL ?>/product/index"
-                               aria-expanded="false">Shop</a>
-                        </li>
+                        <?php foreach ($navLinks as $label => $url): ?>
+                            <li class="nav-item">
+                                <a class="nav-link <?php echo ($currentUrl === $url) ? 'active' : ''; ?>"
+                                   href="<?php echo $url; ?>"><?php echo $label; ?></a>
+                            </li>
+                        <?php endforeach; ?>
+
                     </ul>
                     <div class="container">
                         <!-- Navbar or similar container for alignment -->
@@ -74,7 +86,7 @@ abstract class View {
                             <!-- Login and Register Links -->
                             <div class="d-flex">
                                 <?php
-                                if ($session->get('login-status')) {
+                                if (AccountManager::getInstance()->isLoggedIn()) {
                                     // Display logout button if user is logged in ?>
                                     <button class="btn btn-outline-primary me-2" type="button"
                                             onclick="location.href='<?= BASE_URL ?>/user/logout'">Logout
@@ -94,7 +106,7 @@ abstract class View {
                                         onclick="location.href='<?= BASE_URL ?>/cart/index'">
                                     <i class="bi-cart-fill me-1"></i>
                                     Cart
-                                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                                    <span class="badge bg-dark text-white ms-1 rounded-pill"><?= $totalQuantity ?></span>
                                 </button>
                             </div>
                         </nav>
@@ -119,12 +131,11 @@ abstract class View {
         ?>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+            <div class="container"><p class="m-0 text-center text-white">&copy; FitFlex 2024. All rights reserved.</p>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <!--        <script src="/I211-Team-Project/public/js/scripts.js"></script>-->
         </body>
         </html>
         <?php

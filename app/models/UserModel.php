@@ -99,8 +99,11 @@ class UserModel extends Model {
      * @return User|null A User object if the credentials are valid, null otherwise.
      */
     public function verifyUserCredentials(string $username, string $password): ?User {
+        // Escape username before using it in query
+        $escapedUsername = $this->db->realEscapeString($username);
+        
         // Fetch user by username
-        $user = $this->getUserByUsername($username);
+        $user = $this->getUserByUsername($escapedUsername);
         
         // Check if user exists and verify password
         if ($user && password_verify($password, $user->getPassword())) {

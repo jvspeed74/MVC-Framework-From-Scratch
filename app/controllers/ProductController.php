@@ -69,12 +69,6 @@ class ProductController extends Controller {
         // Search the database for matching products
         $products = $this->model->fetchBySearch($searchTerms);
         
-        // Handle errors if occurred during the search
-        if ($products === false) {
-            $this->error("An error occurred while searching for products.");
-            return;
-        }
-        
         // Render the search results view
         ProductIndexView::render($products);
     }
@@ -87,19 +81,29 @@ class ProductController extends Controller {
      * @return void
      */
     public function create(): void {
-        // Check if the form has been submitted
-        if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-            // If the form hasn't been submitted, render the create view
-            ProductCreateView::render();
-            exit();
-        }
-        
-        // Ensure all required POST variables are set
-        if (!filter_has_var(INPUT_POST, 'name') ||
-            !filter_has_var(INPUT_POST, 'price') ||
-            !filter_has_var(INPUT_POST, 'description')
-        ) {
-            $this->error("We were unable to process the entered data.");
+        // Verify that user has access and appropriate variables are set.
+        try {
+            if (!AccountManager::getInstance()->isAdmin()) {
+                throw new AccessDeniedException();
+            }
+            
+            // Check if the form has been submitted
+            if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+                // If the form hasn't been submitted, render the create view
+                ProductCreateView::render();
+                exit();
+            }
+            
+            // Ensure each post variable is set
+            $fields = ['name', 'price', 'description'];
+            foreach ($fields as $field) {
+                if (empty($_POST[$field])) {
+                    ProductCreateView::render("We were unable to process the entered data.");
+                    exit();
+                }
+            }
+        } catch (AccessDeniedException $e) {
+            ExceptionHandler::handleException($e, "Access Denied");
         }
         
         // Validate form data
@@ -118,15 +122,5 @@ class ProductController extends Controller {
         
         // Redirect to the show view for the newly created product
         $this->show($productId);
-    }
-    
-    /**
-     * Renders an error page with an optional message.
-     *
-     * @param string $message The message to be displayed to the client.
-     * @return void
-     */
-    public function error(string $message): void {
-        ErrorView::render($message);
     }
 }

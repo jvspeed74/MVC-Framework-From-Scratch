@@ -21,13 +21,11 @@ class ExceptionHandler {
         // Log exception details
         self::logDetails($exception);
         
-        // Determine the message to display to the user
-        if (empty($message)) {
-            $message = "An unknown error occurred while conducting site operations.";
-        }
-        
         // Render the error page
-        ErrorView::render($message);
+        
+        header('Location: ' . BASE_URL . "/error/display/?message=" . urlencode($message));
+//        $errorController = new ErrorController();
+//        $errorController->display($message);
         
         // Terminate the application gracefully
         exit();

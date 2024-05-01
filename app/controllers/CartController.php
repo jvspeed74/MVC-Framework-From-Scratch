@@ -13,8 +13,8 @@ class CartController extends Controller {
      * Initializes the controller and sets the model property to CartModel.
      */
     public function __construct() {
-        // Load CartModel
-        $this->model = CartModel::getInstance();
+        // Load CartManager
+        $this->model = CartManager::getInstance();
         $this->session = SessionManager::getInstance();
     }
     
@@ -42,9 +42,8 @@ class CartController extends Controller {
             $this->index();
         } catch (ProductNotFoundException $e) {
             $this->error($e->getMessage());
+            return;
         }
-        
-        
     }
     
     /**
@@ -70,7 +69,19 @@ class CartController extends Controller {
         
         // Update quantities based on POST data
         foreach ($_POST['quantity'] as $id => $quantity) {
-            $this->model->addToCart($id, $quantity);
+            // Validate that quantity is a positive integer
+            try {
+                if (!is_numeric($quantity)) {
+                    // Throw critical error for non-integer inputs
+                    throw new InvalidQuantityException('Invalid update quantity. Please enter an integer value.  ');
+                }
+            } catch (InvalidQuantityException $e) {
+                $this->error($e->getMessage());
+                return;
+            }
+            
+            // Update quantity
+            $this->model->updateQuantity($id, intval($quantity));
         }
         // Redirect to cart index
         $this->index();
@@ -78,8 +89,9 @@ class CartController extends Controller {
     
     public function checkout(): void {
         // Verify user is signed in
-        if (!$this->session->get('login-status')) {
-            header('Location: ' . BASE_URL . '/user/login');
+        if (!AccountManager::getInstance()->isLoggedIn()) {
+            $message = urlencode("Please log in to continue");
+            header('Location: ' . BASE_URL . '/user/login/?message=' . $message);
             return;
         }
         
@@ -87,6 +99,10 @@ class CartController extends Controller {
         $this->model->destroyCart();
         
         // Display page verifying checkout is complete.
-        $this->index();
+        CartCheckoutView::render();
+    }
+    
+    public function error($message): void {
+        header("Location: " . BASE_URL . '/cart/index/?message=' . $message);
     }
 }
