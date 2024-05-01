@@ -1,9 +1,21 @@
 <?php
+/**
+ * NOTE: Login Account Details
+ *
+ * username: admin
+ * password: admin
+ *
+ * This provides you with the "create" feature on the main product page.
+ *
+ * It also allows you to check out products in the shopping cart.
+ */
 
 /**
  * Class CartCheckoutView
  *
  * Represents the view for cart checkout.
+ *
+ *
  */
 class CartCheckoutView extends CartView {
     
