@@ -13,7 +13,7 @@ class CartController extends Controller {
      * Initializes the controller and sets the model property to CartModel.
      */
     public function __construct() {
-        // Load CartModel
+        // Load CartManager
         $this->model = CartManager::getInstance();
         $this->session = SessionManager::getInstance();
     }
