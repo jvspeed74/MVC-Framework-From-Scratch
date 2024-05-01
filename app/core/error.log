@@ -1,0 +1,1192 @@
+[29-Apr-2024 02:37:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_report() in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php:25
+Stack trace:
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(13): require_once()
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+  thrown in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php on line 25
+[29-Apr-2024 02:38:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_report() in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php:25
+Stack trace:
+#0 {main}
+  thrown in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php on line 25
+[29-Apr-2024 02:38:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_report() in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php:25
+Stack trace:
+#0 {main}
+  thrown in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php on line 25
+[29-Apr-2024 02:39:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_report() in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php:25
+Stack trace:
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(13): require_once()
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+  thrown in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php on line 25
+[29-Apr-2024 02:46:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_report() in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php:25
+Stack trace:
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(13): require_once()
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+  thrown in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php on line 25
+[29-Apr-2024 02:47:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_report() in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php:25
+Stack trace:
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(13): require_once()
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+  thrown in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php on line 25
+[29-Apr-2024 02:47:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_report() in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php:25
+Stack trace:
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(13): require_once()
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+  thrown in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php on line 25
+[29-Apr-2024 02:48:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_report() in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php:25
+Stack trace:
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(13): require_once()
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+  thrown in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php on line 25
+[29-Apr-2024 02:48:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_report() in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php:25
+Stack trace:
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(13): require_once()
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+  thrown in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php on line 25
+[29-Apr-2024 02:54:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_report() in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php:25
+Stack trace:
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(13): require_once()
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+  thrown in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php on line 25
+[29-Apr-2024 02:54:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_report() in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php:25
+Stack trace:
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(13): require_once()
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+  thrown in C:\MAMP\htdocs\I211-Team-Project\app\core\config.php on line 25
+[29-Apr-2024 13:58:27 America/New_York] Table 'fitness_db.courses' doesn't exist
+1146
+C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php
+75
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php(75): mysqli->query('SELECT * FROM C...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\models\CourseModel.php(52): Database->query('SELECT * FROM C...')
+#2 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CourseController.php(39): CourseModel->fetchByDate('2024-04-29')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CourseController->fetch('?date=2024-04-2...')
+#4 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#5 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#6 {main}
+[29-Apr-2024 13:58:27 America/New_York] Table 'fitness_db.courses' doesn't exist
+1146
+C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php
+75
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php(75): mysqli->query('SELECT * FROM C...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\models\CourseModel.php(52): Database->query('SELECT * FROM C...')
+#2 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CourseController.php(39): CourseModel->fetchByDate('2024-04-29')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CourseController->fetch('?date=2024-04-2...')
+#4 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#5 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#6 {main}
+[29-Apr-2024 16:10:07 America/New_York] Table 'fitness_db.courses' doesn't exist
+1146
+C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php
+75
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php(75): mysqli->query('SELECT * FROM C...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\models\CourseModel.php(52): Database->query('SELECT * FROM C...')
+#2 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CourseController.php(39): CourseModel->fetchByDate('2024-04-29')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CourseController->fetch('?date=2024-04-2...')
+#4 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#5 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#6 {main}
+[29-Apr-2024 16:10:07 America/New_York] Table 'fitness_db.courses' doesn't exist
+1146
+C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php
+75
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php(75): mysqli->query('SELECT * FROM C...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\models\CourseModel.php(52): Database->query('SELECT * FROM C...')
+#2 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CourseController.php(39): CourseModel->fetchByDate('2024-04-29')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CourseController->fetch('?date=2024-04-2...')
+#4 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#5 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#6 {main}
+[29-Apr-2024 19:32:24 America/New_York] Table 'fitness_db.courses' doesn't exist
+1146
+C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php
+75
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php(75): mysqli->query('SELECT * FROM C...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\models\CourseModel.php(52): Database->query('SELECT * FROM C...')
+#2 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CourseController.php(39): CourseModel->fetchByDate('2024-04-29')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CourseController->fetch('?date=2024-04-2...')
+#4 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#5 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#6 {main}
+[29-Apr-2024 19:32:24 America/New_York] Table 'fitness_db.courses' doesn't exist
+1146
+C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php
+75
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php(75): mysqli->query('SELECT * FROM C...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\models\CourseModel.php(52): Database->query('SELECT * FROM C...')
+#2 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CourseController.php(39): CourseModel->fetchByDate('2024-04-29')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CourseController->fetch('?date=2024-04-2...')
+#4 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#5 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#6 {main}
+[29-Apr-2024 19:35:03 America/New_York] Page not found: /I211-Team-Project/public/index.php/cart/checkout
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+49
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+[29-Apr-2024 19:54:21 America/New_York] Page not found: /I211-Team-Project/public/index.php/cart/checkout
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+49
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+[29-Apr-2024 19:54:33 America/New_York] Page not found: /I211-Team-Project/public/public/js/cart-functions.js
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[29-Apr-2024 19:54:38 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(61): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->update()
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'POST')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 19:54:44 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 19:54:45 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 19:54:56 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 19:55:04 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 19:55:57 America/New_York] Table 'fitness_db.courses' doesn't exist
+1146
+C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php
+75
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php(75): mysqli->query('SELECT * FROM C...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\models\CourseModel.php(52): Database->query('SELECT * FROM C...')
+#2 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CourseController.php(39): CourseModel->fetchByDate('2024-04-29')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CourseController->fetch('?date=2024-04-2...')
+#4 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#5 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#6 {main}
+[29-Apr-2024 19:55:57 America/New_York] Table 'fitness_db.courses' doesn't exist
+1146
+C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php
+75
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php(75): mysqli->query('SELECT * FROM C...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\models\CourseModel.php(52): Database->query('SELECT * FROM C...')
+#2 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CourseController.php(39): CourseModel->fetchByDate('2024-04-29')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CourseController->fetch('?date=2024-04-2...')
+#4 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#5 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#6 {main}
+[29-Apr-2024 19:56:09 America/New_York] Table 'fitness_db.courses' doesn't exist
+1146
+C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php
+75
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php(75): mysqli->query('SELECT * FROM C...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\models\CourseModel.php(52): Database->query('SELECT * FROM C...')
+#2 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CourseController.php(39): CourseModel->fetchByDate('2024-04-29')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CourseController->fetch('?date=2024-04-2...')
+#4 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#5 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#6 {main}
+[29-Apr-2024 19:56:09 America/New_York] Table 'fitness_db.courses' doesn't exist
+1146
+C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php
+75
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Database.php(75): mysqli->query('SELECT * FROM C...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\models\CourseModel.php(52): Database->query('SELECT * FROM C...')
+#2 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CourseController.php(39): CourseModel->fetchByDate('2024-04-29')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CourseController->fetch('?date=2024-04-2...')
+#4 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#5 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#6 {main}
+[29-Apr-2024 19:56:17 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('4')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 19:59:54 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+37
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('4')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 19:59:54 America/New_York] Page not found: /I211-Team-Project/public/index.php/cart/add/path/to/cart-style.css
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[29-Apr-2024 19:59:55 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+37
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('4')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 19:59:55 America/New_York] Page not found: /I211-Team-Project/public/index.php/cart/add/path/to/cart-style.css
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[29-Apr-2024 20:00:14 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+37
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('2')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 20:00:14 America/New_York] Page not found: /I211-Team-Project/public/index.php/cart/add/path/to/cart-style.css
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[29-Apr-2024 20:03:44 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+37
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('4')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 20:04:44 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+37
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('4')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 20:04:44 America/New_York] Page not found: /I211-Team-Project/public/index.php/cart/add/public/css/cart.css
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[29-Apr-2024 20:06:41 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('4')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 20:06:42 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('4')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 20:08:38 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:08:42 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:08:57 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:14:14 America/New_York] Page not found: /I211-Team-Project/public/public/assets/supp-image.jpg
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[29-Apr-2024 20:14:28 America/New_York] Page not found: /I211-Team-Project/public/public/assets/supp-image.jpg
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[29-Apr-2024 20:14:31 America/New_York] Page not found: /I211-Team-Project/public/public/assets/supp-image.jpg
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[29-Apr-2024 20:14:33 America/New_York] Page not found: /I211-Team-Project/public/public/assets/supp-image.jpg
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[29-Apr-2024 20:14:56 America/New_York] Page not found: /I211-Team-Project/public/public/assets/supp-image.jpg
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[29-Apr-2024 20:18:54 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:21:48 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:21:52 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:21:59 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+33
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('4')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 20:28:36 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+42
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:35:04 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+54
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:35:05 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+54
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:35:05 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+54
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:35:12 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+54
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('4')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 20:35:18 America/New_York] Page not found: /I211-Team-Project/public/index.php/checkout
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+49
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+[29-Apr-2024 20:35:21 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+54
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('4')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 20:38:05 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+54
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:38:09 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+54
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:38:11 America/New_York] Page not found: /I211-Team-Project/public/index.php/shop
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+49
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+[29-Apr-2024 20:38:13 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+54
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:39:57 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+62
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:40:26 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+62
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:47:58 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+62
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('3')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 20:48:02 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+62
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('3')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 20:48:13 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+62
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('3')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 20:48:19 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+62
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('3')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 20:48:51 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+62
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('3')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[29-Apr-2024 20:52:06 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+62
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:52:09 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+62
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[29-Apr-2024 20:55:06 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+62
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('1')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 00:02:00 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 00:02:03 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 00:58:30 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 01:00:23 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 01:00:28 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 01:00:30 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 01:00:32 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 11:41:58 America/New_York] Page not found: /I211-Team-Project/public/public/assets/supp-image.jpg
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[30-Apr-2024 11:42:16 America/New_York] Page not found: /I211-Team-Project/public/public/assets/supp-image.jpg
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[30-Apr-2024 12:11:04 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:11:04 America/New_York] Page not found: /I211-Team-Project/public/public/css/bootstrap.min.css
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[30-Apr-2024 12:11:24 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:11:24 America/New_York] Page not found: /I211-Team-Project/public/public/css/bootstrap.min.css
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[30-Apr-2024 12:11:28 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:11:28 America/New_York] Page not found: /I211-Team-Project/public/public/css/bootstrap.min.css
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[30-Apr-2024 12:16:54 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:16:54 America/New_York] Page not found: /I211-Team-Project/public/public/css/bootstrap.min.css
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[30-Apr-2024 12:16:55 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:16:55 America/New_York] Page not found: /I211-Team-Project/public/public/css/bootstrap.min.css
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[30-Apr-2024 12:16:56 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:16:56 America/New_York] Page not found: /I211-Team-Project/public/public/css/bootstrap.min.css
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[30-Apr-2024 12:17:25 America/New_York] Page not found: /I211-Team-Project/public/public/css/bootstrap.min.css
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[30-Apr-2024 12:17:28 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:17:28 America/New_York] Page not found: /I211-Team-Project/public/public/css/bootstrap.min.css
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+98
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(39): Dispatcher->serveStaticFile('/I211-Team-Proj...')
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#2 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#3 {main}
+[30-Apr-2024 12:23:44 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:23:45 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:23:51 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:23:51 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:23:51 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:23:52 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:23:52 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('5')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:24:03 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+66
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:29:17 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:29:24 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:29:25 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:29:50 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:31:52 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:33:26 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+61
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:33:52 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:34:09 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:34:12 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:42:59 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:44:02 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:44:47 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:44:48 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:44:58 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:44:59 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:44:59 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:44:59 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:45:00 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:45:31 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:45:32 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:45:32 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:45:32 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:45:32 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:46:38 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(32): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->add('2')
+#3 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#4 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#5 {main}
+[30-Apr-2024 12:47:08 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:47:16 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}
+[30-Apr-2024 12:47:55 America/New_York] call_user_func_array(): Argument #1 ($function) must be a valid callback, class UserController does not have a method "signup"
+0
+C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php
+67
+#0 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'POST')
+#1 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#2 {main}
+[30-Apr-2024 18:41:54 America/New_York] The script tried to call a method on an incomplete object. Please ensure that the class definition "Product" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition
+0
+C:\MAMP\htdocs\I211-Team-Project\app\views\cart\CartIndexView.php
+63
+#0 C:\MAMP\htdocs\I211-Team-Project\app\controllers\CartController.php(75): CartIndexView::render(Array)
+#1 C:\MAMP\htdocs\I211-Team-Project\app\core\Dispatcher.php(67): CartController->index()
+#2 C:\MAMP\htdocs\I211-Team-Project\app\core\init.php(28): Dispatcher->dispatch('/I211-Team-Proj...', 'GET')
+#3 C:\MAMP\htdocs\I211-Team-Project\public\index.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 {main}

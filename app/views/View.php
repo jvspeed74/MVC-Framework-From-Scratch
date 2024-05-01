@@ -86,7 +86,7 @@ abstract class View {
                             <!-- Login and Register Links -->
                             <div class="d-flex">
                                 <?php
-                                if ($session->get('login-status')) {
+                                if (AccountManager::getInstance()->isLoggedIn()) {
                                     // Display logout button if user is logged in ?>
                                     <button class="btn btn-outline-primary me-2" type="button"
                                             onclick="location.href='<?= BASE_URL ?>/user/logout'">Logout
