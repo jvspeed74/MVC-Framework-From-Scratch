@@ -30,7 +30,7 @@ class ProductCreateView extends ProductView {
                 <div class="form-group">
                     <div>
                         <label for="name">Product Name:</label>
-                        <input type="text" class="form-control" id="name" name="name" maxlength="50">
+                        <input type="text" class="form-control" id="name" name="name" maxlength="50" required>
                     </div>
                     <div>
                         <label for="price">Price:</label>
