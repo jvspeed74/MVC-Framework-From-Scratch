@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 24, 2024 at 09:05 PM
+-- Generation Time: May 01, 2024 at 05:59 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -72,11 +72,11 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`productID`, `name`, `price`, `rating`, `description`, `onSale`, `discountPrice`, `image`) VALUES
-(1, 'Dumbbell Set (10 lbs)', 30.00, 4, 'Pair of 10-pound dumbbells for strength training.', 1, 25.00, 'assets/DumbbellSet.jpg'),
-(2, 'Yoga Mat', 20.00, 5, 'Non-slip yoga mat for comfortable floor exercises.', 0, 0.00, 'assets/yoga%20mat.jpg'),
-(3, 'Resistance Bands Set', 40.00, 3, 'Set of resistance bands for full-body workouts.', 1, 30.00, 'assets/complete-band-pack.jpeg'),
-(4, 'Jump Rope', 9.99, 5, 'Adjustable jump rope for cardio and agility training.', NULL, NULL, 'assets/jump%20ropes.jpg'),
-(5, 'Foam Roller', 25.00, 5, 'High-density foam roller for muscle recovery and flexibility exercises.', 0, 0.00, 'assets/best-foam-rollers-scaled.jpg');
+(1, 'Dumbbell Set (10 lbs)', 30.00, 4, 'Pair of 10-pound dumbbells for strength training.', 1, 25.00, '/assets/DumbbellSet.jpg'),
+(2, 'Yoga Mat', 20.00, 5, 'Non-slip yoga mat for comfortable floor exercises.', 0, 0.00, '/assets/yoga%20mat.jpg'),
+(3, 'Resistance Bands Set', 40.00, 3, 'Set of resistance bands for full-body workouts.', 1, 30.00, '/assets/complete-band-pack.jpeg'),
+(4, 'Jump Rope', 9.99, 5, 'Adjustable jump rope for cardio and agility training.', NULL, NULL, '/assets/jump%20ropes.jpg'),
+(5, 'Foam Roller', 25.00, 5, 'High-density foam roller for muscle recovery and flexibility exercises.', 0, 0.00, '/assets/best-foam-rollers-scaled.jpg');
 
 -- --------------------------------------------------------
 
@@ -94,8 +94,8 @@ CREATE TABLE `userroles` (
 --
 
 INSERT INTO `userroles` (`roleID`, `role`) VALUES
-(1, 'Admin'),
-(2, 'Basic');
+(0, 'Basic'),
+(1, 'Admin');
 
 -- --------------------------------------------------------
 
@@ -118,7 +118,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`userID`, `firstName`, `lastName`, `email`, `userName`, `password`, `roleID`) VALUES
-(1, 'Jalen', 'Vaughn', 'javaugh@iu.edu', 'javaugh', '$2y$10$SQqkNaKROuWpyGb07QlrZ.cg3fqMuxZKYiOgMQqt/khGfpJSi2Qf.', 1);
+(1, 'Jalen', 'Vaughn', 'javaugh@iu.edu', 'javaugh', '$2y$10$SQqkNaKROuWpyGb07QlrZ.cg3fqMuxZKYiOgMQqt/khGfpJSi2Qf.', 1),
+(5, 'Ran', 'Chang', 'ranchang@iupui.edu', 'ranchang', '$2y$10$./8nYF2Y6Z1usZRpaa3U1.LJtKNXzXiWeOcAKU1LLDREzBIpTkB2S', 0),
+(6, 'admin', 'admin', 'admin@admin.com', 'admin', '$2y$10$MLsYdbWVR7YQePe0YPRXnO0aznxYIwj051O4PUR/EutHDsLv5E/Ze', 1);
 
 --
 -- Indexes for dumped tables
@@ -163,13 +165,13 @@ ALTER TABLE `courses`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `productID` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `productID` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables
