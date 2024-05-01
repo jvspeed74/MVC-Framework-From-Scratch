@@ -8,27 +8,24 @@
 class CartController extends Controller {
     
     /**
-     * @var CartModel The model instance for the shopping cart.
-     */
-    protected object $model;
-    
-    /**
      * CartController constructor.
      *
      * Initializes the controller and sets the model property to CartModel.
      */
     public function __construct() {
-        parent::__construct();
-        $this->model = $this->loadModel();
+        // Load CartManager
+        $this->model = CartManager::getInstance();
+        $this->session = SessionManager::getInstance();
     }
     
     /**
-     * Loads the CartModel.
-     *
-     * @return CartModel The CartModel instance.
+     * Renders the cart view.
      */
-    protected function loadModel(): CartModel {
-        return new CartModel();
+    public function index(): void {
+        // Retrieve items from the model
+        $items = $this->model->getCart();
+        // Render cart view
+        CartIndexView::render($items);
     }
     
     /**
@@ -36,14 +33,16 @@ class CartController extends Controller {
      *
      * @param mixed $id The ID of the product to add.
      *
-     * @throws InvalidArgumentException if the product ID is invalid.
      */
     public function add(mixed $id): void {
         try {
-            $this->model->addItem($id);
+            // Add item to cart
+            $this->model->addToCart($id);
+            // Redirect to cart index
             $this->index();
-        } catch (InvalidArgumentException $exception) {
-            $this->error($exception->getMessage());
+        } catch (ProductNotFoundException $e) {
+            $this->error($e->getMessage());
+            return;
         }
     }
     
@@ -53,7 +52,9 @@ class CartController extends Controller {
      * @param mixed $id The ID of the product to remove.
      */
     public function remove(mixed $id): void {
-        $this->model->removeItem($id);
+        // Remove item from cart
+        $this->model->removeFromCart($id);
+        // Redirect to cart index
         $this->index();
     }
     
@@ -61,21 +62,47 @@ class CartController extends Controller {
      * Updates the quantities of products in the cart.
      */
     public function update(): void {
-        try {
-            foreach ($_POST['quantity'] as $id => $quantity) {
-                $this->model->updateQuantity($id, $quantity);
-            }
+        if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             $this->index();
-        } catch (InvalidArgumentException $exception) {
-            $this->error($exception->getMessage());
+            return;
         }
+        
+        // Update quantities based on POST data
+        foreach ($_POST['quantity'] as $id => $quantity) {
+            // Validate that quantity is a positive integer
+            try {
+                if (!is_numeric($quantity)) {
+                    // Throw critical error for non-integer inputs
+                    throw new InvalidQuantityException('Invalid update quantity. Please enter an integer value.  ');
+                }
+            } catch (InvalidQuantityException $e) {
+                $this->error($e->getMessage());
+                return;
+            }
+            
+            // Update quantity
+            $this->model->updateQuantity($id, intval($quantity));
+        }
+        // Redirect to cart index
+        $this->index();
     }
     
-    /**
-     * Renders the cart view.
-     */
-    public function index(): void {
-        $items = $this->model->getItems();
-        CartIndexView::render($items);
+    public function checkout(): void {
+        // Verify user is signed in
+        if (!AccountManager::getInstance()->isLoggedIn()) {
+            $message = urlencode("Please log in to continue");
+            header('Location: ' . BASE_URL . '/user/login/?message=' . $message);
+            return;
+        }
+        
+        // Destroy the cart
+        $this->model->destroyCart();
+        
+        // Display page verifying checkout is complete.
+        CartCheckoutView::render();
+    }
+    
+    public function error($message): void {
+        header("Location: " . BASE_URL . '/cart/index/?message=' . $message);
     }
 }

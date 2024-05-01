@@ -1,13 +1,14 @@
 <?php
 
 /**
- * File: Model.php
- * Created By: Jalen Vaughn
- * Date: 4/9/2024
- * Description: Creates an abstract class Model that contains the base functionality of each inherited model.
+ * Abstract class Model
+ *
+ * Base class for models in the application.
  */
 abstract class Model {
-    
+    /**
+     * @var Database The database connection instance.
+     */
     protected Database $db;
     
     /**
@@ -15,12 +16,14 @@ abstract class Model {
      * Initializes the database connection.
      */
     protected function __construct() {
+        // Initialize the database connection
         $this->db = Database::getInstance();
     }
     
     /**
-     * Returns an instance of the concrete class implementing this abstract class
+     * Returns an instance of the concrete class implementing this abstract class.
+     *
+     * This method should be implemented by concrete subclasses to return an instance of the concrete class.
      */
     abstract static public function getInstance();
 }
-

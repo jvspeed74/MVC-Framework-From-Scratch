@@ -1,12 +1,10 @@
 <?php
+
 /**
- * Author: Jalen Vaughn
- * Date: 4/8/24
- * File: Product.php
- * Description: Data transfer object for a Product.
+ * Class Product
+ *
+ * Data Transfer Object for the Products Table
  */
-
-
 class Product {
     private ?string $productID = null;
     private ?string $name = null;

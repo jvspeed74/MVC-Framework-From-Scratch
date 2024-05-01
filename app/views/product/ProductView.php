@@ -1,12 +1,21 @@
 <?php
 
 /**
- * Author: Jalen Vaughn
- * Date: 4/24/2024
- * File: ProductView.php
- * Description:
+ * Class ProductView
+ *
+ * Represents the base view for product-related pages.
  */
 class ProductView extends View {
+    
+    /**
+     * Renders the header section of the product view.
+     *
+     * This method outputs the HTML content for the header section,
+     * including the page title and a header banner.
+     *
+     * @param string $pageTitle The title of the page.
+     * @return void
+     */
     public static function header(string $pageTitle): void {
         parent::header($pageTitle);
         ?>

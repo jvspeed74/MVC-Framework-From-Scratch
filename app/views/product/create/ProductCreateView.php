@@ -1,14 +1,37 @@
 <?php
+/**
+ * NOTE: Login Account Details
+ *
+ * username: admin
+ * password: admin
+ *
+ * This provides you with the "create" feature on the main product page.
+ *
+ * It also allows you to check out products in the shopping cart.
+ */
 
 /**
- * Author: Jalen Vaughn
- * Date: 4/16/2024
- * File: ProductCreateView.php
- * Description:
+ * Class ProductCreateView
+ *
+ * Represents the view for creating a new product.
  */
 class ProductCreateView extends ProductView {
-    public static function render(): void {
+    /**
+     * Renders the product creation form.
+     *
+     * This method outputs the HTML content for displaying a form to create a new product.
+     * It includes input fields for the product name, price, and description, along with a submit button.
+     *
+     * @param string $message
+     * @return void
+     * @throws AccessDeniedException
+     */
+    public static function render(string $message = ''): void {
         parent::header("Product Creation");
+        // Verify user has access to this page.
+        if (!AccountManager::getInstance()->isAdmin()) {
+            throw new AccessDeniedException();
+        }
         ?>
         <!-- Page Content-->
         <div class="compact-product">
@@ -34,6 +57,9 @@ class ProductCreateView extends ProductView {
             </form>
         </div>
         <?php
+        if (!empty($message)) {
+            echo '<div class="alert alert-danger">' . $message . '</div>';
+        }
         parent::footer();
     }
 }

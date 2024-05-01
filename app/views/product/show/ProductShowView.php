@@ -1,13 +1,10 @@
 <?php
+
 /**
- * Author: Jalen Vaughn
- * Date: 4/9/24
- * File: ProductShowView.php
- * Description: Contains the show page for the ProductController.
- * todo show img AND FIX THE DAMN STYLING
+ * Class ProductShowView
+ *
+ * Represents the view for displaying details of a single product.*
  */
-
-
 class ProductShowView extends ProductView {
     
     /**
@@ -29,6 +26,7 @@ class ProductShowView extends ProductView {
             if ($product) {
                 // Output the product details
                 echo '<h2>' . $product->getName() . '</h2>';
+                echo '<img src="' . IMG_URL . $product->getImage() . '" alt="' . $product->getName() . '" class="img-fluid product-image" style="width: 200px; height: 200px;">';
                 echo '<p>Price: $' . $product->getPrice() . '</p>';
                 echo '<p>Description: ' . $product->getDescription() . '</p>';
             } else {
@@ -36,10 +34,12 @@ class ProductShowView extends ProductView {
                 echo '<p>This product does not exist.</p>';
             }
             ?>
-            <p><a href="<?=BASE_URL?>">Back to Product Page</a></p>
+            <p><a href="<?= BASE_URL ?>/product/index" class="btn btn-primary">Back to Product Page</a></p>
         </div>
         </body>
         <?php parent::footer();
     }
 }
+
+?>
 

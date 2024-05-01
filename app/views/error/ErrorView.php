@@ -1,14 +1,11 @@
 <?php
+
 /**
- * File: ErrorView.php
- * Created By: Jalen Vaughn
- * Date: 4/10/2024
- * Description: View for error related activities.
+ * Class ErrorView
+ *
+ * Represents the view for displaying error messages.
  */
-
-
 class ErrorView extends View {
-    
     /**
      * Renders the error view.
      *
@@ -18,7 +15,7 @@ class ErrorView extends View {
      * @param string $message The error message to display.
      * @return void
      */
-    static public function render(string $message): void {
+    public static function render(string $message): void {
         // HTML for error page
         ?>
         <!DOCTYPE html>
@@ -26,7 +23,9 @@ class ErrorView extends View {
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Error</title>
+            <!-- Favicon-->
+            <link rel="icon" type="image/x-icon" href="<?=IMG_URL?>/assets/favicon.ico"/>
+            <title>FitFlex: <?= $message ?></title>
             <style>
                 body {
                     font-family: Arial, sans-serif;
@@ -52,8 +51,8 @@ class ErrorView extends View {
         <body>
         <div class="container">
             <h1>Error</h1>
-            <p><?php echo "$message"; ?></p>
-            <p><a href="<?=BASE_URL?>">Back to Home</a></p>
+            <p><?php echo htmlspecialchars($message); ?></p>
+            <p><a href="<?= BASE_URL ?>">Back to Home</a></p>
         </div>
         </body>
         </html>

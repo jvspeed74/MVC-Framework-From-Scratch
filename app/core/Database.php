@@ -1,24 +1,38 @@
 <?php
+
 /**
- * Author: Jalen Vaughn
- * Date: 4/8/24
- * File: Database.php
- * Description: This class works as an API for database operations.
+ * Class Database
+ *
+ * Handles database connections and queries.
  */
-
-
 class Database {
+    /**
+     * Database connection parameters.
+     * @var array
+     */
     private array $param = [
         'host' => 'localhost',
         'login' => 'phpuser',
         'password' => 'phpuser',
         'database' => 'fitness_db',
     ];
+    
+    /**
+     * The mysqli connection object.
+     * @var mysqli
+     */
     private mysqli $connection;
+    
+    /**
+     * The singular instance of the Database object.
+     * @var Database|null
+     */
     static private ?Database $_instance = null;
     
     /**
-     * Creates DB connection when called
+     * Database constructor.
+     * Creates a database connection.
+     * @throws mysqli_sql_exception if unable to connect to the database.
      */
     private function __construct() {
         try {
@@ -29,18 +43,17 @@ class Database {
                 $this->param['password'],
                 $this->param['database']
             );
-            
-            // Database connection was unsuccessful
         } catch (mysqli_sql_exception $e) {
+            // Handle database connection errors
             ExceptionHandler::handleException($e, "Our data services are currently unresponsive. Please try again later.");
         }
     }
     
     /**
-     * Gets the singular instance of the Database object. This is statically checked
-     * to confirm there is only one Database connection being made.
+     * Gets the singular instance of the Database object.
+     * Implements the Singleton pattern.
      *
-     * @return Database
+     * @return Database The Database instance.
      */
     static public function getInstance(): Database {
         if (self::$_instance == null) {
@@ -52,29 +65,35 @@ class Database {
     /**
      * Send a query to the database.
      *
-     * @param $sql
-     * @return bool|mysqli_result
+     * @param string $sql The SQL query to execute.
+     * @return bool|mysqli_result The result of the query.
+     * @throws mysqli_sql_exception if unable to execute the query.
      */
-    public function query($sql): mysqli_result|bool {
+    public function query(string $sql): mysqli_result|bool {
         try {
-            // Execute the query using the query method of the mysqli object
+            // Execute the query
             return $this->connection->query($sql);
-            
         } catch (mysqli_sql_exception $e) {
+            // Handle query execution errors
             ExceptionHandler::handleException($e, "Unable to process the query made to our data services.");
         }
     }
     
     /**
-     * An intermediary to use the real_escape_string method from the mysqli connection property.
+     * Escapes special characters in a string for use in an SQL statement.
      *
      * @param string $string The string to be escaped.
-     * @return string An escaped string.
+     * @return string The escaped string.
      */
     public function realEscapeString(string $string): string {
         return $this->connection->real_escape_string($string);
     }
     
+    /**
+     * Get the ID generated from the previous INSERT operation.
+     *
+     * @return string The insertion ID.
+     */
     public function getInsertionID(): string {
         return $this->connection->insert_id;
     }

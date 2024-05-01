@@ -1,13 +1,14 @@
 <?php
 
-
 /**
- * Author: Jalen Vaughn
- * Date: 4/8/24
- * File: Dispatcher.php
- * Description: Responsible for routing requests to their appropriate controller and method.
+ * Class Dispatcher
+ *
+ * Handles dispatching requests to the appropriate controller method.
  */
 class Dispatcher {
+    /**
+     * @var Router The router instance to use for dispatching requests.
+     */
     protected Router $router;
     
     /**
@@ -22,21 +23,19 @@ class Dispatcher {
     /**
      * Dispatches the request to the appropriate controller method.
      *
-     * This method uses the provided router to look up the route matching the given URI
-     * and request type. If a matching route is found, it instantiates the corresponding
-     * controller and calls the appropriate method with any captured segments from the URI.
+     *  This method uses the provided router to look up the route matching the given URI
+     *  and request type. If a matching route is found, it instantiates the corresponding
+     *  controller and calls the appropriate method with any captured segments from the URI.
      *
      * @param string $uri The URI of the request.
      * @param string $requestType The type of HTTP request (e.g., GET, POST).
-     *
      * @return mixed The result of the controller method execution.
-     *
      * @throws PageNotFoundException If a request is unable to be dispatched.
      */
     public function dispatch(string $uri, string $requestType): mixed {
-        // Check if the request is for a static file (e.g., CSS, JS, images)
+        // Check if the request is for a static file
         if ($this->isStaticFileRequest($uri)) {
-            // Serve the static file directly (e.g., by returning the file contents)
+            // Serve the static file
             $this->serveStaticFile($uri);
             // Return null to indicate that the request has been handled
             return null;
@@ -45,26 +44,26 @@ class Dispatcher {
         // Proceed with routing for other requests
         $routeInfo = $this->router->lookupRoute($uri, $requestType);
         
-        // The URI is not defined
+        // Handle cases where the URI is not defined
         if ($routeInfo === false) {
             throw new PageNotFoundException();
         }
         
-        // Route is a static file.
+        // Handle cases where the route is a static file
         if ($routeInfo === null) {
             return null;
         }
         
-        // Extract controller method and arguments from the routeInfo array.
+        // Extract controller method and arguments from the routeInfo array
         [$controllerMethod, $args] = $routeInfo;
         
-        // Split the controller method into controller and method name.
+        // Split the controller method into controller and method name
         [$controller, $method] = explode('@', $controllerMethod);
         
-        // Create an instance of the controller.
+        // Create an instance of the controller
         $controllerInstance = new $controller;
         
-        // Call the controller method with arguments and return the result.
+        // Call the controller method with arguments and return the result
         return call_user_func_array([$controllerInstance, $method], $args);
     }
     
@@ -75,7 +74,7 @@ class Dispatcher {
      * @return bool True if the request is for a static file, false otherwise.
      */
     private function isStaticFileRequest(string $uri): bool {
-        // Check if the URI ends with common file extensions for static files (e.g., .css, .js, .jpg)
+        // Check if the URI ends with common file extensions for static files
         return preg_match('/\.(css|js|jpg|jpeg|png|gif|ico)$/', $uri);
     }
     
@@ -84,9 +83,10 @@ class Dispatcher {
      *
      * @param string $uri The URI of the static file.
      * @return void
+     * @throws PageNotFoundException If file is unable to be found.
      */
     private function serveStaticFile(string $uri): void {
-        // Serve the static file directly (e.g., by reading and outputting the file contents)
+        // Serve the static file directly
         $filePath = $_SERVER['DOCUMENT_ROOT'] . $uri;
         if (file_exists($filePath)) {
             // Output appropriate headers
@@ -95,8 +95,7 @@ class Dispatcher {
             readfile($filePath);
         } else {
             // Handle file not found error
-            header("HTTP/1.0 404 Not Found");
-            echo "File not found";
+            throw new PageNotFoundException();
         }
     }
 }
