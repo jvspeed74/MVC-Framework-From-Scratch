@@ -99,6 +99,6 @@ class CartController extends Controller {
         $this->model->destroyCart();
         
         // Display page verifying checkout is complete.
-        $this->index();
+        CartCheckoutView::render();
     }
 }
