@@ -17,14 +17,11 @@ class UserLoginView extends View {
         
         // Check if user is logged in
         if (AccountManager::getInstance()->isLoggedIn()) {
-            self::renderLoggedInView()
-            // Display welcome message ?>
-            <div class="alert alert-success" role="alert">
-                <h2>Welcome <?= AccountManager::getInstance()->getAccountName() ?>!</h2>
-                <p>You are logged in.</p>
-            </div>
-            <?php
+            // Display welcome message
+            self::renderLoggedInView();
+            
         } else {
+            // Check if a message was sent via query string
             if (isset($_GET['message'])) {
                 $message = $_GET['message'];
             }
