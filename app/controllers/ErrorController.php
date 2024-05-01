@@ -2,9 +2,12 @@
 
 //todo document
 class ErrorController {
-    public function display(string $message=''): void {
+    public function display(): void {
+        // Get message
+        $message = $_GET["message"];
+        
         // Display appropriate error message
-        if (empty($message)) {
+        if (empty($_GET['message'])) {
             $message = 'An unknown error occurred while conducting site operations.';
         }
         

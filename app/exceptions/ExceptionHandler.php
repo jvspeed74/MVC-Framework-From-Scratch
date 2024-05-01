@@ -22,8 +22,10 @@ class ExceptionHandler {
         self::logDetails($exception);
         
         // Render the error page
-        $errorController = new ErrorController();
-        $errorController->display($message);
+        
+        header('Location: ' . BASE_URL . "/error/display/?message=" . urlencode($message));
+//        $errorController = new ErrorController();
+//        $errorController->display($message);
         
         // Terminate the application gracefully
         exit();
