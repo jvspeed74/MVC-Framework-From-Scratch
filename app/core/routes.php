@@ -67,6 +67,6 @@ $router->registerRoute("POST", "/cart/update", 'CartController@update');
 
 /**
  * Error Page:
- * - Currently unused but may have functionality in a later build.
+ * - Displays the error page
  */
 $router->registerRoute("GET", "/error/display/{message}", "ErrorController@display");
