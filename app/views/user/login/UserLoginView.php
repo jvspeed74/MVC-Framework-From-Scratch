@@ -18,8 +18,10 @@ class UserLoginView extends View {
         // Check if user is logged in
         if (AccountManager::getInstance()->isLoggedIn()) {
             // Display welcome message ?>
-            <h2>Welcome <?= AccountManager::getInstance()->getAccountName() ?>!</h2>
-            <p>You are logged in.</p>
+            <div class="alert alert-success" role="alert">
+                <h2>Welcome <?= AccountManager::getInstance()->getAccountName() ?>!</h2>
+                <p>You are logged in.</p>
+            </div>
             <?php
         } else {
             if (isset($_GET['message'])) {
@@ -47,12 +49,10 @@ class UserLoginView extends View {
         </form>
         <?php
         if ($message) {
-            echo "<div class='form-container'>";
-            echo htmlspecialchars($message);
-            echo "</div>";
+            echo '<div class="alert alert-danger">' . $message . '</div>';
         }
         ?>
-        <p><a href="<?= BASE_URL ?>/user/signup">Sign Up</a></p>
+        <p><a href="<?= BASE_URL ?>/user/signup" class="btn btn-primary">Sign Up</a></p>
         <?php
     }
 }

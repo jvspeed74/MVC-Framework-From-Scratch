@@ -41,10 +41,9 @@ class CartController extends Controller {
             // Redirect to cart index
             $this->index();
         } catch (ProductNotFoundException $e) {
-            ExceptionHandler::handleException($e, $e->getMessage());
+            CartErrorView::render($e->getMessage());
+            return;
         }
-        
-        
     }
     
     /**
@@ -77,7 +76,8 @@ class CartController extends Controller {
                     throw new InvalidQuantityException('Invalid update quantity. Please enter an integer value.  ');
                 }
             } catch (InvalidQuantityException $e) {
-                ExceptionHandler::handleException($e);
+               CartErrorView::render($e->getMessage());
+               return;
             }
             
             // Update quantity
@@ -100,5 +100,9 @@ class CartController extends Controller {
         
         // Display page verifying checkout is complete.
         CartCheckoutView::render();
+    }
+    
+    public function error($message): void {
+        CartErrorView::render($message);
     }
 }

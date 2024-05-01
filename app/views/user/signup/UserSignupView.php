@@ -24,22 +24,20 @@ class UserSignupView extends View {
     private static function signupForm($message): void {
         ?>
         <h2>Sign Up</h2>
-        <form action="<?=BASE_URL?>/user/signup" method="post">
+        <form action="<?= BASE_URL ?>/user/signup" method="post">
             First Name: <input type="text" name="first-name" required><br>
             Last Name: <input type="text" name="last-name" required><br>
             Email: <input type="email" name="email" required><br>
             Username: <input type="text" name="username" required><br>
             Password: <input type="password" name="password" required><br>
             Confirm Password: <input type="password" name="confirm-password" required><br>
-            <input type="submit" value="Sign Up">
+            <input type="submit" value="Sign Up" class="btn btn-primary">
         </form>
         <?php
         // Error message
         if ($message) {
             // Check the signup status
-            echo "<div class='form-container'>";
-            echo htmlspecialchars($message);
-            echo "</div>";
+            echo '<div class="alert alert-danger">' . $message . '</div>';
         }
     }
 }
