@@ -1,21 +1,8 @@
-# Project Sources
-
-[Roadmap and Task List](https://github.iu.edu/users/javaugh/projects/2/views/5)
-
-[Google Drive Shared Folder](https://drive.google.com/drive/folders/1WyFGIZ_ocX_4AhMUiMJvDxovCNJ5LbBl?usp=drive_link)
-
 # Web Application Project: FitFlex
 
-## Overview
+## Project Goals
 
-Welcome to our final project for I211 Information Infrastructure II! In this project, we'll be developing a robust and
-user-friendly web application aimed at engaging with weight watchers and athletes alike. This project is a culmination
-of our learning journey, where we'll apply various concepts and techniques learned throughout the course to create a
-practical and impactful solution.
-
-### Project Goals
-
-- **Objective:** Design and develop a data-driven, interactive web application using PHP and MySQL.
+- **Objective:** Design and develop a data-driven, interactive web application using PHP and MariaDB.
 - **Focus:** Implement the MVC (Model-View-Controller) software design pattern to ensure a well-structured and
   maintainable codebase.
 - **Functionality:** Provide users with several interactive features that increase engagement.
@@ -49,7 +36,7 @@ practical and impactful solution.
 - Separate concerns by implementing distinct models, views, and controllers.
 - Ensure clear and logical organization of code for ease of development and maintenance.
 
-### 3. Database Management with MySQL
+### 3. Database Management with MariaDB
 
 - Store user data securely in a MySQL database.
 - Optimize database queries for efficient data retrieval and manipulation.
