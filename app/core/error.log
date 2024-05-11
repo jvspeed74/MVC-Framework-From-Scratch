@@ -1,0 +1,1000 @@
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:03 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:04 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] PHP Warning:  preg_match(): Compilation failed: unknown property after \P or \p at offset 4 in C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Router.php on line 53
+[10-May-2024 21:58:05 America/New_York] Page not found: /PHP-OOP-MVC-Framework/public/index.php/error/display/?message=Page+Not+Found%3A+Oops%21+Looks+like+the+page+you+requested+doesn%27t+exist%21
+0
+C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\Dispatcher.php
+49
+#0 C:\xampp\htdocs\PHP-OOP-MVC-Framework\app\core\init.php(27): Dispatcher->dispatch('/PHP-OOP-MVC-Fr...', 'GET')
+#1 C:\xampp\htdocs\PHP-OOP-MVC-Framework\public\index.php(11): require_once('C:\\xampp\\htdocs...')
+#2 {main}
