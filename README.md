@@ -288,4 +288,104 @@ We'll dive into exception handling in a later chapter! For now, let's move onto 
 
 ## Views
 
+Views are the client-oriented layer that provide an interface for interaction. They are the result of the backend work
+done by the heavy lifting of Models and Controllers. The View layer contain action elements that directly call
+controllers in order to complete the events the user requests.
+
+### Declaration
+
+To declare a view:
+
+1. Create a new PHP file in the `views/` directory.
+2. Define a class extending the base View class.
+3. Implement static methods that orchestrate HTML elements.
+
+Example:
+
+```php
+class ErrorView extends View {
+    /**
+     * Renders the error view.
+     *
+     * This method outputs the HTML content for displaying an error message.
+     * It includes the error message within a styled container.
+     *
+     * @param string $message The error message to display.
+     * @return void
+     */
+    public static function render(string $message): void {
+        // HTML for error page
+        ?>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Favicon-->
+            <link rel="icon" type="image/x-icon" href="<?=IMG_URL?>/assets/favicon.ico"/>
+            <title>FitFlex: <?= $message ?></title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f4;
+                }
+
+                .container {
+                    max-width: 600px;
+                    margin: 50px auto;
+                    background-color: #fff;
+                    padding: 20px;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                }
+
+                h1 {
+                    color: #e74c3c;
+                }
+            </style>
+        </head>
+        <body>
+        <div class="container">
+            <h1>Error</h1>
+            <p><?php echo htmlspecialchars($message); ?></p>
+            <p><a href="<?= BASE_URL ?>">Back to Home</a></p>
+        </div>
+        </body>
+        </html>
+        <?php
+    }
+}
+```
+
+Our example represents a view that displays an error message to the user. The static method `render` contains HTML/CSS
+code formatting the page.
+
+We also see PHP logic also incorporated into the method. The View layer is unique in that there should be minimal
+business logic on each view. The model layer handles data processes and the controller layer handles actions and data
+organization.
+
+How does that implementation work?
+
+```php
+    public static function render(string $message): void {
+        // HTML for error page
+        ?>
+```
+
+In our instance, the `render` method accepts one argument:
+
+ - $message - a string representing a message that is displayed on the page.
+
+```php
+        <div class="container">
+            <h1>Error</h1>
+            <p><?php echo htmlspecialchars($message); ?></p>
+            <p><a href="<?= BASE_URL ?>">Back to Home</a></p>
+        </div>
+```
+
+The variable is then 
+
 ## Exception Handling
