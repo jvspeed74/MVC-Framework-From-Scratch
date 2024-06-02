@@ -303,6 +303,8 @@ To declare a view:
 Example:
 
 ```php
+    // app/views/error/ErrorView.php
+
 class ErrorView extends View {
     /**
      * Renders the error view.
@@ -366,7 +368,7 @@ We also see PHP logic also incorporated into the method. The View layer is uniqu
 business logic on each view. The model layer handles data processes and the controller layer handles actions and data
 organization.
 
-How does that implementation work?
+#### How does that implementation work?
 
 ```php
     public static function render(string $message): void {
@@ -376,7 +378,7 @@ How does that implementation work?
 
 In our instance, the `render` method accepts one argument:
 
- - $message - a string representing a message that is displayed on the page.
+ - $message - a string representing an error message that is displayed on the page.
 
 ```php
         <div class="container">
@@ -386,6 +388,33 @@ In our instance, the `render` method accepts one argument:
         </div>
 ```
 
-The variable is then 
+Deeper into the method declaration, the `$message` variable is echoed out onto the web page, providing the user with the
+error information.
+
+#### Where is the render method called from?
+
+View methods can be called from anywhere; however, they are primarily called from the controller layer.
+
+This example has a dedicated controller that handles errors.
+
+```php
+    // app/controllers/ErrorController.php
+
+/**
+ * Controller responsible for displaying error messages.
+ */
+class ErrorController {
+    public function display(): void {
+        // Render the error page
+        ErrorView::render($message);
+    }
+}
+```
+
+Due to the static nature of the `ErrorView` class, its `render` method can be called from anywhere without instantiation
+of an `ErrorView` object. This allows flexibility in the specific use cases that the view provides. Any controller can
+display an error page to the user without jumping through extra hoops.
 
 ## Exception Handling
+
+
