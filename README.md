@@ -90,7 +90,7 @@ order for the class to be recognized by the router/dispatcher.
 
 To declare a controller:
 
-1. Create a new PHP file in the `controllers/` directory.
+1. Create a new PHP file in the `app/controllers/` directory.
 2. Define a class extending the base controller class.
 3. Add methods corresponding to different routes or actions.
 4. Use soft exception handling for higher-level operations.
@@ -123,6 +123,8 @@ The base `Controller` class declares two properties. One for the instance of the
 manager instance.
 
 ```php
+// app/core/Controller.php
+
 abstract class Controller {
     /**
      * @var object|null The model instance associated with the controller.
@@ -136,6 +138,8 @@ abstract class Controller {
 The `SessionManager` class is the endpoint for all $_SESSION variable interactions. Let's take a look at the class.
 
 ```php
+// app/core/SessionManager.php
+
 class SessionManager {
     private static SessionManager $_instance;
     
@@ -194,7 +198,7 @@ Models handle data manipulation and interaction with the database. They reside i
 
 To declare a model:
 
-1. Create a new PHP file in the `models/` directory.
+1. Create a new PHP file in the `app/models/` directory.
 2. Define a class extending the base model class.
 3. Implement methods for CRUD operations and data retrieval.
 4. Use hard exception handling for lower-level operations.
@@ -202,7 +206,7 @@ To declare a model:
 Example:
 
 ```php
-<?php
+// app/models/ProductModel.php
 
 // Represents a model for product.
 class ProductModel extends Model {
@@ -219,7 +223,6 @@ class ProductModel extends Model {
     
     // Other class related methods
 }
-
 ```
 
 The `Database` class is instantiated in the base model class as the `db` property. There is no intervention required in
@@ -228,6 +231,8 @@ copies of the class being declared. It would be far from optimal to connect to t
 See below:
 
 ```php
+// app/core/Model.php
+
 abstract class Model {
 
     protected Database $db;  // The database connection instance.
@@ -407,7 +412,7 @@ organization.
 
 In our instance, the `render` method accepts one argument:
 
-- $message - a string representing an error message that is displayed on the page.
+- `$message` - a string representing an error message that is displayed on the page.
 
 ```php
         <div class="container">
