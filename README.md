@@ -3,6 +3,7 @@
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
+2. [Installation](#installation)
 2. [Folder Structure](#folder-structure)
 3. [Controllers](#controllers)
 4. [Models](#models)
@@ -27,6 +28,35 @@
 
 - The site will host shopping cart functionality tied to a user account.
 - Users can add, remove, update, and checkout products in their cart.
+
+## Installation
+
+### Prerequisites
+
+- **XAMPP**
+  - Free and open-source cross-platform web server solution stack package.
+      - Minimum Version: 8.0
+      - [XAMPP Download Page](https://www.apachefriends.org/download.html)
+
+1. **Clone the repository:**
+    ```
+    git clone https://github.com/jvspeed74/PHP-Web-Framework.git
+    ```
+2. **Copy the repository files to XAMPP's htdocs directory:**
+   - Your directory structure should look like `xampp/htdocs/PHP-Web-Framework`
+
+3. **Start XAMPP:**
+   - Enable `Apache Web Server` and `MySQL Database` from the XAMPP Control Panel.
+
+4. **Import the Database:**
+   - Open phpMyAdmin by heading to `http://localhost/phpmyadmin/` in a web browser (Google, Edge, ect)
+   - From the navigation bar, click on the `Import` tab
+   - In the topmost section, click choose file and import `fitnesss_db.sql` from the repository.
+   - Scroll to the bottom of the page and click `Import`
+
+5. **Run the application:**
+   - Open a web browser and navigate to `http://localhost/PHP-Web-Framework/`
+   - A fitness themed application should be displayed.
 
 ## Folder Structure
 
