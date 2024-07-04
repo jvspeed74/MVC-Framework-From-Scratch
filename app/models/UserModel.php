@@ -127,7 +127,7 @@ class UserModel extends Model {
         $lastName = $this->db->realEscapeString($user->getLastName());
         $email = $this->db->realEscapeString($user->getEmail());
         $userName = $this->db->realEscapeString($user->getUserName());
-        $roleID = 0;  // Base User
+        $roleID = $this->db->realEscapeString($user->getRoleID());
         
         // Hash the password
         $hashedPassword = password_hash($user->getPassword(), PASSWORD_DEFAULT);
