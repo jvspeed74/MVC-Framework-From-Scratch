@@ -14,7 +14,6 @@
 - **Objective:** Design and develop a data-driven, interactive web application using PHP and MariaDB.
 - **Focus:** Implement the MVC (Model-View-Controller) software design pattern to ensure a well-structured and
   maintainable codebase.
-- **Functionality:** Provide users with several interactive features that increase engagement.
 - **User Experience:** Prioritize usability and interactivity to create a seamless experience for users of all levels.
 
 ### Features
@@ -22,12 +21,16 @@
 #### 1. User Authentication
 
 - Allow users to register accounts and securely log in.
-- Implement authentication measures to protect user data.
+- Authentication security measures preventing SQL injection protect user data.
 
 #### 2. E-commerce Store
 
-- The site will host shopping cart functionality tied to a user account.
+- The website hosts shopping cart functionality tied to a user account.
 - Users can add, remove, update, and checkout products in their cart.
+
+#### 3. Session Management
+
+- User sessions are tracked, maintain login state, and shopping cart data across multiple visits.
 
 ## Installation
 
