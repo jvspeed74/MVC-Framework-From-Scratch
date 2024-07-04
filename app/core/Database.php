@@ -12,8 +12,8 @@ class Database {
      */
     private array $param = [
         'host' => 'localhost',
-        'login' => 'phpuser',
-        'password' => 'phpuser',
+        'login' => 'root',
+        'password' => '',
         'database' => 'fitness_db',
     ];
     
