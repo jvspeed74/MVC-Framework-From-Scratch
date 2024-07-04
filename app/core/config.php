@@ -15,9 +15,9 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 set_exception_handler(['ExceptionHandler', 'handleException']);
 
 // Constant URLs used for routing within the application
-const BASE_URL = "/MVC-Framework-From-Scratch/public/index.php";
-const IMG_URL = "/MVC-Framework-From-Scratch/public";
-const PUBLIC_URL = "/MVC-Framework-From-Scratch/public";
+const BASE_URL = "/PHP-Web-Framework/public/index.php";
+const IMG_URL = "/PHP-Web-Framework/public";
+const PUBLIC_URL = "/PHP-Web-Framework/public";
 
 // Set the default time zone to East Coast
 date_default_timezone_set('America/New_York'); // Default time zone for the application
