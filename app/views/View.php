@@ -30,8 +30,7 @@ abstract class View {
         
         // Logic for active navigation links
         $navLinks = [
-            'Shop' => BASE_URL . '/product/index',
-            'Courses' => BASE_URL . '/course/index'
+            'Shop' => BASE_URL . '/product/index'
         ];
         
         ?>
