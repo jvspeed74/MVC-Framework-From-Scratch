@@ -7,7 +7,6 @@
 3. [Controllers](#controllers)
 4. [Models](#models)
 5. [Views](#views)
-6. [Exception Handling](#exception-handling)
 
 ## Project Overview
 
@@ -282,7 +281,7 @@ Let's see exactly how the `Database` object handles that request:
 The `Database` object will attempt to run the SQL query and return the results. PHP's `mysqli` object is used to connect
 to the database. It has a built-in exception named `mysqli_sql_exception`. Any errors or exceptions in database
 operations will throw this exception. This is an example of a low-level exception and is handled abruptly with the user
-created class `ExceptionHandler`.  
+created class `ExceptionHandler`.
 
 We'll dive into exception handling in a later chapter! For now, let's move onto how views work within the framework.
 
@@ -378,7 +377,7 @@ organization.
 
 In our instance, the `render` method accepts one argument:
 
- - $message - a string representing an error message that is displayed on the page.
+- $message - a string representing an error message that is displayed on the page.
 
 ```php
         <div class="container">
@@ -414,7 +413,5 @@ class ErrorController {
 Due to the static nature of the `ErrorView` class, its `render` method can be called from anywhere without instantiation
 of an `ErrorView` object. This allows flexibility in the specific use cases that the view provides. Any controller can
 display an error page to the user without jumping through extra hoops.
-
-## Exception Handling
 
 
