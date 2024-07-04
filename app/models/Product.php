@@ -144,4 +144,21 @@ class Product
         $this->image = $image;
     }
     
+    /**
+     * Gets the correct sale price of the product based on its sale conditions.
+     *
+     * @return string|null
+     */
+    public function getCorrectSalePrice(): ?string
+    {
+        // Product is on sale
+        if ($this->getOnSale()) {
+            return $this->getDiscountPrice();
+        }
+        
+        // Product is not on sale
+        return $this->getPrice();
+        
+    }
+    
 }
