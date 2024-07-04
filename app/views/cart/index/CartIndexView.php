@@ -5,7 +5,8 @@
  *
  * Represents the view for displaying the shopping cart contents.
  */
-class CartIndexView extends CartView {
+class CartIndexView extends CartView
+{
     
     /**
      * Renders the shopping cart view.
@@ -16,20 +17,21 @@ class CartIndexView extends CartView {
      * @param array $items An array containing items in the shopping cart.
      * @return void
      */
-    public static function render(array $items = []): void {
+    public static function render(array $items = []): void
+    {
         parent::header("Shopping Cart");
         $error = $_GET['message'] ?? '';
         ?>
 
         <!-- Optional Error Alert Box -->
         <?php if (!empty($error)): ?>
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>Error:</strong> <?= htmlspecialchars($error) ?>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        <?php endif; ?>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Error:</strong> <?= htmlspecialchars($error) ?>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    <?php endif; ?>
 
         <!-- Cart Table -->
         <div class="table-responsive">

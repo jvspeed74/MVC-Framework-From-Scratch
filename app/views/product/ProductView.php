@@ -5,7 +5,8 @@
  *
  * Represents the base view for product-related pages.
  */
-class ProductView extends View {
+class ProductView extends View
+{
     
     /**
      * Renders the header section of the product view.
@@ -16,7 +17,8 @@ class ProductView extends View {
      * @param string $pageTitle The title of the page.
      * @return void
      */
-    public static function header(string $pageTitle): void {
+    public static function header(string $pageTitle): void
+    {
         parent::header($pageTitle);
         ?>
         <!-- Header-->

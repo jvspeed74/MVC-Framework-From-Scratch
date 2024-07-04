@@ -16,13 +16,15 @@
  *
  * Responsible for rendering the login view.
  */
-class UserLoginView extends View {
+class UserLoginView extends View
+{
     
     /**
      * Render the login view.
      * @param string|null $message Optional message to display (e.g., login failure message).
      */
-    public static function render(?string $message = ''): void {
+    public static function render(?string $message = ''): void
+    {
         // Display header
         parent::header('Login');
         
@@ -45,10 +47,23 @@ class UserLoginView extends View {
     }
     
     /**
+     * Render the welcome screen.
+     */
+    private static function renderLoggedInView(): void
+    {
+        ?>
+        <div class="alert alert-success" role="alert">
+        <h2>Welcome <?= AccountManager::getInstance()->getAccountName() ?>!</h2>
+        <p>You are logged in.</p>
+        <?php
+    }
+    
+    /**
      * Render the login form.
      * @param string|null $message Option
      */
-    private static function renderLoginForm(?string $message = ''): void {
+    private static function renderLoginForm(?string $message = ''): void
+    {
         ?>
         <div class="container">
             <div class="row justify-content-center">
@@ -79,17 +94,6 @@ class UserLoginView extends View {
                 </div>
             </div>
         </div>
-        <?php
-    }
-    
-    /**
-     * Render the welcome screen.
-     */
-    private static function renderLoggedInView(): void {
-        ?>
-        <div class="alert alert-success" role="alert">
-        <h2>Welcome <?= AccountManager::getInstance()->getAccountName() ?>!</h2>
-        <p>You are logged in.</p>
         <?php
     }
 }

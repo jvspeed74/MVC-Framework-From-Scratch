@@ -1,7 +1,9 @@
 <?php
 
-class HomeView extends View {
-    public static function header(string $pageTitle): void {
+class HomeView extends View
+{
+    public static function header(string $pageTitle): void
+    {
         parent::header($pageTitle);
         ?>
         <!-- Header-->

@@ -15,7 +15,8 @@
  *
  * Represents the view for creating a new product.
  */
-class ProductCreateView extends ProductView {
+class ProductCreateView extends ProductView
+{
     /**
      * Renders the product creation form.
      *
@@ -26,7 +27,8 @@ class ProductCreateView extends ProductView {
      * @return void
      * @throws AccessDeniedException
      */
-    public static function render(string $message = ''): void {
+    public static function render(string $message = ''): void
+    {
         parent::header("Product Creation");
         // Verify user has access to this page.
         if (!AccountManager::getInstance()->isAdmin()) {

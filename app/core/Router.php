@@ -5,7 +5,8 @@
  *
  * Handles routing of requests to controller methods based on URI patterns.
  */
-class Router {
+class Router
+{
     /**
      * @var array The registered routes.
      */
@@ -19,7 +20,8 @@ class Router {
      * @param string $controllerMethod The controller method to call when the route matches.
      * @return void
      */
-    public function registerRoute(string $requestType, string $uri, string $controllerMethod): void {
+    public function registerRoute(string $requestType, string $uri, string $controllerMethod): void
+    {
         $this->routes[$requestType][BASE_URL . $uri] = $controllerMethod;
     }
     
@@ -36,7 +38,8 @@ class Router {
      * @return array|bool|null An array containing the controller method and captured
      * segments from the URI, null if the request shouldn't be routed, or false if no route is found.
      */
-    public function lookupRoute(string $uri, string $requestType): null|array|bool {
+    public function lookupRoute(string $uri, string $requestType): null|array|bool
+    {
         // Check if the request is for a static file
         if (preg_match('/\.(css|js|jpg|jpeg|png|gif|ico)$/', $uri)) {
             // Return null to indicate that the request should not be routed

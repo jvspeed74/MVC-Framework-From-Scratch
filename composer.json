@@ -1,23 +1,23 @@
 {
-    "name": "jalenvaughn/i211-team-project",
-    "authors": [
-        {
-            "name": "Jalen Vaughn",
-            "email": "javaugh@iu.edu"
-        }
-    ],
-    "autoload": {
-        "classmap": [
-            "app/"
-        ]
-    },
-    "require": {
-      "ext-mysqli": "*",
-      "ext-fileinfo": "*"
-    },
-    "config": {
-        "allow-plugins": {
-            "composer/installers": true
-        }
+  "name": "jalenvaughn/i211-team-project",
+  "authors": [
+    {
+      "name": "Jalen Vaughn",
+      "email": "javaugh@iu.edu"
     }
+  ],
+  "autoload": {
+    "classmap": [
+      "app/"
+    ]
+  },
+  "require": {
+    "ext-mysqli": "*",
+    "ext-fileinfo": "*"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  }
 }

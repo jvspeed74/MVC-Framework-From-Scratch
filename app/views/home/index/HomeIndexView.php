@@ -6,8 +6,10 @@
  * File: HomeIndexView.php
  * Description:
  */
-class HomeIndexView extends HomeView {
-    public static function render(): void {
+class HomeIndexView extends HomeView
+{
+    public static function render(): void
+    {
         parent::header('Home');
         ?>
         <!-- Page Specific Content -->

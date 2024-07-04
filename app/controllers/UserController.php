@@ -3,60 +3,15 @@
 /**
  * Controller responsible for managing user-related actions.
  */
-class UserController extends Controller {
+class UserController extends Controller
+{
     /**
      * UserController constructor.
      */
-    public function __construct() {
+    public function __construct()
+    {
         $this->model = UserModel::getInstance();
         $this->session = SessionManager::getInstance();
-    }
-    
-    /**
-     * Handles the login action.
-     *
-     * Retrieves user credentials from POST data, verifies them,
-     * and renders the appropriate view based on the verification result.
-     *
-     * @return void
-     */
-    public function login(): void {
-        // Start session
-        $this->session->startSession();
-        
-        // If the form hasn't been submitted, render the login form.
-        if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-            UserLoginView::render();
-            exit();
-        }
-        
-        // Check if appropriate POST data was sent in request.
-        if (empty($_POST['username'])) {
-            UserLoginView::render("Username is required");
-            exit();
-        }
-        
-        if (empty($_POST['password'])) {
-            UserLoginView::render("Password is required");
-            exit();
-        }
-        
-        // Retrieve username and password from POST data
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        
-        // Verify user credentials
-        $user = $this->model->verifyUserCredentials($username, $password);
-        if (!$user) {
-            UserLoginView::render("The username or password is incorrect.");
-            exit();
-        }
-        
-        // Login the account
-        AccountManager::getInstance()->login($user);
-        
-        // Render appropriate view based on verification result
-        UserLoginView::render();
     }
     
     /**
@@ -67,7 +22,8 @@ class UserController extends Controller {
      *
      * @return void
      */
-    public function signup(): void {
+    public function signup(): void
+    {
         // Start session
         $this->session->startSession();
         
@@ -99,24 +55,12 @@ class UserController extends Controller {
     }
     
     /**
-     * Logs out the current user.
-     *
-     * @return void
-     */
-    public function logout(): void {
-        // Log user out
-        AccountManager::getInstance()->logout();
-        
-        // Render the view
-        UserLogoutView::render();
-    }
-    
-    /**
      * Validates the signup request data.
      *
      * @return array The validated signup request data.
      */
-    public function validateSignupRequest(): array {
+    public function validateSignupRequest(): array
+    {
         // Ensure POST data is sent.
         $fields = [
             'first-name' => FILTER_SANITIZE_SPECIAL_CHARS,
@@ -172,5 +116,67 @@ class UserController extends Controller {
         
         // Validated data. If ANYTHING went wrong the user was sent back to the signup view with the according message
         return $filteredFields;
+    }
+    
+    /**
+     * Handles the login action.
+     *
+     * Retrieves user credentials from POST data, verifies them,
+     * and renders the appropriate view based on the verification result.
+     *
+     * @return void
+     */
+    public function login(): void
+    {
+        // Start session
+        $this->session->startSession();
+        
+        // If the form hasn't been submitted, render the login form.
+        if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+            UserLoginView::render();
+            exit();
+        }
+        
+        // Check if appropriate POST data was sent in request.
+        if (empty($_POST['username'])) {
+            UserLoginView::render("Username is required");
+            exit();
+        }
+        
+        if (empty($_POST['password'])) {
+            UserLoginView::render("Password is required");
+            exit();
+        }
+        
+        // Retrieve username and password from POST data
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        
+        // Verify user credentials
+        $user = $this->model->verifyUserCredentials($username, $password);
+        if (!$user) {
+            UserLoginView::render("The username or password is incorrect.");
+            exit();
+        }
+        
+        // Login the account
+        AccountManager::getInstance()->login($user);
+        
+        // Render appropriate view based on verification result
+        UserLoginView::render();
+    }
+    
+    /**
+     * Logs out the current user.
+     *
+     * @return void
+     */
+    public function logout(): void
+    {
+        // Log user out
+        AccountManager::getInstance()->logout();
+        
+        // Render the view
+        UserLogoutView::render();
     }
 }

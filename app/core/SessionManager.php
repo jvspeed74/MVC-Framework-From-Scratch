@@ -5,7 +5,8 @@
  *
  * A singleton class to manage sessions in the application.
  */
-class SessionManager {
+class SessionManager
+{
     /**
      * @var SessionManager The singleton instance of the SessionManager class.
      */
@@ -15,7 +16,8 @@ class SessionManager {
      * SessionManager constructor.
      * Prevent instantiation from outside the class.
      */
-    private function __construct() {
+    private function __construct()
+    {
         // Prevent instantiation
     }
     
@@ -23,7 +25,8 @@ class SessionManager {
      * Get the singleton instance of the SessionManager class.
      * @return SessionManager The singleton instance.
      */
-    public static function getInstance(): SessionManager {
+    public static function getInstance(): SessionManager
+    {
         if (!isset(self::$_instance)) {
             self::$_instance = new self();
         }
@@ -34,7 +37,8 @@ class SessionManager {
      * Start a session if not already started.
      * @return void
      */
-    public function startSession(): void {
+    public function startSession(): void
+    {
         if (session_status() == PHP_SESSION_NONE) {
             session_start();
         }
@@ -45,7 +49,8 @@ class SessionManager {
      * @param array $data An associative array of key-value pairs.
      * @return void
      */
-    public function set(array $data): void {
+    public function set(array $data): void
+    {
         foreach ($data as $key => $value) {
             $_SESSION[$key] = $value;
         }
@@ -56,7 +61,8 @@ class SessionManager {
      * @param string $key The key of the session variable.
      * @return mixed|null The value of the session variable if found, null otherwise.
      */
-    public function get(string $key): mixed {
+    public function get(string $key): mixed
+    {
         return $_SESSION[$key] ?? null;
     }
     
@@ -64,7 +70,8 @@ class SessionManager {
      * Destroy the session.
      * @return void
      */
-    public function destroy(): void {
+    public function destroy(): void
+    {
         session_destroy();
     }
     
@@ -72,7 +79,8 @@ class SessionManager {
      * Check if a session is active.
      * @return bool True if a session is active, false otherwise.
      */
-    public function isActive(): bool {
+    public function isActive(): bool
+    {
         return session_status() === PHP_SESSION_ACTIVE;
     }
 }
