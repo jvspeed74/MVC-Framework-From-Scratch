@@ -5,7 +5,8 @@
  *
  * Handles dispatching requests to the appropriate controller method.
  */
-class Dispatcher {
+class Dispatcher
+{
     /**
      * @var Router The router instance to use for dispatching requests.
      */
@@ -16,7 +17,8 @@ class Dispatcher {
      *
      * @param Router $router The router instance to use for dispatching requests.
      */
-    public function __construct(Router $router) {
+    public function __construct(Router $router)
+    {
         $this->router = $router;
     }
     
@@ -32,7 +34,8 @@ class Dispatcher {
      * @return mixed The result of the controller method execution.
      * @throws PageNotFoundException If a request is unable to be dispatched.
      */
-    public function dispatch(string $uri, string $requestType): mixed {
+    public function dispatch(string $uri, string $requestType): mixed
+    {
         // Check if the request is for a static file
         if ($this->isStaticFileRequest($uri)) {
             // Serve the static file
@@ -73,7 +76,8 @@ class Dispatcher {
      * @param string $uri The URI of the request.
      * @return bool True if the request is for a static file, false otherwise.
      */
-    private function isStaticFileRequest(string $uri): bool {
+    private function isStaticFileRequest(string $uri): bool
+    {
         // Check if the URI ends with common file extensions for static files
         return preg_match('/\.(css|js|jpg|jpeg|png|gif|ico)$/', $uri);
     }
@@ -85,7 +89,8 @@ class Dispatcher {
      * @return void
      * @throws PageNotFoundException If file is unable to be found.
      */
-    private function serveStaticFile(string $uri): void {
+    private function serveStaticFile(string $uri): void
+    {
         // Serve the static file directly
         $filePath = $_SERVER['DOCUMENT_ROOT'] . $uri;
         if (file_exists($filePath)) {

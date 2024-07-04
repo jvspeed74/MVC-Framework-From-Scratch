@@ -5,7 +5,8 @@
  *
  * Represents the view for displaying error messages.
  */
-class ErrorView extends View {
+class ErrorView extends View
+{
     /**
      * Renders the error view.
      *
@@ -15,7 +16,8 @@ class ErrorView extends View {
      * @param string $message The error message to display.
      * @return void
      */
-    public static function render(string $message): void {
+    public static function render(string $message): void
+    {
         // HTML for error page
         ?>
         <!DOCTYPE html>
@@ -24,7 +26,7 @@ class ErrorView extends View {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- Favicon-->
-            <link rel="icon" type="image/x-icon" href="<?=IMG_URL?>/assets/favicon.ico"/>
+            <link rel="icon" type="image/x-icon" href="<?= IMG_URL ?>/assets/favicon.ico"/>
             <title>FitFlex: <?= $message ?></title>
             <style>
                 body {

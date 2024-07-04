@@ -5,7 +5,8 @@
  *
  * Data Transfer Object for the Products Table
  */
-class Product {
+class Product
+{
     private ?string $productID = null;
     private ?string $name = null;
     private ?string $price = null;
@@ -18,112 +19,128 @@ class Product {
     /**
      * @return string|null
      */
-    public function getProductID(): ?string {
+    public function getProductID(): ?string
+    {
         return $this->productID;
     }
     
     /**
      * @param string|null $productID
      */
-    public function setProductID(?string $productID): void {
+    public function setProductID(?string $productID): void
+    {
         $this->productID = $productID;
     }
     
     /**
      * @return string|null
      */
-    public function getName(): ?string {
+    public function getName(): ?string
+    {
         return $this->name;
     }
     
     /**
      * @param string|null $name
      */
-    public function setName(?string $name): void {
+    public function setName(?string $name): void
+    {
         $this->name = $name;
     }
     
     /**
      * @return string|null
      */
-    public function getPrice(): ?string {
+    public function getPrice(): ?string
+    {
         return $this->price;
     }
     
     /**
      * @param string|null $price
      */
-    public function setPrice(?string $price): void {
+    public function setPrice(?string $price): void
+    {
         $this->price = $price;
     }
     
     /**
      * @return string|null
      */
-    public function getDescription(): ?string {
+    public function getDescription(): ?string
+    {
         return $this->description;
     }
     
     /**
      * @param string|null $description
      */
-    public function setDescription(?string $description): void {
+    public function setDescription(?string $description): void
+    {
         $this->description = $description;
     }
     
     /**
      * @return string|null
      */
-    public function getRating(): ?string {
+    public function getRating(): ?string
+    {
         return $this->rating;
     }
     
     /**
      * @param string|null $rating
      */
-    public function setRating(?string $rating): void {
+    public function setRating(?string $rating): void
+    {
         $this->rating = $rating;
     }
     
     /**
      * @return string|null
      */
-    public function getOnSale(): ?string {
+    public function getOnSale(): ?string
+    {
         return $this->onSale;
     }
     
     /**
      * @param string|null $onSale
      */
-    public function setOnSale(?string $onSale): void {
+    public function setOnSale(?string $onSale): void
+    {
         $this->onSale = $onSale;
     }
     
     /**
      * @return string|null
      */
-    public function getDiscountPrice(): ?string {
+    public function getDiscountPrice(): ?string
+    {
         return $this->discountPrice;
     }
     
     /**
      * @param string|null $discountPrice
      */
-    public function setDiscountPrice(?string $discountPrice): void {
+    public function setDiscountPrice(?string $discountPrice): void
+    {
         $this->discountPrice = $discountPrice;
     }
     
     /**
      * @return string|null
      */
-    public function getImage(): ?string {
+    public function getImage(): ?string
+    {
         return $this->image;
     }
     
     /**
      * @param string|null $image
      */
-    public function setImage(?string $image): void {
+    public function setImage(?string $image): void
+    {
         $this->image = $image;
     }
     

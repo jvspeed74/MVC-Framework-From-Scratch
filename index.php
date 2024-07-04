@@ -18,4 +18,4 @@ header("Location: public/index.php");
  * This provides you with the "create" feature on the main product page.
  *
  * It also allows you to check out products in the shopping cart.
-*/
+ */

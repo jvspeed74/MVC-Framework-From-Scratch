@@ -1,7 +1,9 @@
 <?php
 
-class HomeController {
-    public function index(): void {
+class HomeController
+{
+    public function index(): void
+    {
         HomeIndexView::render();
     }
 }

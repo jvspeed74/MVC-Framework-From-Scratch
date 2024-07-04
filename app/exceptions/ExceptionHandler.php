@@ -7,7 +7,8 @@ use JetBrains\PhpStorm\NoReturn;
  *
  * Handles exceptions and errors, logs details, and renders error pages.
  */
-class ExceptionHandler {
+class ExceptionHandler
+{
     /**
      * Handles the given exception or error.
      *
@@ -17,7 +18,8 @@ class ExceptionHandler {
      * @return void
      */
     #[NoReturn]
-    public static function handleException(Exception|Error $exception, string $message = ''): void {
+    public static function handleException(Exception|Error $exception, string $message = ''): void
+    {
         // Log exception details
         self::logDetails($exception);
         
@@ -38,7 +40,8 @@ class ExceptionHandler {
      *
      * @return void
      */
-    protected static function logDetails(Exception|Error $exception): void {
+    protected static function logDetails(Exception|Error $exception): void
+    {
         $exceptionDetails = [
             'message' => $exception->getMessage(),
             'code' => $exception->getCode(),

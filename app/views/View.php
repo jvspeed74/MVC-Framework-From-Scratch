@@ -6,7 +6,8 @@
  * Abstract class containing the foundation for the header and footer methods.
  *
  */
-abstract class View {
+abstract class View
+{
     
     /**
      * Outputs the HTML header for the webpage.
@@ -17,7 +18,8 @@ abstract class View {
      * @param string $pageTitle The title to be displayed on the browser tab.
      * @return void
      */
-    static public function header(string $pageTitle): void {
+    static public function header(string $pageTitle): void
+    {
         // Start session
         $session = SessionManager::getInstance();
         $session->startSession();
@@ -30,8 +32,7 @@ abstract class View {
         
         // Logic for active navigation links
         $navLinks = [
-            'Shop' => BASE_URL . '/product/index',
-            'Courses' => BASE_URL . '/course/index'
+            'Shop' => BASE_URL . '/product/index'
         ];
         
         ?>
@@ -127,7 +128,8 @@ abstract class View {
      *
      * @return void
      */
-    static public function footer(): void {
+    static public function footer(): void
+    {
         ?>
         <!-- Footer-->
         <footer class="py-5 bg-dark">

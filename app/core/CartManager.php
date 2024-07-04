@@ -3,16 +3,18 @@
 /**
  * Manages the shopping cart.
  */
-class CartManager {
+class CartManager
+{
+    const CART_SESSION_KEY = 'cart';
     private static CartManager $_instance;
     private SessionManager $sessionManager;
     private array $cart;
-    const CART_SESSION_KEY = 'cart';
     
     /**
      * CartManager constructor.
      */
-    private function __construct() {
+    private function __construct()
+    {
         $this->sessionManager = SessionManager::getInstance();
         $this->cart = $this->getCartFromSession();
     }
@@ -22,7 +24,8 @@ class CartManager {
      *
      * @return CartManager The instance of CartManager.
      */
-    public static function getInstance(): CartManager {
+    public static function getInstance(): CartManager
+    {
         if (!isset(self::$_instance)) {
             self::$_instance = new self();
         }
@@ -34,7 +37,8 @@ class CartManager {
      *
      * @return array The cart retrieved from the session.
      */
-    private function getCartFromSession(): array {
+    private function getCartFromSession(): array
+    {
         // Start session if not started
         $this->sessionManager->startSession();
         
@@ -49,7 +53,8 @@ class CartManager {
      *
      * @throws ProductNotFoundException If the product is not found.
      */
-    public function addToCart(mixed $productID): void {
+    public function addToCart(mixed $productID): void
+    {
         // Grab product by its ID
         $product = ProductModel::getInstance()->fetchByID($productID);
         
@@ -81,7 +86,8 @@ class CartManager {
      * @param mixed $productID The ID of the product to update quantity for.
      * @param mixed $quantity The new quantity of the product.
      */
-    public function updateQuantity(mixed $productID, mixed $quantity): void {
+    public function updateQuantity(mixed $productID, mixed $quantity): void
+    {
         // Update the quantity of the specified product in the cart
         if (isset($this->cart[$productID])) {
             // If the quantity is below 1, remove the product from the cart
@@ -102,7 +108,8 @@ class CartManager {
      *
      * @param mixed $productID The ID of the product to remove.
      */
-    public function removeFromCart(mixed $productID): void {
+    public function removeFromCart(mixed $productID): void
+    {
         // Remove the product from the cart if it exists
         if (isset($this->cart[$productID])) {
             unset($this->cart[$productID]);
@@ -117,14 +124,16 @@ class CartManager {
      *
      * @return array The current cart.
      */
-    public function getCart(): array {
+    public function getCart(): array
+    {
         return $this->cart;
     }
     
     /**
      * Destroys the cart.
      */
-    public function destroyCart(): void {
+    public function destroyCart(): void
+    {
         // Destroy the cart session
         $this->cart = [];
         $this->sessionManager->set([self::CART_SESSION_KEY => $this->cart]);
@@ -135,7 +144,8 @@ class CartManager {
      *
      * @return int The total quantity of all items in the cart.
      */
-    public function getTotalQuantity(): int {
+    public function getTotalQuantity(): int
+    {
         // Default counter
         $totalQuantity = 0;
         

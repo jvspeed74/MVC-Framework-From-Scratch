@@ -5,7 +5,8 @@
  *
  * Base class for models in the application.
  */
-abstract class Model {
+abstract class Model
+{
     /**
      * @var Database The database connection instance.
      */
@@ -15,7 +16,8 @@ abstract class Model {
      * Model constructor.
      * Initializes the database connection.
      */
-    protected function __construct() {
+    protected function __construct()
+    {
         // Initialize the database connection
         $this->db = Database::getInstance();
     }

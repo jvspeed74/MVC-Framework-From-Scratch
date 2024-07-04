@@ -5,12 +5,14 @@
  *
  * Responsible for displaying user account signup form.
  */
-class UserSignupView extends View {
+class UserSignupView extends View
+{
     
     /**
      * Render the signup form.
      */
-    public static function render($message = ''): void {
+    public static function render($message = ''): void
+    {
         // Display header
         parent::header('Signup');
         
@@ -21,7 +23,8 @@ class UserSignupView extends View {
         parent::footer();
     }
     
-    private static function signupForm(?string $message): void {
+    private static function signupForm(?string $message): void
+    {
         ?>
         <div class="container">
             <div class="row justify-content-center">

@@ -5,27 +5,19 @@
  *
  * Controller responsible for managing the shopping cart.
  */
-class CartController extends Controller {
+class CartController extends Controller
+{
     
     /**
      * CartController constructor.
      *
      * Initializes the controller and sets the model property to CartModel.
      */
-    public function __construct() {
+    public function __construct()
+    {
         // Load CartManager
         $this->model = CartManager::getInstance();
         $this->session = SessionManager::getInstance();
-    }
-    
-    /**
-     * Renders the cart view.
-     */
-    public function index(): void {
-        // Retrieve items from the model
-        $items = $this->model->getCart();
-        // Render cart view
-        CartIndexView::render($items);
     }
     
     /**
@@ -34,7 +26,8 @@ class CartController extends Controller {
      * @param mixed $id The ID of the product to add.
      *
      */
-    public function add(mixed $id): void {
+    public function add(mixed $id): void
+    {
         try {
             // Add item to cart
             $this->model->addToCart($id);
@@ -47,11 +40,28 @@ class CartController extends Controller {
     }
     
     /**
+     * Renders the cart view.
+     */
+    public function index(): void
+    {
+        // Retrieve items from the model
+        $items = $this->model->getCart();
+        // Render cart view
+        CartIndexView::render($items);
+    }
+    
+    public function error($message): void
+    {
+        header("Location: " . BASE_URL . '/cart/index/?message=' . $message);
+    }
+    
+    /**
      * Removes a product from the cart.
      *
      * @param mixed $id The ID of the product to remove.
      */
-    public function remove(mixed $id): void {
+    public function remove(mixed $id): void
+    {
         // Remove item from cart
         $this->model->removeFromCart($id);
         // Redirect to cart index
@@ -61,7 +71,8 @@ class CartController extends Controller {
     /**
      * Updates the quantities of products in the cart.
      */
-    public function update(): void {
+    public function update(): void
+    {
         if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             $this->index();
             return;
@@ -87,7 +98,8 @@ class CartController extends Controller {
         $this->index();
     }
     
-    public function checkout(): void {
+    public function checkout(): void
+    {
         // Verify user is signed in
         if (!AccountManager::getInstance()->isLoggedIn()) {
             $message = urlencode("Please log in to continue");
@@ -100,9 +112,5 @@ class CartController extends Controller {
         
         // Display page verifying checkout is complete.
         CartCheckoutView::render();
-    }
-    
-    public function error($message): void {
-        header("Location: " . BASE_URL . '/cart/index/?message=' . $message);
     }
 }

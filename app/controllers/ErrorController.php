@@ -3,7 +3,8 @@
 /**
  * Controller responsible for displaying error messages.
  */
-class ErrorController {
+class ErrorController
+{
     /**
      * Displays the error message.
      *
@@ -12,7 +13,8 @@ class ErrorController {
      *
      * @return void
      */
-    public function display(): void {
+    public function display(): void
+    {
         // Get message
         $message = $_GET["message"];
         

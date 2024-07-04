@@ -1,21 +1,21 @@
 {
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-        "This file is @generated automatically"
-    ],
-    "content-hash": "f1fe5ced7f51b01079e2f341d3e0c444",
-    "packages": [],
-    "packages-dev": [],
-    "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
-    "prefer-lowest": false,
-    "platform": {
-        "ext-mysqli": "*",
-        "ext-fileinfo": "*"
-    },
-    "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+  "_readme": [
+    "This file locks the dependencies of your project to a known state",
+    "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+    "This file is @generated automatically"
+  ],
+  "content-hash": "f1fe5ced7f51b01079e2f341d3e0c444",
+  "packages": [],
+  "packages-dev": [],
+  "aliases": [],
+  "minimum-stability": "stable",
+  "stability-flags": [],
+  "prefer-stable": false,
+  "prefer-lowest": false,
+  "platform": {
+    "ext-mysqli": "*",
+    "ext-fileinfo": "*"
+  },
+  "platform-dev": [],
+  "plugin-api-version": "2.6.0"
 }

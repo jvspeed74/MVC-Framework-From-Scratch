@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Jul 04, 2024 at 10:48 PM
+-- Host: 127.0.0.1
+-- Generation Time: Jul 05, 2024 at 12:28 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -94,8 +94,8 @@ CREATE TABLE `userroles` (
 --
 
 INSERT INTO `userroles` (`roleID`, `role`) VALUES
-(1, 'Admin'),
-(2, 'Basic');
+(0, 'Default'),
+(1, 'Admin');
 
 -- --------------------------------------------------------
 
@@ -118,7 +118,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`userID`, `firstName`, `lastName`, `email`, `userName`, `password`, `roleID`) VALUES
-(1, 'Jalen', 'Vaughn', 'javaugh@iu.edu', 'javaugh', '$2y$10$SQqkNaKROuWpyGb07QlrZ.cg3fqMuxZKYiOgMQqt/khGfpJSi2Qf.', 1);
+(3, 'Administrator', '1', 'admin1@fitflex.com', 'admin', '$2y$10$IQKkYHvNnkDeKd0GGW1RkePs3W7QrPugylJ.TwsTaH8l1xt6hWaeu', 1);
 
 --
 -- Indexes for dumped tables
@@ -169,7 +169,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables

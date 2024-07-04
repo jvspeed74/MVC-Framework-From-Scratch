@@ -17,12 +17,14 @@
  *
  *
  */
-class CartCheckoutView extends CartView {
+class CartCheckoutView extends CartView
+{
     
     /**
      * Renders the checkout page.
      */
-    public static function render(): void {
+    public static function render(): void
+    {
         parent::header('Checkout');
         ?>
         <div class="alert alert-success" role="alert">

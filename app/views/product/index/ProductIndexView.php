@@ -5,7 +5,8 @@
  *
  * Represents the view for displaying a list of products.
  */
-class ProductIndexView extends ProductView {
+class ProductIndexView extends ProductView
+{
     
     /**
      * Renders the product index view.
@@ -16,7 +17,8 @@ class ProductIndexView extends ProductView {
      * @param array $products An array containing product objects to display.
      * @return void
      */
-    static public function render(array $products = []): void {
+    static public function render(array $products = []): void
+    {
         parent::header("Shop");
         ?>
         <!-- Section-->

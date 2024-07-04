@@ -5,12 +5,14 @@
  *
  * Controller responsible for managing products.
  */
-class ProductController extends Controller {
+class ProductController extends Controller
+{
     
     /*
      * Initializes the controller and loads the model.
      */
-    public function __construct() {
+    public function __construct()
+    {
         $this->model = ProductModel::getInstance();
     }
     
@@ -22,32 +24,13 @@ class ProductController extends Controller {
      *
      * @return void
      */
-    public function index(): void {
+    public function index(): void
+    {
         // Get all products from the database
         $products = $this->model->fetchAll();
         
         // Render the index view
         ProductIndexView::render($products);
-    }
-    
-    /**
-     * Renders the show view displaying details of a single product.
-     *
-     * Queries a single product from the database using the model
-     * based on the provided ID and then renders the show view with the retrieved product.
-     *
-     * @param string $id The ID of the product to display.
-     * @return void
-     */
-    public function show(string $id): void {
-        // Filter and trim the provided product ID
-        $filteredID = htmlspecialchars(trim($id));
-        
-        // Query the product from the database
-        $product = $this->model->fetchByID($filteredID);
-        
-        // Render the show view
-        ProductShowView::render($product);
     }
     
     /**
@@ -57,7 +40,8 @@ class ProductController extends Controller {
      *
      * @return void
      */
-    public function search(): void {
+    public function search(): void
+    {
         // Set default search terms if not provided
         if (!isset($_GET["search-terms"])) {
             $_GET["search-terms"] = "";
@@ -80,7 +64,8 @@ class ProductController extends Controller {
      *
      * @return void
      */
-    public function create(): void {
+    public function create(): void
+    {
         // Verify that user has access and appropriate variables are set.
         try {
             if (!AccountManager::getInstance()->isAdmin()) {
@@ -122,5 +107,26 @@ class ProductController extends Controller {
         
         // Redirect to the show view for the newly created product
         $this->show($productId);
+    }
+    
+    /**
+     * Renders the show view displaying details of a single product.
+     *
+     * Queries a single product from the database using the model
+     * based on the provided ID and then renders the show view with the retrieved product.
+     *
+     * @param string $id The ID of the product to display.
+     * @return void
+     */
+    public function show(string $id): void
+    {
+        // Filter and trim the provided product ID
+        $filteredID = htmlspecialchars(trim($id));
+        
+        // Query the product from the database
+        $product = $this->model->fetchByID($filteredID);
+        
+        // Render the show view
+        ProductShowView::render($product);
     }
 }

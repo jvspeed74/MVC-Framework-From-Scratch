@@ -3,17 +3,16 @@
 /**
  * Represents a model for products.
  */
-class ProductModel extends Model {
-    /**
-     * @var Database $db Database object.
-     */
-    protected Database $db;
-    
+class ProductModel extends Model
+{
     /**
      * @var ProductModel|null $_instance Singleton instance of ProductModel.
      */
     static private ?ProductModel $_instance = null;
-    
+    /**
+     * @var Database $db Database object.
+     */
+    protected Database $db;
     /**
      * @var string $table Database table name.
      */
@@ -23,7 +22,8 @@ class ProductModel extends Model {
      * ProductModel constructor.
      * Initializes the database connection.
      */
-    private function __construct() {
+    private function __construct()
+    {
         parent::__construct();
     }
     
@@ -32,7 +32,8 @@ class ProductModel extends Model {
      *
      * @return ProductModel An instance of the Model.
      */
-    static public function getInstance(): ProductModel {
+    static public function getInstance(): ProductModel
+    {
         if (self::$_instance == null) {
             self::$_instance = new ProductModel();
         }
@@ -47,7 +48,8 @@ class ProductModel extends Model {
      *
      * @return array An array containing Product objects representing all products in the database.
      */
-    public function fetchAll(): array {
+    public function fetchAll(): array
+    {
         // Declare SQL
         $sql = "SELECT * FROM $this->table ORDER BY productID DESC";
         
@@ -72,7 +74,8 @@ class ProductModel extends Model {
      * @param string $id The ID of the product to fetch.
      * @return Product|null A Product object if the product is found, null if not found.
      */
-    public function fetchByID(string $id): ?Product {
+    public function fetchByID(string $id): ?Product
+    {
         // Request product from DB
         $sql = "SELECT * FROM $this->table WHERE productID='$id'";
         $query = $this->db->query($sql);
@@ -87,7 +90,8 @@ class ProductModel extends Model {
      * @param string $terms The provided search terms.
      * @return array The fetched records.
      */
-    public function fetchBySearch(string $terms): array {
+    public function fetchBySearch(string $terms): array
+    {
         // Separate terms into array
         $searchTerms = explode(" ", $terms);
         
@@ -124,7 +128,8 @@ class ProductModel extends Model {
      * @param Product $product The Product object containing the information of the product to be created.
      * @return int|null The ID of the newly created record, or null if creation fails.
      */
-    public function create(Product $product): ?int {
+    public function create(Product $product): ?int
+    {
         // Escape input data to prevent SQL injection
         $escapedName = $this->db->realEscapeString($product->getName());
         $escapedPrice = $this->db->realEscapeString($product->getPrice());

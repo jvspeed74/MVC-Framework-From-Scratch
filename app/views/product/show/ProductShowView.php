@@ -5,7 +5,8 @@
  *
  * Represents the view for displaying details of a single product.*
  */
-class ProductShowView extends ProductView {
+class ProductShowView extends ProductView
+{
     
     /**
      * Renders the product show view.
@@ -16,7 +17,8 @@ class ProductShowView extends ProductView {
      * @param Product|null $product The product object to display details of.
      * @return void
      */
-    static public function render(?Product $product): void {
+    static public function render(?Product $product): void
+    {
         parent::header("View Product"); ?>
         <body>
         <h1>Product Details</h1>

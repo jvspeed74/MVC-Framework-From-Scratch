@@ -5,7 +5,13 @@
  *
  * Handles database connections and queries.
  */
-class Database {
+class Database
+{
+    /**
+     * The singular instance of the Database object.
+     * @var Database|null
+     */
+    static private ?Database $_instance = null;
     /**
      * Database connection parameters.
      * @var array
@@ -16,7 +22,6 @@ class Database {
         'password' => '',
         'database' => 'fitness_db',
     ];
-    
     /**
      * The mysqli connection object.
      * @var mysqli
@@ -24,17 +29,12 @@ class Database {
     private mysqli $connection;
     
     /**
-     * The singular instance of the Database object.
-     * @var Database|null
-     */
-    static private ?Database $_instance = null;
-    
-    /**
      * Database constructor.
      * Creates a database connection.
      * @throws mysqli_sql_exception if unable to connect to the database.
      */
-    private function __construct() {
+    private function __construct()
+    {
         try {
             // Attempt database connection
             $this->connection = new mysqli(
@@ -55,7 +55,8 @@ class Database {
      *
      * @return Database The Database instance.
      */
-    static public function getInstance(): Database {
+    static public function getInstance(): Database
+    {
         if (self::$_instance == null) {
             self::$_instance = new Database();
         }
@@ -69,7 +70,8 @@ class Database {
      * @return bool|mysqli_result The result of the query.
      * @throws mysqli_sql_exception if unable to execute the query.
      */
-    public function query(string $sql): mysqli_result|bool {
+    public function query(string $sql): mysqli_result|bool
+    {
         try {
             // Execute the query
             return $this->connection->query($sql);
@@ -85,7 +87,8 @@ class Database {
      * @param string $string The string to be escaped.
      * @return string The escaped string.
      */
-    public function realEscapeString(string $string): string {
+    public function realEscapeString(string $string): string
+    {
         return $this->connection->real_escape_string($string);
     }
     
@@ -94,7 +97,8 @@ class Database {
      *
      * @return string The insertion ID.
      */
-    public function getInsertionID(): string {
+    public function getInsertionID(): string
+    {
         return $this->connection->insert_id;
     }
 }
