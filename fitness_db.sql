@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 01, 2024 at 05:59 PM
+-- Host: localhost
+-- Generation Time: Jul 04, 2024 at 10:48 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -48,7 +48,7 @@ INSERT INTO `courses` (`courseID`, `title`, `description`, `date`, `startTime`, 
 (3, 'Pilates for Beginners', 'A beginner-friendly Pilates class focusing on core strength and flexibility.', '2024-04-24', '18:30:00', '20:00:00'),
 (4, 'Cardio Kickboxing', 'High-intensity cardio workout combined with martial arts moves.', '2024-05-05', '17:00:00', '18:30:00'),
 (5, 'Tai Chi for Stress Relief', 'Gentle movements and breathing exercises to reduce stress and improve balance.', '2024-05-10', '09:30:00', '11:00:00'),
-(6, 'Hatha Yoga Flow', 'A dynamic yoga class emphasizing breath with movement.', '2024-05-15', '19:00:00', '20:30:00');
+(6, 'Hatha Yoga Flow', 'A dynamic yoga class emphasizing breath with movement.', '2024-04-24', '19:00:00', '20:30:00');
 
 -- --------------------------------------------------------
 
@@ -94,8 +94,8 @@ CREATE TABLE `userroles` (
 --
 
 INSERT INTO `userroles` (`roleID`, `role`) VALUES
-(0, 'Basic'),
-(1, 'Admin');
+(1, 'Admin'),
+(2, 'Basic');
 
 -- --------------------------------------------------------
 
@@ -118,9 +118,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`userID`, `firstName`, `lastName`, `email`, `userName`, `password`, `roleID`) VALUES
-(1, 'Jalen', 'Vaughn', 'javaugh@iu.edu', 'javaugh', '$2y$10$SQqkNaKROuWpyGb07QlrZ.cg3fqMuxZKYiOgMQqt/khGfpJSi2Qf.', 1),
-(5, 'Ran', 'Chang', 'ranchang@iupui.edu', 'ranchang', '$2y$10$./8nYF2Y6Z1usZRpaa3U1.LJtKNXzXiWeOcAKU1LLDREzBIpTkB2S', 0),
-(6, 'admin', 'admin', 'admin@admin.com', 'admin', '$2y$10$MLsYdbWVR7YQePe0YPRXnO0aznxYIwj051O4PUR/EutHDsLv5E/Ze', 1);
+(1, 'Jalen', 'Vaughn', 'javaugh@iu.edu', 'javaugh', '$2y$10$SQqkNaKROuWpyGb07QlrZ.cg3fqMuxZKYiOgMQqt/khGfpJSi2Qf.', 1);
 
 --
 -- Indexes for dumped tables
@@ -165,13 +163,13 @@ ALTER TABLE `courses`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `productID` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `productID` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables
