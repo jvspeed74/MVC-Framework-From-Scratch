@@ -1,5 +1,7 @@
 <?php
+
 namespace PhpWebFramework\core;
+
 /**
  * Abstract class Model
  *

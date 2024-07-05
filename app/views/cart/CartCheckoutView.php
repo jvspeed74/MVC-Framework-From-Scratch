@@ -11,7 +11,8 @@
  */
 
 namespace PhpWebFramework\views\cart;
-use CartBaseView;
+
+use const PhpWebFramework\core\BASE_URL;
 
 /**
  * Class CartCheckoutView
@@ -20,7 +21,7 @@ use CartBaseView;
  *
  *
  */
-class CartCheckoutView extends CartBaseView
+class CartCheckoutView extends CartView
 {
     
     /**

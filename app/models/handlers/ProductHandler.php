@@ -1,5 +1,11 @@
 <?php
+
 namespace PhpWebFramework\models\handlers;
+
+use PhpWebFramework\core\Database;
+use PhpWebFramework\core\Model;
+use PhpWebFramework\models\dto\Product;
+
 /**
  * Represents a model for products.
  */

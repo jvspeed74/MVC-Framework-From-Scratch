@@ -1,14 +1,16 @@
 <?php
 
 namespace PhpWebFramework\views\user;
-use BaseView;
+
+use PhpWebFramework\views\View;
+use const PhpWebFramework\core\BASE_URL;
 
 /**
  * Class UserSignupView
  *
  * Responsible for displaying user account signup form.
  */
-class UserSignupView extends BaseView
+class UserSignupView extends View
 {
     
     /**

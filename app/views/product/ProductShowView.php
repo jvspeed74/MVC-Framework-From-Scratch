@@ -2,15 +2,16 @@
 
 namespace PhpWebFramework\views\product;
 
-use Product;
-use ProductBaseView;
+use PhpWebFramework\models\dto\Product;
+use const PhpWebFramework\core\BASE_URL;
+use const PhpWebFramework\core\IMG_URL;
 
 /**
  * Class ProductShowView
  *
  * Represents the view for displaying details of a single product.*
  */
-class ProductShowView extends ProductBaseView
+class ProductShowView extends ProductView
 {
     
     /**
@@ -24,7 +25,7 @@ class ProductShowView extends ProductBaseView
      */
     static public function render(?Product $product): void
     {
-        parent::header("BaseView Product"); ?>
+        parent::header("View Product"); ?>
         <body>
         <h1>Product Details</h1>
         <div class="product">

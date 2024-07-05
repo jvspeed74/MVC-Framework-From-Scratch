@@ -1,5 +1,9 @@
 <?php
+
 namespace PhpWebFramework\core;
+
+use PhpWebFramework\exceptions\PageNotFoundException;
+
 /**
  * Class Dispatcher
  *

@@ -1,5 +1,7 @@
 <?php
+
 namespace PhpWebFramework\core;
+
 /**
  * Class SessionManager
  *

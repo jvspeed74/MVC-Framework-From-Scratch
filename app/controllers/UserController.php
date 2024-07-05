@@ -1,5 +1,16 @@
 <?php
+
 namespace PhpWebFramework\controllers;
+
+use PhpWebFramework\core\AccountManager;
+use PhpWebFramework\core\Controller;
+use PhpWebFramework\core\SessionManager;
+use PhpWebFramework\models\dto\User;
+use PhpWebFramework\models\handlers\UserHandler;
+use PhpWebFramework\views\user\UserLoginView;
+use PhpWebFramework\views\user\UserLogoutView;
+use PhpWebFramework\views\user\UserSignupView;
+
 /**
  * Controller responsible for managing user-related actions.
  */

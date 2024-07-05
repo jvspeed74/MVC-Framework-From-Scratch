@@ -1,7 +1,6 @@
 <?php
 
 namespace PhpWebFramework\views\home;
-use HomeBaseView;
 
 /**
  * Author: Jalen Vaughn
@@ -9,7 +8,7 @@ use HomeBaseView;
  * File: HomeIndexView.php
  * Description:
  */
-class HomeIndexView extends HomeBaseView
+class HomeIndexView extends HomeView
 {
     public static function render(): void
     {

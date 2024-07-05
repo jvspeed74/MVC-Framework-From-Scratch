@@ -2,6 +2,8 @@
 
 namespace PhpWebFramework\controllers;
 
+use PhpWebFramework\views\error\ErrorView;
+
 /**
  * Controller responsible for displaying error messages.
  */

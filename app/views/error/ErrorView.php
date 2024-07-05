@@ -2,12 +2,16 @@
 
 namespace PhpWebFramework\views\error;
 
+use PhpWebFramework\views\View;
+use const PhpWebFramework\core\BASE_URL;
+use const PhpWebFramework\core\IMG_URL;
+
 /**
  * Class ErrorDisplayView
  *
  * Represents the view for displaying error messages.
  */
-class ErrorDisplayView extends BaseView
+class ErrorView extends View
 {
     /**
      * Renders the error view.

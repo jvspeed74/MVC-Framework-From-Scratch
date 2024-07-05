@@ -1,5 +1,9 @@
 <?php
+
 namespace PhpWebFramework\exceptions;
+
+use Exception;
+
 /**
  * Class InvalidQuantityException
  *

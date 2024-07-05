@@ -1,5 +1,11 @@
 <?php
+
 namespace PhpWebFramework\models\handlers;
+
+use PhpWebFramework\core\Database;
+use PhpWebFramework\core\Model;
+use PhpWebFramework\models\dto\User;
+
 /**
  * Represents a model for users.
  */

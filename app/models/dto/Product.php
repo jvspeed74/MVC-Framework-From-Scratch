@@ -1,5 +1,7 @@
 <?php
+
 namespace PhpWebFramework\models\dto;
+
 /**
  * Class Product
  *
@@ -51,22 +53,6 @@ class Product
     /**
      * @return string|null
      */
-    public function getPrice(): ?string
-    {
-        return $this->price;
-    }
-    
-    /**
-     * @param string|null $price
-     */
-    public function setPrice(?string $price): void
-    {
-        $this->price = $price;
-    }
-    
-    /**
-     * @return string|null
-     */
     public function getDescription(): ?string
     {
         return $this->description;
@@ -94,6 +80,39 @@ class Product
     public function setRating(?string $rating): void
     {
         $this->rating = $rating;
+    }
+    
+    /**
+     * @return string|null
+     */
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+    
+    /**
+     * @param string|null $image
+     */
+    public function setImage(?string $image): void
+    {
+        $this->image = $image;
+    }
+    
+    /**
+     * Gets the correct sale price of the product based on its sale conditions.
+     *
+     * @return string|null
+     */
+    public function getCorrectSalePrice(): ?string
+    {
+        // Product is on sale
+        if ($this->getOnSale()) {
+            return $this->getDiscountPrice();
+        }
+        
+        // Product is not on sale
+        return $this->getPrice();
+        
     }
     
     /**
@@ -131,34 +150,17 @@ class Product
     /**
      * @return string|null
      */
-    public function getImage(): ?string
+    public function getPrice(): ?string
     {
-        return $this->image;
+        return $this->price;
     }
     
     /**
-     * @param string|null $image
+     * @param string|null $price
      */
-    public function setImage(?string $image): void
+    public function setPrice(?string $price): void
     {
-        $this->image = $image;
-    }
-    
-    /**
-     * Gets the correct sale price of the product based on its sale conditions.
-     *
-     * @return string|null
-     */
-    public function getCorrectSalePrice(): ?string
-    {
-        // Product is on sale
-        if ($this->getOnSale()) {
-            return $this->getDiscountPrice();
-        }
-        
-        // Product is not on sale
-        return $this->getPrice();
-        
+        $this->price = $price;
     }
     
 }

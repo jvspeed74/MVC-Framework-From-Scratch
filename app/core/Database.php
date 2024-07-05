@@ -1,5 +1,12 @@
 <?php
+
 namespace PhpWebFramework\core;
+
+use mysqli;
+use mysqli_result;
+use mysqli_sql_exception;
+use PhpWebFramework\exceptions\ExceptionHandler;
+
 /**
  * Class Database
  *

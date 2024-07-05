@@ -1,7 +1,11 @@
 <?php
+
 namespace PhpWebFramework\exceptions;
 
+use Error;
+use Exception;
 use JetBrains\PhpStorm\NoReturn;
+use const PhpWebFramework\core\BASE_URL;
 
 /**
  * Class ExceptionHandler

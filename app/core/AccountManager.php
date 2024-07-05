@@ -1,5 +1,9 @@
 <?php
+
 namespace PhpWebFramework\core;
+
+use PhpWebFramework\models\dto\User;
+
 /**
  * Manages user accounts, including login, logout, and access control.
  */

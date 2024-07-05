@@ -1,14 +1,15 @@
 <?php
 
 namespace PhpWebFramework\views\cart;
-use CartBaseView;
+
+use const PhpWebFramework\core\BASE_URL;
 
 /**
  * Class CartIndexView
  *
  * Represents the view for displaying the shopping cart contents.
  */
-class CartIndexView extends CartBaseView
+class CartIndexView extends CartView
 {
     
     /**

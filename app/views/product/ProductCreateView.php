@@ -11,16 +11,17 @@
  */
 
 namespace PhpWebFramework\views\product;
-use AccessDeniedException;
-use AccountManager;
-use ProductBaseView;
+
+use PhpWebFramework\core\AccountManager;
+use PhpWebFramework\exceptions\AccessDeniedException;
+use const PhpWebFramework\core\BASE_URL;
 
 /**
  * Class ProductCreateView
  *
  * Represents the view for creating a new product.
  */
-class ProductCreateView extends ProductBaseView
+class ProductCreateView extends ProductView
 {
     /**
      * Renders the product creation form.

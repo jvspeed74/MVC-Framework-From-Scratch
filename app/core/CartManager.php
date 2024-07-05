@@ -1,5 +1,10 @@
 <?php
+
 namespace PhpWebFramework\core;
+
+use PhpWebFramework\exceptions\ProductNotFoundException;
+use PhpWebFramework\models\handlers\ProductHandler;
+
 /**
  * Manages the shopping cart.
  */

@@ -2,7 +2,11 @@
 
 namespace PhpWebFramework\views\home;
 
-class HomeBaseView extends BaseView
+use PhpWebFramework\views\View;
+use const PhpWebFramework\core\BASE_URL;
+use const PhpWebFramework\core\IMG_URL;
+
+class HomeView extends View
 {
     public static function header(string $pageTitle): void
     {

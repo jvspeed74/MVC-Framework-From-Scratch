@@ -1,12 +1,20 @@
 <?php
+
 namespace PhpWebFramework\views;
+
+use PhpWebFramework\core\AccountManager;
+use PhpWebFramework\core\CartManager;
+use PhpWebFramework\core\SessionManager;
+use const PhpWebFramework\core\BASE_URL;
+use const PhpWebFramework\core\IMG_URL;
+
 /**
- * Class BaseView
+ * Class View
  *
  * Abstract class containing the foundation for the header and footer methods.
  *
  */
-abstract class BaseView
+abstract class View
 {
     
     /**

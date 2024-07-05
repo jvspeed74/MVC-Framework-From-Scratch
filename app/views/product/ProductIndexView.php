@@ -1,15 +1,17 @@
 <?php
 
 namespace PhpWebFramework\views\product;
-use AccountManager;
-use ProductBaseView;
+
+use PhpWebFramework\core\AccountManager;
+use const PhpWebFramework\core\BASE_URL;
+use const PhpWebFramework\core\IMG_URL;
 
 /**
  * Class CartIndexView
  *
  * Represents the view for displaying a list of products.
  */
-class ProductIndexView extends ProductBaseView
+class ProductIndexView extends ProductView
 {
     
     /**
