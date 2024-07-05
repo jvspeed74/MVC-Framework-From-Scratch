@@ -7,7 +7,7 @@ use const PhpWebFramework\core\BASE_URL;
 use const PhpWebFramework\core\IMG_URL;
 
 /**
- * Class ErrorDisplayView
+ * Class ErrorView
  *
  * Represents the view for displaying error messages.
  */

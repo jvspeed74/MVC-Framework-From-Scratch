@@ -279,7 +279,7 @@ Here is an example of how `ProductModel` uses the `Database` methods.
         // Query DB for data
         $query = $this->db->query($sql);
         
-        // ProductCreateView product obj from result
+        // Create product obj from result
         $results = [];
         while ($row = $query->fetch_object(Product::class)) {
             $results[] = $row;
@@ -342,7 +342,7 @@ Example:
 ```php
     // app/views/error/ErrorDisplayView.php
 
-class ErrorView extends BaseView {
+class ErrorView extends View {
     /**
      * Renders the error view.
      *
