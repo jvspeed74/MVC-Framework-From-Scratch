@@ -50,7 +50,7 @@ class CartIndexView extends CartView
                     <?php foreach ($items as $item): ?>
                         <tr>
                             <td><?= htmlspecialchars($item['product']->getName()) ?></td>
-                            <td>$<?= htmlspecialchars(number_format($item['product']->getPrice(), 2)) ?></td>
+                            <td>$<?= htmlspecialchars(number_format($item['product']->getCorrectSalePrice(), 2)) ?></td>
                             <td>
                                 <form method="post" action="<?= htmlspecialchars(BASE_URL) ?>/cart/update">
                                     <input type="number" class="form-control"
@@ -60,7 +60,7 @@ class CartIndexView extends CartView
                                 </form>
                             </td>
                             <td>
-                                $<?= htmlspecialchars(number_format($item['product']->getPrice() * $item['quantity'], 2)) ?></td>
+                                $<?= htmlspecialchars(number_format($item['product']->getCorrectSalePrice() * $item['quantity'], 2)) ?></td>
                             <td>
                                 <a class="btn btn-danger btn-sm mt-2"
                                    href="<?= htmlspecialchars(BASE_URL) ?>/cart/remove/<?= $item['product']->getProductID() ?>">Remove</a>

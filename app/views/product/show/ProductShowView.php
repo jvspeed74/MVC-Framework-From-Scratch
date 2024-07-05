@@ -29,7 +29,7 @@ class ProductShowView extends ProductView
                 // Output the product details
                 echo '<h2>' . $product->getName() . '</h2>';
                 echo '<img src="' . IMG_URL . $product->getImage() . '" alt="' . $product->getName() . '" class="img-fluid product-image" style="width: 200px; height: 200px;">';
-                echo '<p>Price: $' . $product->getPrice() . '</p>';
+                echo '<p>Price: $' . $product->getCorrectSalePrice() . '</p>';
                 echo '<p>Description: ' . $product->getDescription() . '</p>';
             } else {
                 // Product not found
