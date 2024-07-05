@@ -6,54 +6,29 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitf1fe5ced7f51b01079e2f341d3e0c444
 {
+    public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PhpWebFramework\\' => 16,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'PhpWebFramework\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
+    );
+
     public static $classMap = array (
-        'AccessDeniedException' => __DIR__ . '/../..' . '/app/exceptions/AccessDeniedException.php',
-        'AccountManager' => __DIR__ . '/../..' . '/app/core/AccountManager.php',
-        'CartCheckoutView' => __DIR__ . '/../..' . '/app/views/cart/checkout/CartCheckoutView.php',
-        'CartController' => __DIR__ . '/../..' . '/app/controllers/CartController.php',
-        'CartIndexView' => __DIR__ . '/../..' . '/app/views/cart/index/CartIndexView.php',
-        'CartManager' => __DIR__ . '/../..' . '/app/core/CartManager.php',
-        'CartView' => __DIR__ . '/../..' . '/app/views/cart/CartView.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Controller' => __DIR__ . '/../..' . '/app/core/Controller.php',
-        'Course' => __DIR__ . '/../..' . '/app/models/Course.php',
-        'CourseController' => __DIR__ . '/../..' . '/app/controllers/CourseController.php',
-        'CourseIndexView' => __DIR__ . '/../..' . '/app/views/course/index/CourseIndexView.php',
-        'CourseModel' => __DIR__ . '/../..' . '/app/models/CourseModel.php',
-        'Database' => __DIR__ . '/../..' . '/app/core/Database.php',
-        'Dispatcher' => __DIR__ . '/../..' . '/app/core/Dispatcher.php',
-        'ErrorController' => __DIR__ . '/../..' . '/app/controllers/ErrorController.php',
-        'ErrorView' => __DIR__ . '/../..' . '/app/views/error/ErrorView.php',
-        'ExceptionHandler' => __DIR__ . '/../..' . '/app/exceptions/ExceptionHandler.php',
-        'HomeController' => __DIR__ . '/../..' . '/app/controllers/HomeController.php',
-        'HomeIndexView' => __DIR__ . '/../..' . '/app/views/home/index/HomeIndexView.php',
-        'HomeView' => __DIR__ . '/../..' . '/app/views/home/HomeView.php',
-        'InvalidQuantityException' => __DIR__ . '/../..' . '/app/exceptions/InvalidQuantityException.php',
-        'Model' => __DIR__ . '/../..' . '/app/core/Model.php',
-        'NotImplementedException' => __DIR__ . '/../..' . '/app/exceptions/NotImplementedException.php',
-        'PageNotFoundException' => __DIR__ . '/../..' . '/app/exceptions/PageNotFoundException.php',
-        'Product' => __DIR__ . '/../..' . '/app/models/Product.php',
-        'ProductController' => __DIR__ . '/../..' . '/app/controllers/ProductController.php',
-        'ProductCreateView' => __DIR__ . '/../..' . '/app/views/product/create/ProductCreateView.php',
-        'ProductIndexView' => __DIR__ . '/../..' . '/app/views/product/index/ProductIndexView.php',
-        'ProductModel' => __DIR__ . '/../..' . '/app/models/ProductModel.php',
-        'ProductNotFoundException' => __DIR__ . '/../..' . '/app/exceptions/ProductNotFoundException.php',
-        'ProductShowView' => __DIR__ . '/../..' . '/app/views/product/show/ProductShowView.php',
-        'ProductView' => __DIR__ . '/../..' . '/app/views/product/ProductView.php',
-        'Router' => __DIR__ . '/../..' . '/app/core/Router.php',
-        'SessionManager' => __DIR__ . '/../..' . '/app/core/SessionManager.php',
-        'User' => __DIR__ . '/../..' . '/app/models/User.php',
-        'UserController' => __DIR__ . '/../..' . '/app/controllers/UserController.php',
-        'UserLoginView' => __DIR__ . '/../..' . '/app/views/user/login/UserLoginView.php',
-        'UserLogoutView' => __DIR__ . '/../..' . '/app/views/user/logout/UserLogoutView.php',
-        'UserModel' => __DIR__ . '/../..' . '/app/models/UserModel.php',
-        'UserSignupView' => __DIR__ . '/../..' . '/app/views/user/signup/UserSignupView.php',
-        'View' => __DIR__ . '/../..' . '/app/views/View.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf1fe5ced7f51b01079e2f341d3e0c444::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf1fe5ced7f51b01079e2f341d3e0c444::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInitf1fe5ced7f51b01079e2f341d3e0c444::$classMap;
 
         }, null, ClassLoader::class);

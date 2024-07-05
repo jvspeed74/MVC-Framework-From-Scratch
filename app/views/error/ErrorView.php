@@ -1,5 +1,11 @@
 <?php
 
+namespace PhpWebFramework\views\error;
+
+use PhpWebFramework\views\View;
+use const PhpWebFramework\core\BASE_URL;
+use const PhpWebFramework\core\IMG_URL;
+
 /**
  * Class ErrorView
  *

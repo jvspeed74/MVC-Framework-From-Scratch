@@ -1,5 +1,10 @@
 <?php
 
+namespace PhpWebFramework\core;
+
+use PhpWebFramework\exceptions\ProductNotFoundException;
+use PhpWebFramework\models\handlers\ProductHandler;
+
 /**
  * Manages the shopping cart.
  */
@@ -56,7 +61,7 @@ class CartManager
     public function addToCart(mixed $productID): void
     {
         // Grab product by its ID
-        $product = ProductModel::getInstance()->fetchByID($productID);
+        $product = ProductHandler::getInstance()->fetchByID($productID);
         
         // Check if product exists
         if (!$product) {

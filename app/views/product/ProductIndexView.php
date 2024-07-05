@@ -1,5 +1,11 @@
 <?php
 
+namespace PhpWebFramework\views\product;
+
+use PhpWebFramework\core\AccountManager;
+use const PhpWebFramework\core\BASE_URL;
+use const PhpWebFramework\core\IMG_URL;
+
 /**
  * Class ProductIndexView
  *
@@ -71,11 +77,11 @@ class ProductIndexView extends ProductView
                                             <?php } ?>
                                             <!-- Product price-->
                                             <?php if ($product->getOnSale() && $product->getDiscountPrice() != null) {
-                                                // Show discounted price
+                                                // ProductShowView discounted price
                                                 echo '<span class="text-muted text-decoration-line-through">$' . $product->getPrice() . '</span><br>';
                                                 echo "$" . $product->getDiscountPrice();
                                             } else {
-                                                // Show regular price
+                                                // ProductShowView regular price
                                                 echo "$" . $product->getPrice();
                                             }
                                             ?>

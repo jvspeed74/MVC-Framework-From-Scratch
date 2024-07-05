@@ -1,5 +1,9 @@
 <?php
 
+namespace PhpWebFramework\views\product;
+
+use PhpWebFramework\views\View;
+
 /**
  * Class ProductView
  *

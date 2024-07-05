@@ -1,5 +1,9 @@
 <?php
 
+namespace PhpWebFramework\exceptions;
+
+use Exception;
+
 /**
  * Represents an exception thrown when access is denied.
  */

@@ -3,8 +3,13 @@
  * File: init.php
  *
  * Description: Initializes the required files and code needed to run the index page.
- * The purpose of this file is to be a hub so the index.php isn't cluttered with code.
  */
+
+namespace PhpWebFramework\core;
+
+use PhpWebFramework\exceptions\ExceptionHandler;
+use PhpWebFramework\exceptions\PageNotFoundException;
+
 
 // Include Composer autoload file
 require_once "../vendor/autoload.php";

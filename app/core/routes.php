@@ -5,6 +5,14 @@
  * Description: Contains route declarations for each page.
  */
 
+namespace PhpWebFramework\core;
+
+use PhpWebFramework\controllers\CartController;
+use PhpWebFramework\controllers\ErrorController;
+use PhpWebFramework\controllers\HomeController;
+use PhpWebFramework\controllers\ProductController;
+use PhpWebFramework\controllers\UserController;
+
 // Initialize Router object
 $router = new Router();
 
@@ -12,7 +20,7 @@ $router = new Router();
  * Home page:
  * - index: Displays a static welcome page
  */
-$router->registerRoute('GET', "", 'HomeController@index');
+$router->registerRoute('GET', "", [HomeController::class, 'index']);
 
 
 /**
@@ -22,20 +30,11 @@ $router->registerRoute('GET', "", 'HomeController@index');
  * - search: Displays the products found in the user search result.
  * - create: Creates a new product based on form submission.
  */
-$router->registerRoute("GET", "/product/index", 'ProductController@index');
-$router->registerRoute("GET", "/product/show/{id}", 'ProductController@show');
-$router->registerRoute("GET", "/product/search/{terms}", 'ProductController@search');
-$router->registerRoute("GET", "/product/create", 'ProductController@create');
-$router->registerRoute("POST", "/product/create", 'ProductController@create');
-
-/**
- * Courses page:
- * - index: Displays a calendar of all courses.
- * - fetch: Fetches courses based on a specific date.
- */
-$router->registerRoute("GET", "/course/index", "CourseController@index");
-$router->registerRoute("GET", "/course/fetch", "CourseController@fetch");
-$router->registerRoute("GET", "/course/fetch/{date}", "CourseController@fetch");
+$router->registerRoute("GET", "/product/index", [ProductController::class, 'index']);
+$router->registerRoute("GET", "/product/show/{id}", [ProductController::class, 'show']);
+$router->registerRoute("GET", "/product/search/{terms}", [ProductController::class, 'search']);
+$router->registerRoute("GET", "/product/create", [ProductController::class, 'create']);
+$router->registerRoute("POST", "/product/create", [ProductController::class, 'create']);
 
 /**
  * User page:
@@ -43,13 +42,12 @@ $router->registerRoute("GET", "/course/fetch/{date}", "CourseController@fetch");
  * - signup: Handles user signup.
  * - logout: Handles user logout.
  */
-$router->registerRoute("GET", "/user/login", "UserController@login");
-$router->registerRoute("GET", "/user/login/{message}", "UserController@login");
-$router->registerRoute("GET", "/user/signup", "UserController@signup");
-$router->registerRoute('GET', '/user/logout', 'UserController@logout');
-
-$router->registerRoute("POST", "/user/login", "UserController@login");
-$router->registerRoute("POST", "/user/signup", "UserController@signup");
+$router->registerRoute("GET", "/user/login", [UserController::class, 'login']);
+$router->registerRoute("GET", "/user/login/{message}", [UserController::class, 'login']);
+$router->registerRoute("GET", "/user/signup", [UserController::class, 'signup']);
+$router->registerRoute('GET', '/user/logout', [UserController::class, 'logout']);
+$router->registerRoute("POST", "/user/login", [UserController::class, 'login']);
+$router->registerRoute("POST", "/user/signup", [UserController::class, 'signup']);
 
 /**
  * Shopping Cart Page:
@@ -58,16 +56,15 @@ $router->registerRoute("POST", "/user/signup", "UserController@signup");
  * - remove: Removes a product from the cart.
  * - update: Updates the quantities of products in the cart.
  */
-$router->registerRoute("GET", "/cart/index", 'CartController@index');
-$router->registerRoute("GET", "/cart/index/{message}", 'CartController@index');
-$router->registerRoute("GET", "/cart/add/{id}", 'CartController@add');
-$router->registerRoute("GET", "/cart/remove/{id}", 'CartController@remove');
-$router->registerRoute("GET", "/cart/checkout", 'CartController@checkout');
-
-$router->registerRoute("POST", "/cart/update", 'CartController@update');
+$router->registerRoute("GET", "/cart/index", [CartController::class, 'index']);
+$router->registerRoute("GET", "/cart/index/{message}", [CartController::class, 'index']);
+$router->registerRoute("GET", "/cart/add/{id}", [CartController::class, 'add']);
+$router->registerRoute("GET", "/cart/remove/{id}", [CartController::class, 'remove']);
+$router->registerRoute("GET", "/cart/checkout", [CartController::class, 'checkout']);
+$router->registerRoute("POST", "/cart/update", [CartController::class, 'update']);
 
 /**
  * Error Page:
  * - Displays the error page
  */
-$router->registerRoute("GET", "/error/display/{message}", "ErrorController@display");
+$router->registerRoute("GET", "/error/display/{message}", [ErrorController::class, 'display']);

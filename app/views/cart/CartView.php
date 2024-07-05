@@ -1,5 +1,11 @@
 <?php
 
+namespace PhpWebFramework\views\cart;
+
+use PhpWebFramework\core\CartManager;
+use PhpWebFramework\views\View;
+use const PhpWebFramework\core\BASE_URL;
+
 /**
  * Represents the base view for the shopping cart.
  */

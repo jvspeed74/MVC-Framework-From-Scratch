@@ -1,5 +1,11 @@
 <?php
 
+namespace PhpWebFramework\views\product;
+
+use PhpWebFramework\models\dto\Product;
+use const PhpWebFramework\core\BASE_URL;
+use const PhpWebFramework\core\IMG_URL;
+
 /**
  * Class ProductShowView
  *

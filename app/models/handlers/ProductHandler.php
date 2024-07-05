@@ -1,14 +1,20 @@
 <?php
 
+namespace PhpWebFramework\models\handlers;
+
+use PhpWebFramework\core\Database;
+use PhpWebFramework\core\Model;
+use PhpWebFramework\models\dto\Product;
+
 /**
  * Represents a model for products.
  */
-class ProductModel extends Model
+class ProductHandler extends Model
 {
     /**
-     * @var ProductModel|null $_instance Singleton instance of ProductModel.
+     * @var ProductHandler|null $_instance Singleton instance of ProductModel.
      */
-    static private ?ProductModel $_instance = null;
+    static private ?ProductHandler $_instance = null;
     /**
      * @var Database $db Database object.
      */
@@ -30,12 +36,12 @@ class ProductModel extends Model
     /**
      * Retrieves an instance of the ProductModel.
      *
-     * @return ProductModel An instance of the Model.
+     * @return ProductHandler An instance of the Model.
      */
-    static public function getInstance(): ProductModel
+    static public function getInstance(): ProductHandler
     {
         if (self::$_instance == null) {
-            self::$_instance = new ProductModel();
+            self::$_instance = new ProductHandler();
         }
         return self::$_instance;
     }

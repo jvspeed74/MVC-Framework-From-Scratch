@@ -1,5 +1,9 @@
 <?php
 
+namespace PhpWebFramework\controllers;
+
+use PhpWebFramework\views\error\ErrorView;
+
 /**
  * Controller responsible for displaying error messages.
  */
@@ -11,15 +15,14 @@ class ErrorController
      * Retrieves the error message from the GET parameters,
      * and renders the appropriate view based on the message.
      *
+     * @param string $message
      * @return void
      */
-    public function display(): void
+    public function display(string $message = ''): void
     {
-        // Get message
-        $message = $_GET["message"];
         
         // Display appropriate error message
-        if (empty($_GET['message'])) {
+        if (!$message) {
             $message = 'An unknown error occurred while conducting site operations.';
         }
         

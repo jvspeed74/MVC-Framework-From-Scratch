@@ -1,5 +1,9 @@
 <?php
 
+namespace PhpWebFramework\views\cart;
+
+use const PhpWebFramework\core\BASE_URL;
+
 /**
  * Class CartIndexView
  *

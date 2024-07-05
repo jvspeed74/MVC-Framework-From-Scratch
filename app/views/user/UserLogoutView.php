@@ -1,5 +1,9 @@
 <?php
 
+namespace PhpWebFramework\views\user;
+
+use PhpWebFramework\views\View;
+
 /**
  * Class UserLogoutView
  * Represents the view for user logout.

@@ -1,5 +1,16 @@
 <?php
 
+namespace PhpWebFramework\controllers;
+
+use PhpWebFramework\core\AccountManager;
+use PhpWebFramework\core\Controller;
+use PhpWebFramework\core\SessionManager;
+use PhpWebFramework\models\dto\User;
+use PhpWebFramework\models\handlers\UserHandler;
+use PhpWebFramework\views\user\UserLoginView;
+use PhpWebFramework\views\user\UserLogoutView;
+use PhpWebFramework\views\user\UserSignupView;
+
 /**
  * Controller responsible for managing user-related actions.
  */
@@ -10,7 +21,7 @@ class UserController extends Controller
      */
     public function __construct()
     {
-        $this->model = UserModel::getInstance();
+        $this->model = UserHandler::getInstance();
         $this->session = SessionManager::getInstance();
     }
     
@@ -36,7 +47,7 @@ class UserController extends Controller
         // Validate POST data
         $fields = $this->validateSignupRequest();
         
-        // Create user DTO
+        // Create user dto
         $user = new User();
         $user->setFirstName($fields['first-name']);
         $user->setLastName($fields['last-name']);
@@ -44,7 +55,7 @@ class UserController extends Controller
         $user->setUsername($fields['username']);
         $user->setPassword($fields['password']);
         
-        // Send request to UserModel
+        // Send request to UserHandler
         if (!$this->model->create($user)) {
             UserSignupView::render("An error occurred while trying to create an account.");
             exit();

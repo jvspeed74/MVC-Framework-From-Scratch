@@ -1,5 +1,13 @@
 <?php
 
+namespace PhpWebFramework\views;
+
+use PhpWebFramework\core\AccountManager;
+use PhpWebFramework\core\CartManager;
+use PhpWebFramework\core\SessionManager;
+use const PhpWebFramework\core\BASE_URL;
+use const PhpWebFramework\core\IMG_URL;
+
 /**
  * Class View
  *

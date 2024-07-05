@@ -107,7 +107,7 @@ class ProductController extends Controller {
 
     // Point the model property to the model representing the object (i.e. ProductModel)
     public function __construct() {
-        $this->model = ProductModel::getInstance();
+        $this->model = ProductHandler::getInstance();
     }
 
     public function index() {
@@ -340,7 +340,7 @@ To declare a view:
 Example:
 
 ```php
-    // app/views/error/ErrorView.php
+    // app/views/error/ErrorDisplayView.php
 
 class ErrorView extends View {
     /**
@@ -443,7 +443,7 @@ This example has a dedicated controller that handles errors.
 class ErrorController {
     public function display(): void {
         // Render the error page
-        ErrorView::render($message);
+        ErrorBaseView::render($message);
     }
 }
 ```

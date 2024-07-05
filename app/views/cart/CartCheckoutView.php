@@ -10,6 +10,10 @@
  * It also allows you to check out products in the shopping cart.
  */
 
+namespace PhpWebFramework\views\cart;
+
+use const PhpWebFramework\core\BASE_URL;
+
 /**
  * Class CartCheckoutView
  *
