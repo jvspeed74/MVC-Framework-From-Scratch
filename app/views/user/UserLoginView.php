@@ -13,7 +13,11 @@
 
 namespace PhpWebFramework\views\user;
 
-use PhpWebFramework\core\AccountManager;use PhpWebFramework\views\View;use const PhpWebFramework\core\BASE_URL;/**
+use PhpWebFramework\core\AccountManager;
+use PhpWebFramework\views\View;
+use const PhpWebFramework\core\BASE_URL;
+
+/**
  * Class UserLoginView
  *
  * Responsible for rendering the login view.
