@@ -13,7 +13,7 @@ class ProductController extends Controller
      */
     public function __construct()
     {
-        $this->model = ProductModel::getInstance();
+        $this->model = ProductHandler::getInstance();
     }
     
     /**

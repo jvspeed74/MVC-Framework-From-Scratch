@@ -107,7 +107,7 @@ class ProductController extends Controller {
 
     // Point the model property to the model representing the object (i.e. ProductModel)
     public function __construct() {
-        $this->model = ProductModel::getInstance();
+        $this->model = ProductHandler::getInstance();
     }
 
     public function index() {

@@ -56,7 +56,7 @@ class CartManager
     public function addToCart(mixed $productID): void
     {
         // Grab product by its ID
-        $product = ProductModel::getInstance()->fetchByID($productID);
+        $product = ProductHandler::getInstance()->fetchByID($productID);
         
         // Check if product exists
         if (!$product) {
