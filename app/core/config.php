@@ -8,6 +8,9 @@ namespace PhpWebFramework\core;
 
 use PhpWebFramework\exceptions\ExceptionHandler;
 
+// Set the default time zone to East Coast
+date_default_timezone_set('America/New_York'); // Default time zone for the application
+
 // Set up error reporting for production
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 ini_set('display_errors', 0);
@@ -21,6 +24,3 @@ set_exception_handler([ExceptionHandler::class, 'handleException']);
 // Constant URLs used for routing within the application
 const BASE_URL = "/PHP-Web-Framework/public/index.php";
 const IMG_URL = "/PHP-Web-Framework/public";
-
-// Set the default time zone to East Coast
-date_default_timezone_set('America/New_York'); // Default time zone for the application
