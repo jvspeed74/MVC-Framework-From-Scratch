@@ -1,5 +1,5 @@
 {
-  "name": "jalenvaughn/i211-team-project",
+  "name": "jalenvaughn/php-web-framework",
   "authors": [
     {
       "name": "Jalen Vaughn",
@@ -7,13 +7,14 @@
     }
   ],
   "autoload": {
-    "classmap": [
-      "app/"
-    ]
+    "psr-4": {
+      "PhpWebFramework\\": "app/"
+    }
   },
   "require": {
     "ext-mysqli": "*",
-    "ext-fileinfo": "*"
+    "ext-fileinfo": "*",
+    "php": "^8.0"
   },
   "config": {
     "allow-plugins": {
