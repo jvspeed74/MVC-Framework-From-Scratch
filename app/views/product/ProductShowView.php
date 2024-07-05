@@ -1,11 +1,16 @@
 <?php
 
+namespace PhpWebFramework\views\product;
+
+use Product;
+use ProductBaseView;
+
 /**
  * Class ProductShowView
  *
  * Represents the view for displaying details of a single product.*
  */
-class ProductShowView extends ProductView
+class ProductShowView extends ProductBaseView
 {
     
     /**
@@ -19,7 +24,7 @@ class ProductShowView extends ProductView
      */
     static public function render(?Product $product): void
     {
-        parent::header("View Product"); ?>
+        parent::header("BaseView Product"); ?>
         <body>
         <h1>Product Details</h1>
         <div class="product">

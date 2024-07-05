@@ -10,12 +10,17 @@
  * It also allows you to check out products in the shopping cart.
  */
 
+namespace PhpWebFramework\views\product;
+use AccessDeniedException;
+use AccountManager;
+use ProductBaseView;
+
 /**
  * Class ProductCreateView
  *
  * Represents the view for creating a new product.
  */
-class ProductCreateView extends ProductView
+class ProductCreateView extends ProductBaseView
 {
     /**
      * Renders the product creation form.

@@ -1,11 +1,14 @@
 <?php
 
+namespace PhpWebFramework\views\user;
+use BaseView;
+
 /**
  * Class UserSignupView
  *
  * Responsible for displaying user account signup form.
  */
-class UserSignupView extends View
+class UserSignupView extends BaseView
 {
     
     /**

@@ -1,5 +1,5 @@
 <?php
-
+namespace PhpWebFramework\exceptions;
 /**
  * Class PageNotFoundException
  *

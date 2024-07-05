@@ -1,5 +1,9 @@
 <?php
 
+namespace PhpWebFramework\controllers;
+
+use PhpWebFramework\core\Controller;
+
 /**
  * Class CartController
  *

@@ -6,6 +6,8 @@
  * The purpose of this file is to be a hub so the index.php isn't cluttered with code.
  */
 
+namespace PhpWebFramework\core;
+
 // Include Composer autoload file
 require_once "../vendor/autoload.php";
 

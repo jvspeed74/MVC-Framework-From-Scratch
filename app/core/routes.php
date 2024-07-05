@@ -5,6 +5,8 @@
  * Description: Contains route declarations for each page.
  */
 
+namespace PhpWebFramework\core;
+
 // Initialize Router object
 $router = new Router();
 

@@ -1,11 +1,15 @@
 <?php
 
+namespace PhpWebFramework\views\product;
+use AccountManager;
+use ProductBaseView;
+
 /**
- * Class ProductIndexView
+ * Class CartIndexView
  *
  * Represents the view for displaying a list of products.
  */
-class ProductIndexView extends ProductView
+class ProductIndexView extends ProductBaseView
 {
     
     /**
@@ -71,11 +75,11 @@ class ProductIndexView extends ProductView
                                             <?php } ?>
                                             <!-- Product price-->
                                             <?php if ($product->getOnSale() && $product->getDiscountPrice() != null) {
-                                                // Show discounted price
+                                                // ProductShowView discounted price
                                                 echo '<span class="text-muted text-decoration-line-through">$' . $product->getPrice() . '</span><br>';
                                                 echo "$" . $product->getDiscountPrice();
                                             } else {
-                                                // Show regular price
+                                                // ProductShowView regular price
                                                 echo "$" . $product->getPrice();
                                             }
                                             ?>

@@ -1,5 +1,5 @@
 <?php
-
+namespace PhpWebFramework\core;
 /**
  * Class Dispatcher
  *

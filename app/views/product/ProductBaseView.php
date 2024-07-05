@@ -1,11 +1,13 @@
 <?php
 
+namespace PhpWebFramework\views\product;
+
 /**
- * Class ProductView
+ * Class ProductBaseView
  *
  * Represents the base view for product-related pages.
  */
-class ProductView extends View
+class ProductBaseView extends BaseView
 {
     
     /**

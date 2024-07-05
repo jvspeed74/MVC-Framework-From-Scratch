@@ -1,12 +1,12 @@
 <?php
-
+namespace PhpWebFramework\views;
 /**
- * Class View
+ * Class BaseView
  *
  * Abstract class containing the foundation for the header and footer methods.
  *
  */
-abstract class View
+abstract class BaseView
 {
     
     /**

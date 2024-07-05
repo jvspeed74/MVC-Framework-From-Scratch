@@ -1,5 +1,5 @@
 <?php
-
+namespace PhpWebFramework\core;
 /**
  * Abstract class Controller
  *

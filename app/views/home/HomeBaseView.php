@@ -1,6 +1,8 @@
 <?php
 
-class HomeView extends View
+namespace PhpWebFramework\views\home;
+
+class HomeBaseView extends BaseView
 {
     public static function header(string $pageTitle): void
     {

@@ -1,5 +1,5 @@
 <?php
-
+namespace PhpWebFramework\controllers;
 /**
  * Controller responsible for managing user-related actions.
  */

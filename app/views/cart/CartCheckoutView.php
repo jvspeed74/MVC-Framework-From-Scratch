@@ -10,6 +10,9 @@
  * It also allows you to check out products in the shopping cart.
  */
 
+namespace PhpWebFramework\views\cart;
+use CartBaseView;
+
 /**
  * Class CartCheckoutView
  *
@@ -17,7 +20,7 @@
  *
  *
  */
-class CartCheckoutView extends CartView
+class CartCheckoutView extends CartBaseView
 {
     
     /**

@@ -1,11 +1,13 @@
 <?php
 
+namespace PhpWebFramework\views\error;
+
 /**
- * Class ErrorView
+ * Class ErrorDisplayView
  *
  * Represents the view for displaying error messages.
  */
-class ErrorView extends View
+class ErrorDisplayView extends BaseView
 {
     /**
      * Renders the error view.

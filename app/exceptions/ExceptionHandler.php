@@ -1,4 +1,5 @@
 <?php
+namespace PhpWebFramework\exceptions;
 
 use JetBrains\PhpStorm\NoReturn;
 

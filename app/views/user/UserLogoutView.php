@@ -1,10 +1,13 @@
 <?php
 
+namespace PhpWebFramework\views\user;
+use BaseView;
+
 /**
  * Class UserLogoutView
  * Represents the view for user logout.
  */
-class UserLogoutView extends View
+class UserLogoutView extends BaseView
 {
     
     /**

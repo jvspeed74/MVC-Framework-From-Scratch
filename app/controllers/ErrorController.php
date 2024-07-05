@@ -1,5 +1,7 @@
 <?php
 
+namespace PhpWebFramework\controllers;
+
 /**
  * Controller responsible for displaying error messages.
  */

@@ -1,5 +1,5 @@
 <?php
-
+namespace PhpWebFramework\models\handlers;
 /**
  * Represents a model for products.
  */

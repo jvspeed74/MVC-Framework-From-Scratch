@@ -1,5 +1,5 @@
 <?php
-
+namespace PhpWebFramework\core;
 /**
  * Manages the shopping cart.
  */

@@ -1,5 +1,5 @@
 <?php
-
+namespace PhpWebFramework\models\dto;
 /**
  * Class User
  *

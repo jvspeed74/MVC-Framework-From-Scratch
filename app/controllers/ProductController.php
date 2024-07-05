@@ -1,5 +1,6 @@
 <?php
 
+namespace PhpWebFramework\controllers;
 /**
  * Class ProductController
  *

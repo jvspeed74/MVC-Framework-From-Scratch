@@ -1,5 +1,5 @@
 <?php
-
+namespace PhpWebFramework\core;
 /**
  * Manages user accounts, including login, logout, and access control.
  */

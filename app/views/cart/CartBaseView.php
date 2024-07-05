@@ -1,9 +1,11 @@
 <?php
 
+namespace PhpWebFramework\views\cart;
+
 /**
  * Represents the base view for the shopping cart.
  */
-class CartView extends View
+class CartBaseView extends BaseView
 {
     
     /**
