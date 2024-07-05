@@ -340,7 +340,7 @@ To declare a view:
 Example:
 
 ```php
-    // app/views/error/ErrorDisplayView.php
+    // app/views/error/ErrorView.php
 
 class ErrorView extends View {
     /**
