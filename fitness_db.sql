@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 05, 2024 at 12:28 AM
+-- Generation Time: Jul 05, 2024 at 02:02 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -62,8 +62,8 @@ CREATE TABLE `products` (
   `price` decimal(6,2) NOT NULL,
   `rating` int(1) DEFAULT NULL COMMENT 'Product star rating 1-5',
   `description` varchar(5000) DEFAULT NULL,
-  `onSale` tinyint(1) DEFAULT NULL COMMENT 'If the item is on sale: 1, otherwise 0.',
-  `discountPrice` decimal(6,2) DEFAULT NULL COMMENT 'The product discounted price',
+  `onSale` tinyint(1) NOT NULL COMMENT 'If the item is on sale: 1, otherwise 0.',
+  `discountPrice` decimal(6,2) NOT NULL COMMENT 'The product discounted price',
   `image` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -73,10 +73,10 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`productID`, `name`, `price`, `rating`, `description`, `onSale`, `discountPrice`, `image`) VALUES
 (1, 'Dumbbell Set (10 lbs)', 30.00, 4, 'Pair of 10-pound dumbbells for strength training.', 1, 25.00, '/assets/DumbbellSet.jpg'),
-(2, 'Yoga Mat', 20.00, 5, 'Non-slip yoga mat for comfortable floor exercises.', 0, 0.00, '/assets/yoga%20mat.jpg'),
+(2, 'Yoga Mat', 20.00, 5, 'Non-slip yoga mat for comfortable floor exercises.', 0, 20.00, '/assets/yoga%20mat.jpg'),
 (3, 'Resistance Bands Set', 40.00, 3, 'Set of resistance bands for full-body workouts.', 1, 30.00, '/assets/complete-band-pack.jpeg'),
-(4, 'Jump Rope', 9.99, 5, 'Adjustable jump rope for cardio and agility training.', NULL, NULL, '/assets/jump%20ropes.jpg'),
-(5, 'Foam Roller', 25.00, 5, 'High-density foam roller for muscle recovery and flexibility exercises.', 0, 0.00, '/assets/best-foam-rollers-scaled.jpg');
+(4, 'Jump Rope', 9.99, 5, 'Adjustable jump rope for cardio and agility training.', 0, 9.99, '/assets/jump%20ropes.jpg'),
+(5, 'Foam Roller', 25.00, 5, 'High-density foam roller for muscle recovery and flexibility exercises.', 0, 25.00, '/assets/best-foam-rollers-scaled.jpg');
 
 -- --------------------------------------------------------
 
