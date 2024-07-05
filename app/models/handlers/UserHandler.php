@@ -3,12 +3,12 @@
 /**
  * Represents a model for users.
  */
-class UserModel extends Model
+class UserHandler extends Model
 {
     /**
-     * @var UserModel|null $_instance Singleton instance of UserModel.
+     * @var UserHandler|null $_instance Singleton instance of UserHandler.
      */
-    static private ?UserModel $_instance = null;
+    static private ?UserHandler $_instance = null;
     /**
      * @var Database $db Database object.
      */
@@ -19,7 +19,7 @@ class UserModel extends Model
     private string $table = 'users';
     
     /**
-     * UserModel constructor.
+     * UserHandler constructor.
      * Initializes the database connection.
      */
     private function __construct()
@@ -28,14 +28,14 @@ class UserModel extends Model
     }
     
     /**
-     * Retrieves an instance of the UserModel.
+     * Retrieves an instance of the UserHandler.
      *
-     * @return UserModel An instance of the model.
+     * @return UserHandler An instance of the model.
      */
-    static public function getInstance(): UserModel
+    static public function getInstance(): UserHandler
     {
         if (self::$_instance == null) {
-            self::$_instance = new UserModel();
+            self::$_instance = new UserHandler();
         }
         return self::$_instance;
     }
