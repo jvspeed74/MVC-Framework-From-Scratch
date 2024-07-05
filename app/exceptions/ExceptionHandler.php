@@ -1,6 +1,11 @@
 <?php
 
+namespace PhpWebFramework\exceptions;
+
+use Error;
+use Exception;
 use JetBrains\PhpStorm\NoReturn;
+use PhpWebFramework\controllers\ErrorController;
 
 /**
  * Class ExceptionHandler
@@ -24,13 +29,15 @@ class ExceptionHandler
         self::logDetails($exception);
         
         // Render the error page
-        
-        header('Location: ' . BASE_URL . "/error/display/?message=" . urlencode($message));
-//        $errorController = new ErrorController();
-//        $errorController->display($message);
-        
-        // Terminate the application gracefully
-        exit();
+        try {
+            $errorController = new ErrorController();
+            $errorController->display($message);
+        } catch (Exception $e) {
+            self::logDetails($e);
+        } finally {
+            // Terminate the application gracefully
+            exit();
+        }
     }
     
     /**

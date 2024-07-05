@@ -1,5 +1,9 @@
 <?php
 
+namespace PhpWebFramework\core;
+
+use PhpWebFramework\exceptions\PageNotFoundException;
+
 /**
  * Class Dispatcher
  *
@@ -58,10 +62,7 @@ class Dispatcher
         }
         
         // Extract controller method and arguments from the routeInfo array
-        [$controllerMethod, $args] = $routeInfo;
-        
-        // Split the controller method into controller and method name
-        [$controller, $method] = explode('@', $controllerMethod);
+        [$controller, $method, $args] = $routeInfo;
         
         // Create an instance of the controller
         $controllerInstance = new $controller;

@@ -1,5 +1,10 @@
 <?php
 
+namespace PhpWebFramework\views\user;
+
+use PhpWebFramework\views\View;
+use const PhpWebFramework\core\BASE_URL;
+
 /**
  * Class UserSignupView
  *

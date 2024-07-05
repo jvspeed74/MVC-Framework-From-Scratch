@@ -1,5 +1,17 @@
 <?php
 
+namespace PhpWebFramework\controllers;
+
+use PhpWebFramework\core\AccountManager;
+use PhpWebFramework\core\Controller;
+use PhpWebFramework\exceptions\AccessDeniedException;
+use PhpWebFramework\exceptions\ExceptionHandler;
+use PhpWebFramework\models\dto\Product;
+use PhpWebFramework\models\handlers\ProductHandler;
+use PhpWebFramework\views\product\ProductCreateView;
+use PhpWebFramework\views\product\ProductIndexView;
+use PhpWebFramework\views\product\ProductShowView;
+
 /**
  * Class ProductController
  *

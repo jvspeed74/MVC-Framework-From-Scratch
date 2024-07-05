@@ -10,6 +10,12 @@
  * It also allows you to check out products in the shopping cart.
  */
 
+namespace PhpWebFramework\views\product;
+
+use PhpWebFramework\core\AccountManager;
+use PhpWebFramework\exceptions\AccessDeniedException;
+use const PhpWebFramework\core\BASE_URL;
+
 /**
  * Class ProductCreateView
  *

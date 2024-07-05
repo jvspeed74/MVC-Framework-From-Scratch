@@ -1,5 +1,17 @@
 <?php
 
+namespace PhpWebFramework\controllers;
+
+use PhpWebFramework\core\AccountManager;
+use PhpWebFramework\core\CartManager;
+use PhpWebFramework\core\Controller;
+use PhpWebFramework\core\SessionManager;
+use PhpWebFramework\exceptions\InvalidQuantityException;
+use PhpWebFramework\exceptions\ProductNotFoundException;
+use PhpWebFramework\views\cart\CartCheckoutView;
+use PhpWebFramework\views\cart\CartIndexView;
+use const PhpWebFramework\core\BASE_URL;
+
 /**
  * Class CartController
  *

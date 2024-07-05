@@ -1,5 +1,7 @@
 <?php
 
+namespace PhpWebFramework\core;
+
 /**
  * Class Router
  *
@@ -17,10 +19,10 @@ class Router
      *
      * @param string $requestType GET|POST method.
      * @param string $uri The URI pattern to match.
-     * @param string $controllerMethod The controller method to call when the route matches.
+     * @param array $controllerMethod The controller method to call when the route matches.
      * @return void
      */
-    public function registerRoute(string $requestType, string $uri, string $controllerMethod): void
+    public function registerRoute(string $requestType, string $uri, array $controllerMethod): void
     {
         $this->routes[$requestType][BASE_URL . $uri] = $controllerMethod;
     }
@@ -35,10 +37,10 @@ class Router
      *
      * @param string $uri The URI to match against registered routes.
      * @param string $requestType The type of HTTP request (e.g., GET, POST).
-     * @return array|bool|null An array containing the controller method and captured
+     * @return array|false|null An array containing the controller method and captured
      * segments from the URI, null if the request shouldn't be routed, or false if no route is found.
      */
-    public function lookupRoute(string $uri, string $requestType): null|array|bool
+    public function lookupRoute(string $uri, string $requestType): null|array|false
     {
         // Check if the request is for a static file
         if (preg_match('/\.(css|js|jpg|jpeg|png|gif|ico)$/', $uri)) {
@@ -57,7 +59,8 @@ class Router
                 // Remove full match from matches array
                 array_shift($matches);
                 // Return controller method and captured segments
-                return [$controllerMethod, $matches];
+                $controllerMethod[] = $matches;
+                return $controllerMethod;
             }
         }
         // No route found
